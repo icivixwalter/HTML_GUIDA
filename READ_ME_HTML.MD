@@ -238,7 +238,7 @@ H
 
                 These are <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>.
                 Il codice seguente definisce tutte le intestazioni:
- ## immagini
+ ##Immagini
               NOTE  
               Il tag <img> delle immagini
                 Il  tag <img> viene utilizzato per inserire un'immagine. 
@@ -301,6 +301,13 @@ H
 
                         CORSIVO
                                  viene creato con    @corsivo: <i> TAG DEL CORSIVO  </i> 
+     ## INPUT
+        
+        Per accettare l'input dell'utente, sono necessari gli elementi del modulo corrispondenti,
+        come i campi di testo. L'elemento <input> ha molte varianti, a seconda dell'attributo type.
+        Può essere un testo, una password, una radio, un URL, un invio, ecc.
+        @HTLM.INPUT  @INPUT.HTLM
+        Il tag <input> non ha tag di fine.
 
 # L 
 
@@ -335,14 +342,8 @@ H
         POST offre una maggiore sicurezza perché i dati inviati non sono visibili nell'indirizzo della pagina.
         @ATTRIBUTO.POST
         @POST.ATTRIBUTO
-#I
-    INPUT
-        Per accettare l'input dell'utente, sono necessari gli elementi del modulo corrispondenti,
-        come i campi di testo. L'elemento <input> ha molte varianti, a seconda dell'attributo type.
-        Può essere un testo, una password, una radio, un URL, un invio, ecc.
-        @HTLM.INPUT  @INPUT.HTLM
-        Il tag <input> non ha tag di fine.
 
+  
 #R
     ##RADIO BUTTON
             con il comando imput puoi creare una radio button con scelta alterantiva
