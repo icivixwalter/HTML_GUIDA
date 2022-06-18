@@ -1,0 +1,112 @@
+
+<!-- @form
+Se modifichiamo il tipo di input in radio, l'utente può selezionare
+solo una tra una serie di scelte:
+
+--->
+
+<html>
+<form>
+</form>
+    <body>
+
+    <br><br>
+        COSTRUZIONE DI UNA FORM
+        <br>
+        <br>
+        Per costruire una form come contenitore oggetto occorrono i due tag "< .. form ..>"
+        aperto e chiuso; all'interno dell'intestazione e questa struttura tag:
+    <br> <br>
+                    <..form..> <br>
+                    <../..form..> possono  essere inseriti le azioni o gli attributi.
+
+                <br>
+
+        ACTION
+        <br>
+        Con l'attributo action per puntare
+        a una pagina web che verra' caricata dopo che l'utente ha inviato il modulo.
+                <----form action="http://www.sololearn.com"----->
+    <br>
+    <br>
+            GET = VISIBILITA DEI DATI
+            <br>
+            <....form action="url" method="GET",,,,,>
+                Quando usi GET, i dati del modulo saranno visibili nell'indirizzo della pagina.
+    <br>
+    <br>
+    POST = PER AGGIORNAMENTO DATI
+    <br>
+    Utilizzare POST se il modulo aggiorna i dati o include informazioni riservate (password).
+    <br>
+    POST offre una maggiore sicurezza perche i dati inviati non sono visibili nell'indirizzo della pagina.
+  <....form action="url" method="POST"...>...
+        L'esempio seguente mostra un modulo che richiede un nome utente e una password:
+        <br>
+    </body>
+
+        <!-- @oggetto.form.1 oggetto contenitore
+        PRIMO oggetto contenitore per 2 caselle di imput  --->
+
+            <form action="http://www.sololearn.com">
+        <label>
+            username
+            <input type="text" name="username" />
+        </label><br />
+        <label>
+            password
+            <input type="password" name="password" />
+        </label>
+        <br>
+
+    </form>
+<br>
+
+        <!-- @oggetto.form.2 oggetto contenitore
+        secondo oggetto contenitore form per inserire 2 caselle di imput--->
+        <form>
+            INPUT
+                II OGGETTO FORM CONTENITORE PER L'INPUT DEL CLIENTE <br>
+                due caselle di imput  per l'username e la password
+
+            <br>
+            Per accettare l'input dell'utente, sono necessari gli elementi del modulo corrispondenti,
+            come i campi di testo. L'elemento <..input> ha molte varianti, a seconda di
+            l'attributo tipo. Può essere un testo, una password, una radio, un URL, un invio, ecc.DD
+
+            <br>
+                <input type="text" name="username" /><br />
+                <input type="password" name="password" />
+
+            <br>
+
+
+
+                ESEMPIO I = due radio button con doppia scelta
+
+            <br>
+            Se modifichiamo il tipo di input in radio, l'utente puo
+            selezionare solo una tra una serie di scelte:
+            <br><br>
+
+            <input type="radio" name="gender" value="male" />Male <br />
+            <input type="radio" name="gender" value="female" />Female <br />
+            <br> <br>
+        </form>
+
+        <form>
+            <br>
+            II ESEMPIO CON 2 CHEKBOX  <br>
+            Se modifichiamo il tipo di input in radio, l'utente puo
+            selezionare solo una tra una serie di scelte:
+            <br><br>
+            Il tipo "casella di controllo" consente all'utente di selezionare piu di un'opzione:
+            <br><br>
+            <input type="checkbox" name="gender" value="1" />Male <br />
+            <input type="checkbox" name="gender" value="2" />Female <br />
+
+
+        </form>
+
+
+</html>

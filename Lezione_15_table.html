@@ -1,0 +1,134 @@
+
+
+<!-- My  Skills section start 
+    
+    TAG t = TABELLE
+Le tabelle vengono definite utilizzando il  tag table.  
+    Le tabelle sono divise in righe di tabella con il  tag tr.  
+    Le righe della tabella sono divise in colonne di tabella (dati della tabella) con il tag td.  
+     
+    Ecco un esempio di tabella con una riga e tre colonne 
+    
+    I CONTENITORI DI DATI
+        I tag di dati della tabella td fungono da contenitori di dati all'interno della tabella.      
+        Possono contenere tutti i tipi di elementi HTML, ad esempio testo, immagini, 
+        elenchi, altre tabelle e così via.
+
+        ATTENZIONE: L'attributo border non è supportato in HTML5.
+
+        BORDER è possibile aggiungere l'attributo border 
+        CELLA che si puo estendere su due colonne
+
+    IL COLORE = colspan
+    Nell'esempio seguente viene illustrato l'attributo colspan in azione: 
+        Puoi vedere che la cella contenente "Orange" si estende su due celle. 
+
+        ROWSPAN = ESTENDE LA COLONNA IN PIU RIGHE    
+        per estendere una colonna su piu di una riga occorre questo attributo
+        Per fare in modo che una cella si estenda su più di una riga, utilizzare l'attributo rowspan.
+
+    ALIGN
+        Per modificare la posizione della tabella, usa l'attributo align all'interno del tag table: 
+
+    BIG COLOR
+        Ora specifichiamo un colore di sfondo rosso per una cella di tabella. 
+        Per fare ciò, basta usare l'attributo bgcolor. 
+
+    
+    --->
+    
+
+
+PRIMA TABELLA
+I tag della tabella sono Table con la 
+proprieta border 2 = bordo e td = le colonne
+<br><br>
+
+
+
+I° TABELLA 
+<table border="2">
+    <tr>
+        <!-- PROVO UN COLLEGAMENTO non funziona con a  --->
+        <td>Red</td>
+        <td>Blue</td>
+        <td>Green</td>
+    </tr>
+    <tr>
+        <td><br />
+        </td>
+        <td colspan="2"><br /></td>
+    </tr>
+</table>
+
+
+<td><br />
+II° TABELLA con l'attributo colspan per estedere su 3 righe
+<td><br />
+<table border="2">
+    <tr>
+        <td>Red</td>
+        <td>Blue</td>
+        <td>Ocra</td>
+        <td>Green</td>
+    </tr>
+    <tr>
+        <td>Yellow</td>
+        <!--- orange si estende su 3 rige
+        con l'attributo colspan --->
+        <td colspan="3">Orange</td>
+    </tr>
+</table>
+
+
+
+<td><br />
+    III° TABELLA IL COLORE DELLA CELLA con l'attributo bgcolor
+    <td><br />
+        <td><br />
+    <table border="2">
+        <tr>
+             <!--- l'attributo va dentro td viene specificato il colore
+            con bgcolor="red" e viene chiuso il tag  --->
+            <td bgcolor="red">Red</td>
+            <td>Blue</td>
+            <td>Ocra</td>
+            <td>Green</td>
+        </tr>
+        <tr>
+            <td>Yellow</td>
+            <!--- orange si estende su 3 rige
+            con l'attributo colspan --->
+            <td colspan="3">Orange</td>
+        </tr>
+    </table>
+    
+<td><br />
+
+    
+VI° TABELLA ALLINEO AL CENTRO  con l'attributo bgcolor  "table align="center""  e l'attributo
+deve stare dentro table
+    <td><br />
+        
+        <td><br />
+         
+            <!-- tabella 2 ATTRIBUTI BORDER + ALIGN  --->
+    <table border="2"
+    table align="center"
+    >
+        <tr>
+             <!--- l'attributo va dentro td viene specificato il colore
+            con bgcolor="red" e viene chiuso il tag  --->
+            <td bgcolor="red">Red</td>
+            <td>Blue</td>
+            <td>Ocra</td>
+            <td>Green</td>
+        </tr>
+        <tr>
+            <td>Yellow</td>
+            <!--- orange si estende su 3 rige
+            con l'attributo colspan --->
+            <td colspan="3">Orange</td>
+        </tr>
+    </table>
+    
