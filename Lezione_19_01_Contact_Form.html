@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- AGGIUNGO LO STILE CSS: link al file css DI STILE
+
+   CSS esterno
+    Un foglio di stile esterno viene utilizzato per definire lo stile di molte pagine HTML.
+    Per utilizzare un foglio di stile esterno, aggiungi un collegamento ad esso nella
+     sezione <head> di ogni pagina HTML:
+     Questa è solo una pagina HTML statica, quindi non funzionerà per inviare
+     effettivamente il modulo. Dovresti creare il codice lato server per inviare
+     un modulo reale ed elaborare i dati.
+     Per sapere come, completa il corso PHP di SoloLearn dopo aver completato i corsi HTML e CSS.
+   --->
+<link rel="stylesheet" href="Lezione_19_01_CSS.css">
+
+
+    <!--CARATTERI SPECIALI   --->
+    Per HTML 4:
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta charset="UTF-8">
+    <title>LEZIONE 19.01</title>
+
+
+
+<body>
+        <h2>
+
+            <br>
+            19.1 Lesson
+            Blog Project: Contact Form
+            <br>
+
+        </h2>
+        <h4>
+            Modulo di Contatto
+            Successivamente, creeremo un modulo di contatto per il tuo blog.
+            Il modulo includerà i campi Nome, Email e Messaggio. Aggiungeremo anche un pulsante Invia.
+        </h4>
+
+        <head>
+            <title>My Blog</title>
+            <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+        </head>
+        <body>
+        <!-- Form section start -->
+        <div class="section">
+            <h1><span>Contact Me</span></h1>
+            <form>
+                <input name="name" type="text" /><br/>
+                <input name="email" type="email" /><br/>
+                <textarea name="message" ></textarea>
+                <input type="submit" value="SEND" class="submit" />
+            </form>
+        </div>
+        <!-- Form section end
+        Completare il tuo CV
+        Aggiungi un campo per un messaggio e un pulsante di invio!-->
+        </body>
+
+        Message, Part 2
+        <br> <br>
+        E ora, per il tocco finale!
+        Per completare il modulo, aggiungiamo un campo per il messaggio e un pulsante di invio!
+        <br>
+
+        Compito
+        <br>
+        1. All'interno del form, definire l'elemento <..textarea..> e aggiungere
+            l'attributo segnaposto con il valore "Message".
+            <br>
+        2. Crea tutti i campi richiesti aggiungendo un attributo omonimo alla fine.
+           <br>
+        3. Per il pulsante di invio, aggiungi l'elemento <..input> con gli attributi
+            type = "submit" e value = "SEND". <br>
+
+        Puoi anche aggiungere l'attributo type ai campi con i valori corrispondenti.
+
+
+</body>
+
+<form>
+        1. attributo textarea + segnaposto
+    <input placeholder="Name" required /><br>
+    <input placeholder="Email" required /><br>
+    <textarea placeholder="Message" required ></textarea><br>
+    <input type="submit" value="SEND"/><br>
+</form>
+</html>
+
+Per supportare più righe di input è necessario utilizzare il seguente elemento:

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lezione 21 Frames </title>
+</head>
+<body>
+Il tag <..frame>
+Una pagina può essere divisa in frame utilizzando un documento frame speciale.
+<br><br>
+Il tag <.frame> definisce una finestra specifica (frame) all'interno di un <..frameset>.
+    Ciascun <..frame> in un <..frameset> può avere attributi diversi, come bordo, scorrimento,
+        capacità di ridimensionamento, ecc.
+<br><br>
+    L'elemento <..frameset> specifica il numero di colonne o righe nel frameset, nonché
+        la percentuale o il numero di pixel di spazio occupati da ciascuna di esse.
+<br><br>
+    Il tag <..frameset> non è supportato in HTML5.
+    Quali attributi richiede il tag frameset per indicarne la dimensione?
+<br><br>
+<!--<frameset cols="100, 25%, *"></frameset>-->
+<!--<frameset rows="100, 25%, *"></frameset>-->
+
+
+<br><br>
+Utilizzare l'attributo <..noresize> per specificare che un utente non può ridimensionare un elemento <.frame>:
+    <frame noresize="noresize">
+<br><br>
+    Il contenuto del frame deve essere definito utilizzando l'attributo src.
+
+    Infine, l'elemento <..noframes> fornisce un modo per i browser che non supportano i frame
+        per visualizzare la pagina. L'elemento può contenere una pagina alternativa,
+        completa di body tag ed eventuali altri elementi.
+
+<frameset cols="25%,50%,25%">
+    <frame src="a.htm" />
+    <frame src="b.htm" />
+    <frame src="c.htm" />
+    <noframes>Frames not supported!</noframes>
+</frameset>
+
+
+</body>
+</html>

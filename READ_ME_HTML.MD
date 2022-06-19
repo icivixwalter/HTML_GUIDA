@@ -52,7 +52,9 @@
                 questo esempio, il valore di "center" 
                 indica che il contenuto all'interno dell'elemento p deve essere allineato al centro: 
                 il botton vine scritto con all'interno di body + div es.
-                @attributi, @button
+                Inoltre il ruolo dell'attributo è quello di modificare il tag.
+
+                @attributi, @button, @ruolo.attributi
 
                 div= allineamento.
                 <body>
@@ -76,6 +78,10 @@
                         Questa operazione può essere eseguita utilizzando l'attributo width:
                         La line si creac con hr la larghezza è l'attributo width = 50
                         @linea.orizzonatel  @larghezza.linea
+
+                Quale attributo viene utilizzato per cambiare il colore di una cella?
+                ????
+                @attibuto.colore.cella
  
 # B 
   ## button
@@ -87,7 +93,18 @@
                 @interlinea
 # C
 
-    ## CORSIVO 
+## CARATTERI SPECIALI
+    Per mostrare correttamente una pagina HTML, 
+    in particolar modo in riferimento alle lettere accentate, il browser deve conoscere la codifica dei caratteri o "charset" da essa associata.
+    Per viasualizzare correttamente le lettere accentate nelle pagine HTML è necessario adottare una determinata codifica dei cdaratteri.
+    Per far visualizzare è necessario inserire il meta tag charset nella sezione della tua pagina HTML, i seguente codice:
+    @caratteri.speciali
+    http://www.caratterispeciali.altervista.org/#:~:text=Per%20viasualizzare%20correttamente%20le%20lettere%20accentate%20nelle%20pagine,Per%20HTML%204%3A%20%3Cmeta%20http-equiv%3D%22Content-Type%22%20content%3D%22text%2Fhtml%3B%20charset%3Dutf-8%22%20%2F%3E
+    
+        Per HTML 4: <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        Per HTML 5: <meta charset="utf-8" />
+## CORSIVO 
            All'interno del testo scrivere tra <p> .... 
              ... puoi scrivre <strong>SoloLearn</strong>
             <\p>
@@ -139,6 +156,21 @@
 
             @checkbox
 
+    ###COLOR
+            @colori.sfondo,  @sfondo.colori
+            Questo esempio produrrebbe uno sfondo blu scuro con un titolo bianco: 
+            L'attributo color specifica il colore del testo all'interno di un elemento <...font>.
+        <body bgcolor="#000099">
+         
+    <h1>
+        <font color="#FFFFFF"> White headline </font>
+    </h1>
+#D
+    ##div
+        Sezione del progetto vengono utilizzate con il tag
+            div
+            @creare.sezioni, @sezioni.div
+            
 # E 
    #Tipi di elementi 
         In HTML, la maggior parte degli elementi sono definiti come  elementi a livello di blocco o in linea.
@@ -349,6 +381,14 @@ H
             con il comando imput puoi creare una radio button con scelta alterantiva
            <input type="radio" name="gender" value="male" />Male <br />
            <input type="radio" name="gender" value="female" />Female <br />
+            
+            elenco proprieta INPUT:
+
+            |proprieta      |               |          |
+            |---------------|---------------|----------|
+            |checkbox       |               |          |
+            |radio          |               |          |
+
 # S
   # SEZIONI
         NOTE    
@@ -373,7 +413,7 @@ H
                         I tag <td> vuoti rappresentano celle di tabella vuote. 
                         Sono necessari perché mantengono la struttura della tabella. 
 
-
+                        
                         @tag.th
                         @tabella.intestazioni
                         @intestazioni.tabella
@@ -392,4 +432,12 @@ H
 
         ATTENZIONE: L'attributo border non è supportato in HTML5.
 
-
+    ##TextArea
+        
+        Per avere una multilinea occorre utilizzare il comando
+        textarea, es. 
+        @multilinee.textarea
+        @textarea.multilinee
+            form
+                 <textarea placeholder="Message" required ></textarea>
+            fomr 

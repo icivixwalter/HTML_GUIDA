@@ -1,0 +1,90 @@
+
+
+<!-- @form
+Message, Part 1
+Great job! You have reached the final section!
+Let's create a static form which allows anyone who reads our CV the ability to write us messages in the future. We will do this in 2 steps.
+As the first step, we will create the Name and the Email fields.
+
+Ottimo lavoro! Sei arrivato alla sezione finale!
+Creiamo un form statico che permetta a chiunque legga il nostro CV
+la possibilità di scriverci messaggi in futuro. Lo faremo in 2 passaggi.
+Come primo passo, creeremo i campi Nome e Email.
+
+Task
+1. Write "Write me a message" in italics enclosed in the <h2>.
+2. Immediately below, add <form> tag.
+3. Inside the <form> tag, add two <input> elements -- for Name and Email fields accordingly -- each one in a new line.
+4. In each <input> element, add the placeholder attribute with the corresponding value ("Name" and "Email").
+
+Compito
+1. Scrivi "Scrivimi un messaggio" in corsivo racchiuso in <h2>.
+2. Immediatamente sotto, aggiungi il tag <form>.
+3. All'interno del tag <form>, aggiungi due elementi <input> -- per i campi
+        Nome ed Email di conseguenza -- ognuno in una nuova riga.
+4. In ogni elemento <input>, aggiungi l'attributo segnaposto con il valore corrispondente ("Nome" e "E-mail").
+    L'attributo segnaposto specifica un breve suggerimento che descrive il valore previsto di un campo di input.
+
+--->
+
+
+<form>
+    <h2>
+        <br>
+        ESERCIZIO CODE PRO MESSAGE ESERCIZIO 18.2
+        <br>
+        <br>
+
+        <!-- 01 messaggio in corsivo APRO E CHIUDO IN CORSIVO altrimenti da errore --->
+        <i>
+            <br>
+            <br>
+            01. HO SCRITTO IL MESSAGGIO IN CORSIVO aprendo il tag i e   <br>
+                ho chiuso il corsivo con i e ho chiuso il paragrafo h2
+            <br>
+             "messaggio" in corsivo
+        </i> <br>
+
+    </h2>
+    <!-- 02 tag form  --->
+    <br> 02+03  inserito il tag form + 03 All'interno del tag <..form>,
+    aggiungi due elementi input -- per i campi
+    Nome ed Email <br>
+
+    <!--03 inserito 2 input --->
+    <label>
+        <!--04 ho inserito il sgnaposto per entrambi gli elementi --->
+        <br>
+        04 ho inserito il placeholder = ossia il segnaposto per le due caselle <br>
+        <i>
+            L'attributo segnaposto specifica un breve suggerimento  <br>
+            che descrive il valore previsto di un campo di input.
+        </i>
+
+        <br>
+        <br>
+
+        inserisci il nome
+        <!--04 inserito l'attributo segnaposto per il nome e la email  --->
+        <input placeholder="Name"/><br>
+
+            <br>
+
+    </label><br />
+    <label>
+
+        <br>
+        inserisci la email
+
+        <input placeholder="Email"/><br>
+
+    </label>
+
+
+    <br>    <br>
+    <textarea name="message" placeholder="Message" required ></textarea>
+    <input type="submit" value="SEND" class="submit" />
+</form>
+
+
+
