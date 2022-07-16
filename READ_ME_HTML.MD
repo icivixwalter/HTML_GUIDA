@@ -322,7 +322,7 @@ H
                         @bordi.immagine
                         @border.attributo 
                         @attributo.border.immagini
-        ##LEZIONE 9\
+        ##LEZIONE 9
                 Torniamo al nostro progetto blog.  
                 La  sezione Informazioni personali conterrà un'intestazione racchiusa in un tag <h1>, insieme a due paragrafi che formattano il testo utilizzando i tag appena appresi.  
                 Diamo un'occhiata al codice: VIENE UTILIZZATO IL CSS per le proprieta
@@ -340,6 +340,196 @@ H
         Può essere un testo, una password, una radio, un URL, un invio, ecc.
         @HTLM.INPUT  @INPUT.HTLM
         Il tag <input> non ha tag di fine.
+
+# H
+        ## HTLM5
+        
+        LEZIONE 26 29 30 31
+        Quando scrivi documenti HTML5,  una delle prime nuove funzionalità che noterai è la dichiarazione del tipo di documento: <!DOCTYPE HTML> @DICHIARAZIONE.HTLM
+        @CODIFICA.CARATTERI,  @charset, @dichirazione.codifica.caratteri
+        Anche la dichiarazione di codifica dei caratteri (charset) è semplificata: 
+
+        <meta charset="UTF-8">
+        New Elements in HTML5   @HTML5.ELEMENTI  @NUOVI.ELEMENTI.HTML5
+        <article>, <aside>, <audio>, <canvas>, <datalist>, <details>, 
+        <embed>, <footer>, <header>, <nav>, <output>, <progress>, <section>, <video>, and even more!
+
+        CARATTERISTICHE
+
+                API integrate (Application Programming Interfaces) 
+                - Drag and Drop 
+                - Audio e Video 
+                - Applicazioni 
+                Web offline  - Cronologia 
+                - Archiviazione 
+                locale  - Geolocalizzazione 
+                - Web Messaging
+
+
+        7 modelli di contenuto  @modelli.di.contenuto, @contenuto.modelli
+
+                L'elenco dei modelli di contenuto 
+                In HTML, gli elementi appartenevano in genere al modello di contenuto a livello di blocco o in linea. HTML5 introduce sette modelli di contenuto principali.  
+                
+                - Metadati 
+                - Incorporati 
+                - Interattivi 
+                - Intestazione 
+                - Fraseggio 
+                - Flusso 
+                - Sezionamento 
+       
+                I modelli di contenuto HTML5 sono progettati per rendere la struttura del markup più significativa sia per il browser che per il web designer.
+
+        METADATA
+                Metadata: contenuto che imposta la presentazione o il comportamento del resto del contenuto. Questi elementi si trovano nella testa del documento.  @modelli.metadata, @testa.documento, @comportamento
+                @presentazione
+                Elements: <base>, <link>, <meta>, <noscript>, <script>, <style>, <title>
+
+
+        ENBEDED
+                Embedded: contenuto che importa altre risorse nel documento. 
+                 @IMPORTAZIONI  @importa.risorse
+                Elements: <audio>, <video>, <canvas>, <iframe>, <img>, <math>, <object>, <svg>
+
+        INTERACTIVE
+                Interactive: Contenuto specificamente destinato all'interazione dell'utente.  @INTERAZIONE.UTENTE,              
+                Elements: <a>, <audio>, <video>, <button>, <details>, <embed>, <iframe>, <img>, <input>, <label>, <object>, <select>, <textarea>
+
+        INTESTAZIONE DELLE SEZIONI
+
+                Heading: definisce un'intestazione di sezione. @SEZIONI.INTESTAZIONI, @INTESTAZIONI.SEZIONI
+                Elements: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <hgroup>
+
+        HTML4 ELEMENTI IN COMUNE
+                Phrasing: questo modello ha un numero di elementi di livello in linea in comune con HTML4. 
+                @elementi.in.comune @HTML4.HTML5
+                Elements: <img>, <span>, <strong>, <label>, <br />, <small>, <sub>, and more.
+
+
+        MODELLI DI CONTENUTO Content Models 
+                
+                per individuare i modelli veder questo collegtamento https://www.sololearn.com/learning/1014/2191/4340/1Flow 
+
+        CONTENUTO DEL FLUSSO -FLOW CONTENT
+                Flow content: contiene la maggior parte degli elementi HTML5 che verrebbero inclusi nel normale flusso del documento. @flow
+
+        CONTENUTO DEL SEZIONAMENTO - SECTIONING CONTENT -
+                @sezionamento, @intestazioni, @navigazione @pie.di.pagina @contenuto
+                Sectioning content: Definisce l'ambito di intestazioni, contenuto, navigazione e piè di pagina. 
+                Elements: <article>, <aside>, <nav>, <section>
+
+                I vari modelli di contenuto si sovrappongono in determinate aree, a seconda di come vengono utilizzati.
+
+        STRUTTURA GENERICA DI UNA PAGINA HTML
+
+                <header>
+                contiene il logo
+                <nav>
+                contiene la navigazione nel sito
+                <article>
+                pagina web che contiene le sezioni
+                        <section>                                               <asize>
+                                divisione di una sezione                    contiene informazioni extra
+                        <section>
+                                divisione di una sezione
+
+                        <foter>
+                                informazioni sul copyright
+
+                        n.b Potresti non aver bisogno di alcuni di questi elementi, a seconda della struttura della pagina.
+
+
+                riepilogo pagina web
+                        head
+                        heder
+                        nav
+                        article
+                        section
+                        foter
+
+
+
+        HEADER ELEMENTI IN HTML5
+        
+                In HTML4, definiremmo un'intestazione come questa: 
+                        <div id="header">
+                
+                In HTML5 viene  invece utilizzato  un semplice tag <header>.  
+                L'elemento <header> è appropriato per l'uso all'interno del tag body. 
+                                <!DOCTYPE html>
+                                <html>
+                                <head></head>
+                                <body>
+                                        <header>
+                                        <h1>Most important heading</h1>
+                                        <h3>Less important heading</h3>
+                                        
+                                        </header>
+                                </body>
+                                </html>
+
+                
+
+
+
+        ELEMENTO PIE DI PAGINA The <footer> Element -
+
+                L'elemento <footer> 
+               Anche l'elemento piè di pagina è ampiamente utilizzato. Generalmente ci riferiamo a una sezione situata nella parte inferiore della pagina web come piè di pagina. 
+               @FOTER  @PIE.DI.PAGINA
+                        ESEMPIO  <footer></footer>
+
+                Nel pie di pagina vengono inserite le seguenti informazioni
+
+                        Le seguenti informazioni vengono solitamente fornite tra questi tag: 
+                        - Informazioni di 
+                        contatto  - Informativa sulla privacy 
+                        - Icone 
+                        dei social media - Termini di servizio 
+                        - Informazioni 
+                        sul copyright  - Mappa del sito e documenti correlati
+
+        ELEMENTO NAVIGAZIONE - The <nav> Element
+
+                L'elemento <nav>
+               Questo tag rappresenta una sezione di una pagina che rimanda ad altre pagine o a determinate sezioni all'interno della pagina. Questa sarebbe una sezione con collegamenti di navigazione. @collegamenti, @navigazione @tag.navigazione
+                
+                Ecco un esempio di un blocco importante di collegamenti di navigazione:
+                        <nav>
+                        <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">About us</a></li>
+                        </ul>
+                        </nav>
+
+                Non tutti i collegamenti in un documento devono trovarsi all'interno di un elemento <nav>. L'elemento <nav> è destinato solo ai principali blocchi di collegamenti di navigazione. In genere, l'elemento <footer> ha spesso un elenco di collegamenti che non devono necessariamente trovarsi in un elemento <nav>.
+
+        ELEMENTO ARTICOLO - The <article> Element
+
+                L'articolo è un contenuto autonomo e indipendente che può essere utilizzato e distribuito separatamente dal resto della pagina o del sito. Questo potrebbe essere un      post sul forum, 
+                        una rivista o un 
+                        articolo di giornale, 
+                        un post di blog,
+                        un commento, 
+                        un widget interattivo o un 
+                        gadget o qualsiasi 
+                        altro contenuto indipendente.
+
+                L'elemento <articolo> sostituisce l'elemento <div> ampiamente utilizzato in HTML4, insieme a un id o a una classe.   @tag.article  @tag.articolo
+                @ARTICOLO, @post @rivista, @blog @commento @widget  @gadget @sostituisce.div
+                @HTML5.articolo=article   @HTML4.articolo=div è stato sostituito da article
+                
+                                esempio
+                                        <article>
+                                        <h1>The article title</h1> 
+                                        <p>Contents of the article element </p>
+                                        </article>
+
+x\
+
+                Quando un elemento <articolo> è nidificato, l'elemento interno rappresenta un articolo correlato all'elemento esterno. Ad esempio, i commenti ai post di blog possono essere <articolo> elementi nidificati nel <articolo> che rappresentano il post di blog.
 
 # L 
 
