@@ -1,0 +1,9 @@
+/* intro il selectore id dell'HTML
+    id = intro 
+    SELETTORE DI UN ID SPECIFICO  che puo essere utilizzato solo una volta
+    mentre i SELETTORI DI CLASSE 
+ */
+#intro {
+    color: white;
+    background-color: gray;
+}

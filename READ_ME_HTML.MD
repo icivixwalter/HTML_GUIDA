@@ -91,6 +91,214 @@
                 <br> = una linea per un cr.
                 <br>    <br> = due linee ecc..
                 @interlinea
+
+# CSS
+        LEZIONE 2.1
+                What is CSS?
+                        Cascading Style Sheets.
+                        CSS è l'acronimo  di Cascading Style Sheets.  @CSS
+                         
+                        - Cascading si riferisce al modo in cui CSS applica uno stile sopra un altro.  
+                        - I fogli di stile controllano l'aspetto dei documenti Web.  @FOGLI.DI.STILE
+                         
+                        CSS e HTML lavorano fianco a fianco: 
+                        - HTML ordina la struttura della pagina.  
+                        - CSS definisce come vengono visualizzati gli elementi HTML. 
+                        Per comprendere i CSS, dovresti già avere una conoscenza di base dell'HTML.  
+                        Se vuoi studiare HTML, dai un'occhiata al nostro corso HTML.
+
+                        Cascading
+                        Style Sheets
+
+                Why Use CSS?
+                        CSS consente di applicare stili specifici a specifici elementi HTML.  
+                         
+                        Il vantaggio principale di CSS è che consente di separare lo stile dal contenuto.  
+                         
+                        Usando solo HTML, tutti gli stili e la formattazione sono nello stesso posto, il che diventa piuttosto difficile da mantenere man mano che la pagina cresce. 
+                        Tutta la formattazione può (e deve) essere rimossa dal documento HTML e memorizzata in un file CSS separato.
+
+        LEZIONE 2.1 Inline, Embedded, External CSS
+
+                
+                Inline CSS
+
+                        L'utilizzo di uno stile in linea è uno dei modi per inserire un foglio di stile. Con uno stile in linea, uno stile unico viene applicato a un singolo elemento. 
+                         
+                        Per utilizzare uno stile in linea, aggiungere l'attributo style al tag pertinente.  
+                         
+                        L'esempio seguente mostra come creare un paragrafo con sfondo grigio e testo bianco: 
+                                                        style attribute to the relevant tag. 
+                                                        @style, @attributo.style  @proprieta.css
+
+                                ESEMPIO = PARAGRAFO CON SFONDO GRIGIO
+                                        <p style="color:white; background-color:gray;">
+                                            This is an example of inline styling. 
+                                        </p>
+
+                                L'attributo style può contenere qualsiasi proprietà CSS.
+
+                Embedded/Internal CSS
+                        Gli stili interni sono definiti all'interno dell'elemento <style>, all'interno  della sezione head di una pagina HTML.  
+                        Ad esempio, il codice seguente applica uno stile a tutti i paragrafi:
+                        @stile.paragrafi
+                                @esempio.stile paragrafi in grigio
+                                @TAG.STILE in testa alla pagina
+                                <html>
+                                   <head>
+                                      <style>
+                                      p {
+                                         color:white;
+                                         background-color:gray;
+                                      }
+                                      </style>
+                                   </head>
+                                   <body>
+                                      <p>This is my first paragraph. </p>
+                                      <p>This is my second paragraph. </p>
+                                   </body>
+                                </html>
+
+                        STILE INTERNO UNICO  = Un foglio di stile interno può essere utilizzato se una singola pagina ha uno stile unico.
+
+                External CSS
+                         <link> tag
+                        Con questo metodo, tutte le regole di stile sono contenute in un singolo file di testo, che viene salvato con l'estensione .css.  @CSS.FILE.UNICO, @UNICO.FILE.CSS                         
+                        Questo file CSS viene quindi referenziato nell'HTML utilizzando il  tag <link>. L'elemento <link> si trova all'interno della sezione head. @LINK.TAG, TAG.LINK
+                         
+                        Ecco un esempio: 
+                        l'HTML:
+                                <head>
+                                   <link rel="stylesheet" href="example.css">
+                                </head>
+                                <body>
+                                   <p>This is my first paragraph.</p>
+                                   <p>This is my second paragraph. </p>
+                                   <p>This is my third paragraph. </p>
+                                </body>
+
+                        Sia i percorsi relativi che quelli assoluti possono essere utilizzati per definire l'href per il file CSS. Nel nostro esempio, il percorso è relativo, poiché il file CSS si trova nella stessa directory del file HTML.
+
+                        @path.relativa, @path.assoluta
+                
+                Welcome to Resume Design Project
+                        Benvenuti nel progetto Resume Design! Durante questo progetto, costruiremo un accattivante design del curriculum passo dopo passo!  
+                        Ti verrà dato un modello HTML e durante questo progetto lavoreremo sul suo stile usando CSS.  
+                        Esaminare l'attività, scrivere il codice, eseguirne il commit per salvare lo stato di avanzamento e continuare il progetto in ciascuna delle sue fasi. 
+
+                        Per prima cosa, scriviamo il tuo nome e cognome in alto e impostiamo la dimensione del carattere.  
+                                <div class="heading">John Smith</div> 
+
+                        È possibile impostare valori personalizzati per tutte le proprietà del curriculum durante l'intero progetto per ottenere contenuti e stili unici.  
+                        Gli esempi forniti sono intesi esclusivamente come guida.
+
+                         
+                        Attività
+                        1. Nel codice HTML, sezione "Intro", scrivi il tuo nome e cognome all'interno del tag > <div class="heading". 
+                        numero arabo. Nel codice CSS, selezionare l'elemento "heading" e impostare una dimensione del carattere per esso utilizzando la  proprietà font-size. 
+
+                        VEDI @MyPROGETTO-CSS
+
+        LEZIONE 3.1 CSS Rules and Selectors
+                CSS Syntax
+                       CSS è composto da regole di stile che il browser interpreta e quindi applica agli elementi corrispondenti nel documento.Una regola di stile è composta da tre parti:selettor,proprietevalor.Ad esempio, il colore del titolo può essere definito
+                        come @REGOLA.DI STILE, @SELETTORE,@PROPRIETA, @VALORE
+                                nel file css
+                                blocco dichiarazione = h1
+
+                                h1 { color: orange; }
+                                     nomeprorieta:valore   
+                                
+                                h1    = selettore 
+                                color = proprieta
+                                orang = valore
+
+                                <h1>A Sample Heading</h1>
+
+                        Il selettore punta all'elemento HTML a cui si desidera applicare uno stile. 
+                        Il blocco di dichiarazione contiene una o più dichiarazioni, separate da punto e virgola.             
+                        Ogni dichiarazione include un nome di proprietà e un valore, separati da due punti. 
+
+                Type Selectors
+                        I selettori più comuni e facili da capire sono i selettori di tipo. Questo selettore è destinato ai tipi di elemento nella pagina. 
+                        p = selettore di paragrafo
+                        Ad esempio, per scegliere come target tutti i paragrafi della pagina: 
+
+                                nel file css
+                                        p {
+                                            color: red;
+                                            font-size:130%;
+                                        }  
+
+                                        Una dichiarazione CSS termina sempre con un punto e virgola e i gruppi di dichiarazioni sono circondati da parentesi graffe. 
+
+                id and class Selectors
+                        I selettori id consentono di applicare uno stile a un elemento HTML con un attributo id, indipendentemente dalla posizione nell'albero del documento. Ecco un esempio di un selettore id: 
+
+                                NEL FILE HTML
+                                <div id="intro">
+                                   <p> This paragraph is in the intro section.</p>
+                                </div>
+                                <p> This paragraph is not in the intro section.</p>
+                                        
+                                        ID= INTRO
+
+
+                        NEL FILE CSS
+                                #intro {
+                                    color: white;
+                                    background-color: gray;
+                                }
+
+                                @vedi.esempio.selettore.specifico
+
+                DIFFERENZA SELETTORI DI CLASSE E I SELETTORI ID
+                        I selettori di classe funzionano in modo simile. La differenza principale è che gli ID possono essere applicati solo una volta per pagina, mentre le classi possono essere utilizzate tutte le volte su una pagina secondo necessità. 
+                         
+                        Nell'esempio seguente, entrambi i paragrafi con la classe "first" saranno interessati dal CSS: 
+                                .first {font-size: 200%;}
+
+
+                                Per selezionare elementi con una classe specifica, utilizzare un carattere punto, seguito dal nome della classe.  
+
+                                NON iniziare una classe o un nome ID con un numero!
+
+                                @vedi.esempio.selettore.di.classe
+
+                Descendant Selectors
+                        Questi selettori vengono utilizzati per selezionare elementi discendenti di un altro elemento. Quando si selezionano i livelli, è possibile selezionare tutti i livelli di profondità necessari.        @SELEZIONA.LIVELLI @PADRE.FIGLIO
+ 
+                        Ad esempio, per scegliere come target solo <em> elementi nel primo paragrafo della sezione "introduzione": 
+
+                                ESEMPIO
+                                <div id="intro">
+                                    <p class="first">This is a 
+                                                <em> paragraph.</em>
+                                    </p>
+                                    
+                                    <p> This is the second paragraph. </p>
+                                </div>
+
+                                <p class="first"> This is not in the intro section.</p>
+                                <p> The second paragraph is not in the intro section. </p>
+
+                                vedi: @regola.di.stile
+
+        LEZIONE 4.1 CSS Comments
+                Comments
+                I commenti vengono utilizzati per spiegare il codice e possono essere utili quando si modifica il codice sorgente in un secondo momento. I commenti vengono ignorati dai browser. 
+                        @commenti.css 
+                        p { 
+                            color: green; 
+                            /* This is a comment */
+                            font-size: 150%;
+                        }
+
+           LEZIONE 5.2 Code Repo
+                Intro Section
+                        @todo: da fare
+     
+       
 # C
 
 ## CARATTERI SPECIALI
@@ -161,6 +369,9 @@
             Questo esempio produrrebbe uno sfondo blu scuro con un titolo bianco: 
             L'attributo color specifica il colore del testo all'interno di un elemento <...font>.
         <body bgcolor="#000099">
+                Il nome di questo colore è Black. Nello spazio colore RGB, l'esadecimale #000000 è composto da: 0% di rosso, 0% di verde e 0% di blu. Mentre in quadricromia o spazio colore CMYK, è così composto: 0% ciano, 0% magenta, 0% giallo e 100% nero.
+
+                @COLORE.NERO.#000000
          
     <h1>
         <font color="#FFFFFF"> White headline </font>
@@ -262,97 +473,16 @@ H
                 Quali tag vengono utilizzati per indicare le intestazioni?
 
 
+                LEZIONE 26 29 30 31
+        GENERALE
+                Quando scrivi documenti HTML5,  una delle prime nuove funzionalità che noterai è la dichiarazione del tipo di documento: <!DOCTYPE HTML> @DICHIARAZIONE.HTLM
+                @CODIFICA.CARATTERI,  @charset, @dichiarazione.codifica.caratteri
+                Anche la dichiarazione di codifica dei caratteri (charset) è semplificata: 
 
-#I 
- ##intestazioni  
-
-                HTML include sei livelli di intestazioni, che sono classificati in base all'importanza. 
-
-                These are <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>.
-                Il codice seguente definisce tutte le intestazioni:
- ##Immagini
-              NOTE  
-              Il tag <img> delle immagini
-                Il  tag <img> viene utilizzato per inserire un'immagine. 
-                Contiene solo attributi e non ha un tag di chiusura. 
-
-                @path.immagini
-                L'URL (indirizzo) dell'immagine può essere definito utilizzando l'attributo src.  
-
-                        La sintassi dell'immagine HTML è simile alla seguente:     
-                        L'attributo alt specifica un testo alternativo per un'immagine.
-                        alt = attributo per il testo dell'immagine.
-                        @testo.per.immagine
-
-
-                        È necessario inserire la posizione dell'immagine per l'attributo src 
-                        che si trova tra virgolette.  
- 
-                        Ad esempio, se hai una foto denominata "tree.jpg" nella stessa cartella 
-                        del file HTML, il codice dovrebbe essere simile al seguente: 
-                        Nel caso in cui l'immagine non possa essere visualizzata, l'attributo alt specifica 
-                        un testo alternativo che descrive l'immagine in parole. L'attributo alt è alternativo
-                        
-                        <html>
-                                <head>
-                                <title>first page</title>
-                                </head>
-                        <body> 
-                                <img src="http://www.sololearn.com/images/tree.jpg" alt="" />
-                        </body>
-                        </html>
-
-                        Per definire le dimensioni dell'immagine, utilizzare gli attributi width e height.  
-                        Il valore può essere specificato in pixel o in percentuale:
-
-                        LE IMMAGINI SONO PESANTI
-                                               
-                        Il caricamento delle immagini richiede tempo. L'uso di immagini di 
-                        grandi dimensioni può rallentare la tua pagina, quindi usale con cura.
-        
-                        ATTENZIONE Per impostazione predefinita, Internet Explorer 
-                        9 e le versioni precedenti visualizzano 
-                        un bordo attorno a un'immagine, a meno che non sia definito un attributo border.
-                        @internet.exporer
-
-                IMMAGINE BORDER
-                        Per impostazione predefinita, un'immagine non ha bordi. Utilizzare 
-                        l'attributo border all'interno del tag image per creare un bordo attorno all'immagine.
-
-                        @bordi.immagine
-                        @border.attributo 
-                        @attributo.border.immagini
-        ##LEZIONE 9
-                Torniamo al nostro progetto blog.  
-                La  sezione Informazioni personali conterrà un'intestazione racchiusa in un tag <h1>, insieme a due paragrafi che formattano il testo utilizzando i tag appena appresi.  
-                Diamo un'occhiata al codice: VIENE UTILIZZATO IL CSS per le proprieta
-                esercizio
-                COMPITO: 
-                        1. Crea la tua sezione Informazioni su di me modificando il testo. 
-                        numero arabo. Gioca con il codice; sperimentare con la formattazione del testo.
-
-                        CORSIVO
-                                 viene creato con    @corsivo: <i> TAG DEL CORSIVO  </i> 
-     ## INPUT
-        
-        Per accettare l'input dell'utente, sono necessari gli elementi del modulo corrispondenti,
-        come i campi di testo. L'elemento <input> ha molte varianti, a seconda dell'attributo type.
-        Può essere un testo, una password, una radio, un URL, un invio, ecc.
-        @HTLM.INPUT  @INPUT.HTLM
-        Il tag <input> non ha tag di fine.
-
-# H
-        ## HTLM5
-        
-        LEZIONE 26 29 30 31
-        Quando scrivi documenti HTML5,  una delle prime nuove funzionalità che noterai è la dichiarazione del tipo di documento: <!DOCTYPE HTML> @DICHIARAZIONE.HTLM
-        @CODIFICA.CARATTERI,  @charset, @dichirazione.codifica.caratteri
-        Anche la dichiarazione di codifica dei caratteri (charset) è semplificata: 
-
-        <meta charset="UTF-8">
-        New Elements in HTML5   @HTML5.ELEMENTI  @NUOVI.ELEMENTI.HTML5
-        <article>, <aside>, <audio>, <canvas>, <datalist>, <details>, 
-        <embed>, <footer>, <header>, <nav>, <output>, <progress>, <section>, <video>, and even more!
+                <meta charset="UTF-8">
+                New Elements in HTML5   @HTML5.ELEMENTI  @NUOVI.ELEMENTI.HTML5
+                <article>, <aside>, <audio>, <canvas>, <datalist>, <details>, 
+                <embed>, <footer>, <header>, <nav>, <output>, <progress>, <section>, <video>, and even more!
 
         CARATTERISTICHE
 
@@ -412,6 +542,7 @@ H
                 per individuare i modelli veder questo collegtamento https://www.sololearn.com/learning/1014/2191/4340/1Flow 
 
         CONTENUTO DEL FLUSSO -FLOW CONTENT
+                
                 Flow content: contiene la maggior parte degli elementi HTML5 che verrebbero inclusi nel normale flusso del documento. @flow
 
         CONTENUTO DEL SEZIONAMENTO - SECTIONING CONTENT -
@@ -448,12 +579,11 @@ H
                         section
                         foter
 
-
-
         HEADER ELEMENTI IN HTML5
         
                 In HTML4, definiremmo un'intestazione come questa: 
                         <div id="header">
+                @HEADER
                 
                 In HTML5 viene  invece utilizzato  un semplice tag <header>.  
                 L'elemento <header> è appropriato per l'uso all'interno del tag body. 
@@ -468,10 +598,6 @@ H
                                         </header>
                                 </body>
                                 </html>
-
-                
-
-
 
         ELEMENTO PIE DI PAGINA The <footer> Element -
 
@@ -649,7 +775,7 @@ H
 
                 Un altro aspetto condiviso sia dagli elementi audio che video è che ognuno ha controlli, autoplay e  attributi di loop.  
                 
-                In questo esempio, il video verrà riprodotto al termine della riproduzione: 
+                In questo esempio, il video verrà riprodotto al termine della riproduzione: @riproduzione.video
 
 
                 Un altro aspetto che gli elementi audio e video hanno in comune è che i principali browser non supportano tutti gli stessi tipi di file. Se il browser non supporta il primo tipo di video, proverà quello successivo. Nell'esempio esegue prima il file mp4
@@ -663,24 +789,25 @@ H
 
                 Attualmente, ci sono tre formati video supportati per l'elemento <video>: MP4, WebM e OGG.
 
-        LEZIONE 33.1
-                THE PROGRES ELEMENT
-                L'elemento <progress> consente di creare barre di avanzamento sul Web.  
-                L'elemento progress può essere utilizzato all'interno di intestazioni, paragrafi o in qualsiasi altro punto del corpo. 
-                @barra.avanzamento.web @tag.progress @attributi.progress 
+        #LEZIONE 33.1 
                 
-                Valore degli attributi dell'elemento
-                Progress: specifica la quantità di attività completata.  
-                Max: specifica la quantità di lavoro totale richiesta dall'attività. 
-                @progressione.35% @avanzamento.35%
+                THE PROGRES ELEMENT
+                        L'elemento <progress> consente di creare barre di avanzamento sul Web.  
+                        L'elemento progress può essere utilizzato all'interno di intestazioni, paragrafi o in qualsiasi altro punto del corpo. 
+                        @barra.avanzamento.web @tag.progress @attributi.progress 
+                        
+                        Valore degli attributi dell'elemento
+                        Progress: specifica la quantità di attività completata.  
+                        Max: specifica la quantità di lavoro totale richiesta dall'attività. 
+                        @progressione.35% @avanzamento.35%
 
-                        Status: <progress min="0" max="100" value="35"> 
-                                </progress>
+                                Status: <progress min="0" max="100" value="35"> 
+                                        </progress>
 
-                Utilizzare il tag <progress> insieme a JavaScript per visualizzare dinamicamente lo stato di avanzamento di un'attività.
-                @stato.avanzamento  @tag.progress
+                        Utilizzare il tag <progress> insieme a JavaScript per visualizzare dinamicamente lo stato di avanzamento di un'attività.
+                        @stato.avanzamento  @tag.progress
 
-        LEZIONE 34.1
+       # LEZIONE 34.1
                 Web storage Api
                         HTML5 Web Storage
                                 @ARCHIVIAZIONE.WEB @ARCHIVIAZIONE.LOCALE
@@ -689,20 +816,15 @@ H
                                 N.B. l'archiviazione in HTML5 è sul web storage mentre HTML4 per archiviare dovevano utilizzare i cookes
                                 @HTML4.STORAGE = salvavano nei cookies ma davano proprlemi
 
-
-
-                                
                                 I vantaggi del Web Storage  @WEB.STORAGE  @HTML5.STORAG WEB
                                 - Più sicuro 
                                 - Più veloce 
                                 - Memorizza una maggiore quantità di dati 
                                 - Stored data is not sent with every server 
-                                
-                                        
-
                                 L'archiviazione locale è per dominio. Tutte le pagine di un dominio possono archiviare e accedere agli stessi dati.
 
                         Types of Web Storage Objects
+                                
                                 Tipi di oggetti di archiviazione Web
                                 @STORAGE.due.tipi
                                 @storage.session        =  dati temporanei
@@ -721,9 +843,10 @@ H
                                 È necessario avere familiarità con JavaScript di base per comprendere e utilizzare l'API.
 
                         Working with Values = Utilizzo dei valori
+                                
                                 La sintassi per l'archiviazione Web sia per l'archiviazione locale che per l'archiviazione di sessione è molto semplice e simile.
                                 @chiave.valore  
-I                               dati vengono memorizzati come coppie chiave/valore. 
+                                I dati vengono memorizzati come coppie chiave/valore. 
                                         localStorage.setItem("key1", "value1");
                                                 @storage.local
                                                 @esempio.storage.locale
@@ -738,9 +861,829 @@ I                               dati vengono memorizzati come coppie chiave/valo
                                         Removing All Values: @rimuovi.tutti.i.valori
                                                 localStorage.clear();
 
+        # LEZIONE 35.1
+                Geolocation API
+                        Che cos'è l'API di geolocalizzazione?
+                        In HTML5, l'API di geolocalizzazione viene utilizzata per ottenere la posizione geografica dell'utente.  
+                        
+                        Poiché ciò può compromettere la privacy dell'utente, l'opzione non è disponibile a meno che l'utente non la approvi. 
+
+                        La geolocalizzazione è molto più accurata per i dispositivi con GPS, come smartphone e simili.
+
+                What is the Geolocation API?
+                        Che cos'è l'API di geolocalizzazione?
+                        Con l'API di geolocalizzazione, è possibile ottenere...
+                                ...user location
+                Using HTML Geolocation
+                        Utilizzo della geolocalizzazione HTML
+                        Il metodo principale dell'API di geolocalizzazione è getCurrentPosition, che recupera la posizione geografica corrente del dispositivo dell'utente. 
+                                navigator.geolocation.getCurrentPosition();
+                        @geo.localizzazione  @posizione.geografica.corrente @posizione.dispositivo
+                        @navigator
+
+                        Parameters:
+                        showLocation (obbligatorio):definisce il metodo di callback che recupera le informazioni sulla posizione.   @posizione.recupero
+
+                        ErrorHandler(facoltativo):definisce il metodo di callback richiamato quando si verifica un errore nell'elaborazione della chiamata asincrona.  
+                        @chiamata.asincrona
+
+                        Opzioni (facoltativo):: definisce un set di opzioni per il recupero delle informazioni sulla posizione. @opzioni.informazioni.posizione
+
+                        È necessario avere familiarità con JavaScript di base per comprendere e utilizzare l'API.
+
+                        Using HTML Geolocation
+                        Utilizzo della geolocalizzazione HTML
+                        Qual è la scelta del parametro obbligatorio del metodo getCurrentPosition()?
+
+                Presenting Data
+                        Presentazione dei dati
+                        La posizione dell'utente può essere presentata in due modi: Geodetico e Civico.  
+                        
+                        1. Il modo geodetico di descrivere la posizione si riferisce direttamente alla latitudine e alla longitudine. 
+                                @latitudine  @longitudine @posizione.geodetico @civica
+
+                        2. La rappresentazione civica dei dati sulla posizione è presentata in un formato più facilmente leggibile e comprensibile dalla persona media.  
+                                @rappresentazione.civica
+
+                        Ogni parametro ha sia una rappresentazione geodetica che civica: 
+                                @geodetica.civica
+
+                        Il metodo getCurrentPosition() restituisce un oggetto se ha esito positivo. Le proprietà di latitudine, longitudine e precisione vengono sempre restituite.
+                        @oggetto.posizione @latitudine.proprieta
+                        @proprieta.latidudine
+                        @longitudince
+                        @precisione
+
+                
+            #LEZIONE 36.1
+                Drag&Dropo API
+                        Making Elements Draggable
+                                Rendere gli elementi trascinabili 
+                                La funzione di trascinamento della selezione ti consente di "afferrare" un oggetto e trascinarlo in una posizione diversa.  
+                                Per rendere un elemento trascinabile, è sufficiente impostare l'attributo draggable su true: 
+                                        <img draggable="true" />
+                                
+                                Qualsiasi elemento HTML può essere trascinabile.
+                                @oggetto.trascinabile   
+
+                                
+                                L'API per il trascinamento della selezione HTML5 è basata su eventi. 
+                                        Example:
+
+                                                        <!DOCTYPE HTML>
+                                                        <html>
+                                                                <head>
+                                                                        <script>
+                                                                        function allowDrop(ev) {
+                                                                        ev.preventDefault();
+                                                                        }
+
+                                                                        function drag(ev) {
+                                                                        ev.dataTransfer.setData("text", ev.target.id);
+                                                                        }
+
+                                                                        function drop(ev) {
+                                                                        ev.preventDefault();
+                                                                        var data = ev.dataTransfer.getData("text");
+                                                                        ev.target.appendChild(document.getElementById(data));
+                                                                        }
+                                                                        </script>
+
+                                                                </head>
+
+                                                                <body>
+
+                                                                        <div id="box" ondrop="drop(event)"
+                                                                        ondragover="allowDrop(event)"
+                                                                        style="border:1px solid black; 
+                                                                        width:200px; height:200px"></div>
+
+                                                                        <img id="image" src="sample.jpg" draggable="true"
+                                                                        ondragstart="drag(event)" width="150" height="50" alt="" />
+
+                                                                </body>
+                                                        </html>
+
+                                        What to Drag
+                                                Cosa trascinare
+                                                Quando l'elemento viene trascinato, l'attributo ondragstart chiama una funzione, drag(event), che specifica quali dati devono essere trascinati.  
+                                                        @evento.drag, @trascinamento.elemento
+                                                Il  metodo dataTransfer.setData() imposta il tipo di dati e il valore dei dati trascinati:   
+                                                @setData,  @esempio.trascina  
+                                                        function drag(ev) {
+                                                                ev.dataTransfer.setData("text", ev.target.id);
+                                                                }  
+
+                                                Nel nostro esempio, il tipo di dati è "text" e il valore è l'ID dell'elemento trascinabile ("image"). 
+
+                                        Where to Drop
+                                                @evento.trascina @evento.rilascio
+                                                @dove.rilasciare
+
+                                                L'evento ondragover specifica dove è possibile rilasciare i dati trascinati. Per impostazione predefinita, i dati e gli elementi non possono essere eliminati in altri elementi. Per consentire una caduta, è necessario impedire la gestione predefinita dell'elemento. 
+                                                Questo viene fatto chiamando l'evento. metodo preventDefault() per l'evento ondragover. 
+
+                                                Gli eventi trascinabili sono multipli.
+
+                                               @rilascio.oggetto
+                                        
+                                        Do the Drop
+                                                Fare il trascinamento
+                                                Quando i dati trascinati vengono rilasciati, si verifica un evento di rilascio.  
+                                                Nell'esempio precedente, l'attributo ondrop chiama una funzione, drop(event):
+
+                                                        function drop(ev) {
+                                                        ev.preventDefault();
+                                                        var data = ev.dataTransfer.getData("text");
+                                                        ev.target.appendChild(document.getElementById(data));
+                                                        } 
+
+                                                @funzione.trascinamento
+                                                @trascina.oggetto
+
+        # LEZIONE 37.1
+                SVG
+                        Drawing Shapes
+                                Disegno di forme 
+                                SVG è l'acronimo  di Scalable Vector Graphics ( Scalable Vector Graphics,), ed è usato per disegnare forme con markup in stile HTML.  
+                                Offre diversi metodi per disegnare tracciati, caselle, cerchi, testo e immagini grafiche. 
+                                @DISEGNO     @METODO.DISEGNO 
+
+                        SVG non è basato su pixel, quindi può essere ingrandito all'infinito senza perdita di qualità.
+                        @INGRANDIMENTO.INFINITO
+
+                        Inserting SVG Images
+                                Inserimento di immagini Un'immagine SVG può essere aggiunta al codice HTML con solo un tag immagine di base che include un attributo source che punta all'immagine
+                                        <img src="image.svg" alt="" height="300" />
+
+                                SVG definisce la grafica vettoriale in formato XML.
+                                @grafica.vettoriale
+
+                        Drawing a Circle
+                                Per disegnare forme con SVG, devi prima creare un  tag elemento SVG con due attributi: width e height. 
+                                @tag.svg = <svg width="1000" height="1000"></svg>
+                                ha due attributi altezza e larghezza
+
+                                svg width="1000" height="1000"></svg>
+
+
+                                - cx spinge il centro del cerchio più a destra dello schermo 
+                                - cy spinge il centro del cerchio più in basso dalla parte superiore  dello schermo 
+                                - r definisce il raggio 
+                                -  il riempimento determina il colore del nostro cerchio 
+
+                                        @esempio.cerchio
+                                                <svg width="2000" height="2000">
+                                                        <circle cx="80" cy="80" r="50" fill="green" />
+                                                </svg>
+
+                                @centro.cerchio = cx 
+                                @basso.cerchio = cy 
+                                @raggio.cerchio = r
+
+                        
+
+                        Other Shape Elements
+                                @definizione.rettangolo, @rettangolo
+                                <rect> defines a rectangle:
+                                        <svg width="2000" height="2000">
+                                        <rect width="300" height="100" 
+                                        x="20" y="20" fill="green" />
+                                        </svg>
+                        
+                        <line> defines a line segment:
+                                <linea> definisce un segmento di linea:  @linea, @segmento.linea
+                                (x1, y1) definire le coordinate iniziali(x2, y2) definire le coordinate finali. 
+
+                        <polylinea> definisce forme create da più definizioni di linea: 
+                                        <svg width="2000" height="500">
+                                        <polyline style="stroke-linejoin:miter; stroke:black; 
+                                                stroke-width:12; fill: none;"
+                                                points="100 100, 150 150, 200 100" />
+                                        </svg>
+
+                                I punti sono le coordinate della polilinea.  
+                                Il codice seguente disegnerà un segno di spunta nero: 
+
+                                Gli attributi width e height dell'elemento <rect> definiscono l'altezza e la larghezza del rettangolo.
+
+                        <line> defines a line segment:
+                                <linea> definisce un segmento di linea:
+                                (x1, y1) definire le coordinate iniziali(x2, y2) definire le coordinate finali. 
+
+                                <svg width="400" height="410">
+                                <line x1="10" y1="10" x2="200" y2="100" 
+                                        style="stroke:#000000; stroke-linecap:round; 
+                                        stroke-width:20"  />
+                                </svg>
+
+                <ellipse> and <polygon>
+                        Ellipse
+
+                                L'<ellipse> è simile al <cerchio>, con un'eccezione: 
+                                è possibile modificare in modo indipendente gli assi orizzontale e verticale del suo raggio, utilizzando gli  attributi rx e ry. 
+                                        <svg height="500" width="1000">
+                                        <ellipse cx="200" cy="100" rx="150" ry="70" style="fill:green" />
+                                        </svg>
+
+                                @ellipse
+
+
+                                
+                Polygon
+                        L'elemento <poligono> viene utilizzato per creare un elemento grafico con almeno tre lati. L'elemento poligono è unico perché chiude automaticamente la forma per te.
+                                
+                                <svg width="2000" height="2000">
+                                <polygon points="100 100, 200 200, 300 0" 
+                                style="fill: green; stroke:black;" />
+                                </svg>
+
+                        Polygon deriva dal greco. "Poly" significa "molti" e "gon" significa "angolo".
+                                         
+                        @poligono
+
+        # LEZIONE 38.1
+               SVG Animations & Paths
+                        Le animazioni SVG possono essere create utilizzando l'elemento  <animate>.  
+                        
+                        L'esempio seguente crea un rettangolo che cambierà la sua posizione in 3 secondi e ripeterà l'animazione due volte: 
+                                <svg width="1000" height="250">
+                                <rect width="150" height="150" fill="orange">
+                                        <animate attributeName="x" from="0" to="300"
+                                dur="3s" fill="freeze" repeatCount="2"/> 
+                                </rect>
+                                </svg>
+
+                        attributeName: 
+                                attributeName: specifica quale attributo sarà interessato dall'animazione da: Specifica il valore iniziale 
+                                dell'attributo 
+                        from:   a: Specifica il valore finale dell'attributo 
+                        dur:
+                                dur: Specifica per quanto tempo viene eseguito l'animazione (durata) 
+                        fill:
+                                riempimento : specifica se il valore dell'attributo deve tornare al valore iniziale al termine dell'animazione (Valori: "rimuovi" reimposta il valore; "freeze" mantiene il "valore a") 
+                        
+                        repeatCount:
+                                repeatCount: specifica il conteggio delle ripetizioni dell'animazione 
+
+                        Nell'esempio precedente, il rettangolo cambia il suo attributo x da 0 a 300 in 3 secondi.
+
+                        Per ripetere l'animazione a tempo indeterminato, utilizzare il valore "indefinite" per l'attributo repeatCount.
+                        Continuare
+
+                Paths
+                        L'elemento <path> viene utilizzato per definire un tracciato. 
+                        Per i dati del percorso sono disponsibili i seguenti comandi
+                        The <path> element is used to define a path.
+
+                        The following commands are available for path data:
+                        M: moveto
+                        L: lineto
+                        H: horizontal lineto
+                        V: vertical lineto
+                        C: curveto
+                        S: smooth curveto
+                        Q: quadratic Bézier curve
+                        T: smooth quadratic Bézier curveto
+                        A: elliptical Arc
+                        Z: closepath
+
+                        Define a path using the d attribute:
+                        Definire un tracciato usare questo attributo: d
+
+                                        <svg width="500" height="500">
+                                        <path d="M 0 0 L200 200 L200 0 Z" style="stroke:#000;  fill:none;" />
+                                        </svg>
+
+                        Tutti i comandi di cui sopra possono anche essere espressi con lettere minuscole. Quando vengono utilizzate lettere maiuscole, indica la posizione assoluta; minuscolo indica la posizione relativa.
+                        @posizione.assoluta,  @posizione.relativa, @path
+
+        # LEZIONE 39.1
+               Cavans
+                        The <canvas> Element
+
+                                Il canvas HTML viene utilizzato per disegnare grafica che include 
+                                di tutto, dalle linee semplici agli oggetti grafici complessi.  
+                                CAVANSI E' UN CONTENITORE PER LA GRAFICA MA BISOGNA UTILIZZARE
+                                JAVASCRIPT.
+                            
+
+                                L'elemento <canvas> è definito da: 
+                                        <canvas id="canvas1" width="200" height="100">
+                                        </canvas>
+
+                                L'elemento <canvas> è solo un contenitore per la grafica. 
+                                È necessario utilizzare uno script per disegnare effettivamente 
+                                la grafica (di solito JavaScript).
+                                @contenitore.grafico, @javascript
+                                @grafica.di.tutto  @cavans, @tag.cavans
+                                
 
 
 
+                                L'elemento <canvas> deve avere un attributo id  in modo 
+                                che possa essere definito da JavaScript: 
+                                        
+                                @esempio.cavans
+                                        <html>
+                                           <head></head>
+                                           <body>
+                                             <canvas id="canvas1" 
+                                           width="400" height="300"></canvas> 
+
+                                           <script>
+                                              var can = document.getElementById("canvas1"); 
+                                              var ctx = can.getContext("2d");
+                                           </script>
+
+                                           </body>
+                                        </html>
+
+                                getContext() returns a drawing context on the canvas.
+                                         getContext() restituisce un contesto di disegno nell'area di disegno. 
+
+                                         Per comprendere e utilizzare il Canvas è necessaria una conoscenza di base di JavaScript.
+                        @cavans.griglia.bidemensionare
+                         Canvas Coordinates
+                                Il canvas HTML è una griglia bidimensionale.  
+                                L'angolo superiore sinistro dell'area di lavoro ha le coordinate (0,0).  
+                                 
+                                La coordinata X aumenta a destra.  
+                                La coordinata Y aumenta verso la parte inferiore dell'area di lavoro. 
+               Drawing Shapes
+                         fillRect(x, y, w, h)
+                         Il metodo  fillRect(x, y, w, h) disegna un rettangolo "riempito", 
+                         in cui 
+                                w = indica la larghezza e 
+                                h = indica l'altezza. 
+                         Il colore di riempimento predefinito è nero. 
+ 
+                        Un rettangolo nero di 100 * 100 pixel viene disegnato sulla tela 
+                        nella posizione (20, 20): 
+
+                        fillStyle
+                                La  proprietà @PROPRIETA.fillStyle 
+                                viene utilizzata per impostare un colore, una sfumatura o 
+                                un motivo per riempire il disegno.  @IMPOSTA.COLORE
+                                L'utilizzo di questa proprietà consente di disegnare 
+
+                                un rettangolo pieno di verde. @ESEMPIO.rettangolo
+
+                                ESEMPIO DI FILLSTYLE 
+                                        @rettangolo.verde
+                                        
+                                        <html>
+                                            <head></head>
+                                            <body>
+                                                <canvas id="canvas1" width="400" height="300">
+                                                </canvas> 
+                                                <script>
+                                                    var canvas=document.getElementById("canvas1");
+                                                    var ctx=canvas.getContext("2d");
+                                                    ctx.fillStyle ="rgba(0, 200, 0, 1)";
+                                                    ctx.fillRect (36, 10, 22, 22);
+                                                </script>
+                                            </body>
+                                        </html>
+
+               ALTRI MODI PER DISERGNARE
+                        La tela supporta vari altri metodi per disegnare: 
+
+                        Draw a Line
+                                        Disegna uno spostamento di
+                                        lineaTo(x,y): definisce il punto iniziale della linea.
+                                        lineTo(x,y): definisce il punto finale della linea.
+                                        @SPOSTAMENTO.LINEA
+
+                        Draw a Circle
+                                        Disegna un cerchio
+                                        beginPath(): avvia il disegno.
+                                        arc(x,y,r,start,stop): imposta i parametri del cerchio.
+                                        stroke(): termina il disegno.
+                                        @CERCHIO.DISEGNA
+                        Gradients
+                                        Gradienti
+                                        createLinearGradient(x,y,x1;y1): crea una sfumatura lineare.
+                                        createRadialGradient(x,y,r;x1,y1,r1): crea una sfumatura radiale/circolare.
+                                        @SFUMATURA.LINERARE
+
+                        Drawing Text on the Canvas
+
+                        Disegno di testo sul carattere
+                                Canvas: definisce le proprietà del carattere per il testo.
+                                fillText(text,x,y): disegna il testo "riempito" sull'area di disegno.
+                                strokeText(text,x;y): disegna il testo nell'area di disegno (senza riempimento).
+                                @disegno.carattere
+                                @disegno.testo
+                                @testo.riempito
+                                @testo.nell'area.di.disegno
+
+                                Esistono molti altri metodi volti ad disegnare forme e immagini sulla tela.
+
+        # LEZIONE 40.1
+                SVG vs. Canvas
+                        - Gli elementi sono disegnati a 
+                                livello di programmazione 
+                        - Il disegno viene eseguito con pixel 
+                        - Le animazioni non sono integrate  - Prestazioni elevate per le operazioni 
+                                di disegno basate su pixel  - Dipendente dalla 
+                                risoluzione  - Nessun supporto per i gestori eventi 
+                        - È possibile salvare l'immagine risultante come .png o .jpg 
+                        - Adatto per giochi ad alta intensità grafica 
+
+                SVG
+
+                        - Gli elementi fanno parte del DOM (Document object model) 
+                                della pagina  - Il disegno viene eseguito con vettori 
+                        - Gli effetti, come le animazioni sono incorporati 
+                        - Basato sulla sintass@i XML standard, che fornisce una migliore accessibilità 
+                        - Indipendente dalla risoluzione  - Supporto per gestori di eventi 
+                        - Non adatto per applicazioni 
+                                di gioco - Più adatto per applicazioni con grandi aree di rendering (ad esempio, Google Maps) 
+                               
+
+                       Puoi effettivamente usare sia SVG che canvas sulla stessa pagina, se necessario. 
+
+        # LEZIONE 41.1
+
+                Canvas Transformations
+                        Working with Canvas
+
+                        Utilizzo di Canvas
+                        L'elemento Canvas può essere trasformato. Ad esempio, un testo viene scritto sulla tela alle coordinate (10, 30). 
+                        @esempio.convans  @testo.scritto  @allineamento.testo, @font.testo
+
+                                <html>
+                                    <head></head>
+                                    <body>
+                                        <canvas id="canvas1" width="400" height="300">
+                                        </canvas> 
+                                    <script>
+                                        var c=document.getElementById("canvas1");
+                                        var ctx=c.getContext("2d");
+                                        ctx.font="bold 22px Tahoma";
+                                        ctx.textAlign="start";
+                                        ctx.fillText("start", 10, 30);
+                                    </script>
+                                    </body>
+                                </html>
+
+                translate(x,y)
+
+                        Il  metodo translate(x,y) viene utilizzato per spostare il Canvas.  
+                        x indica fino a che punto spostare la griglia orizzontalmente e y indica fino a che punto spostare la griglia verticalmente. 
+                                @esempio.sposta.cavans  @spostamento.start @traslate
+                                @spostamento.griglia
+                                        <html>
+                                            <head></head>
+                                            qui start si trova sulla griglia di default 0,0
+                                            <body>
+                                                <canvas id="canvas1" width="400" height="300">
+                                                </canvas> 
+                                            <script>
+                                                var c=document.getElementById("canvas1");
+                                                var ctx=c.getContext("2d");
+                                                ctx.font="bold 22px Tahoma";
+                                                ctx.textAlign="start";
+                                                ctx.fillText("start", 10, 30);
+                                                ctx.translate(100, 150);
+                                                ctx.fillText("after translate", 10, 30);
+                                            </script>
+                                                qui After traslete è stata spostata con la griglia a 120,150
+                                            </body>
+                                        </html>
+
+
+                                qui la griglia iniziale è all'angolo 0,0 per default ma puo essere spostata
+                                inserendo pe start un traslete
+
+                The rotate() Method
+                        Il  metodo rotate() viene utilizzato per ruotare il canvas HTML5. Il valore deve essere in radianti, non in gradi. 
+                        Ecco un esempio che disegna lo stesso rettangolo prima e dopo l'impostazione della rotazione: 
+
+                                @rotazione.in.radianti
+                                <html>
+                                    <head></head>
+                                    <body>
+                                        <canvas id="canvas1" width="400" height="300">
+                                        </canvas> 
+                                    <script>
+                                        var c=document.getElementById("canvas1");
+                                        var ctx=c.getContext("2d");
+                                        ctx.fillStyle = "#FF0000";
+                                        ctx.fillRect(10,10, 100, 100);
+
+                                        ctx.rotate( (Math.PI / 180) * 25);  //rotate 25 degrees.
+
+                                        ctx.fillStyle = "#0000FF";
+                                        ctx.fillRect(10,10, 100, 100);
+                                    </script>
+                                    </body>
+                                </html>
+
+                        La rotazione influirà solo sui disegni effettuati dopo che la rotazione è stata completata.
+
+                The scale() Method
+                        @scale.ridemensiona
+
+                        Il  metodo scale() ridimensiona il disegno corrente. Ci vogliono due parametri: 
+                         - Il numero di volte in cui l'immagine deve essere ridimensionata nella direzione X.  
+                         - Il numero di volte in cui l'immagine deve essere ridimensionata nella direzione Y. 
+                        Questo scalerà la tela 1,5 volte nella direzione X e 4 volte nella direzione Y: 
+                                @rotazione,  @scala 
+
+                                <html>
+                                    <head></head>
+                                    <body>
+                                        <canvas id="canvas1" width="400" height="400">
+                                        </canvas> 
+                                    <script>
+                                        var canvas = document.getElementById('canvas1');
+                                        ctx =canvas.getContext('2d');
+                                        ctx.font="bold 22px Tahoma";
+                                        ctx.textAlign="start";
+                                        ctx.fillText("start", 10, 30);
+                                        ctx.translate(100, 150);
+                                        ctx.fillText("after translate", 0, 0);
+                                        ctx.rotate(1);
+                                        ctx.fillText("after rotate", 0, 0);
+                                        ctx.scale(1.5, 4);
+                                        ctx.fillText("after scale", 0,20);
+                                    </script>
+                                    </body>
+                                </html>
+
+                        Se si ridimensiona un disegno, verranno ridimensionati anche tutti i disegni futuri.
+
+        # LEZIONE 42.1
+                HTML5 Forms, Part 1
+                        creazione modulo htlm5
+                                @miglioramenti.funzionalita. @nuove.funzionalita
+                                HTML5 offre molte funzionalità e miglioramenti alla creazione di moduli Web. Sono stati introdotti nuovi attributi e tipi di input per creare esperienze migliori per gli utenti Web. 
+                                @creazione.modulo.web, @label, @casella.di.imput
+                                La creazione del modulo viene eseguita in HTML5 nello stesso modo in cui lo era in HTML4: 
+                                @nuovi.attributi,  @tipi.di.imput, @input.nuovi.tipi   
+
+                                        <form>
+                                            <label>Your name:</label>
+                                            <input id="user" name="username" type="text" />
+                                        </form>
+
+                                Utilizzare l'attributo novalidate per evitare la convalida del modulo sugli invii.
+                                @todo
+
+                                        @esempio.web  HTML5 Forms
+                                                <form>
+
+                                                < input type="text" name="name" />
+
+                                                </form>
+
+                        New Attributes
+                                placeholder = HTML5 ha introdotto un nuovo attributo chiamato segnaposto. Negli elementi <input> e <textarea>, questo attributo fornisce un suggerimento all'utente su quali informazioni possono essere immesse nel campo. @placeholder, @suggerimenti
+                                Nell'esempio nella casella di imput viene scritto il suggerimento e-mail.
+
+                                        @esempio.placeholder @suggerimento.imput
+
+                                                <form>
+                                                    <label for="email">Your e-mail address: </label>
+                                                    <input type="text" name="email" placeholder="email@example.com" />
+                                                </form>
+
+                                autofocus = L'attributo autofocus attiva la messa a fuoco desiderata quando viene caricato il modulo: 
+                                        @autofocus.caricamento.modulo
+                                        @non.funziona
+                                        <form>
+                                            <label for="email">Your e-mail address: </label>
+                                            <input type="text" name="email" autofocus />
+                                        </form>
+
+                                        <!DOCTYPE html>
+                                                <html>
+                                                <body>
+
+                                                <h1>The autofocus attribute</h1>
+
+                                                <form action="/action_page.php">
+                                                  <label for="fname">First name:</label> 
+                                                  <input type="text" id="fname" name="fname" autofocus> <br><br>
+
+                                                  <label for="lname">Last name:</label>
+                                                  <input type="text" id="lname" name="lname"><br><br>
+                                                  <input type="submit">
+                                                </form>
+
+                                                </body>
+                                                </html>
+
+
+                                        L'attributo required indica al browser che l'input è obbligatorio.
+                                        @esempio.da.provare  @funzione.apertura.modulo
+
+
+                                        @esempio
+                                                <form>
+                                                <input type="text" name="name"  ="Enter your name"/>
+                                                </form>
+
+                        Forms with Required Fields
+                                Moduli con campi obbligatori @campi.obbligatori
+                                @required, @attributo.required
+                                L'attributo "required" viene utilizzato per rendere necessari gli elementi di input. @autocomplete.off
+
+                                        <form autocomplete="off">
+                                                se invi il messaggio senza valorrizzazione del
+                                                   <br>
+                                                campo email  compare il messaggio
+                                                <br>
+
+                                            <label for="e-mail">Your e-mail address: </label>
+                                            <input name="Email" type="text" required />
+                                            <input type="submit" value="Submit"/>
+                                        </form>
+
+                                @II.ESEMPIO.COMPLETAMENTO AUTOMATICO DISATTIVATO
+                                        <form autocomplete ="off">
+
+                                        <input type="text" name="name" /> 
+                                        < input type="password" name="pass" Required  />
+
+                                        </form>
+
+
+                                @messaggio,  @vedi.esempio.messaggio
+
+
+                                L'attributo completamento automatico specifica se un modulo o un campo di input deve avere il completamento automatico attivato o disattivato.  
+                                Quando il completamento automatico è attivo, il browser completa automaticamente i valori in base ai valori immessi in precedenza dall'utente. @AUTOCOMPLETAMENTO.AUTOMATICO
+
+                        HTML5 added several new input types:
+                                HTML5 ha aggiunto diversi nuovi tipi di input:
+                                @NUOVI.TIPI.DI.IMPUT  @IMPUT.NUOVI.TIPI
+
+                                - color
+                                - date
+                                - datetime
+                                - datetime-local
+                                - email
+                                - month
+                                - number
+                                - range
+                                - search
+                                - tel
+                                - time
+                                - url
+                                - week
+
+                        New input attributes in HTML5:
+
+                                Nuovi attributi di input in HTML5:
+                                - autofocus
+                                - form
+                                - formaction
+                                - formenctype
+                                - formmethod
+                                - formnovalidate
+                                - formtarget
+                                - height and width
+                                - list
+                                - min and max
+                                - multiple
+                                - pattern (regexp)
+                                - placeholder
+                                - required
+                                - step
+
+                                I tipi di input che non sono supportati dai vecchi browser Web si comporteranno come testo di tipo di input.
+
+        # LEZIONE 43.1
+                HTML5 Forms, Part 2
+
+                        Creating a Search Box
+                        Creazione di una casella di ricerca
+                        Il nuovo  tipo di input di ricerca può essere utilizzato per creare una casella di ricerca: 
+                        @casella.di.ricerca, @ricerca.casella
+
+                                <input id="mysearch" name="searchitem" type="search" />
+
+                        Devi ricordarti di impostare un nome per il tuo input; in caso contrario, non verrà inviato nulla.
+
+                Search Options
+                        datalist
+                        Il  tag <datalist> può essere utilizzato per definire un elenco di opzioni predefinite per il campo di ricerca:
+                        @elenco.opzioni, @opzioni.elenco @option
+                                @esempio.opzioni
+                                        <input id="car" type="text" list="colors" />
+                                        <datalist id="colors">
+                                            <option value="Red">
+                                            <option value="Green">
+                                            <option value="Yellow">
+                                        </datalist> 
+
+                        <option> definisce le opzioni in un elenco a discesa che l'utente può selezionare. 
+                        L'ID dell'elemento datalist deve corrispondere all'attributo list della casella di input.
+                                list="colors"  = datalist id="colors"
+
+                Creating More Fields                
+                        Creazione di più campi
+                        Alcuni altri nuovi tipi di input includono e-mail, URL e tel: 
+
+                                @creazione.piu.campi
+                                <input id="email" name="email" type="email" placeholder="example@example.com" />
+                                <br />
+                                <input id="url" name="url" type="url" placeholder="example.com" />
+                                <br />
+                                <input id="tel" name="tel" type="tel" placeholder="555.555.1211" />
+
+                        Questi sono particolarmente utili quando si apre una pagina su un dispositivo mobile moderno, che riconosce i tipi di input e apre una tastiera corrispondente al tipo di campo:  esempio nel campo telefono apre subito la tastiera numerica.
+
+
+
+#I 
+
+
+
+ ##intestazioni  
+
+                HTML include sei livelli di intestazioni, che sono classificati in base all'importanza. 
+
+                These are <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>.
+                Il codice seguente definisce tutte le intestazioni:
+ ##Immagini
+              NOTE  
+              Il tag <img> delle immagini
+                Il  tag <img> viene utilizzato per inserire un'immagine. 
+                Contiene solo attributi e non ha un tag di chiusura. 
+
+                @path.immagini
+                L'URL (indirizzo) dell'immagine può essere definito utilizzando l'attributo src.  
+
+                        La sintassi dell'immagine HTML è simile alla seguente:     
+                        L'attributo alt specifica un testo alternativo per un'immagine.
+                        alt = attributo per il testo dell'immagine.
+                        @testo.per.immagine
+
+
+                        È necessario inserire la posizione dell'immagine per l'attributo src 
+                        che si trova tra virgolette.  
+ 
+                        Ad esempio, se hai una foto denominata "tree.jpg" nella stessa cartella 
+                        del file HTML, il codice dovrebbe essere simile al seguente: 
+                        Nel caso in cui l'immagine non possa essere visualizzata, l'attributo alt specifica 
+                        un testo alternativo che descrive l'immagine in parole. L'attributo alt è alternativo
+                        
+                        <html>
+                                <head>
+                                <title>first page</title>
+                                </head>
+                        <body> 
+                                <img src="http://www.sololearn.com/images/tree.jpg" alt="" />
+                        </body>
+                        </html>
+
+                        Per definire le dimensioni dell'immagine, utilizzare gli attributi width e height.  
+                        Il valore può essere specificato in pixel o in percentuale:
+
+                        LE IMMAGINI SONO PESANTI
+                                               
+                        Il caricamento delle immagini richiede tempo. L'uso di immagini di 
+                        grandi dimensioni può rallentare la tua pagina, quindi usale con cura.
+        
+                        ATTENZIONE Per impostazione predefinita, Internet Explorer 
+                        9 e le versioni precedenti visualizzano 
+                        un bordo attorno a un'immagine, a meno che non sia definito un attributo border.
+                        @internet.exporer
+
+                IMMAGINE BORDER
+                        Per impostazione predefinita, un'immagine non ha bordi. Utilizzare 
+                        l'attributo border all'interno del tag image per creare un bordo attorno all'immagine.
+
+                        @bordi.immagine
+                        @border.attributo 
+                        @attributo.border.immagini
+        ##LEZIONE 9
+                Torniamo al nostro progetto blog.  
+                La  sezione Informazioni personali conterrà un'intestazione racchiusa in un tag <h1>, insieme a due paragrafi che formattano il testo utilizzando i tag appena appresi.  
+                Diamo un'occhiata al codice: VIENE UTILIZZATO IL CSS per le proprieta
+                esercizio
+                COMPITO: 
+                        1. Crea la tua sezione Informazioni su di me modificando il testo. 
+                        numero arabo. Gioca con il codice; sperimentare con la formattazione del testo.
+
+                        CORSIVO
+                                 viene creato con    @corsivo: <i> TAG DEL CORSIVO  </i> 
+     ## INPUT
+        
+        Per accettare l'input dell'utente, sono necessari gli elementi del modulo corrispondenti,
+        come i campi di testo. L'elemento <input> ha molte varianti, a seconda dell'attributo type.
+        Può essere un testo, una password, una radio, un URL, un invio, ecc.
+        @HTLM.INPUT  @INPUT.HTLM
+        Il tag <input> non ha tag di fine.
+
+# H
+        ## HTLM5
+        
+        
 
         DIFFERENZE TRA HTML5 E HTML4
                 https://doweb.srl/news/differenze-tra-html4-e-html5-135
@@ -785,9 +1728,6 @@ I                               dati vengono memorizzati come coppie chiave/valo
                         La versione HTML 4, creata nel 1999, includeva fogli di stile a cascata (CSS) che permettevano di modificare facilmente aspetti come testo, colore, font e sfondi. Invece di essere inclusi direttamente nella pagina Web, questi aspetti (in seguito alla comparsa dell’HTML 4) sono ora separati, rendendo l’utilizzo del linguaggio molto più semplice.
 
                         Attualmente, la versione di HTML comunemente utilizzata è la HTML 5; si tratta di una vera e propria rivoluzione, in quanto questa particolare versione può essere utilizzata per scrivere applicazioni web che funzionano anche quando ci si trova offline, per localizzare la nostra posizione, per gestire video ad alta definizione e per molto altro ancora.
-
-
-
 
         HTML 4 VS HTML 5 : differenze sostanziali
 
@@ -847,7 +1787,8 @@ I                               dati vengono memorizzati come coppie chiave/valo
 
                         L'elemento <mark> consente di evidenziare il testo in una pagina web. Il tag è stato introdotto in HTML5 e non era presente nelle versioni precedenti.
 
-        Quali sono i principali miglioramenti di HTML5 rispetto a HTML4?
+        MIGLIORNAMENTI DI HTML5
+                Quali sono i principali miglioramenti di HTML5 rispetto a HTML4?
 
                 Elementi multimediali
 
@@ -898,6 +1839,7 @@ I                               dati vengono memorizzati come coppie chiave/valo
 
                                 Elementi come <article>, <nav>, <section> hanno sostituito la maggior parte degli elementi div ormai obsoleti. Ciò rende il processo di scansione degli errori molto meno complicato poiché gli elementi sono più semplici. 
                                 @DIV.OBSLETI
+                                @tag.navigatore @nav.tag.navigazione @navigazione.nav @navigation.nav
 
                                                 
                         Supporto avanzato per le funzionalità dell'applicazione Web
@@ -926,6 +1868,7 @@ I                               dati vengono memorizzati come coppie chiave/valo
                                 Il Web Storage, d'altra parte, consente di archiviare permanentemente i dati sul computer del client (a meno che l'utente non li cancelli) garantendo una una maggiore memorizzazione dei dati (5 MB).
 
                                 @storage.web.5.mb  @archiviazioni.web
+                                @memorizza.in.una.sessione, @sessione.una.storage
 
 
 

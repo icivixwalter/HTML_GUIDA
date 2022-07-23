@@ -1,0 +1,13 @@
+/*
+    Una dichiarazione CSS termina sempre con un punto e virgola 
+    e i gruppi di dichiarazioni sono circondati da parentesi graffe.
+    
+    @SELETTORI.COMUNI
+        SONO I SELETTORI DI TIPO = p 
+        selettore di paragrafo
+
+*/
+
+.heading{
+    font-size: 85px;
+}

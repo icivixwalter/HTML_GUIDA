@@ -1,0 +1,34 @@
+/*
+	QUESTO E' UN SELETORE DI CLASSE con il 
+	.nome classe ed è valido ogni volta che lo richiede la pagina
+		selettore di classe = .first
+
+		@vedi.esempio.selettore.di.classe
+*/
+
+.first {font-size: 200%;}
+
+
+
+/*
+	QUESTO ESEMPIO PERMETTE SIA LA SELEZIONE AL SINGOLO ELEMENTO con id
+	E SIA LA SELEZIONE con la CLASSE
+
+id and class Selectors
+Riempi gli spazi vuoti per dare il colore di sfondo giallo all'elemento con id = "intro" e il colore del testo nero al class = "mytext":
+		#intro
+		 {
+
+		   background-color: yellow;
+
+		}
+
+		.mytext
+		 {
+
+		   color: black;
+
+		}
+
+
+*/

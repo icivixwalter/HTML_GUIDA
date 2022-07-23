@@ -1,0 +1,25 @@
+#intro .first em {
+    color: pink; 
+    background-color:gray;
+}
+
+
+/*
+
+@regola.di.stile
+
+Descendant Selectors
+Trascina e rilascia dalle opzioni seguenti per creare una 
+regola di stile per tutti i paragrafi appartenenti all'elemento con id="test": 
+ 
+#test p
+ {
+
+
+ colore: rosso; 
+
+
+}
+
+ 
+*/
