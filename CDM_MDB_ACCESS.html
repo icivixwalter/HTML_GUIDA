@@ -1,0 +1,41 @@
+---- https://www.w3schools.com/asp/webpages_database.asp  
+	ESEMPIO PAGINA COLLEGATA AD UN MDB ACCESS
+-->
+
+@{
+
+set conn=Server.CreateObject("ADODB.Connection")
+conn.Provider="Microsoft.Jet.OLEDB.4.0"
+conn.Open "c:\CASA\LINGUAGGI\HTML\TUTORIAL_HTML\CDM_MDB_ACCESS.mdb"
+
+set rs=Server.CreateObject("ADODB.recordset")
+rs.Open "Select * from Product", conn
+
+var db = Database.Open("CDM_MDB_ACCESS.mdb");
+var query = "SELECT * FROM Product";
+}
+
+
+<html>
+<body>
+<h1>Small Bakery Products</h1>
+<table border="1" width="100%">
+<tr>
+<th>Id</th>
+<th>Product</th>
+<th>Description</th>
+<th>Price</th>
+</tr>
+@foreach(var row in db.Query(query))
+{
+<tr>
+<td>@row.Id</td>
+<td>@row.Name</td>
+<td>@row.Description</td>
+<td style="text-align:right">@row.Price</td>
+</tr>
+}
+</table>
+</body>
+</html>
+

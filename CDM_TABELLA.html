@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  
+ <!--- HEAD PER STILI TABELLA  + FONT FAMILY child eventi??
+      modell tabella: file:///C:/CASA/LINGUAGGI/HTML/TUTORIAL_HTML/CDM_TABELLA.html
+
+                        ---->
+    <head>
+
+            <!--- padding = altezza righe 
+                  text-align = allinamento a left 
+                  border = 1px proviamo 2 sarebbe il bordo piu o meno grande
+                    --->
+      
+      <style>
+          table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+
+          td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+          }
+
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+
+        </style>
+            
+            <!--- stile tab controll  -->
+              <style>
+
+                  * {box-sizing: border-box}
+
+                  /* Set height of body and the document to 100% */
+                  body, html {
+                    height: 100%;
+                    margin: 0;
+                    font-family: Arial;
+                  }
+
+                  /* Style tab links */
+                  .tablink {
+                    background-color: #555;
+                    color: white;
+                    float: left;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 14px 16px;
+                    font-size: 17px;
+                    width: 25%;
+                  }
+
+                  .tablink:hover {
+                    background-color: #777;
+                  }
+
+                  /* Style the tab content (and add height:100% for full page content) */
+                  .tabcontent {
+                    color: white;
+                    display: none;
+                    padding: 100px 20px;
+                    height: 100%;
+                  }
+
+                  #Home {background-color: red;}
+                  #News {background-color: green;}
+                  #Contact {background-color: blue;}
+                  #About {background-color: orange;}
+
+
+
+                
+
+
+              </style>
+     
+     </head>
+
+  <!--- BODY DELLA TABELLA
+      come viene costruita 
+            ---->
+    <body>
+
+      <h2>HTML Table</h2>
+        
+        <table>
+          <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+          <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+          </tr>
+          <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+          </tr>
+          <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+          </tr>
+          </table>
+
+      </body>
+
+</html>
+

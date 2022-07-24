@@ -294,10 +294,165 @@
                             font-size: 150%;
                         }
 
+        LEZIONE 5.1 Style Cascade and Inheritance
+                Cascade
+                        L'aspetto finale di una pagina web è il risultato di regole di stile diverse.  
+                        Le tre principali fonti di informazioni sullo stile che formano una cascata sono: 
+                        - Il foglio di stile creato dall'autore della pagina
+                        - Gli stili predefiniti del browser
+                        - Stili specificati dall'utente
+                        CSS è l'acronimo di Cascading Style Sheets.  @tre.stili, @css.stili.principali
+
+                Inheritance
+                        L'ereditarietà si riferisce al modo in cui le proprietà fluiscono attraverso la pagina. Un elemento figlio assumerà in genere le caratteristiche dell'elemento padre, se non diversamente definito. 
+                        @eredita   @eredita.padre.figlio  @proprieta.fluiscono.in.pagina
+
+                                        <html>
+                                           <head>
+                                              <style>
+                                              body {
+                                                 color: green;
+                                                 font-family: Arial;
+                                                        }
+                                             </style>
+                                           </head>
+                                           <body>       
+                                              <p>
+                                              This is a text inside the paragraph. 
+                                              </p>
+                                           </body>
+                                        </html>
+
+                        Poiché il tag di paragrafo (elemento figlio) si trova all'interno del tag body (elemento padre), assume tutti gli stili assegnati al tag body.
+
+
+                        Intro Section - ESEMPIO 
+                        Personalizziamo la nostra  sezione Introduttiva che include il tuo nome completo, professione e riepilogo.  
+                        Innanzitutto, impostiamo un colore di sfondo.  
+
+                                @vedi.esempio.IntroSection
+
+                                        <br>
+                                        <head>
+                                           <link rel="stylesheet" href="CSS_ESEMPIO_IntroSection.css">
+                                        </head>
+
+                                        <div class="prof">Software Engineer</div>
+                                        <p class="summary">Deadline-oriented software engineer with considerable experience...</p> 
+                                        
+
+
+                        Attività
+                        1. Nel codice HTML, sezione "intro", scrivi la tua professione e riepiloga di conseguenza negli elementi "prof" e "summary". 
+                        numero arabo. Nel codice CSS, selezionare l'elemento "intro" e impostare un colore di sfondo utilizzando la  proprietà background-color. 
+
+
+
+
+
            LEZIONE 5.2 Code Repo
                 Intro Section
                         @todo: da fare
-     
+
+                        Tra i tre tipi di styling, qual è il più utile in termini di ottimizzazione del sito web?
+                                External  = questo è piu utile per ottimizzare il sito web
+                                Inline
+                                Internal
+
+        LEZIONE 7.1 Lessons
+                font-family
+                        The font-family Property
+                                 
+                                
+                                La proprietà font-family specifica il font per un elemento.  
+                                Esistono due tipi di cognomi di font: 
+                                - font family: - famiglia di font: una famiglia di font specifica (come Times New Roman o Arial)   @aspetto.specifico
+                                - generic family: famiglia generica: un gruppo di famiglie di font con un aspetto simile (come Serif o Monospace) @aspetto.simile 
+                                @FAMIGLIA.GENERICA
+
+                                La proprietà font-family deve contenere diversi nomi di font come sistema di "fallback". Quando si specifica un font Web in uno stile CSS, aggiungere più di un nome di font per evitare comportamenti imprevisti. Se il computer client per qualche motivo non ha quello scelto, proverà quello successivo. 
+                                @font.family.nomi.diversi
+                                 
+                                È buona norma specificare una famiglia di caratteri generica, per consentire al browser di scegliere un tipo di carattere simile nella famiglia generica, se non sono disponibili altri tipi di carattere.
+                                @famiglia.generica
+                                        esempio: contiene diversi font specifici + una famiglia
+                                                generica detta Serif 
+                                               
+                                                body {
+                                                   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                                                }
+
+                                        Se il browser non supporta il font Arial, prova i font successivi (Helvetica Neue, poi Helvetica). Se il browser non ne ha nessuno, proverà il sans-serif generico.
+
+
+                                ATTENZIONE: Ricordarsi di usare le virgolette se il nome del carattere è costituito da più di una parola.ATTENZIONE:  
+
+                                        altro esempio
+                                        icona di repository di codice
+                                        
+                                        Impostiamo il font
+                                        
+                                        Inserisci le tue informazioni di contatto, quindi specifica il font per l'intero curriculum.
+                                                @vedi.esempio.FontFamily
+
+        LEZIONE 8.1. font-size
+                The font-size Property
+                @FONT.PROPERTY  - ESEMPIO @vedi.font-size
+
+                        La proprietà font-size imposta la dimensione di un font. Un modo per impostare la dimensione dei caratteri sul Web consiste nell'utilizzare parole chiave.  Ad esempio xx-piccolo, piccolo, medio, grande, grande, ecc. 
+                        @DIMENSIONE.CARATTERI, @piccolo, @medio, @grande
+
+                                esempi
+                                        <p class="small">
+                                           Paragraph text set to be small
+                                        </p>
+                                        <p class="medium">
+                                           Paragraph text set to be medium
+                                        </p>
+                                        <p class="large">
+                                           Paragraph text set to be large
+                                        </p>
+                                        <p class="xlarge">
+                                           Paragraph text set to be very large
+                                        </p>
+
+                        È inoltre possibile utilizzare valori numerici in pixel o ems per manipolare la dimensione del carattere.  
+                        L'impostazione della dimensione del carattere in valori pixel (px) è una buona scelta quando è necessaria la precisione dei pixel e offre il pieno controllo sulla dimensione del testo.  
+                        L'unità di dimensione em è un altro modo per impostare la dimensione del carattere (em  è un'unità di dimensione relativa). Consente a tutti i principali browser di ridimensionare il testo. Se non hai impostato la dimensione del carattere in nessuna parte della pagina, allora è la dimensione predefinita del browser, che è 16px.  
+                                esempio. p{font-size:15px}
+
+                        Per calcolare la dimensione em, basta usare la seguente formula: em = pixel / 16 
+                                @misura.em. @pixel @valori.numerici, @dimensione.pixel  @dimensione.em
+
+
+
+                                Prova diverse combinazioni di dimensioni del testo e zoom della pagina in una varietà di browser per garantire che il testo rimanga leggibile.
+
+        LEZIONE 9.1. font-style
+                The font-style Property
+                        Proprietà font-style - La proprietà font-style viene in genere utilizzata per specificare il testo in corsivo. 
+                                @testo.in.corsivo
+                                        <p class="italic">This is a paragraph in italic style.</p>
+
+                                in css
+                                        p.italic {
+                                                    font-style: italic;
+                                                }
+
+                La proprietà font-style ha tre valori:  @proprieta.3.valori
+                        normal, 
+                        italic 
+                        oblique.  
+                Oblique è molto simile al corsivo, ma meno supportato.                                
+
+
+
+
+
+
+
+
+
        
 # C
 
@@ -398,8 +553,21 @@
                 Ad esempio: <b>, <a>, <strong>, <img>, <input>, <em>, <span>, ecc.  
                 
         STILI CSS 
-                Se utilizzato insieme ad alcuni stili CSS, l'elemento <div> può essere utilizzato per applicare 
-                uno stile ai blocchi di contenuto: 
+                Se utilizzato insieme ad alcuni stili CSS, l'elemento <div> può essere utilizzato per applicare uno stile ai blocchi di contenuto: 
+                        @div.stile,  @applicare.stile 
+
+                FOGLI DI STILE INTERNI
+                        Fogli di stile interni @fogli.di.stile.interni, @stile.interni
+                        Questa possibilità prevede che il codice CSS sia scritto direttamente all'interno del documento HTML. Per farlo è possibile adottare due tecniche differenti:
+                        
+                        Applicare uno stile inline 
+                        @stile.inline   @stile.nel.tag
+                        Si dice in linea l'utilizzo delle proprietà di stile direttamente all'interno del tag HTML che si desidera formattare. Così facendo le varie proprietà vengono scritte all'interno dell'attributo style il quale può essere applicato ad ogni tag HTML della pagina. Vediamo un esempio:
+                                <p style="color: #FF0000;">Testo rosso</p>
+                        Nel nostro esempio abbiamo applicato il colore rosso ad un paragrafo di testo.
+
+
+
 
         ALTRI ELEMENTI UTILIZZABILI A LIVELLO DI BLOCCO O DI LINEA
 
@@ -408,8 +576,7 @@
                         APPLET - IFRAME dell'applet  Java incorporato  - INS del frame 
                         in linea  - MAP del testo 
                         inserito  - mappa
-                        immagine OBJECT - oggetto 
-                        incorporato SCRIPT - script all'interno di un documento HTML  
+                        immagine OBJECT - oggetto incorporato SCRIPT - script all'interno di un documento HTML  
                 
                 È possibile inserire elementi in linea all'interno di elementi di blocco. Ad esempio, è possibile avere più  
                 elementi <span> all'interno di un  elemento <div>. 
@@ -1583,6 +1750,9 @@ H
                         <option> definisce le opzioni in un elenco a discesa che l'utente può selezionare. 
                         L'ID dell'elemento datalist deve corrispondere all'attributo list della casella di input.
                                 list="colors"  = datalist id="colors"
+
+                                esempio: per applicare lo stile bianco al paragrafo scrivere
+                                        p{color:#FFF;}
 
                 Creating More Fields                
                         Creazione di più campi

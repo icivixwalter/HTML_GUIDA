@@ -1,0 +1,194 @@
+ <!--- @vedi.esempio.FontFamily 
+
+Ora inseriamo le tue informazioni di contatto, quindi specifichiamo il carattere per l'intero curriculum.  
+
+Attività
+1. Nella sezione "Informazioni di contatto" del codice HTML, 
+    scrivi il tuo indirizzo, numero di cellulare ed e-mail negli elementi "dati" che sono scritti nella sequenza corrispondente.  
+2. Nel codice CSS, selezionare l'elemento body e impostare 
+    il font che si preferisce utilizzando la  proprietà font-family. Questo specificherà il tipo di carattere per tutto il contenuto. 
+
+    Ricorda che se il nome di una famiglia di font è più lungo di una parola, deve essere tra virgolette: "Gill Sans".
+
+ --->
+
+
+
+
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>PROGETTO FONT FAMILY</title>
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+        <!--- collego al file css  -->
+         <link rel="stylesheet" href="CSS_ESEMPIO_FontFamily.css">
+
+    
+         <!--- stile diretto
+         https://www.w3schools.com/cssref/tryit.asp?filename=trycss_font-family
+         da questo link provo a definire due tipi di stile da applicare con 
+         direttamente all'interno di un paragrafo
+         es. <p class="a">This is a paragraph, shown in the Times New Roman font.</p>
+          --->
+
+        <style>
+        p.a {
+          font-family: "Times New Roman", Times, serif;
+        }
+
+        p.b {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        </style>
+
+
+
+
+
+
+    </head>
+
+    <body>
+
+        <!--Intro-->
+        <div class="intro">
+            <img src="https://www.gtiarmoredcars.com/wp-content/uploads/2021/02/62681-flat-icons-face-computer-design-avatar-icon.png" alt = "" height="100" width="100px" </img>
+            <div class="heading">WALTER ROSSI</div>
+           <br> 
+                <br>
+                    PROGETTO FONT FAMILY vedo come applicare le font da applicare a tutto il contenuto
+                <br>
+                    ma occorre selezionale quale elemento body scegliere.
+                <br>
+                <br>
+
+                <br>
+            <div class="prof">Profession</div>
+            <div class="summary">Summary.</div>
+        </div>
+
+        <!--Contact Information-->
+        <div class="contactinfo">
+            <div class="icon">
+                <div class="fas fa-map-signs"></div>
+            </div>
+            
+            <div class="data">
+                <p class="b"> 
+                    Address = QUESTO INDIRIZZO è in questo paragrafo è visualizzato in Arial font.
+                </p>
+
+              
+            </div>
+
+            <div class="icon">
+                <div class="fas fa-mobile-alt"></div>
+            </div>
+            <div class="data">
+                Phone number
+            </div>
+            <div class="icon">
+                <div class="fas fa-envelope"></div>
+            </div>
+            <div class="data">
+                Email
+            </div>
+        </div>
+        <!--Skills Section-->
+        <div class="subheading">Skills</div>
+        <div class="skills">
+            <ul>
+                <li>
+                    <div class="skill_name">
+                        Skill 1
+                    </div>
+                    <div class="skill_prog">
+                        <span style="width: 80%;"></span>
+                    </div>
+                    <div class="skill_per">80%</div>
+                </li>
+                <li>
+                    <div class="skill_name">
+                        Skill 2
+                    </div>
+                    <div class="skill_prog">
+                        <span style="width: 70%;"></span>
+                    </div>
+                    <div class="skill_per">70%</div>
+                </li>
+                <li>
+                    <div class="skill_name">
+                        Skill 3
+                    </div>
+                    <div class="skill_prog">
+                        <span style="width: 90%;"></span>
+                    </div>
+                    <div class="skill_per">90%</div>
+                </li>                    
+            </ul>
+        </div>
+        <!--Experience/Education-->
+        <div class="subheading">Experience</div>
+        <div class="explist">
+            <ul>
+                <li>
+                    <div class="date">Job 1 date</div> 
+                    <div class="jobinfo">
+                        <div class="jobtitle">Job 1 Title</div> 
+                    <div class ="jobdesc">Job 1 description</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="date">Job 2 date</div> 
+                    <div class="jobinfo">
+                        <div class="jobtitle">Job 2 title</div> 
+                    <div class ="jobdesc">Job 2 description</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--Social-->
+        <div class="subheading">Social</div>
+        <div class="social">
+            <a href="facebooklink" target="_blank">
+                <div class = "icon">
+                    <div class="fab fa-facebook-square">Facebook</div>
+                </div>
+            </a>
+             <a href="twitterlink" target="_blank">
+                 <div class = "icon">
+                     <span style="padding-left:10px;"></span>
+                     <div class="fab fa-twitter-square">Twitter</div>
+                 </div>
+             </a>
+             <a href="linkedInlink" target="_blank">
+                 <div class="icon">
+                     <span style="padding-left:10px;"></span>
+                     <div class="fab fa-linkedin">LinkedIn</div>
+                </div>
+             </a>
+            <a href="githublink" target="_blank">
+                <div class = "icon">
+                    <span style="padding-left:10px;"></span>
+                  <div class="fab fa-github">Github</div>
+                </div>
+             </a>
+        </div>
+    </body>
+
+
+    <body>
+        <h1>APPLICAZIONE DELLE PROPRIETA : The font-family Property</h1>
+            <br>
+                questi esempi sono di applicazone della classe a = new roman <br>
+                e della                                 classe b = arial
+            <br>
+        <p class="a">This is a paragraph, shown in the Times New Roman font.</p>
+
+        <p class="b">This is a paragraph, shown in the Arial font.</p>
+
+    </body>
+
+
+</html>

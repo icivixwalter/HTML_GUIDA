@@ -1,0 +1,3129 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>body {
+  max-width: 980px;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable,
+.markdown-body .highlighttable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr,
+.markdown-body .highlighttable {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite,
+.markdown-body .highlighttable pre,
+.markdown-body .highlighttable div.highlight {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td,
+.markdown-body .highlighttable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headerlink {
+  font: normal 400 16px fontawesome-mini;
+  vertical-align: middle;
+  margin-left: -16px;
+  float: left;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0;
+  color: #333;
+}
+
+.markdown-body .headerlink:focus {
+  outline: none;
+}
+
+.markdown-body h1 .headerlink {
+  margin-top: 0.8rem;
+}
+
+.markdown-body h2 .headerlink,
+.markdown-body h3 .headerlink {
+  margin-top: 0.6rem;
+}
+
+.markdown-body h4 .headerlink {
+  margin-top: 0.2rem;
+}
+
+.markdown-body h5 .headerlink,
+.markdown-body h6 .headerlink {
+  margin-top: 0;
+}
+
+.markdown-body .headerlink:hover,
+.markdown-body h1:hover .headerlink,
+.markdown-body h2:hover .headerlink,
+.markdown-body h3:hover .headerlink,
+.markdown-body h4:hover .headerlink,
+.markdown-body h5:hover .headerlink,
+.markdown-body h6:hover .headerlink {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite,
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* MultiMarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px fontawesome-mini;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\e157';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+.markdown-body diagram-div, .markdown-body div.uml-sequence-diagram, .markdown-body, div.uml-flowchart {
+  overflow: auto;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><style>/*GitHub*/
+.highlight {background-color:#fff;color:#333333;}
+.highlight .hll {background-color:#ffffcc;}
+.highlight .c{color:#999988;font-style:italic}
+.highlight .err{color:#a61717;background-color:#e3d2d2}
+.highlight .k{font-weight:bold}
+.highlight .o{font-weight:bold}
+.highlight .cm{color:#999988;font-style:italic}
+.highlight .cp{color:#999999;font-weight:bold}
+.highlight .c1{color:#999988;font-style:italic}
+.highlight .cs{color:#999999;font-weight:bold;font-style:italic}
+.highlight .gd{color:#000000;background-color:#ffdddd}
+.highlight .ge{font-style:italic}
+.highlight .gr{color:#aa0000}
+.highlight .gh{color:#999999}
+.highlight .gi{color:#000000;background-color:#ddffdd}
+.highlight .go{color:#888888}
+.highlight .gp{color:#555555}
+.highlight .gs{font-weight:bold}
+.highlight .gu{color:#800080;font-weight:bold}
+.highlight .gt{color:#aa0000}
+.highlight .kc{font-weight:bold}
+.highlight .kd{font-weight:bold}
+.highlight .kn{font-weight:bold}
+.highlight .kp{font-weight:bold}
+.highlight .kr{font-weight:bold}
+.highlight .kt{color:#445588;font-weight:bold}
+.highlight .m{color:#009999}
+.highlight .s{color:#dd1144}
+.highlight .n{color:#333333}
+.highlight .na{color:teal}
+.highlight .nb{color:#0086b3}
+.highlight .nc{color:#445588;font-weight:bold}
+.highlight .no{color:teal}
+.highlight .ni{color:purple}
+.highlight .ne{color:#990000;font-weight:bold}
+.highlight .nf{color:#990000;font-weight:bold}
+.highlight .nn{color:#555555}
+.highlight .nt{color:navy}
+.highlight .nv{color:teal}
+.highlight .ow{font-weight:bold}
+.highlight .w{color:#bbbbbb}
+.highlight .mf{color:#009999}
+.highlight .mh{color:#009999}
+.highlight .mi{color:#009999}
+.highlight .mo{color:#009999}
+.highlight .sb{color:#dd1144}
+.highlight .sc{color:#dd1144}
+.highlight .sd{color:#dd1144}
+.highlight .s2{color:#dd1144}
+.highlight .se{color:#dd1144}
+.highlight .sh{color:#dd1144}
+.highlight .si{color:#dd1144}
+.highlight .sx{color:#dd1144}
+.highlight .sr{color:#009926}
+.highlight .s1{color:#dd1144}
+.highlight .ss{color:#990073}
+.highlight .bp{color:#999999}
+.highlight .vc{color:teal}
+.highlight .vg{color:teal}
+.highlight .vi{color:teal}
+.highlight .il{color:#009999}
+.highlight .gc{color:#999;background-color:#EAF2F5}
+</style><title>READ_ME_HTML</title></head><body><article class="markdown-body"><h1 id="a">A<a class="headerlink" href="#a" title="Permanent link"></a></h1>
+<p>### Allineamento testo</p>
+<pre><code>                    &lt;hr width="50px" /&gt;
+                    &lt;hr width="60px" /&gt;
+                    &lt;hr width="80px" /&gt;
+
+
+    ### Attributo Rowspan
+            L'attributo Rowspan estende la colonna su piu rige es.
+
+    ### Attributo border
+            NOTE    
+                    L'attributo border imposta il bordo della tabella.
+                             &lt;table border="2"&gt;
+                    @bordo.tabella
+                    @tabella.bordi
+
+    ### Attributo border
+            NOTE    
+                    L'attributo table align="center" permette il centraggio della tabella
+                    @centrare.la.tabella
+                    @tabella.center
+
+
+    NOTE    
+            Attributo Align 
+            L'attributo align viene utilizzato per specificare la modalità di allineamento del testo.  
+            Nell'esempio seguente, abbiamo un paragrafo allineato al centro e una linea allineata a destra. 
+            ATTENZIONE: L'attributo align di &lt;p&gt; non è supportato in HTML5.             ATTENZIONE: 
+            @testo.allinea, @allinemanto.testo
+
+
+    ESEMPIO
+            ci sono anche attributi contradditori all'interno 
+            &lt;html&gt;
+            &lt;head&gt;
+                    &lt;title&gt;Attributes&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                    &lt;p align="center"&gt; CENTRA IL TESTO This is a text &lt;br /&gt;
+                    &lt;hr width="10%" align="right" /&gt; LARGHEZZA 10% This is also a text.
+                    &lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+</code></pre>
+<p>### attributi</p>
+<pre><code>    NOTE
+            Gli attributi forniscono informazioni aggiuntive su un elemento o un tag, modificandoli al 
+            contempo. La maggior parte degli attributi ha un valore; il valore modifica l'attributo. 
+            questo esempio, il valore di "center" 
+            indica che il contenuto all'interno dell'elemento p deve essere allineato al centro: 
+            il botton vine scritto con all'interno di body + div es.
+            Inoltre il ruolo dell'attributo è quello di modificare il tag.
+
+            @attributi, @button, @ruolo.attributi
+
+            div= allineamento.
+            &lt;body&gt;
+            &lt;div align = center&gt;
+                    &lt;button align = center&gt; button centrale 
+                    There can be any text&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;/body&gt;
+
+
+            Gli attributi sono sempre specificati nel tag iniziale e 
+            vengono visualizzati nelle coppie name="value".
+                    nome attributo = valore
+                    align = center
+
+            Qual è il ruolo di un attributo in HTML?
+
+            Misurazioni degli attributi 
+                     Ad esempio, possiamo modificare la linea orizzontale in modo 
+                     che abbia una larghezza di 50 pixel. 
+                    Questa operazione può essere eseguita utilizzando l'attributo width:
+                    La line si creac con hr la larghezza è l'attributo width = 50
+                    @linea.orizzonatel  @larghezza.linea
+
+            Quale attributo viene utilizzato per cambiare il colore di una cella?
+            ????
+            @attibuto.colore.cella
+</code></pre>
+<h1 id="b">B<a class="headerlink" href="#b" title="Permanent link"></a></h1>
+<p>## button</p>
+<p>## br
+        INTERLINEA, per avere ritorno a campo utilizzare il tag senza chiusura
+                <br> = una linea per un cr.
+                <br>    <br> = due linee ecc..
+                <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/interlinea" title="GitHub User: interlinea">@interlinea</a></p>
+<h1 id="css">CSS<a class="headerlink" href="#css" title="Permanent link"></a></h1>
+<pre><code>    LEZIONE 2.1
+            What is CSS?
+                    Cascading Style Sheets.
+                    CSS è l'acronimo  di Cascading Style Sheets.  @CSS
+
+                    - Cascading si riferisce al modo in cui CSS applica uno stile sopra un altro.  
+                    - I fogli di stile controllano l'aspetto dei documenti Web.  @FOGLI.DI.STILE
+
+                    CSS e HTML lavorano fianco a fianco: 
+                    - HTML ordina la struttura della pagina.  
+                    - CSS definisce come vengono visualizzati gli elementi HTML. 
+                    Per comprendere i CSS, dovresti già avere una conoscenza di base dell'HTML.  
+                    Se vuoi studiare HTML, dai un'occhiata al nostro corso HTML.
+
+                    Cascading
+                    Style Sheets
+
+            Why Use CSS?
+                    CSS consente di applicare stili specifici a specifici elementi HTML.
+
+                    Il vantaggio principale di CSS è che consente di separare lo stile dal contenuto.
+
+                    Usando solo HTML, tutti gli stili e la formattazione sono nello stesso posto, il che diventa piuttosto difficile da mantenere man mano che la pagina cresce. 
+                    Tutta la formattazione può (e deve) essere rimossa dal documento HTML e memorizzata in un file CSS separato.
+
+    LEZIONE 2.1 Inline, Embedded, External CSS
+
+
+            Inline CSS
+
+                    L'utilizzo di uno stile in linea è uno dei modi per inserire un foglio di stile. Con uno stile in linea, uno stile unico viene applicato a un singolo elemento.
+
+                    Per utilizzare uno stile in linea, aggiungere l'attributo style al tag pertinente.
+
+                    L'esempio seguente mostra come creare un paragrafo con sfondo grigio e testo bianco: 
+                                                    style attribute to the relevant tag. 
+                                                    @style, @attributo.style  @proprieta.css
+
+                            ESEMPIO = PARAGRAFO CON SFONDO GRIGIO
+                                    &lt;p style="color:white; background-color:gray;"&gt;
+                                        This is an example of inline styling. 
+                                    &lt;/p&gt;
+
+                            L'attributo style può contenere qualsiasi proprietà CSS.
+
+            Embedded/Internal CSS
+                    Gli stili interni sono definiti all'interno dell'elemento &lt;style&gt;, all'interno  della sezione head di una pagina HTML.  
+                    Ad esempio, il codice seguente applica uno stile a tutti i paragrafi:
+                    @stile.paragrafi
+                            @esempio.stile paragrafi in grigio
+                            @TAG.STILE in testa alla pagina
+                            &lt;html&gt;
+                               &lt;head&gt;
+                                  &lt;style&gt;
+                                  p {
+                                     color:white;
+                                     background-color:gray;
+                                  }
+                                  &lt;/style&gt;
+                               &lt;/head&gt;
+                               &lt;body&gt;
+                                  &lt;p&gt;This is my first paragraph. &lt;/p&gt;
+                                  &lt;p&gt;This is my second paragraph. &lt;/p&gt;
+                               &lt;/body&gt;
+                            &lt;/html&gt;
+
+                    STILE INTERNO UNICO  = Un foglio di stile interno può essere utilizzato se una singola pagina ha uno stile unico.
+
+            External CSS
+                     &lt;link&gt; tag
+                    Con questo metodo, tutte le regole di stile sono contenute in un singolo file di testo, che viene salvato con l'estensione .css.  @CSS.FILE.UNICO, @UNICO.FILE.CSS                         
+                    Questo file CSS viene quindi referenziato nell'HTML utilizzando il  tag &lt;link&gt;. L'elemento &lt;link&gt; si trova all'interno della sezione head. @LINK.TAG, TAG.LINK
+
+                    Ecco un esempio: 
+                    l'HTML:
+                            &lt;head&gt;
+                               &lt;link rel="stylesheet" href="example.css"&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                               &lt;p&gt;This is my first paragraph.&lt;/p&gt;
+                               &lt;p&gt;This is my second paragraph. &lt;/p&gt;
+                               &lt;p&gt;This is my third paragraph. &lt;/p&gt;
+                            &lt;/body&gt;
+
+                    Sia i percorsi relativi che quelli assoluti possono essere utilizzati per definire l'href per il file CSS. Nel nostro esempio, il percorso è relativo, poiché il file CSS si trova nella stessa directory del file HTML.
+
+                    @path.relativa, @path.assoluta
+
+            Welcome to Resume Design Project
+                    Benvenuti nel progetto Resume Design! Durante questo progetto, costruiremo un accattivante design del curriculum passo dopo passo!  
+                    Ti verrà dato un modello HTML e durante questo progetto lavoreremo sul suo stile usando CSS.  
+                    Esaminare l'attività, scrivere il codice, eseguirne il commit per salvare lo stato di avanzamento e continuare il progetto in ciascuna delle sue fasi.
+
+                    Per prima cosa, scriviamo il tuo nome e cognome in alto e impostiamo la dimensione del carattere.  
+                            &lt;div class="heading"&gt;John Smith&lt;/div&gt;
+
+                    È possibile impostare valori personalizzati per tutte le proprietà del curriculum durante l'intero progetto per ottenere contenuti e stili unici.  
+                    Gli esempi forniti sono intesi esclusivamente come guida.
+
+
+                    Attività
+                    1. Nel codice HTML, sezione "Intro", scrivi il tuo nome e cognome all'interno del tag &gt; &lt;div class="heading". 
+                    numero arabo. Nel codice CSS, selezionare l'elemento "heading" e impostare una dimensione del carattere per esso utilizzando la  proprietà font-size.
+
+                    VEDI @MyPROGETTO-CSS
+
+    LEZIONE 3.1 CSS Rules and Selectors
+            CSS Syntax
+                   CSS è composto da regole di stile che il browser interpreta e quindi applica agli elementi corrispondenti nel documento.Una regola di stile è composta da tre parti:selettor,proprietevalor.Ad esempio, il colore del titolo può essere definito
+                    come @REGOLA.DI STILE, @SELETTORE,@PROPRIETA, @VALORE
+                            nel file css
+                            blocco dichiarazione = h1
+
+                            h1 { color: orange; }
+                                 nomeprorieta:valore
+
+                            h1    = selettore 
+                            color = proprieta
+                            orang = valore
+
+                            &lt;h1&gt;A Sample Heading&lt;/h1&gt;
+
+                    Il selettore punta all'elemento HTML a cui si desidera applicare uno stile. 
+                    Il blocco di dichiarazione contiene una o più dichiarazioni, separate da punto e virgola.             
+                    Ogni dichiarazione include un nome di proprietà e un valore, separati da due punti.
+
+            Type Selectors
+                    I selettori più comuni e facili da capire sono i selettori di tipo. Questo selettore è destinato ai tipi di elemento nella pagina. 
+                    p = selettore di paragrafo
+                    Ad esempio, per scegliere come target tutti i paragrafi della pagina:
+
+                            nel file css
+                                    p {
+                                        color: red;
+                                        font-size:130%;
+                                    }
+
+                                    Una dichiarazione CSS termina sempre con un punto e virgola e i gruppi di dichiarazioni sono circondati da parentesi graffe.
+
+            id and class Selectors
+                    I selettori id consentono di applicare uno stile a un elemento HTML con un attributo id, indipendentemente dalla posizione nell'albero del documento. Ecco un esempio di un selettore id:
+
+                            NEL FILE HTML
+                            &lt;div id="intro"&gt;
+                               &lt;p&gt; This paragraph is in the intro section.&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;p&gt; This paragraph is not in the intro section.&lt;/p&gt;
+
+                                    ID= INTRO
+
+
+                    NEL FILE CSS
+                            #intro {
+                                color: white;
+                                background-color: gray;
+                            }
+
+                            @vedi.esempio.selettore.specifico
+
+            DIFFERENZA SELETTORI DI CLASSE E I SELETTORI ID
+                    I selettori di classe funzionano in modo simile. La differenza principale è che gli ID possono essere applicati solo una volta per pagina, mentre le classi possono essere utilizzate tutte le volte su una pagina secondo necessità.
+
+                    Nell'esempio seguente, entrambi i paragrafi con la classe "first" saranno interessati dal CSS: 
+                            .first {font-size: 200%;}
+
+
+                            Per selezionare elementi con una classe specifica, utilizzare un carattere punto, seguito dal nome della classe.
+
+                            NON iniziare una classe o un nome ID con un numero!
+
+                            @vedi.esempio.selettore.di.classe
+
+            Descendant Selectors
+                    Questi selettori vengono utilizzati per selezionare elementi discendenti di un altro elemento. Quando si selezionano i livelli, è possibile selezionare tutti i livelli di profondità necessari.        @SELEZIONA.LIVELLI @PADRE.FIGLIO
+
+                    Ad esempio, per scegliere come target solo &lt;em&gt; elementi nel primo paragrafo della sezione "introduzione":
+
+                            ESEMPIO
+                            &lt;div id="intro"&gt;
+                                &lt;p class="first"&gt;This is a 
+                                            &lt;em&gt; paragraph.&lt;/em&gt;
+                                &lt;/p&gt;
+
+                                &lt;p&gt; This is the second paragraph. &lt;/p&gt;
+                            &lt;/div&gt;
+
+                            &lt;p class="first"&gt; This is not in the intro section.&lt;/p&gt;
+                            &lt;p&gt; The second paragraph is not in the intro section. &lt;/p&gt;
+
+                            vedi: @regola.di.stile
+
+    LEZIONE 4.1 CSS Comments
+            Comments
+            I commenti vengono utilizzati per spiegare il codice e possono essere utili quando si modifica il codice sorgente in un secondo momento. I commenti vengono ignorati dai browser. 
+                    @commenti.css 
+                    p { 
+                        color: green; 
+                        /* This is a comment */
+                        font-size: 150%;
+                    }
+
+    LEZIONE 5.1 Style Cascade and Inheritance
+            Cascade
+                    L'aspetto finale di una pagina web è il risultato di regole di stile diverse.  
+                    Le tre principali fonti di informazioni sullo stile che formano una cascata sono: 
+                    - Il foglio di stile creato dall'autore della pagina
+                    - Gli stili predefiniti del browser
+                    - Stili specificati dall'utente
+                    CSS è l'acronimo di Cascading Style Sheets.  @tre.stili, @css.stili.principali
+
+            Inheritance
+                    L'ereditarietà si riferisce al modo in cui le proprietà fluiscono attraverso la pagina. Un elemento figlio assumerà in genere le caratteristiche dell'elemento padre, se non diversamente definito. 
+                    @eredita   @eredita.padre.figlio  @proprieta.fluiscono.in.pagina
+
+                                    &lt;html&gt;
+                                       &lt;head&gt;
+                                          &lt;style&gt;
+                                          body {
+                                             color: green;
+                                             font-family: Arial;
+                                                    }
+                                         &lt;/style&gt;
+                                       &lt;/head&gt;
+                                       &lt;body&gt;       
+                                          &lt;p&gt;
+                                          This is a text inside the paragraph. 
+                                          &lt;/p&gt;
+                                       &lt;/body&gt;
+                                    &lt;/html&gt;
+
+                    Poiché il tag di paragrafo (elemento figlio) si trova all'interno del tag body (elemento padre), assume tutti gli stili assegnati al tag body.
+
+
+                    Intro Section - ESEMPIO 
+                    Personalizziamo la nostra  sezione Introduttiva che include il tuo nome completo, professione e riepilogo.  
+                    Innanzitutto, impostiamo un colore di sfondo.
+
+                            @vedi.esempio.IntroSection
+
+                                    &lt;br&gt;
+                                    &lt;head&gt;
+                                       &lt;link rel="stylesheet" href="CSS_ESEMPIO_IntroSection.css"&gt;
+                                    &lt;/head&gt;
+
+                                    &lt;div class="prof"&gt;Software Engineer&lt;/div&gt;
+                                    &lt;p class="summary"&gt;Deadline-oriented software engineer with considerable experience...&lt;/p&gt;
+
+
+
+                    Attività
+                    1. Nel codice HTML, sezione "intro", scrivi la tua professione e riepiloga di conseguenza negli elementi "prof" e "summary". 
+                    numero arabo. Nel codice CSS, selezionare l'elemento "intro" e impostare un colore di sfondo utilizzando la  proprietà background-color.
+
+
+
+
+
+       LEZIONE 5.2 Code Repo
+            Intro Section
+                    @todo: da fare
+
+                    Tra i tre tipi di styling, qual è il più utile in termini di ottimizzazione del sito web?
+                            External  = questo è piu utile per ottimizzare il sito web
+                            Inline
+                            Internal
+
+    LEZIONE 7.1 Lessons
+            font-family
+                    The font-family Property
+
+
+                            La proprietà font-family specifica il font per un elemento.  
+                            Esistono due tipi di cognomi di font: 
+                            - font family: - famiglia di font: una famiglia di font specifica (come Times New Roman o Arial)   @aspetto.specifico
+                            - generic family: famiglia generica: un gruppo di famiglie di font con un aspetto simile (come Serif o Monospace) @aspetto.simile 
+                            @FAMIGLIA.GENERICA
+
+                            La proprietà font-family deve contenere diversi nomi di font come sistema di "fallback". Quando si specifica un font Web in uno stile CSS, aggiungere più di un nome di font per evitare comportamenti imprevisti. Se il computer client per qualche motivo non ha quello scelto, proverà quello successivo. 
+                            @font.family.nomi.diversi
+
+                            È buona norma specificare una famiglia di caratteri generica, per consentire al browser di scegliere un tipo di carattere simile nella famiglia generica, se non sono disponibili altri tipi di carattere.
+                            @famiglia.generica
+                                    esempio: contiene diversi font specifici + una famiglia
+                                            generica detta Serif
+
+                                            body {
+                                               font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                                            }
+
+                                    Se il browser non supporta il font Arial, prova i font successivi (Helvetica Neue, poi Helvetica). Se il browser non ne ha nessuno, proverà il sans-serif generico.
+
+
+                            ATTENZIONE: Ricordarsi di usare le virgolette se il nome del carattere è costituito da più di una parola.ATTENZIONE:
+
+                                    altro esempio
+                                    icona di repository di codice
+
+                                    Impostiamo il font
+
+                                    Inserisci le tue informazioni di contatto, quindi specifica il font per l'intero curriculum.
+                                            @vedi.esempio.FontFamily
+
+    LEZIONE 8.1. font-size
+</code></pre>
+<h1 id="c">C<a class="headerlink" href="#c" title="Permanent link"></a></h1>
+<h2 id="caratteri-speciali">CARATTERI SPECIALI<a class="headerlink" href="#caratteri-speciali" title="Permanent link"></a></h2>
+<pre><code>Per mostrare correttamente una pagina HTML, 
+in particolar modo in riferimento alle lettere accentate, il browser deve conoscere la codifica dei caratteri o "charset" da essa associata.
+Per viasualizzare correttamente le lettere accentate nelle pagine HTML è necessario adottare una determinata codifica dei cdaratteri.
+Per far visualizzare è necessario inserire il meta tag charset nella sezione della tua pagina HTML, i seguente codice:
+@caratteri.speciali
+http://www.caratterispeciali.altervista.org/#:~:text=Per%20viasualizzare%20correttamente%20le%20lettere%20accentate%20nelle%20pagine,Per%20HTML%204%3A%20%3Cmeta%20http-equiv%3D%22Content-Type%22%20content%3D%22text%2Fhtml%3B%20charset%3Dutf-8%22%20%2F%3E
+
+    Per HTML 4: &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+
+    Per HTML 5: &lt;meta charset="utf-8" /&gt;
+</code></pre>
+<h2 id="corsivo">CORSIVO<a class="headerlink" href="#corsivo" title="Permanent link"></a></h2>
+<pre><code>       All'interno del testo scrivere tra &lt;p&gt; .... 
+         ... puoi scrivre &lt;strong&gt;SoloLearn&lt;/strong&gt;
+        &lt;\p&gt;
+
+## COLLEGAMENTI
+    I collegamenti vengono effettuati con il tag a es.
+             &lt;li&gt;
+                &lt;a 
+                    href="https://www.sololearn.com/"&gt; HTML 
+                &lt;/a&gt; &lt;/li&gt;
+            ATTENZIONE all'interno del tag a occorre inserimento il riferimento e poi chiudere il tag:
+                        &lt;a  href="https://www.sololearn.com/"&gt; HTML
+            a= collegamento con sottolineratura della parola HTML
+            @tag.a 
+            @link.tag.A
+            @collegamenti.tag.A
+
+    Attributo target per i collegamento specifica dove aprire il documento collegato mentre,
+    se viene dato un valore a _blank  all'attributo,  il link sarà aperto  in una nuova finestra
+    o in una nuova scheda.
+    esempio di utilizzo di target:
+            &lt;a href="http://www.sololearn.com" target="_blank"&gt;
+                    Learn Playing
+            &lt;/a&gt;
+
+            @target.attributo.link
+            @attributo.target.link
+
+    ATTENZIONE per aprire con il link una nuova finestra occorre attribuire un valore all'alltributo con 
+    _blank
+
+            @valore._blank
+            @target.blank
+
+## COMMENTI
+    si scrivono cosi     &lt;!-- My Schedule section start --&gt;
+    ATTENZIONE nei commenti alla sapzio che non deve esistere nel tag di apertura e quello
+    di chiusurua.
+
+            NO      &lt;!-- My Schedule section start --   &gt;
+            NO           &lt;  !-- My Schedule section start -- &gt;
+            SI           &lt;!-- My Schedule section start --&gt;
+
+
+
+##CHECKBOX
+    Per creare la check box in html occorre utilizzare il comando
+        &lt;input type="checkbox" name="gender" value="1" /&gt;Male &lt;br /&gt;
+
+        @checkbox
+
+###COLOR
+        @colori.sfondo,  @sfondo.colori
+        Questo esempio produrrebbe uno sfondo blu scuro con un titolo bianco: 
+        L'attributo color specifica il colore del testo all'interno di un elemento &lt;...font&gt;.
+    &lt;body bgcolor="#000099"&gt;
+            Il nome di questo colore è Black. Nello spazio colore RGB, l'esadecimale #000000 è composto da: 0% di rosso, 0% di verde e 0% di blu. Mentre in quadricromia o spazio colore CMYK, è così composto: 0% ciano, 0% magenta, 0% giallo e 100% nero.
+
+            @COLORE.NERO.#000000
+
+&lt;h1&gt;
+    &lt;font color="#FFFFFF"&gt; White headline &lt;/font&gt;
+&lt;/h1&gt;
+</code></pre>
+<h1 id="d">D<a class="headerlink" href="#d" title="Permanent link"></a></h1>
+<pre><code>##div
+    Sezione del progetto vengono utilizzate con il tag
+        div
+        @creare.sezioni, @sezioni.div
+</code></pre>
+<h1 id="e">E<a class="headerlink" href="#e" title="Permanent link"></a></h1>
+<p>#Tipi di elementi 
+        In HTML, la maggior parte degli elementi sono definiti come  elementi a livello di blocco o in linea.</p>
+<pre><code>    ELEMENTI A LIVELLO DI BLOCCO   
+            Gli elementi a livello di blocco partono da una nuova riga.
+
+            Ad esempio: &lt;h1&gt;, &lt;form&gt;, &lt;li&gt;, &lt;ol&gt;, &lt;ul&gt;, &lt;p&gt;, &lt;pre&gt;, &lt;table&gt;, &lt;div&gt;, ecc.  
+            L'elemento &lt;div&gt; è un elemento a livello di blocco che viene spesso utilizzato come contenitore 
+            per altri elementi HTML.
+
+    ELEMENTI A LIVELLO DI LINEA 
+            Gli elementi in linea vengono normalmente visualizzati senza interruzioni di riga.  
+            Ad esempio: &lt;b&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;img&gt;, &lt;input&gt;, &lt;em&gt;, &lt;span&gt;, ecc.
+
+    STILI CSS 
+            Se utilizzato insieme ad alcuni stili CSS, l'elemento &lt;div&gt; può essere utilizzato per applicare uno stile ai blocchi di contenuto: 
+                    @div.stile,  @applicare.stile
+
+            FOGLI DI STILE INTERNI
+                    Fogli di stile interni @fogli.di.stile.interni, @stile.interni
+                    Questa possibilità prevede che il codice CSS sia scritto direttamente all'interno del documento HTML. Per farlo è possibile adottare due tecniche differenti:
+
+                    Applicare uno stile inline 
+                    @stile.inline   @stile.nel.tag
+                    Si dice in linea l'utilizzo delle proprietà di stile direttamente all'interno del tag HTML che si desidera formattare. Così facendo le varie proprietà vengono scritte all'interno dell'attributo style il quale può essere applicato ad ogni tag HTML della pagina. Vediamo un esempio:
+                            &lt;p style="color: #FF0000;"&gt;Testo rosso&lt;/p&gt;
+                    Nel nostro esempio abbiamo applicato il colore rosso ad un paragrafo di testo.
+
+
+
+
+    ALTRI ELEMENTI UTILIZZABILI A LIVELLO DI BLOCCO O DI LINEA
+
+            Altri elementi possono essere utilizzati sia come elementi a livello di blocco che come elementi in linea. 
+            Ciò include i seguenti elementi: 
+                    APPLET - IFRAME dell'applet  Java incorporato  - INS del frame 
+                    in linea  - MAP del testo 
+                    inserito  - mappa
+                    immagine OBJECT - oggetto incorporato SCRIPT - script all'interno di un documento HTML
+
+            È possibile inserire elementi in linea all'interno di elementi di blocco. Ad esempio, è possibile avere più  
+            elementi &lt;span&gt; all'interno di un  elemento &lt;div&gt;. 
+            ATTENZIONE = Gli elementi in linea non possono contenere elementi a livello di blocco.
+            @elementi.in.linea.NO.BLOCCO
+
+    @elementi.livello.di.blocco
+    @elementi.in.linea 
+    @div.elemento.livello.di.blocco
+    @div.elemento.contenitore
+    @elementi.misti
+</code></pre>
+<h1 id="f">F<a class="headerlink" href="#f" title="Permanent link"></a></h1>
+<pre><code>    ##FORMATTAZIONE
+            La formatazzione in html avviene con i 6 tag p all'interno di body, esempio 
+            per il titolo usare
+                             &lt;h1&gt;first page&lt;/h1&gt; = paragrafo pagina 1
+
+            le 6 formattazioni sono :
+
+                    &lt;p&gt;This is regular text &lt;/p&gt;
+                    &lt;p&gt;&lt;b&gt;bold text &lt;/b&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;big&gt; big text &lt;/big&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;i&gt; italic text &lt;/i&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;small&gt; small text &lt;/small&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; strong text &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;sub&gt; subscripted text &lt;/sub&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;sup&gt; superscripted text &lt;/sup&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;ins&gt; inserted text &lt;/ins&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;del&gt; deleted text &lt;/del&gt;&lt;/p&gt;
+</code></pre>
+<p>G
+    #GET
+           ATTRIBUTO
+                GET = VISIBILITA DEI DATI
+                Quando usi GET, i dati del modulo saranno visibili nell&rsquo;indirizzo della pagina.
+           POST = PER AGGIORNAMENTO DATI
+                Utilizzare POST se il modulo aggiorna i dati o include informazioni riservate (password).
+                POST offre una maggiore sicurezza perché i dati inviati non sono visibili nell&rsquo;indirizzo della pagina.</p>
+<p>H
+        #HTML <br />
+                E un linguaggio di markup e le parti principale sono 
+                head and body</p>
+<pre><code>            Quale tag contiene la parte visiva della pagina web?
+
+            HTML è l'acronimo di HyperText    Markup Language. 
+                    A differenza di un linguaggio di scripting o di programmazione 
+                    che utilizza script per eseguire funzioni, 
+                    un linguaggio di markup utilizza tag per identificare il contenuto.
+
+            MARKUP = linguaggio che utilizza i tag per il contenuto.
+            Quali tag vengono utilizzati per indicare le intestazioni?
+
+
+            LEZIONE 26 29 30 31
+    GENERALE
+            Quando scrivi documenti HTML5,  una delle prime nuove funzionalità che noterai è la dichiarazione del tipo di documento: &lt;!DOCTYPE HTML&gt; @DICHIARAZIONE.HTLM
+            @CODIFICA.CARATTERI,  @charset, @dichiarazione.codifica.caratteri
+            Anche la dichiarazione di codifica dei caratteri (charset) è semplificata:
+
+            &lt;meta charset="UTF-8"&gt;
+            New Elements in HTML5   @HTML5.ELEMENTI  @NUOVI.ELEMENTI.HTML5
+            &lt;article&gt;, &lt;aside&gt;, &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;, &lt;details&gt;, 
+            &lt;embed&gt;, &lt;footer&gt;, &lt;header&gt;, &lt;nav&gt;, &lt;output&gt;, &lt;progress&gt;, &lt;section&gt;, &lt;video&gt;, and even more!
+
+    CARATTERISTICHE
+
+            API integrate (Application Programming Interfaces) 
+            - Drag and Drop 
+            - Audio e Video 
+            - Applicazioni 
+            Web offline  - Cronologia 
+            - Archiviazione 
+            locale  - Geolocalizzazione 
+            - Web Messaging
+
+
+    7 modelli di contenuto  @modelli.di.contenuto, @contenuto.modelli
+
+            L'elenco dei modelli di contenuto 
+            In HTML, gli elementi appartenevano in genere al modello di contenuto a livello di blocco o in linea. HTML5 introduce sette modelli di contenuto principali.
+
+            - Metadati 
+            - Incorporati 
+            - Interattivi 
+            - Intestazione 
+            - Fraseggio 
+            - Flusso 
+            - Sezionamento
+
+            I modelli di contenuto HTML5 sono progettati per rendere la struttura del markup più significativa sia per il browser che per il web designer.
+
+    METADATA
+            Metadata: contenuto che imposta la presentazione o il comportamento del resto del contenuto. Questi elementi si trovano nella testa del documento.  @modelli.metadata, @testa.documento, @comportamento
+            @presentazione
+            Elements: &lt;base&gt;, &lt;link&gt;, &lt;meta&gt;, &lt;noscript&gt;, &lt;script&gt;, &lt;style&gt;, &lt;title&gt;
+
+
+    ENBEDED
+            Embedded: contenuto che importa altre risorse nel documento. 
+             @IMPORTAZIONI  @importa.risorse
+            Elements: &lt;audio&gt;, &lt;video&gt;, &lt;canvas&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;math&gt;, &lt;object&gt;, &lt;svg&gt;
+
+    INTERACTIVE
+            Interactive: Contenuto specificamente destinato all'interazione dell'utente.  @INTERAZIONE.UTENTE,              
+            Elements: &lt;a&gt;, &lt;audio&gt;, &lt;video&gt;, &lt;button&gt;, &lt;details&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;, &lt;label&gt;, &lt;object&gt;, &lt;select&gt;, &lt;textarea&gt;
+
+    INTESTAZIONE DELLE SEZIONI
+
+            Heading: definisce un'intestazione di sezione. @SEZIONI.INTESTAZIONI, @INTESTAZIONI.SEZIONI
+            Elements: &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;, &lt;hgroup&gt;
+
+    HTML4 ELEMENTI IN COMUNE
+            Phrasing: questo modello ha un numero di elementi di livello in linea in comune con HTML4. 
+            @elementi.in.comune @HTML4.HTML5
+            Elements: &lt;img&gt;, &lt;span&gt;, &lt;strong&gt;, &lt;label&gt;, &lt;br /&gt;, &lt;small&gt;, &lt;sub&gt;, and more.
+
+
+    MODELLI DI CONTENUTO Content Models
+
+            per individuare i modelli veder questo collegtamento https://www.sololearn.com/learning/1014/2191/4340/1Flow
+
+    CONTENUTO DEL FLUSSO -FLOW CONTENT
+
+            Flow content: contiene la maggior parte degli elementi HTML5 che verrebbero inclusi nel normale flusso del documento. @flow
+
+    CONTENUTO DEL SEZIONAMENTO - SECTIONING CONTENT -
+            @sezionamento, @intestazioni, @navigazione @pie.di.pagina @contenuto
+            Sectioning content: Definisce l'ambito di intestazioni, contenuto, navigazione e piè di pagina. 
+            Elements: &lt;article&gt;, &lt;aside&gt;, &lt;nav&gt;, &lt;section&gt;
+
+            I vari modelli di contenuto si sovrappongono in determinate aree, a seconda di come vengono utilizzati.
+
+    STRUTTURA GENERICA DI UNA PAGINA HTML
+
+            &lt;header&gt;
+            contiene il logo
+            &lt;nav&gt;
+            contiene la navigazione nel sito
+            &lt;article&gt;
+            pagina web che contiene le sezioni
+                    &lt;section&gt;                                               &lt;asize&gt;
+                            divisione di una sezione                    contiene informazioni extra
+                    &lt;section&gt;
+                            divisione di una sezione
+
+                    &lt;foter&gt;
+                            informazioni sul copyright
+
+                    n.b Potresti non aver bisogno di alcuni di questi elementi, a seconda della struttura della pagina.
+
+
+            riepilogo pagina web
+                    head
+                    heder
+                    nav
+                    article
+                    section
+                    foter
+
+    HEADER ELEMENTI IN HTML5
+
+            In HTML4, definiremmo un'intestazione come questa: 
+                    &lt;div id="header"&gt;
+            @HEADER
+
+            In HTML5 viene  invece utilizzato  un semplice tag &lt;header&gt;.  
+            L'elemento &lt;header&gt; è appropriato per l'uso all'interno del tag body. 
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;&lt;/head&gt;
+                            &lt;body&gt;
+                                    &lt;header&gt;
+                                    &lt;h1&gt;Most important heading&lt;/h1&gt;
+                                    &lt;h3&gt;Less important heading&lt;/h3&gt;
+
+                                    &lt;/header&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+
+    ELEMENTO PIE DI PAGINA The &lt;footer&gt; Element -
+
+            L'elemento &lt;footer&gt; 
+           Anche l'elemento piè di pagina è ampiamente utilizzato. Generalmente ci riferiamo a una sezione situata nella parte inferiore della pagina web come piè di pagina. 
+           @FOTER  @PIE.DI.PAGINA
+                    ESEMPIO  &lt;footer&gt;&lt;/footer&gt;
+
+            Nel pie di pagina vengono inserite le seguenti informazioni
+
+                    Le seguenti informazioni vengono solitamente fornite tra questi tag: 
+                    - Informazioni di 
+                    contatto  - Informativa sulla privacy 
+                    - Icone 
+                    dei social media - Termini di servizio 
+                    - Informazioni 
+                    sul copyright  - Mappa del sito e documenti correlati
+
+    ELEMENTO NAVIGAZIONE - The &lt;nav&gt; Element
+
+            L'elemento &lt;nav&gt;
+           Questo tag rappresenta una sezione di una pagina che rimanda ad altre pagine o a determinate sezioni all'interno della pagina. Questa sarebbe una sezione con collegamenti di navigazione. @collegamenti, @navigazione @tag.navigazione
+
+            Ecco un esempio di un blocco importante di collegamenti di navigazione:
+                    &lt;nav&gt;
+                    &lt;ul&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;About us&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;/nav&gt;
+
+            Non tutti i collegamenti in un documento devono trovarsi all'interno di un elemento &lt;nav&gt;. L'elemento &lt;nav&gt; è destinato solo ai principali blocchi di collegamenti di navigazione. In genere, l'elemento &lt;footer&gt; ha spesso un elenco di collegamenti che non devono necessariamente trovarsi in un elemento &lt;nav&gt;.
+
+    ELEMENTO ARTICOLO - The &lt;article&gt; Element
+
+            L'articolo è un contenuto autonomo e indipendente che può essere utilizzato e distribuito separatamente dal resto della pagina o del sito. Questo potrebbe essere un      post sul forum, 
+                    una rivista o un 
+                    articolo di giornale, 
+                    un post di blog,
+                    un commento, 
+                    un widget interattivo o un 
+                    gadget o qualsiasi 
+                    altro contenuto indipendente.
+                    @al.posto.di.articolo, @tag.div.htlm4
+            L'elemento &lt;articolo&gt; sostituisce l'elemento &lt;div&gt; ampiamente utilizzato in HTML4, insieme a un id o a una classe.   @tag.article  @tag.articolo
+            @ARTICOLO, @post @rivista, @blog @commento @widget  @gadget @sostituisce.div
+            @HTML5.articolo=article   @HTML4.articolo=div è stato sostituito da article
+
+                            esempio
+                                    &lt;article&gt;
+                                    &lt;h1&gt;The article title&lt;/h1&gt; 
+                                    &lt;p&gt;Contents of the article element &lt;/p&gt;
+                                    &lt;/article&gt;
+
+            Quando un elemento &lt;articolo&gt; è nidificato, l'elemento interno rappresenta un articolo correlato all'elemento esterno. Ad esempio, i commenti ai post di blog possono essere &lt;articolo&gt; elementi nidificati nel &lt;articolo&gt; che rappresentano il post di blog.
+
+    SEZIONE ELEMENTI
+            The &lt;section&gt; Element  @tag.element @sezione
+            &lt;sezione&gt; è un contenitore logico della pagina o dell'articolo.  
+            Le sezioni possono essere utilizzate per dividere il contenuto all'interno di un articolo.  
+            Ad esempio, una home page potrebbe avere una sezione per l'introduzione dell'azienda, un'altra per le notizie e un'altra ancora per le informazioni di contatto.
+
+                            &lt;article&gt;
+                            &lt;h1&gt;Welcome&lt;/h1&gt;
+                            &lt;section&gt;
+                                    &lt;h1&gt;Heading&lt;/h1&gt;
+                                    &lt;p&gt;content or image&lt;/p&gt;
+                            &lt;/section&gt;
+                            &lt;/article&gt;
+
+            SEZIONE - FIGLIO ELEMENTO H1 FINO AD H6
+            Ogni &lt;sezione&gt; dovrebbe essere identificata, in genere includendo un'intestazione (elemento h1-h6) come figlio dell'elemento &lt;sezione&gt;. 
+            Se ha senso sindacare separatamente il contenuto di un elemento &lt;sezione&gt;, utilizzare invece un elemento &lt;articolo&gt;.
+
+    ELEMENTO ASIDE
+
+            L'elemento &lt;aside&gt;
+            @elemento.asize  @aside @tag.aside
+            @barre.laterali @contenuto.correlato 
+            &lt;aside&gt; è un contenuto secondario o tangenziale che potrebbe essere considerato separato ma indirettamente correlato al contenuto principale.  
+            Questo tipo di contenuto è spesso rappresentato nelle barre laterali.  
+            Quando un tag &lt;aside&gt; viene utilizzato all'interno di un tag &lt;articolo&gt;, il contenuto del tag &lt;aside&gt; dovrebbe essere specificamente correlato a tale articolo.
+
+                            &lt;article&gt;
+                            &lt;h1&gt; Gifts for everyone
+                                    SEZIONE PRINCIPALE
+                            &lt;/h1&gt;
+                            &lt;p&gt;This website will be the best place for choosing gifts&lt;/p&gt;
+                            &lt;aside&gt;
+                                    &lt;p&gt;Gifts will be delivered to you within 24 hours  
+                                    &lt;br&gt; &lt;br&gt;    
+                                    con il tab Asize il contenuto è separato ma
+                                    è CORRELATO al contenuto principale della sezione
+                                    h1
+
+                                    &lt;/p&gt;
+                            &lt;/aside&gt;
+                            &lt;/article&gt;
+
+            n.b Quando un tag &lt;aside&gt; viene utilizzato al di fuori di un tag &lt;articolo&gt;, il suo contenuto deve essere correlato al contenuto circostante.
+
+    ELEMENTO AUDIO
+            Audio sul Web @tag.audio @audio
+            Prima di HTML5, non esisteva uno standard per la riproduzione di file audio su una pagina Web.  
+            L'elemento HTML5 &lt;audio&gt; specifica uno standard per l'incorporamento dell'audio in una pagina Web.
+
+            PRIMO ATTRIBUTO SOURCE
+            Esistono due modi diversi per specificare l'URL del file sorgente audio. Il primo utilizza l'attributo source:
+
+                    @esempio.audio  @attributo.source  @1.audio
+                    &lt;audio src="http://www.sololearn.com/uploads/audio.mp3" controls&gt;
+                    Audio element not supported by your browser
+                    &lt;/audio&gt;
+
+            SECONDO ATTRIBUTO SOURCE DENTRO AUDIO
+                    @secondo.audio
+                    Il secondo modo utilizza l'elemento &lt;source&gt; all'interno dell'elemento &lt;audio&gt;:
+                    &lt;audio controls&gt;
+                            &lt;source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg"&gt;
+                            &lt;source src="http://www.sololearn.com/uploads/audio.ogg" type="audio/ogg"&gt;
+                    &lt;/audio&gt;
+
+            AUDIO WEB
+                    Audio sul Web,  @audio.web  @audio.controls @audio.browser
+                    L'elemento &lt;audio&gt; crea un lettore audio all'interno del browser.
+
+                    &lt;audio controls&gt;
+                            &lt;source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg"&gt;
+                            &lt;source src="http://www.sololearn.com/uploads/audio.ogg" type="audio/ogg"&gt;
+                    Audio element not supported by your browser. 
+                    &lt;/audio&gt;
+
+                    Il testo tra i tag &lt;audio&gt; e &lt;/audio&gt; verrà visualizzato nei browser che non supportano l'elemento &lt;audio&gt;.
+
+            ATTRIBUTI AUDIO
+                    Attributi di &lt;audio&gt; 
+                    @ATTRIBUTI.AUDIO , @pulsante.audio @riproduzione.audio, 
+                    @riproduzione.automatica
+
+
+                    controlli Specifica come devono essere visualizzati i controlli audio, ad esempio un pulsante di riproduzione/pausa e così via.
+
+                    riproduzione
+                    automatica Quando questo attributo è definito, la riproduzione audio inizia non appena è pronto, senza chiedere l'autorizzazione del visitatore.
+
+                    loop
+                    Questo attributo viene utilizzato per riprodurre l'audio ogni volta che è terminato.
+
+                            Attualmente, ci sono tre formati di file supportati per l'elemento &lt;audio&gt;: MP3, WAV e OGG.
+                            @mp3 @WAV  @OGG
+
+                                    &lt;audio controls autoplay&gt;
+                                    &lt;source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg"&gt;
+                                    Audio element not supported by your browser. 
+                                    &lt;/audio&gt;
+
+     VIDEO LESSONS 32.1
+
+            L'elemento video è simile all'elemento audio.  @TAG.VIDEO
+            @video @attributo.video
+            È possibile specificare l'URL dell'origine video utilizzando un attributo in un elemento video o elementi sorgente all'interno dell'elemento video:
+
+            &lt;video controls&gt;
+                    &lt;source src="http://www.sololearn.com/uploads/video.mp4" type="video/mp4"&gt;
+                    &lt;source src="http://www.sololearn.com/uploads/video.ogg" type="video/ogg"&gt;
+                    Video is not supported by your browser
+            &lt;/video&gt;
+
+    ATTRIBUTI VIDEO
+
+
+            Attributi di &lt;video&gt;
+            @VIDEO  @ATTRIBUTI.VIDEO @controlli @autoplay @attributi.loop
+
+            Un altro aspetto condiviso sia dagli elementi audio che video è che ognuno ha controlli, autoplay e  attributi di loop.
+
+            In questo esempio, il video verrà riprodotto al termine della riproduzione: @riproduzione.video
+
+
+            Un altro aspetto che gli elementi audio e video hanno in comune è che i principali browser non supportano tutti gli stessi tipi di file. Se il browser non supporta il primo tipo di video, proverà quello successivo. Nell'esempio esegue prima il file mp4
+
+                    &lt;video controls autoplay loop&gt;
+
+                            &lt;source src="http://www.sololearn.com/uploads/video.mp4" type="video/mp4"&gt;
+                            &lt;source src="http://www.sololearn.com/uploads/video.ogg" type="video/ogg"&gt;
+                    Video is not supported by your browser
+                    &lt;/video&gt;
+
+            Attualmente, ci sono tre formati video supportati per l'elemento &lt;video&gt;: MP4, WebM e OGG.
+
+    #LEZIONE 33.1
+
+            THE PROGRES ELEMENT
+                    L'elemento &lt;progress&gt; consente di creare barre di avanzamento sul Web.  
+                    L'elemento progress può essere utilizzato all'interno di intestazioni, paragrafi o in qualsiasi altro punto del corpo. 
+                    @barra.avanzamento.web @tag.progress @attributi.progress
+
+                    Valore degli attributi dell'elemento
+                    Progress: specifica la quantità di attività completata.  
+                    Max: specifica la quantità di lavoro totale richiesta dall'attività. 
+                    @progressione.35% @avanzamento.35%
+
+                            Status: &lt;progress min="0" max="100" value="35"&gt; 
+                                    &lt;/progress&gt;
+
+                    Utilizzare il tag &lt;progress&gt; insieme a JavaScript per visualizzare dinamicamente lo stato di avanzamento di un'attività.
+                    @stato.avanzamento  @tag.progress
+
+   # LEZIONE 34.1
+            Web storage Api
+                    HTML5 Web Storage
+                            @ARCHIVIAZIONE.WEB @ARCHIVIAZIONE.LOCALE
+                            Con l'archiviazione Web HTML5, i siti Web possono archiviare i dati sul computer locale di un utente.  
+                            Prima di HTML5, dovevamo utilizzare i cookie JavaScript per ottenere questa funzionalità.  
+                            N.B. l'archiviazione in HTML5 è sul web storage mentre HTML4 per archiviare dovevano utilizzare i cookes
+                            @HTML4.STORAGE = salvavano nei cookies ma davano proprlemi
+
+                            I vantaggi del Web Storage  @WEB.STORAGE  @HTML5.STORAG WEB
+                            - Più sicuro 
+                            - Più veloce 
+                            - Memorizza una maggiore quantità di dati 
+                            - Stored data is not sent with every server 
+                            L'archiviazione locale è per dominio. Tutte le pagine di un dominio possono archiviare e accedere agli stessi dati.
+
+                    Types of Web Storage Objects
+
+                            Tipi di oggetti di archiviazione Web
+                            @STORAGE.due.tipi
+                            @storage.session        =  dati temporanei
+                            @storage.local          =  dati permanenti
+
+
+                            Esistono due tipi di oggetti di archiviazione Web: 
+                            - sessionStorage()
+                            - localStorage()
+
+                            Local vs. Session
+                            - Session Storage viene distrutto una volta che l'utente chiude il browser 
+                            - Local Storage memorizza i dati senza data di scadenza
+
+                            @storage.api 
+                            È necessario avere familiarità con JavaScript di base per comprendere e utilizzare l'API.
+
+                    Working with Values = Utilizzo dei valori
+
+                            La sintassi per l'archiviazione Web sia per l'archiviazione locale che per l'archiviazione di sessione è molto semplice e simile.
+                            @chiave.valore  
+                            I dati vengono memorizzati come coppie chiave/valore. 
+                                    localStorage.setItem("key1", "value1");
+                                            @storage.local
+                                            @esempio.storage.locale
+
+                                    Getting a Value:
+                                            In questo modo verrà stampato il valore 
+                                            alert(localStorage.getItem("key1"));
+
+                                    Removing a Value: @rimuovi.valore
+                                            localStorage.removeItem("key1");
+
+                                    Removing All Values: @rimuovi.tutti.i.valori
+                                            localStorage.clear();
+
+    # LEZIONE 35.1
+            Geolocation API
+                    Che cos'è l'API di geolocalizzazione?
+                    In HTML5, l'API di geolocalizzazione viene utilizzata per ottenere la posizione geografica dell'utente.
+
+                    Poiché ciò può compromettere la privacy dell'utente, l'opzione non è disponibile a meno che l'utente non la approvi.
+
+                    La geolocalizzazione è molto più accurata per i dispositivi con GPS, come smartphone e simili.
+
+            What is the Geolocation API?
+                    Che cos'è l'API di geolocalizzazione?
+                    Con l'API di geolocalizzazione, è possibile ottenere...
+                            ...user location
+            Using HTML Geolocation
+                    Utilizzo della geolocalizzazione HTML
+                    Il metodo principale dell'API di geolocalizzazione è getCurrentPosition, che recupera la posizione geografica corrente del dispositivo dell'utente. 
+                            navigator.geolocation.getCurrentPosition();
+                    @geo.localizzazione  @posizione.geografica.corrente @posizione.dispositivo
+                    @navigator
+
+                    Parameters:
+                    showLocation (obbligatorio):definisce il metodo di callback che recupera le informazioni sulla posizione.   @posizione.recupero
+
+                    ErrorHandler(facoltativo):definisce il metodo di callback richiamato quando si verifica un errore nell'elaborazione della chiamata asincrona.  
+                    @chiamata.asincrona
+
+                    Opzioni (facoltativo):: definisce un set di opzioni per il recupero delle informazioni sulla posizione. @opzioni.informazioni.posizione
+
+                    È necessario avere familiarità con JavaScript di base per comprendere e utilizzare l'API.
+
+                    Using HTML Geolocation
+                    Utilizzo della geolocalizzazione HTML
+                    Qual è la scelta del parametro obbligatorio del metodo getCurrentPosition()?
+
+            Presenting Data
+                    Presentazione dei dati
+                    La posizione dell'utente può essere presentata in due modi: Geodetico e Civico.
+
+                    1. Il modo geodetico di descrivere la posizione si riferisce direttamente alla latitudine e alla longitudine. 
+                            @latitudine  @longitudine @posizione.geodetico @civica
+
+                    2. La rappresentazione civica dei dati sulla posizione è presentata in un formato più facilmente leggibile e comprensibile dalla persona media.  
+                            @rappresentazione.civica
+
+                    Ogni parametro ha sia una rappresentazione geodetica che civica: 
+                            @geodetica.civica
+
+                    Il metodo getCurrentPosition() restituisce un oggetto se ha esito positivo. Le proprietà di latitudine, longitudine e precisione vengono sempre restituite.
+                    @oggetto.posizione @latitudine.proprieta
+                    @proprieta.latidudine
+                    @longitudince
+                    @precisione
+
+
+        #LEZIONE 36.1
+            Drag&amp;Dropo API
+                    Making Elements Draggable
+                            Rendere gli elementi trascinabili 
+                            La funzione di trascinamento della selezione ti consente di "afferrare" un oggetto e trascinarlo in una posizione diversa.  
+                            Per rendere un elemento trascinabile, è sufficiente impostare l'attributo draggable su true: 
+                                    &lt;img draggable="true" /&gt;
+
+                            Qualsiasi elemento HTML può essere trascinabile.
+                            @oggetto.trascinabile
+
+
+                            L'API per il trascinamento della selezione HTML5 è basata su eventi. 
+                                    Example:
+
+                                                    &lt;!DOCTYPE HTML&gt;
+                                                    &lt;html&gt;
+                                                            &lt;head&gt;
+                                                                    &lt;script&gt;
+                                                                    function allowDrop(ev) {
+                                                                    ev.preventDefault();
+                                                                    }
+
+                                                                    function drag(ev) {
+                                                                    ev.dataTransfer.setData("text", ev.target.id);
+                                                                    }
+
+                                                                    function drop(ev) {
+                                                                    ev.preventDefault();
+                                                                    var data = ev.dataTransfer.getData("text");
+                                                                    ev.target.appendChild(document.getElementById(data));
+                                                                    }
+                                                                    &lt;/script&gt;
+
+                                                            &lt;/head&gt;
+
+                                                            &lt;body&gt;
+
+                                                                    &lt;div id="box" ondrop="drop(event)"
+                                                                    ondragover="allowDrop(event)"
+                                                                    style="border:1px solid black; 
+                                                                    width:200px; height:200px"&gt;&lt;/div&gt;
+
+                                                                    &lt;img id="image" src="sample.jpg" draggable="true"
+                                                                    ondragstart="drag(event)" width="150" height="50" alt="" /&gt;
+
+                                                            &lt;/body&gt;
+                                                    &lt;/html&gt;
+
+                                    What to Drag
+                                            Cosa trascinare
+                                            Quando l'elemento viene trascinato, l'attributo ondragstart chiama una funzione, drag(event), che specifica quali dati devono essere trascinati.  
+                                                    @evento.drag, @trascinamento.elemento
+                                            Il  metodo dataTransfer.setData() imposta il tipo di dati e il valore dei dati trascinati:   
+                                            @setData,  @esempio.trascina  
+                                                    function drag(ev) {
+                                                            ev.dataTransfer.setData("text", ev.target.id);
+                                                            }
+
+                                            Nel nostro esempio, il tipo di dati è "text" e il valore è l'ID dell'elemento trascinabile ("image").
+
+                                    Where to Drop
+                                            @evento.trascina @evento.rilascio
+                                            @dove.rilasciare
+
+                                            L'evento ondragover specifica dove è possibile rilasciare i dati trascinati. Per impostazione predefinita, i dati e gli elementi non possono essere eliminati in altri elementi. Per consentire una caduta, è necessario impedire la gestione predefinita dell'elemento. 
+                                            Questo viene fatto chiamando l'evento. metodo preventDefault() per l'evento ondragover.
+
+                                            Gli eventi trascinabili sono multipli.
+
+                                           @rilascio.oggetto
+
+                                    Do the Drop
+                                            Fare il trascinamento
+                                            Quando i dati trascinati vengono rilasciati, si verifica un evento di rilascio.  
+                                            Nell'esempio precedente, l'attributo ondrop chiama una funzione, drop(event):
+
+                                                    function drop(ev) {
+                                                    ev.preventDefault();
+                                                    var data = ev.dataTransfer.getData("text");
+                                                    ev.target.appendChild(document.getElementById(data));
+                                                    }
+
+                                            @funzione.trascinamento
+                                            @trascina.oggetto
+
+    # LEZIONE 37.1
+            SVG
+                    Drawing Shapes
+                            Disegno di forme 
+                            SVG è l'acronimo  di Scalable Vector Graphics ( Scalable Vector Graphics,), ed è usato per disegnare forme con markup in stile HTML.  
+                            Offre diversi metodi per disegnare tracciati, caselle, cerchi, testo e immagini grafiche. 
+                            @DISEGNO     @METODO.DISEGNO
+
+                    SVG non è basato su pixel, quindi può essere ingrandito all'infinito senza perdita di qualità.
+                    @INGRANDIMENTO.INFINITO
+
+                    Inserting SVG Images
+                            Inserimento di immagini Un'immagine SVG può essere aggiunta al codice HTML con solo un tag immagine di base che include un attributo source che punta all'immagine
+                                    &lt;img src="image.svg" alt="" height="300" /&gt;
+
+                            SVG definisce la grafica vettoriale in formato XML.
+                            @grafica.vettoriale
+
+                    Drawing a Circle
+                            Per disegnare forme con SVG, devi prima creare un  tag elemento SVG con due attributi: width e height. 
+                            @tag.svg = &lt;svg width="1000" height="1000"&gt;&lt;/svg&gt;
+                            ha due attributi altezza e larghezza
+
+                            svg width="1000" height="1000"&gt;&lt;/svg&gt;
+
+
+                            - cx spinge il centro del cerchio più a destra dello schermo 
+                            - cy spinge il centro del cerchio più in basso dalla parte superiore  dello schermo 
+                            - r definisce il raggio 
+                            -  il riempimento determina il colore del nostro cerchio
+
+                                    @esempio.cerchio
+                                            &lt;svg width="2000" height="2000"&gt;
+                                                    &lt;circle cx="80" cy="80" r="50" fill="green" /&gt;
+                                            &lt;/svg&gt;
+
+                            @centro.cerchio = cx 
+                            @basso.cerchio = cy 
+                            @raggio.cerchio = r
+
+
+
+                    Other Shape Elements
+                            @definizione.rettangolo, @rettangolo
+                            &lt;rect&gt; defines a rectangle:
+                                    &lt;svg width="2000" height="2000"&gt;
+                                    &lt;rect width="300" height="100" 
+                                    x="20" y="20" fill="green" /&gt;
+                                    &lt;/svg&gt;
+
+                    &lt;line&gt; defines a line segment:
+                            &lt;linea&gt; definisce un segmento di linea:  @linea, @segmento.linea
+                            (x1, y1) definire le coordinate iniziali(x2, y2) definire le coordinate finali.
+
+                    &lt;polylinea&gt; definisce forme create da più definizioni di linea: 
+                                    &lt;svg width="2000" height="500"&gt;
+                                    &lt;polyline style="stroke-linejoin:miter; stroke:black; 
+                                            stroke-width:12; fill: none;"
+                                            points="100 100, 150 150, 200 100" /&gt;
+                                    &lt;/svg&gt;
+
+                            I punti sono le coordinate della polilinea.  
+                            Il codice seguente disegnerà un segno di spunta nero:
+
+                            Gli attributi width e height dell'elemento &lt;rect&gt; definiscono l'altezza e la larghezza del rettangolo.
+
+                    &lt;line&gt; defines a line segment:
+                            &lt;linea&gt; definisce un segmento di linea:
+                            (x1, y1) definire le coordinate iniziali(x2, y2) definire le coordinate finali.
+
+                            &lt;svg width="400" height="410"&gt;
+                            &lt;line x1="10" y1="10" x2="200" y2="100" 
+                                    style="stroke:#000000; stroke-linecap:round; 
+                                    stroke-width:20"  /&gt;
+                            &lt;/svg&gt;
+
+            &lt;ellipse&gt; and &lt;polygon&gt;
+                    Ellipse
+
+                            L'&lt;ellipse&gt; è simile al &lt;cerchio&gt;, con un'eccezione: 
+                            è possibile modificare in modo indipendente gli assi orizzontale e verticale del suo raggio, utilizzando gli  attributi rx e ry. 
+                                    &lt;svg height="500" width="1000"&gt;
+                                    &lt;ellipse cx="200" cy="100" rx="150" ry="70" style="fill:green" /&gt;
+                                    &lt;/svg&gt;
+
+                            @ellipse
+
+
+
+            Polygon
+                    L'elemento &lt;poligono&gt; viene utilizzato per creare un elemento grafico con almeno tre lati. L'elemento poligono è unico perché chiude automaticamente la forma per te.
+
+                            &lt;svg width="2000" height="2000"&gt;
+                            &lt;polygon points="100 100, 200 200, 300 0" 
+                            style="fill: green; stroke:black;" /&gt;
+                            &lt;/svg&gt;
+
+                    Polygon deriva dal greco. "Poly" significa "molti" e "gon" significa "angolo".
+
+                    @poligono
+
+    # LEZIONE 38.1
+           SVG Animations &amp; Paths
+                    Le animazioni SVG possono essere create utilizzando l'elemento  &lt;animate&gt;.
+
+                    L'esempio seguente crea un rettangolo che cambierà la sua posizione in 3 secondi e ripeterà l'animazione due volte: 
+                            &lt;svg width="1000" height="250"&gt;
+                            &lt;rect width="150" height="150" fill="orange"&gt;
+                                    &lt;animate attributeName="x" from="0" to="300"
+                            dur="3s" fill="freeze" repeatCount="2"/&gt; 
+                            &lt;/rect&gt;
+                            &lt;/svg&gt;
+
+                    attributeName: 
+                            attributeName: specifica quale attributo sarà interessato dall'animazione da: Specifica il valore iniziale 
+                            dell'attributo 
+                    from:   a: Specifica il valore finale dell'attributo 
+                    dur:
+                            dur: Specifica per quanto tempo viene eseguito l'animazione (durata) 
+                    fill:
+                            riempimento : specifica se il valore dell'attributo deve tornare al valore iniziale al termine dell'animazione (Valori: "rimuovi" reimposta il valore; "freeze" mantiene il "valore a")
+
+                    repeatCount:
+                            repeatCount: specifica il conteggio delle ripetizioni dell'animazione
+
+                    Nell'esempio precedente, il rettangolo cambia il suo attributo x da 0 a 300 in 3 secondi.
+
+                    Per ripetere l'animazione a tempo indeterminato, utilizzare il valore "indefinite" per l'attributo repeatCount.
+                    Continuare
+
+            Paths
+                    L'elemento &lt;path&gt; viene utilizzato per definire un tracciato. 
+                    Per i dati del percorso sono disponsibili i seguenti comandi
+                    The &lt;path&gt; element is used to define a path.
+
+                    The following commands are available for path data:
+                    M: moveto
+                    L: lineto
+                    H: horizontal lineto
+                    V: vertical lineto
+                    C: curveto
+                    S: smooth curveto
+                    Q: quadratic Bézier curve
+                    T: smooth quadratic Bézier curveto
+                    A: elliptical Arc
+                    Z: closepath
+
+                    Define a path using the d attribute:
+                    Definire un tracciato usare questo attributo: d
+
+                                    &lt;svg width="500" height="500"&gt;
+                                    &lt;path d="M 0 0 L200 200 L200 0 Z" style="stroke:#000;  fill:none;" /&gt;
+                                    &lt;/svg&gt;
+
+                    Tutti i comandi di cui sopra possono anche essere espressi con lettere minuscole. Quando vengono utilizzate lettere maiuscole, indica la posizione assoluta; minuscolo indica la posizione relativa.
+                    @posizione.assoluta,  @posizione.relativa, @path
+
+    # LEZIONE 39.1
+           Cavans
+                    The &lt;canvas&gt; Element
+
+                            Il canvas HTML viene utilizzato per disegnare grafica che include 
+                            di tutto, dalle linee semplici agli oggetti grafici complessi.  
+                            CAVANSI E' UN CONTENITORE PER LA GRAFICA MA BISOGNA UTILIZZARE
+                            JAVASCRIPT.
+
+
+                            L'elemento &lt;canvas&gt; è definito da: 
+                                    &lt;canvas id="canvas1" width="200" height="100"&gt;
+                                    &lt;/canvas&gt;
+
+                            L'elemento &lt;canvas&gt; è solo un contenitore per la grafica. 
+                            È necessario utilizzare uno script per disegnare effettivamente 
+                            la grafica (di solito JavaScript).
+                            @contenitore.grafico, @javascript
+                            @grafica.di.tutto  @cavans, @tag.cavans
+
+
+
+
+                            L'elemento &lt;canvas&gt; deve avere un attributo id  in modo 
+                            che possa essere definito da JavaScript:
+
+                            @esempio.cavans
+                                    &lt;html&gt;
+                                       &lt;head&gt;&lt;/head&gt;
+                                       &lt;body&gt;
+                                         &lt;canvas id="canvas1" 
+                                       width="400" height="300"&gt;&lt;/canvas&gt;
+
+                                       &lt;script&gt;
+                                          var can = document.getElementById("canvas1"); 
+                                          var ctx = can.getContext("2d");
+                                       &lt;/script&gt;
+
+                                       &lt;/body&gt;
+                                    &lt;/html&gt;
+
+                            getContext() returns a drawing context on the canvas.
+                                     getContext() restituisce un contesto di disegno nell'area di disegno.
+
+                                     Per comprendere e utilizzare il Canvas è necessaria una conoscenza di base di JavaScript.
+                    @cavans.griglia.bidemensionare
+                     Canvas Coordinates
+                            Il canvas HTML è una griglia bidimensionale.  
+                            L'angolo superiore sinistro dell'area di lavoro ha le coordinate (0,0).
+
+                            La coordinata X aumenta a destra.  
+                            La coordinata Y aumenta verso la parte inferiore dell'area di lavoro. 
+           Drawing Shapes
+                     fillRect(x, y, w, h)
+                     Il metodo  fillRect(x, y, w, h) disegna un rettangolo "riempito", 
+                     in cui 
+                            w = indica la larghezza e 
+                            h = indica l'altezza. 
+                     Il colore di riempimento predefinito è nero.
+
+                    Un rettangolo nero di 100 * 100 pixel viene disegnato sulla tela 
+                    nella posizione (20, 20):
+
+                    fillStyle
+                            La  proprietà @PROPRIETA.fillStyle 
+                            viene utilizzata per impostare un colore, una sfumatura o 
+                            un motivo per riempire il disegno.  @IMPOSTA.COLORE
+                            L'utilizzo di questa proprietà consente di disegnare
+
+                            un rettangolo pieno di verde. @ESEMPIO.rettangolo
+
+                            ESEMPIO DI FILLSTYLE 
+                                    @rettangolo.verde
+
+                                    &lt;html&gt;
+                                        &lt;head&gt;&lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;canvas id="canvas1" width="400" height="300"&gt;
+                                            &lt;/canvas&gt; 
+                                            &lt;script&gt;
+                                                var canvas=document.getElementById("canvas1");
+                                                var ctx=canvas.getContext("2d");
+                                                ctx.fillStyle ="rgba(0, 200, 0, 1)";
+                                                ctx.fillRect (36, 10, 22, 22);
+                                            &lt;/script&gt;
+                                        &lt;/body&gt;
+                                    &lt;/html&gt;
+
+           ALTRI MODI PER DISERGNARE
+                    La tela supporta vari altri metodi per disegnare:
+
+                    Draw a Line
+                                    Disegna uno spostamento di
+                                    lineaTo(x,y): definisce il punto iniziale della linea.
+                                    lineTo(x,y): definisce il punto finale della linea.
+                                    @SPOSTAMENTO.LINEA
+
+                    Draw a Circle
+                                    Disegna un cerchio
+                                    beginPath(): avvia il disegno.
+                                    arc(x,y,r,start,stop): imposta i parametri del cerchio.
+                                    stroke(): termina il disegno.
+                                    @CERCHIO.DISEGNA
+                    Gradients
+                                    Gradienti
+                                    createLinearGradient(x,y,x1;y1): crea una sfumatura lineare.
+                                    createRadialGradient(x,y,r;x1,y1,r1): crea una sfumatura radiale/circolare.
+                                    @SFUMATURA.LINERARE
+
+                    Drawing Text on the Canvas
+
+                    Disegno di testo sul carattere
+                            Canvas: definisce le proprietà del carattere per il testo.
+                            fillText(text,x,y): disegna il testo "riempito" sull'area di disegno.
+                            strokeText(text,x;y): disegna il testo nell'area di disegno (senza riempimento).
+                            @disegno.carattere
+                            @disegno.testo
+                            @testo.riempito
+                            @testo.nell'area.di.disegno
+
+                            Esistono molti altri metodi volti ad disegnare forme e immagini sulla tela.
+
+    # LEZIONE 40.1
+            SVG vs. Canvas
+                    - Gli elementi sono disegnati a 
+                            livello di programmazione 
+                    - Il disegno viene eseguito con pixel 
+                    - Le animazioni non sono integrate  - Prestazioni elevate per le operazioni 
+                            di disegno basate su pixel  - Dipendente dalla 
+                            risoluzione  - Nessun supporto per i gestori eventi 
+                    - È possibile salvare l'immagine risultante come .png o .jpg 
+                    - Adatto per giochi ad alta intensità grafica
+
+            SVG
+
+                    - Gli elementi fanno parte del DOM (Document object model) 
+                            della pagina  - Il disegno viene eseguito con vettori 
+                    - Gli effetti, come le animazioni sono incorporati 
+                    - Basato sulla sintass@i XML standard, che fornisce una migliore accessibilità 
+                    - Indipendente dalla risoluzione  - Supporto per gestori di eventi 
+                    - Non adatto per applicazioni 
+                            di gioco - Più adatto per applicazioni con grandi aree di rendering (ad esempio, Google Maps)
+
+
+                   Puoi effettivamente usare sia SVG che canvas sulla stessa pagina, se necessario.
+
+    # LEZIONE 41.1
+
+            Canvas Transformations
+                    Working with Canvas
+
+                    Utilizzo di Canvas
+                    L'elemento Canvas può essere trasformato. Ad esempio, un testo viene scritto sulla tela alle coordinate (10, 30). 
+                    @esempio.convans  @testo.scritto  @allineamento.testo, @font.testo
+
+                            &lt;html&gt;
+                                &lt;head&gt;&lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;canvas id="canvas1" width="400" height="300"&gt;
+                                    &lt;/canvas&gt; 
+                                &lt;script&gt;
+                                    var c=document.getElementById("canvas1");
+                                    var ctx=c.getContext("2d");
+                                    ctx.font="bold 22px Tahoma";
+                                    ctx.textAlign="start";
+                                    ctx.fillText("start", 10, 30);
+                                &lt;/script&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+
+            translate(x,y)
+
+                    Il  metodo translate(x,y) viene utilizzato per spostare il Canvas.  
+                    x indica fino a che punto spostare la griglia orizzontalmente e y indica fino a che punto spostare la griglia verticalmente. 
+                            @esempio.sposta.cavans  @spostamento.start @traslate
+                            @spostamento.griglia
+                                    &lt;html&gt;
+                                        &lt;head&gt;&lt;/head&gt;
+                                        qui start si trova sulla griglia di default 0,0
+                                        &lt;body&gt;
+                                            &lt;canvas id="canvas1" width="400" height="300"&gt;
+                                            &lt;/canvas&gt; 
+                                        &lt;script&gt;
+                                            var c=document.getElementById("canvas1");
+                                            var ctx=c.getContext("2d");
+                                            ctx.font="bold 22px Tahoma";
+                                            ctx.textAlign="start";
+                                            ctx.fillText("start", 10, 30);
+                                            ctx.translate(100, 150);
+                                            ctx.fillText("after translate", 10, 30);
+                                        &lt;/script&gt;
+                                            qui After traslete è stata spostata con la griglia a 120,150
+                                        &lt;/body&gt;
+                                    &lt;/html&gt;
+
+
+                            qui la griglia iniziale è all'angolo 0,0 per default ma puo essere spostata
+                            inserendo pe start un traslete
+
+            The rotate() Method
+                    Il  metodo rotate() viene utilizzato per ruotare il canvas HTML5. Il valore deve essere in radianti, non in gradi. 
+                    Ecco un esempio che disegna lo stesso rettangolo prima e dopo l'impostazione della rotazione:
+
+                            @rotazione.in.radianti
+                            &lt;html&gt;
+                                &lt;head&gt;&lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;canvas id="canvas1" width="400" height="300"&gt;
+                                    &lt;/canvas&gt; 
+                                &lt;script&gt;
+                                    var c=document.getElementById("canvas1");
+                                    var ctx=c.getContext("2d");
+                                    ctx.fillStyle = "#FF0000";
+                                    ctx.fillRect(10,10, 100, 100);
+
+                                    ctx.rotate( (Math.PI / 180) * 25);  //rotate 25 degrees.
+
+                                    ctx.fillStyle = "#0000FF";
+                                    ctx.fillRect(10,10, 100, 100);
+                                &lt;/script&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+
+                    La rotazione influirà solo sui disegni effettuati dopo che la rotazione è stata completata.
+
+            The scale() Method
+                    @scale.ridemensiona
+
+                    Il  metodo scale() ridimensiona il disegno corrente. Ci vogliono due parametri: 
+                     - Il numero di volte in cui l'immagine deve essere ridimensionata nella direzione X.  
+                     - Il numero di volte in cui l'immagine deve essere ridimensionata nella direzione Y. 
+                    Questo scalerà la tela 1,5 volte nella direzione X e 4 volte nella direzione Y: 
+                            @rotazione,  @scala
+
+                            &lt;html&gt;
+                                &lt;head&gt;&lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;canvas id="canvas1" width="400" height="400"&gt;
+                                    &lt;/canvas&gt; 
+                                &lt;script&gt;
+                                    var canvas = document.getElementById('canvas1');
+                                    ctx =canvas.getContext('2d');
+                                    ctx.font="bold 22px Tahoma";
+                                    ctx.textAlign="start";
+                                    ctx.fillText("start", 10, 30);
+                                    ctx.translate(100, 150);
+                                    ctx.fillText("after translate", 0, 0);
+                                    ctx.rotate(1);
+                                    ctx.fillText("after rotate", 0, 0);
+                                    ctx.scale(1.5, 4);
+                                    ctx.fillText("after scale", 0,20);
+                                &lt;/script&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+
+                    Se si ridimensiona un disegno, verranno ridimensionati anche tutti i disegni futuri.
+
+    # LEZIONE 42.1
+            HTML5 Forms, Part 1
+                    creazione modulo htlm5
+                            @miglioramenti.funzionalita. @nuove.funzionalita
+                            HTML5 offre molte funzionalità e miglioramenti alla creazione di moduli Web. Sono stati introdotti nuovi attributi e tipi di input per creare esperienze migliori per gli utenti Web. 
+                            @creazione.modulo.web, @label, @casella.di.imput
+                            La creazione del modulo viene eseguita in HTML5 nello stesso modo in cui lo era in HTML4: 
+                            @nuovi.attributi,  @tipi.di.imput, @input.nuovi.tipi
+
+                                    &lt;form&gt;
+                                        &lt;label&gt;Your name:&lt;/label&gt;
+                                        &lt;input id="user" name="username" type="text" /&gt;
+                                    &lt;/form&gt;
+
+                            Utilizzare l'attributo novalidate per evitare la convalida del modulo sugli invii.
+                            @todo
+
+                                    @esempio.web  HTML5 Forms
+                                            &lt;form&gt;
+
+                                            &lt; input type="text" name="name" /&gt;
+
+                                            &lt;/form&gt;
+
+                    New Attributes
+                            placeholder = HTML5 ha introdotto un nuovo attributo chiamato segnaposto. Negli elementi &lt;input&gt; e &lt;textarea&gt;, questo attributo fornisce un suggerimento all'utente su quali informazioni possono essere immesse nel campo. @placeholder, @suggerimenti
+                            Nell'esempio nella casella di imput viene scritto il suggerimento e-mail.
+
+                                    @esempio.placeholder @suggerimento.imput
+
+                                            &lt;form&gt;
+                                                &lt;label for="email"&gt;Your e-mail address: &lt;/label&gt;
+                                                &lt;input type="text" name="email" placeholder="email@example.com" /&gt;
+                                            &lt;/form&gt;
+
+                            autofocus = L'attributo autofocus attiva la messa a fuoco desiderata quando viene caricato il modulo: 
+                                    @autofocus.caricamento.modulo
+                                    @non.funziona
+                                    &lt;form&gt;
+                                        &lt;label for="email"&gt;Your e-mail address: &lt;/label&gt;
+                                        &lt;input type="text" name="email" autofocus /&gt;
+                                    &lt;/form&gt;
+
+                                    &lt;!DOCTYPE html&gt;
+                                            &lt;html&gt;
+                                            &lt;body&gt;
+
+                                            &lt;h1&gt;The autofocus attribute&lt;/h1&gt;
+
+                                            &lt;form action="/action_page.php"&gt;
+                                              &lt;label for="fname"&gt;First name:&lt;/label&gt; 
+                                              &lt;input type="text" id="fname" name="fname" autofocus&gt; &lt;br&gt;&lt;br&gt;
+
+                                              &lt;label for="lname"&gt;Last name:&lt;/label&gt;
+                                              &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
+                                              &lt;input type="submit"&gt;
+                                            &lt;/form&gt;
+
+                                            &lt;/body&gt;
+                                            &lt;/html&gt;
+
+
+                                    L'attributo required indica al browser che l'input è obbligatorio.
+                                    @esempio.da.provare  @funzione.apertura.modulo
+
+
+                                    @esempio
+                                            &lt;form&gt;
+                                            &lt;input type="text" name="name"  ="Enter your name"/&gt;
+                                            &lt;/form&gt;
+
+                    Forms with Required Fields
+                            Moduli con campi obbligatori @campi.obbligatori
+                            @required, @attributo.required
+                            L'attributo "required" viene utilizzato per rendere necessari gli elementi di input. @autocomplete.off
+
+                                    &lt;form autocomplete="off"&gt;
+                                            se invi il messaggio senza valorrizzazione del
+                                               &lt;br&gt;
+                                            campo email  compare il messaggio
+                                            &lt;br&gt;
+
+                                        &lt;label for="e-mail"&gt;Your e-mail address: &lt;/label&gt;
+                                        &lt;input name="Email" type="text" required /&gt;
+                                        &lt;input type="submit" value="Submit"/&gt;
+                                    &lt;/form&gt;
+
+                            @II.ESEMPIO.COMPLETAMENTO AUTOMATICO DISATTIVATO
+                                    &lt;form autocomplete ="off"&gt;
+
+                                    &lt;input type="text" name="name" /&gt; 
+                                    &lt; input type="password" name="pass" Required  /&gt;
+
+                                    &lt;/form&gt;
+
+
+                            @messaggio,  @vedi.esempio.messaggio
+
+
+                            L'attributo completamento automatico specifica se un modulo o un campo di input deve avere il completamento automatico attivato o disattivato.  
+                            Quando il completamento automatico è attivo, il browser completa automaticamente i valori in base ai valori immessi in precedenza dall'utente. @AUTOCOMPLETAMENTO.AUTOMATICO
+
+                    HTML5 added several new input types:
+                            HTML5 ha aggiunto diversi nuovi tipi di input:
+                            @NUOVI.TIPI.DI.IMPUT  @IMPUT.NUOVI.TIPI
+
+                            - color
+                            - date
+                            - datetime
+                            - datetime-local
+                            - email
+                            - month
+                            - number
+                            - range
+                            - search
+                            - tel
+                            - time
+                            - url
+                            - week
+
+                    New input attributes in HTML5:
+
+                            Nuovi attributi di input in HTML5:
+                            - autofocus
+                            - form
+                            - formaction
+                            - formenctype
+                            - formmethod
+                            - formnovalidate
+                            - formtarget
+                            - height and width
+                            - list
+                            - min and max
+                            - multiple
+                            - pattern (regexp)
+                            - placeholder
+                            - required
+                            - step
+
+                            I tipi di input che non sono supportati dai vecchi browser Web si comporteranno come testo di tipo di input.
+
+    # LEZIONE 43.1
+            HTML5 Forms, Part 2
+
+                    Creating a Search Box
+                    Creazione di una casella di ricerca
+                    Il nuovo  tipo di input di ricerca può essere utilizzato per creare una casella di ricerca: 
+                    @casella.di.ricerca, @ricerca.casella
+
+                            &lt;input id="mysearch" name="searchitem" type="search" /&gt;
+
+                    Devi ricordarti di impostare un nome per il tuo input; in caso contrario, non verrà inviato nulla.
+
+            Search Options
+                    datalist
+                    Il  tag &lt;datalist&gt; può essere utilizzato per definire un elenco di opzioni predefinite per il campo di ricerca:
+                    @elenco.opzioni, @opzioni.elenco @option
+                            @esempio.opzioni
+                                    &lt;input id="car" type="text" list="colors" /&gt;
+                                    &lt;datalist id="colors"&gt;
+                                        &lt;option value="Red"&gt;
+                                        &lt;option value="Green"&gt;
+                                        &lt;option value="Yellow"&gt;
+                                    &lt;/datalist&gt;
+
+                    &lt;option&gt; definisce le opzioni in un elenco a discesa che l'utente può selezionare. 
+                    L'ID dell'elemento datalist deve corrispondere all'attributo list della casella di input.
+                            list="colors"  = datalist id="colors"
+
+                            esempio: per applicare lo stile bianco al paragrafo scrivere
+                                    p{color:#FFF;}
+
+            Creating More Fields                
+                    Creazione di più campi
+                    Alcuni altri nuovi tipi di input includono e-mail, URL e tel:
+
+                            @creazione.piu.campi
+                            &lt;input id="email" name="email" type="email" placeholder="example@example.com" /&gt;
+                            &lt;br /&gt;
+                            &lt;input id="url" name="url" type="url" placeholder="example.com" /&gt;
+                            &lt;br /&gt;
+                            &lt;input id="tel" name="tel" type="tel" placeholder="555.555.1211" /&gt;
+
+                    Questi sono particolarmente utili quando si apre una pagina su un dispositivo mobile moderno, che riconosce i tipi di input e apre una tastiera corrispondente al tipo di campo:  esempio nel campo telefono apre subito la tastiera numerica.
+</code></pre>
+<h1 id="i">I<a class="headerlink" href="#i" title="Permanent link"></a></h1>
+<p>##intestazioni  </p>
+<pre><code>            HTML include sei livelli di intestazioni, che sono classificati in base all'importanza.
+
+            These are &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, and &lt;h6&gt;.
+            Il codice seguente definisce tutte le intestazioni:
+</code></pre>
+<p>##Immagini
+              NOTE<br />
+              Il tag <img> delle immagini
+                Il  tag <img> viene utilizzato per inserire un&rsquo;immagine. 
+                Contiene solo attributi e non ha un tag di chiusura. </p>
+<pre><code>            @path.immagini
+            L'URL (indirizzo) dell'immagine può essere definito utilizzando l'attributo src.
+
+                    La sintassi dell'immagine HTML è simile alla seguente:     
+                    L'attributo alt specifica un testo alternativo per un'immagine.
+                    alt = attributo per il testo dell'immagine.
+                    @testo.per.immagine
+
+
+                    È necessario inserire la posizione dell'immagine per l'attributo src 
+                    che si trova tra virgolette.
+
+                    Ad esempio, se hai una foto denominata "tree.jpg" nella stessa cartella 
+                    del file HTML, il codice dovrebbe essere simile al seguente: 
+                    Nel caso in cui l'immagine non possa essere visualizzata, l'attributo alt specifica 
+                    un testo alternativo che descrive l'immagine in parole. L'attributo alt è alternativo
+
+                    &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;title&gt;first page&lt;/title&gt;
+                            &lt;/head&gt;
+                    &lt;body&gt; 
+                            &lt;img src="http://www.sololearn.com/images/tree.jpg" alt="" /&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+
+                    Per definire le dimensioni dell'immagine, utilizzare gli attributi width e height.  
+                    Il valore può essere specificato in pixel o in percentuale:
+
+                    LE IMMAGINI SONO PESANTI
+
+                    Il caricamento delle immagini richiede tempo. L'uso di immagini di 
+                    grandi dimensioni può rallentare la tua pagina, quindi usale con cura.
+
+                    ATTENZIONE Per impostazione predefinita, Internet Explorer 
+                    9 e le versioni precedenti visualizzano 
+                    un bordo attorno a un'immagine, a meno che non sia definito un attributo border.
+                    @internet.exporer
+
+            IMMAGINE BORDER
+                    Per impostazione predefinita, un'immagine non ha bordi. Utilizzare 
+                    l'attributo border all'interno del tag image per creare un bordo attorno all'immagine.
+
+                    @bordi.immagine
+                    @border.attributo 
+                    @attributo.border.immagini
+    ##LEZIONE 9
+            Torniamo al nostro progetto blog.  
+            La  sezione Informazioni personali conterrà un'intestazione racchiusa in un tag &lt;h1&gt;, insieme a due paragrafi che formattano il testo utilizzando i tag appena appresi.  
+            Diamo un'occhiata al codice: VIENE UTILIZZATO IL CSS per le proprieta
+            esercizio
+            COMPITO: 
+                    1. Crea la tua sezione Informazioni su di me modificando il testo. 
+                    numero arabo. Gioca con il codice; sperimentare con la formattazione del testo.
+
+                    CORSIVO
+                             viene creato con    @corsivo: &lt;i&gt; TAG DEL CORSIVO  &lt;/i&gt; 
+ ## INPUT
+
+    Per accettare l'input dell'utente, sono necessari gli elementi del modulo corrispondenti,
+    come i campi di testo. L'elemento &lt;input&gt; ha molte varianti, a seconda dell'attributo type.
+    Può essere un testo, una password, una radio, un URL, un invio, ecc.
+    @HTLM.INPUT  @INPUT.HTLM
+    Il tag &lt;input&gt; non ha tag di fine.
+</code></pre>
+<h1 id="h">H<a class="headerlink" href="#h" title="Permanent link"></a></h1>
+<pre><code>    ## HTLM5
+
+
+
+    DIFFERENZE TRA HTML5 E HTML4
+            https://doweb.srl/news/differenze-tra-html4-e-html5-135
+            Sviluppato per la prima volta da Tim Berners-Lee nel 1990, il termine HTML non è altro che l'abbreviazione di Hypertext Markup Language.
+
+            L'HTML viene, sostanzialmente, impiegato per la creazione di siti web (ed e-commerce) e delle pagine che lo compongono.
+
+            Il codice HTML garantisce la corretta formattazione di testo e immagini in modo che il browser possa visualizzarli nella loro forma corretta. Senza HTML, un browser non potrebbe visualizzare il testo o caricare immagini o altri elementi.
+
+            L'HTML fornisce anche la struttura di base della pagina, sulla quale agiscono i files CSS (Cascading File Sheet) per modificarne l'aspetto.
+
+            In termine un po’ semplicistici, si potrebbe affermare che l’HTML rappresenta il sistema scheletrico delle pagine web mentre i fogli di stile potrebbero essere una metafora dell’epidermide e dei tratti caratteristici ed individuali della persona.
+            Meccanismo di threading JavaScript
+
+            In HTML4, JavaScript e l'interfaccia del browser con cui l'utente interagisce, vengono eseguiti nello stesso thread con una penalizzazione notevole delle prestazioni. HTML5 contiene l'API JS Web Worker che consente l'esecuzione dell'interfaccia JavaScript e del browser in thread separati.
+
+            Che cos'è l'HTML?
+
+                    L’Hyper-Text Markup Language (HTML) è la lingua principale del Web in tutto il mondo. Consente agli sviluppatori di progettare il modo in cui gli elementi caratteristici di una pagina Web, come testi, collegamenti ipertestuali e file multimediali, vengono visualizzati dal browser.
+
+                    Questo linguaggio funziona staticamente, il che significa che non è possibile creare una funzione di pagina Web dinamica o interattiva tramite il linguaggio HTML; questo particolare linguaggio di markup, infatti, è in grado di modificare solo gli elementi statici di una pagina, come intestazioni, posizione dell'immagine, ecc.
+
+
+            Storia ed evoluzione del linguaggio HTML
+
+                    L'HTML è indubbiamente un linguaggio in continua evoluzione e tanti sono stati i cambiamenti che l’anno contraddistinto fin dai suoi esordi nei primi anni ‘90.
+
+                    Questo linguaggio di markup è stato infatti presentato per la prima volta da Tim Berners-Lee, il creatore del World Wide Web, nel 1989.
+
+                    Questa prima versione, nota anche con la sigla HTML 1.0, è stata utilizzata dal 1989 al 1994. Si trattava di una versione molto limitata e includeva solo 20 elementi; di fatto, questo linguaggio ancora in fase acerba non consentiva grandi operazioni e quindi la maggior parte delle pagine web finiva per apparire molto simile a causa dell'incapacità di attuare cambiamenti quali la modifica dell’immagine di sfondo o l’inserimento di tabelle e moduli.
+
+                    Nel 1995, comparve il cosiddetto HTML 2, una “release” che sancì un netto passo avanti rispetto al predecessore. L’HTML 2.0 diventò il primo set ufficiale di standard per HTML e lo standard di base rispetto al quale sono stati progettati tutti i browser (almeno fino all’avvento della versione 3.2 del suddetto linguaggio di markup.
+
+                    La seconda versione del linguaggio HTML era in grado di supportare operazioni quali la modifica dello sfondo di una pagina, del colore del testo e del carattere del testo.
+
+                    E’ curioso scoprire come, proprio in questo periodo, sia stato creato il W3C (The World Wide Web Consortium), un'organizzazione che i occupa di sviluppare standard web.
+
+                    Dopo la creazione di HTML 2.0, le persone hanno iniziato a scoprire appieno il potenziale di questo linguaggio.
+
+                    Nel gennaio 1997 l’introduzione dell’HTML 3.2 fu accolta con entusiasmo sia dal W3 Consortium che dal principale browser dell’epoca, ovvero, Netscape.
+
+                    La versione HTML 4, creata nel 1999, includeva fogli di stile a cascata (CSS) che permettevano di modificare facilmente aspetti come testo, colore, font e sfondi. Invece di essere inclusi direttamente nella pagina Web, questi aspetti (in seguito alla comparsa dell’HTML 4) sono ora separati, rendendo l’utilizzo del linguaggio molto più semplice.
+
+                    Attualmente, la versione di HTML comunemente utilizzata è la HTML 5; si tratta di una vera e propria rivoluzione, in quanto questa particolare versione può essere utilizzata per scrivere applicazioni web che funzionano anche quando ci si trova offline, per localizzare la nostra posizione, per gestire video ad alta definizione e per molto altro ancora.
+
+    HTML 4 VS HTML 5 : differenze sostanziali
+
+                    Rispetto all'HTML4, l'HTML5 mira ad essere più di una piattaforma di sviluppo di applicazioni, che include non solo la creazione di layout per la disposizione di testo e immagini in una pagina web, ma anche la riproduzione di video e audio, la creazione di grafiche interattive 2D e 3D, e la gestione e l’accesso ai dati e protocolli di rete in tempo reale per lo scambio di dati.
+
+                    Uno dei punti di forza dell’HTML5 rispetto al predecessore, è quello di avere una sintassi estremamente semplice; se prendiamo ad esempio l’elemento tradizionale “DOCTYPE”, scopriamo che la sintassi corretta in HTML5 è del tipo : &lt;! DOCTYPE html&gt;, laddove per l’HTML4 era necessario inserire una stringa del tipo &lt;! DOCTYPE HTML PUBLIC "- // W3C // DTD HTML 4.01 // EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;.
+
+                    L’HTML5, inoltre, ha visto e vede costantemente l’aggiunta di nuovi tag relativi ad elementi strutturali e che consentono di definire diversi aspetti del layout che altrimenti sarebbero stati troppo complessi da progettare in HTML4.
+
+                    Tra i tag di questo tipo più importanti troviamo :
+
+    Tag &lt;canvas&gt;
+
+                    Il tag &lt;canvas&gt; viene utilizzato per disegnare elementi grafici utilizzando JavaScript, fungendo da “contenitore”. Il tag canvas presenta la possibilità di operare graficamente creando tracciati, cerchi, riquadri, caratteri e immagini. Di default non ha bordi né contenuto.
+
+                    Il markup è simile al seguente:
+
+                    &lt;canvas id = "canvas1" width = "300" height = "300"&gt; ...&lt;/canvas&gt;
+
+                    L'attributo id viene utilizzato per fare riferimento all'area di disegno nello script e larghezza e altezza vengono utilizzate per definire le dimensioni dell'area di disegno.
+
+                    E’ possibile usare più volte il tag canvas all’interno di una pagina html.
+
+    Tag &lt;video&gt;
+
+                    HTML5 definisce un nuovo elemento che specifica un modo standard per incorporare un file video in una pagina Web. I formati di file supportati per l'elemento &lt;video&gt; sono:
+
+                    • mp4
+                    • WebM
+                    • Ogg
+                    Ecco un esempio pratico dell’utilizzo del tag video :
+
+                    &lt;video width="320" height="240" controls&gt;&lt;source src="file.mp4" type="video/mp4"&gt;&lt;/video&gt;
+
+                    Gli attributi di larghezza e altezza definiscono la dimensione. Se l'altezza e la larghezza sono impostate, lo spazio richiesto per il video viene riservato al caricamento della pagina. Tuttavia, senza questi attributi, il browser non può conoscere la dimensione del video e non può riservare lo spazio appropriato ad esso. L'effetto sarà che il layout della pagina cambierà mentre il video viene caricato.
+
+    Tag &lt;audio&gt;
+
+                    HTML5 definisce un nuovo elemento che specifica un modo standard per incorporare un file audio in una pagina Web. I formati di file supportati per l'elemento &lt;audio&gt; sono:
+
+                    • mp3
+                    • Wav
+                    • Ogg
+                    L'esempio seguente dimostra l'utilizzo dell'elemento &lt;audio&gt; in HTML5.
+
+                    &lt;audio&gt;&lt;source src="file.ogg" type="audio/ogg"&gt;&lt;/audio&gt;
+    Tag &lt;article&gt;
+
+                    L'elemento &lt;article&gt; mostra la parte di una pagina Web che contiene materiali del tipo :
+
+                    • Un articolo di una rivista o di un giornale
+                    • Un post sul blog
+                    • Qualsiasi commento da parte dell'utente
+                    • Qualunque elemento di contenuto
+
+    Tag &lt;mark&gt;
+
+                    L'elemento &lt;mark&gt; consente di evidenziare il testo in una pagina web. Il tag è stato introdotto in HTML5 e non era presente nelle versioni precedenti.
+
+    MIGLIORNAMENTI DI HTML5
+            Quali sono i principali miglioramenti di HTML5 rispetto a HTML4?
+
+            Elementi multimediali
+
+                    HTML5 garnatisce un supporto integrato per file multimediali integrati nella pagina Web tramite tag audio e video. In precedenza, in HTML4, il contenuto multimediale era integrato in pagine Web tramite plug-in di terze parti come Silverlight e Flash.
+
+            Accesso alla posizione geografica dell'utente
+
+                    In precedenza in HTML4, era un compito estremamente ingombrante ottenere le posizioni geografiche dei visitatori che navigavano sul sito. Con l’avvento di HTML5 è estremamente facile ottenere la posizione dell'utente. JS GeoLocation di HTML5 può essere sfruttato per identificare la posizione dell'utente che accede al sito Web.
+
+            Memoria lato client
+
+                    In HTML4, al fine di memorizzare dati importanti sul lato client, veniva utilizzata la cache del browser. Tuttavia, quella cache è limitata e non supporta il meccanismo di archiviazione relazionale. In HTML5, questo problema è stato risolto tramite il database Web SQL e la cache a cui è possibile accedere tramite l'interfaccia JavaScript di HTML5.
+
+
+            Comunicazione client-server
+
+                    In HTML4 la comunicazione tra client e server veniva effettuata tramite streaming, poiché in HTML4 non erano disponibili socket Web. Al contrario, HTML5 contiene socket Web che consentono la comunicazione full duplex tra client e server. @SOCKET.WEB
+
+            Meccanismo di threading JavaScript
+
+                    In HTML4, JavaScript e l'interfaccia del browser con cui l'utente interagisce, vengono eseguiti nello stesso thread con una penalizzazione notevole delle prestazioni. HTML5 contiene l'API JS Web Worker che consente l'esecuzione dell'interfaccia JavaScript e del browser in thread separati.
+                    @API.JF.WORKER  @thread.separati
+
+            Compatibilità del browser
+
+                    Come accennato precedentemente, HTML4 è uno standard consolidato per lo sviluppo di applicazioni browser ed è in uso da oltre 10 anni. Per questo motivo, HTML4 è compatibile con quasi tutti i browser web. D'altra parte, HTML5 è ancora in fase di evoluzione e i tag attualmente disponibili subiscono delle continue variazioni. Pertanto, HTML5 è in ritardo rispetto a HTML4 in termini di compatibilità con i browser. @compatibilita.HTML4
+
+
+            Vantaggi principali forniti da HTML5 per gli sviluppatori
+
+                    HTML5 permette agli sviluppatori di avere maggiore flessibilità durante la progettazione di siti web professionali, soprattutto per quanto riguarda :
+
+
+
+                    Gestione persistente degli errori
+
+                            La maggior parte dei browser ha il supporto per analizzare il codice HTML strutturalmente / sintatticamente errato. Tuttavia, fino a pochi anni fa, non esisteva un processo standardizzato per gestirlo.
+
+                            Ciò significa che gli sviluppatori dovevano eseguire test di documenti HTML non validi in diversi browser per creare processi di gestione degli errori migliorati attraverso il reverse engineering.
+
+                            La gestione coerente degli errori in HTML5 ha fatto una differenza enorme in questo senso. Gli algoritmi di analisi migliorati utilizzati in HTML5 hanno un vantaggio non quantificabile nel far risparmiare un sacco di tempo. 
+                            @ERRORI.GESTIONE
+
+
+                    Semantica migliorata per elementi
+
+                            Sono stati apportati miglioramenti ai ruoli semantici di vari elementi esistenti in HTML per migliorare il loro inserimento nel codice.
+
+                            Elementi come &lt;article&gt;, &lt;nav&gt;, &lt;section&gt; hanno sostituito la maggior parte degli elementi div ormai obsoleti. Ciò rende il processo di scansione degli errori molto meno complicato poiché gli elementi sono più semplici. 
+                            @DIV.OBSLETI
+                            @tag.navigatore @nav.tag.navigazione @navigazione.nav @navigation.nav
+
+
+                    Supporto avanzato per le funzionalità dell'applicazione Web
+
+                            Uno degli obiettivi principali di HTML5 è consentire ai browser Web di funzionare come piattaforme applicative. Pertanto, offre agli sviluppatori un maggiore controllo delle prestazioni dei loro siti Web.
+
+                            In passato, gli sviluppatori dovevano usare soluzioni alternative perché non erano presenti molte tecnologie lato server ed estensioni del browser.
+
+                            Attualmente, non è necessario impiegare soluzioni alternative basate su JavaScript o Flash (come precedentemente fatto in HTML4) perché in HTML5 sono presenti elementi che forniscono tutte le funzionalità.
+                            @NO.FLASH @FLASH
+
+                     Mobile più semplice
+
+                            Il gruppo demografico proprietario di smartphone ha visto una crescita costante negli ultimi dieci anni e ciò ha creato la necessità di migliorare gli standard HTML.
+
+                            Gli utenti finali vogliono poter accedere alle risorse Web in qualsiasi momento tramite qualsiasi dispositivo. In altre parole, avere un sito Web responsive è un requisito fondamentale. Fortunatamente, HTML5 ha reso il supporto mobile molto più semplice essendo in grado di supportare pienamente i dispositivi come tablet e smartphone.
+                            @WEB.RESPONSIVE
+
+
+                    Web storage per sostituire i cookie
+
+                            HTML5 utilizza il Web storage per sostituire i cookie. Nelle versioni HTML precedenti, se gli sviluppatori volevano archiviare qualcosa, dovevano fare uso di cookie che contenevano una piccola quantità di dati (circa 4 KB).
+
+                            Tuttavia, i cookie presentano diversi svantaggi: possono essere scaduti, limitare l'uso di dati complessi e rallentare il server Web portando ulteriori script sul server.
+
+                            Il Web Storage, d'altra parte, consente di archiviare permanentemente i dati sul computer del client (a meno che l'utente non li cancelli) garantendo una una maggiore memorizzazione dei dati (5 MB).
+
+                            @storage.web.5.mb  @archiviazioni.web
+                            @memorizza.in.una.sessione, @sessione.una.storage
+</code></pre>
+<h1 id="l">L<a class="headerlink" href="#l" title="Permanent link"></a></h1>
+<p>## LISTE
+        List 
+                elenchi ordinati 
+                <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/tag" title="GitHub User: tag">@tag</a>.ol  <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/elenchi" title="GitHub User: elenchi">@elenchi</a>.ordinati.tag.ol 
+                Elenchi ordinati HTML
+                Un elenco ordinato inizia con il  tag <ol> e ogni voce di elenco è definita dal  tag <li>.<br />
+                Ecco un esempio di elenco ordinato: 
+                Risultato:
+                        <html>
+                        <head>
+                        <title>first page</title>
+                        </head>
+                        <body>
+                                <ol>
+                                <li>Red</li>
+                                <li>Blue</li>
+                                <li>Green</li>
+                                </ol>
+                        </body>
+                        </html></p>
+<pre><code>            TAG ul 
+            il tag ul crea un elenco non ordinato
+</code></pre>
+<h1 id="p">P<a class="headerlink" href="#p" title="Permanent link"></a></h1>
+<pre><code>POST
+    POST = PER AGGIORNAMENTO DATI
+    Utilizzare POST se il modulo aggiorna i dati o include informazioni riservate (password).
+    POST offre una maggiore sicurezza perché i dati inviati non sono visibili nell'indirizzo della pagina.
+    @ATTRIBUTO.POST
+    @POST.ATTRIBUTO
+</code></pre>
+<h1 id="r">R<a class="headerlink" href="#r" title="Permanent link"></a></h1>
+<pre><code>##RADIO BUTTON
+        con il comando imput puoi creare una radio button con scelta alterantiva
+       &lt;input type="radio" name="gender" value="male" /&gt;Male &lt;br /&gt;
+       &lt;input type="radio" name="gender" value="female" /&gt;Female &lt;br /&gt;
+
+        elenco proprieta INPUT:
+
+        |proprieta      |               |          |
+        |---------------|---------------|----------|
+        |checkbox       |               |          |
+        |radio          |               |          |
+</code></pre>
+<h1 id="s">S<a class="headerlink" href="#s" title="Permanent link"></a></h1>
+<p># SEZIONI
+        NOTE  <br />
+                per creare le sezioni utilizzare il tag h1  <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/creare" title="GitHub User: creare">@creare</a>.una.sezione.div <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/div" title="GitHub User: div">@div</a>.sezioni</p>
+<pre><code>                    &lt;!-- About Me section start --&gt;
+                    &lt;div class="section"&gt;
+                    &lt;h1&gt;&lt;span&gt;About Me&lt;/span&gt;&lt;/h1&gt;
+                    &lt;p&gt;
+                            Hey! I'm &lt;strong&gt;Alex&lt;/strong&gt;. Coding has changed my world. It's not just about apps. Learning to code gave me &lt;i&gt;problem-solving skills&lt;/i&gt; and a way to communicate with others on a technical level. I can also develop websites and use my coding skills to get a better job. And I learned it all at &lt;strong&gt;SoloLearn&lt;/strong&gt; where they build your self-esteem and keep you motivated. Join me in this rewarding journey. You'll have fun, get help, and learn along the way!
+                    &lt;/p&gt;
+                    &lt;p class="quote"&gt;"Declare variables, not war"&lt;/p&gt;
+                    &lt;/div&gt;
+</code></pre>
+<p># Schedule
+        NOTE  <br />
+                Usa i tag tabella per aggiungere una tabella al tuo blog che rappresenti il tuo programma di apprendimento giornaliero.<br />
+                I tag <th> rappresentano le intestazioni della tabella.<br />
+                Dai un&rsquo;occhiata al seguente codice:  </p>
+<pre><code>            INTESTAZIONE TABELLA 
+                    usare il tabg th 
+                    I tag &lt;td&gt; vuoti rappresentano celle di tabella vuote. 
+                    Sono necessari perché mantengono la struttura della tabella.
+
+
+                    @tag.th
+                    @tabella.intestazioni
+                    @intestazioni.tabella
+</code></pre>
+<h1 id="t">T<a class="headerlink" href="#t" title="Permanent link"></a></h1>
+<pre><code> ##TABELLE
+    Le tabelle vengono costruite con il TAG &lt;t&gt;  ed i tag fungono anche da contenitori di dati.
+    il tag delle tabelle sono
+            &lt;table border="2"&gt;
+                            .....
+            &lt;/table&gt;
+
+    in questa tabella viene utilizzato l'atributo border = 2
+
+    ATTENZIONE: L'attributo border non è supportato in HTML5.
+
+##TextArea
+
+    Per avere una multilinea occorre utilizzare il comando
+    textarea, es. 
+    @multilinee.textarea
+    @textarea.multilinee
+        form
+             &lt;textarea placeholder="Message" required &gt;&lt;/textarea&gt;
+        fomr
+</code></pre></article></body></html>
