@@ -1,0 +1,27 @@
+/*your CSS code here
+Nel nostro esempio, abbiamo usato 
+il peso in grassetto per intestazioni
+ e sottotitoli e un'opzione più leggera
+  per la professione.
+*/
+.heading{
+    font-size:85px;
+}
+
+
+
+.prof{
+    font-size: 20px;
+}
+.contactinfo{
+    font-size: 25px
+}
+
+/*
+@proprieta.font-weight
+spessore di carattere con la proprieta
+font-weight */
+.subheading{
+    font-size: 20px;
+    font-weight: bolder;
+} 

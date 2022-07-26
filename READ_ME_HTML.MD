@@ -34,7 +34,7 @@
 
         ESEMPIO
                 ci sono anche attributi contradditori all'interno 
-                <html>
+                <html>c
                 <head>
                         <title>Attributes</title>
                 </head>
@@ -443,17 +443,81 @@
                         normal, 
                         italic 
                         oblique.  
-                Oblique è molto simile al corsivo, ma meno supportato.                                
+                                @vedi.esempio.font-style
+                                esempio in HTLM
+                                        c
+
+
+                                in css inserire
+
+                                        p.normal {
+                                            font-style: normal;
+                                        }
+                                        p.italic {
+                                            font-style: italic;
+                                        }
+                                        p.oblique {
+                                            font-style: oblique;
+                                        }
+
+
+                Oblique è molto simile al corsivo, ma meno supportato.
+
+                TAG <i> 
+                        Il tag HTML <i> produrrà esattamente lo stesso risultato dello stile di carattere corsivo. @tag.i 
+
+                        attenzione esercizio ok
+                                What value is NOT used with the font-style property? slant
+
+        LEZIONE 10.1. font-weight
+                The font-weight Property
+                        La proprieta font-weight   @proprieta.font-weight  @font-weight.pro
+
+                   Lo spessore del carattere controlla il grassetto o lo spessore del testo. I valori possono essere impostati come normale normal  (dimensione predefinita),  bold grassetto,  bolder grassetto e più leggero. 
+
+                        @vedi.esempio.font-weigt
+                                <p class="light">This is a font with a "lighter" weight.</p>
+                                <p class="bold">This is a font with a "bold" weight.</p>
+                                <p class="bolder">This is a font with a "bolder" weight.</p>
+
+                        in css
+                                        p.light {   
+                                        font-weight: lighter;
+                                        }
+                                        p.bold {   
+                                        font-weight: bold;
+                                        }
+                                        p.bolder {
+                                        font-weight: bolder;
+                                        }
+                SPESSORE CARATTERE
+                        È inoltre possibile definire lo spessore del carattere con un numero compreso tra 100 (sottile) e 900 (spessore), in base allo spessore desiderato del testo.  
+                        400 è lo stesso del normale e 700 è lo stesso del grassetto. 
+
+                                @SPESSORE.CARATTERE
+
+                                        <p class="light">This is a font with a "lighter" weight.</p>
+                                        <p class="thick">This is a font with a "bold" weight.</p>
+                                        <p class="thicker">This is a font with a "700" weight.</p>
+
+                                        IN CSS
+
+                                        p.light {
+                                            font-weight: lighter;
+                                        }
+                                        p.thick {
+                                            font-weight: bold;
+                                        }
+                                        p.thicker {
+                                            font-weight: 700;
+                                        }  
 
 
 
 
 
-
-
-
-
-       
+                        STRONG
+                        ‎Anche il tag HTML ‎‎<strong>‎‎ rende il testo ‎‎in grassetto‎‎.‎     
 # C
 
 ## CARATTERI SPECIALI
