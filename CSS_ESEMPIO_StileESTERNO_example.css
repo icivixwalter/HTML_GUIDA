@@ -1,9 +1,2 @@
-p {
-    color:white;
-    background-color:gray
-}
-
-r {
-    color:white;
-    background-color:rgb(150, 46, 46);
-}
+var price = 55.55;
+document.write(price);
