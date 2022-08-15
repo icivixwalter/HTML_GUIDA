@@ -4425,10 +4425,482 @@
                         exp(x)                           ?
                         floor(x)                           ?
                         log(x)                           logaritmo base E of x
-                        max(x,y,z...,n)                 logaritmo base E of x
+                        max(x,y,z...,n)                  maggiore del numero
+                        min(x,y,z...,n)                  minore del numero
+                        pov(x,y)                         minore del numero
+                        random()                          minore del numero
+                        round(x)                            ?
+                        sin(x)                            ?
+                        sqr(x)                            ?
+                        tan(x)                            ?
+
+                            Ad esempio, quanto segue calcolerà la radice quadrata di un numero.
+
+                            var number = Math.sqrt(4); 
+                            document.write(number);
+
+                            Per ottenere un numero casuale compreso tra 1-10, usa Math.random(), che ti dà un numero compreso tra 0-1. Quindi moltiplica il numero per 10, quindi prendi Math.ceil() da esso: Math.ceil(Math.random() * 10).
+
+
+                    L'oggetto Math
+
+
+                    Creare una funzione che restituisca il secolo a seconda dell'anno indicato come parametro.  
+                     
+                    Sample Input
+                    1993 
+                     
+                    Sample Output
+                    20 
+                     
+                    Hint
+                    È necessario dividere 1993 per 100: 1993/100 = 19,93, quindi arrotondarlo al numero intero più vicino, che in questo caso è 20. 
+                    Utilizzare il  metodo Math.ceil(x), che restituisce x arrotondato per eccesso al numero intero più vicino.
+
+                    function main() {
+                            var year = parseInt(readLine(), 10)
+                            
+                            //the output
+                            console.log(calcCent(year));
+                            
+                        }
+
+                        //complete the function
+                        function calcCent(y){
+                            return Math.ceil(y/100)   
+                        }
                    
 
-                ?
+               The Math Object
+
+                    Creiamo un programma che chiederà all'utente di inserire un numero e avvisare la sua radice quadrata.
+
+                          //imput inserisci numero
+                            var n = prompt("Enter a number", "");
+                            //calcol rd e salvataggio nella variabile
+                            var answer = Math.sqrt(n);
+                            //messaggio nel browser
+                            alert("The square root of " + n + " is " + answer);
+
+                            La matematica è un oggetto utile. Puoi risparmiare un sacco di tempo usando Math, invece di scrivere le tue funzioni ogni volta.
+
+            LEZIONE 41.2 Practice Which Century?
+                    The Math Object
+                        FUNZIONE CHE RESTITUISCE IL SECOLO
+                            Creare una funzione che restituisca il secolo a seconda dell'anno indicato come parametro.  
+                             
+                            Sample Input
+                            1993 
+                             
+                            Sample Output
+                            20 
+                             
+                            Hint
+                            È necessario dividere 1993 per 100: 1993/100 = 19,93, quindi arrotondarlo al numero intero più vicino, che in questo caso è 20. 
+                            Utilizzare il  metodo Math.ceil(x), che restituisce x arrotondato per eccesso al numero intero più vicino.
+
+
+                            function main() {
+                                var year = parseInt(readLine(), 10)
+                                
+                                //the output
+                                console.log(calcCent(year));
+                                
+                            }
+
+                            //complete the function
+                            function calcCent(y){
+                                return Math.ceil(y/100)   
+                            }
+            
+            LEZIONE 42.1 The Date Object
+                The Date Object
+                    setInterval
+                        Il  metodo setInterval() chiama una funzione o valuta un'espressione a intervalli specificati (in millisecondi).  
+                        Continuerà a chiamare la funzione fino a quando clearInterval() non viene chiamato o la finestra viene chiusa. 
+
+                            function myAlert() {
+                                    alert("Hi");
+                                }
+                                setInterval(myAlert, 3000);
+
+                        Questo chiamerà la funzione myAlert ogni 3 secondi (1000 ms = 1 secondo). 
+
+                new Date()
+                    L'oggetto Date ci consente di lavorare con le date.  
+                    Una data è costituita da un anno, un mese, un giorno, un'ora, un minuto, un secondo e millisecondi.  
+                    Utilizzando new Date(), creare un nuovo oggetto data con la data e l'ora correnti
+                        var d = new Date();
+                        //d stores the current date and time
+
+                    Gli altri modi per inizializzare le date consentono la creazione di nuovi oggetti data dalla data e dall'ora specificate
+                        new Date(milliseconds)
+                        new Date(dateString)
+                        new Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+                    Le date JavaScript sono calcolate in millisecondi dal 1° gennaio 1970 alle 00:00:00 Ora universale (UTC). Un giorno contiene 86.400.000 millisecondi.
+                         example: @esempi.date  @date.esempi
+                            //Fri Jan 02 1970 00:00:00
+                            var d1 = new Date(86400000); 
+
+                            //Fri Jan 02 2015 10:42:00
+                            var d2 = new Date("January 2, 2015 10:42:00");
+
+                            //Sat Jun 11 1988 11:42:00
+                            var d3 = new Date(88,5,11,11,42,0,0);
+
+
+                            JavaScript conta mesi da 0 a 11. Gennaio è 0 e dicembre è 11. 
+                            Gli oggetti data sono statici, anziché dinamici. L'ora del computer sta spuntando, ma gli oggetti data non cambiano, una volta creati.
+                
+                Date Methods
+                    Quando viene creato un oggetto Date, diversi metodi consentono di eseguire operazioni su di esso.  @date.metodi
+
+                           PROPRIETA                      DESCRIPTION
+                            getfullYear                         ?
+                            getMonth                            ?
+                            getDate                             ?
+                            getDay                              ?
+                            getHours                            ?
+                            getMinutes                          ?
+                            getSeconds                          ?
+                            getMilliseconds                     ?
+                            
+                        For example:
+
+                            var d = new Date();
+                            var hours = d.getHours();
+
+                            console.log(hours);
+                            
+                            Creiamo un programma che stampi l'ora corrente sul browser una volta al secondo.
+
+                            <!DOCTYPE html>
+                                <html>
+                                    <head>
+                                        <title>Page Title</title>
+                                    </head>
+                                    <body>
+                                        
+                                    </body>
+                                </html>
+
+                                    function printTime() {
+                                    var d = new Date();
+                                    var hours = d.getHours();
+                                    var mins = d.getMinutes();
+                                    var secs = d.getSeconds();
+                                    document.body.innerHTML = hours+":"+mins+":"+secs;
+                                    }
+                                    setInterval(printTime, 1000);
+
+
+                            Abbiamo dichiarato una funzione 
+                            printTime()che ottiene l'ora corrente dall'oggetto data e la stampa sullo schermo. 
+
+                                    <!DOCTYPE html>
+                                    <html>
+                                        <head>
+                                            <title>Page Title</title>
+                                        </head>
+                                        <body>
+                                            
+                                        </body>
+                                    </html>
+
+
+                                    function printTime() {
+                                    var d = new Date();
+                                    var hours = d.getHours();
+                                    var mins = d.getMinutes();
+                                    var secs = d.getSeconds();
+                                    document.body.innerHTML = hours+":"+mins+":"+secs;
+                                }
+                                setInterval(printTime, 1000);
+
+                            @PROPRIETA.innerHTML
+                            La  proprietà innerHTML imposta o restituisce il contenuto HTML di un elemento.  
+                            Nel nostro caso, stiamo modificando il contenuto HTML del corpo del nostro documento. Questo sovrascrive il contenuto ogni secondo, invece di stamparlo ripetutamente sullo schermo.
+
+            LEZIONE 42.2 Practice Monday to Sunday
+                    The Date Object
+
+
+                            Dal lunedì alla domenica
+                            Creare una funzione che restituisca il giorno della settimana corrispondente in base agli argomenti richiesti.
+
+
+                            Il programma che ti viene dato prende anno, mese e giorno come input.  
+                            Creare una funzione che li accetta come argomenti e restituisce il giorno corrispondente della settimana.  
+                             
+                            Sample Input
+                            1993 
+                            7 
+                            12 
+                             
+                            Sample Output
+                            Giovedì 
+                            Suggerimento: il codice specificato crea un  oggetto Date dai parametri. Utilizzare il  metodo getDay() dell'oggetto date per ottenere l'indice, quindi utilizzarlo nella matrice dei nomi specificati  per restituire il nome del giorno.
+
+                            function main() {
+                                   var year = parseInt(readLine(), 10);
+                                   var month = parseInt(readLine(), 10);
+                                   var day = parseInt(readLine(), 10);
+                                    
+                                   console.log(getWeekDay(year, month, day)); 
+                                }
+
+                                function getWeekDay(year, month, day) {
+                                   var names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                                   var date = new Date(year, month, day);
+                                    //complete the function
+                                    var day = date.getDay()
+                                    return names[day]
+
+                                    
+                                }
+
+            LEZIONE 43.1 Module 6 Quiz
+                ESEGUITI
+
+            LEZIONE 44.1 Store Manager
+                    Store Manager
+
+                            ESEMPIO
+                             /** Store Manager
+                             * Stai lavorando a un programma Store Manager, che memorizza i prezzi in un array.  
+                                                    È necessario aggiungere funzionalità per aumentare i prezzi dell'importo specificato.  
+                                                    La  variabile di aumento viene presa dall'input dell'utente. È necessario aumentare tutti i prezzi nell'array specificato di tale importo e inviare alla console l'array risultante. 
+                                                    Utilizzare un ciclo per scorrere la matrice e aumentare tutti gli elementi.
+
+                             */
+
+
+                            function main() {
+                                var increase = parseInt(readLine(), 10);
+                                var prices = [98.99, 15.2, 20, 1026];
+                                //your code goes here
+
+                                  for(var i=0;i<=prices.length-1;i++){
+                                    prices[i]=prices[i]+increase;
+                                }
+                                console.log(prices);
+                            }
+    
+        DOM & Events
+            LEZIONE 45.1 What is DOM
+                The DOM = Document Object Model 
+
+                    Quando si apre una pagina Web in un browser, il codice HTML della pagina viene caricato e visualizzato visivamente sullo schermo.  
+                    A tale scopo, il browser crea il Document Object Model di quella pagina, che è un modello orientato agli oggetti della sua struttura logica.  
+                    Il DOM di un documento HTML può essere rappresentato come un set nidificato di caselle: 
+   
+                                    DOCUMENT
+                                      |
+                           |--------<html>---------|
+                        <head>                   <body>
+                           |                  |-----|-----|
+                        <title>               <h1>     <a>
+                DOM Tree
+
+                    Il DOM rappresenta un documento come struttura ad albero.  
+                    Gli elementi HTML diventano nodi  correlati nell'albero.  
+                    Tutti quei nodi nell'albero hanno una sorta di relazioni tra loro.  
+                    I nodi possono avere  nodi figlio. I nodi sullo stesso livello dell'albero sono chiamati fratelli.  
+                    Si consideri, ad esempio, la struttura seguente: 
+
+                                      DOCUMENT
+                                          |
+                               |--------<html>---------|
+                            <head>                   <body>
+                               |                  |-----|-----|
+                            <title>               <h1>     <a>
+
+                        Per l'esempio precedente: 
+                        <html>   ha due figli (<head>, <body>);  
+                        <head>   ha un figlio (<title>) e un genitore (<html>);  
+                        <titolo> ha un genitore (<testa>) e nessun figlio;  
+                        <corpo>  ha due figli (<h1> e <a>) e un genitore (<html>); 
+
+                        È importante comprendere le relazioni tra gli elementi in un documento HTML per poterli manipolare con JavaScript.
+
+                    @DOCUMENTO.PREDEFINITO
+                    In JavaScript è presente un  oggetto documento  predefinito che può essere utilizzato per accedere a tutti gli elementi del DOM.  
+                    In altre parole, l'oggetto documento è il proprietario (o radice) di tutti gli oggetti nella pagina Web.  
+                    Pertanto, se si desidera accedere agli oggetti in una pagina HTML, si inizia sempre con l'accesso all'oggetto documento.  
+                    Per esempio: 
+
+                        document.body.innerHTML = "Some text";
+
+                        Poiché body è un elemento del DOM, possiamo accedervi utilizzando l'oggetto document e modificare il contenuto della  proprietà innerHTML. 
+                        La  proprietà innerHTML può essere utilizzata su quasi tutti gli elementi HTML per modificarne il contenuto.
+
+            LEZIONE 46.1 Selecting Elements
+                Selecting Elements
+                    Tutti gli elementi HTML sono oggetti. E come sappiamo ogni oggetto ha proprietà e metodi.  
+                    L'oggetto document dispone di metodi che consentono di selezionare l'elemento HTML desiderato.  
+                    Questi tre metodi sono i più comunemente utilizzati per selezionare gli elementi HTML: 
+
+                        //finds element by id
+                        document.getElementById(id) 
+
+                        //finds elements by class name
+                        document.getElementsByClassName(name) 
+
+                        //finds elements by tag name
+                        document.getElementsByTagName(name)
+
+                     id="demo" =Nell'esempio seguente, il = metodo =getElementById =viene utilizzato per selezionare l'elemento con= id="demo"= e modificarne il contenuto: 
+                        var elem = document.getElementById("demo");
+                        elem.innerHTML = "Hello World!";
+
+                        L'esempio precedente presuppone che l'HTML contenga un elemento con id="demo", ad esempio <div id="demo"></div>.
+
+                Selecting Elements getElementsByClassName()
+
+                        Il  metodo getElementsByClassName() restituisce una raccolta di tutti gli elementi del documento con il nome della classe specificato.  
+                        Ad esempio, se la nostra pagina HTML conteneva tre elementi con class="demo", il codice seguente restituirebbe tutti quegli elementi come matrice: 
+                            @gestElemetsByClassName
+                            var arr =  document.getElementsByClassName("demo");
+                            //accessing the second element
+                            arr[1].innerHTML = "Hi";
+
+                        Analogamente, il  metodo getElementsByTagName restituisce tutti gli elementi del nome del tag specificato come matrice.  
+                        L'esempio seguente ottiene tutti gli elementi di paragrafo della pagina e ne modifica il contenuto: 
+
+                                <p>hi</p>
+                                <p>hello</p>
+                                <p>hi</p>
+                                <script>
+                                var arr = document.getElementsByTagName("p");
+                                for (var x = 0; x < arr.length; x++) {
+                                arr[x].innerHTML = "Hi there";
+                                }
+                                </script>
+
+                        Lo script risulterà nel seguente codice HTML:
+
+                                <p>Hi there</p>
+                                <p>Hi there</p>
+                                <p>Hi there</p>
+
+                        Abbiamo usato la  proprietà length della matrice per eseguire il loop tra tutti gli elementi selezionati nell'esempio precedente.
+
+                Working with DOM
+                    @proprieta.dom
+                    Ogni elemento nel DOM dispone di un set di proprietà e metodi che forniscono informazioni sulle relative relazioni nel DOM: 
+                        @element.proprieta
+                        element.childNodes      returns an array of an element's child nodes.
+                        element.firstChild      returns the first child node of an element.
+                        element.lastChild       returns the last child node of an element.
+                        element.hasChildNodes   returns true if an element has any child nodes, otherwise false.
+                        element.nextSibling     returns the next node at the same tree level.
+                        
+                        element.previousSibling returns the previous node at the same tree level.
+
+                        element.parentNode      returns the parent node of an element.
+                   
+                    Possiamo, ad esempio, selezionare tutti i nodi figlio di un elemento e modificarne il contenuto:
+
+
+                            <html>
+                                <body>
+                                     <div id ="demo">
+                                        <p>some text</p>
+                                        <p>some other text</p>
+                                    </div>
+                                </body>
+                            </html>
+
+                            function setText() {
+                                var a = document.getElementById("demo");
+                                 var arr = a.childNodes;
+                                 for(var x=0;x<arr.length;x++) {
+                                    //sostituisce i due some in newo text
+                                   arr[x].innerHTML = "new text"; 
+                                 }
+                            }
+
+                            //calling the function with setTimeout to make sure the HTML is loaded
+                            setTimeout(setText, 500);
+
+                            Il codice sopra modifica il testo di entrambi i paragrafi in "nuovo testo".
+
+            LEZIONE 47.1 Changing Elements
+                Changing Attributes
+
+                     innerHTML
+
+                        Dopo aver selezionato gli elementi con cui si desidera lavorare, è possibile modificarne gli attributi.  
+                        Come abbiamo visto nelle lezioni precedenti, possiamo modificare il contenuto testuale di un elemento utilizzando la  proprietà innerHTML.  
+                        Allo stesso modo, possiamo cambiare gli attributi degli elementi.  
+                        Ad esempio, possiamo modificare l'attributo src di un'immagine: 
+
+                        <img id="myimg" src="orange.png" alt="" />
+                            <script>
+                            var el = document.getElementById("myimg");
+                            el.src = "apple.png";
+                            </script>
+
+                        Possiamo cambiare l'attributo href di un link: 
+
+                            <!DOCTYPE html>
+                            <html>
+                                <head>
+                                    <title>Page Title</title>
+                                </head>
+                                <body>
+                                    <a href="http://www.example.com">Some link</a>
+                                </body>
+                            </html>
+
+                            //calling the function in window.onload to make sure the HTML is loaded
+                            window.onload = function() {
+                                var el = document.getElementsByTagName('a');
+                                el[0].href= 'http://www.sololearn.com';
+                            };
+
+                        Praticamente tutti gli attributi di un elemento possono essere modificati utilizzando JavaScript. 
+                        
+                Changing Style
+                    Lo stile degli elementi HTML può anche essere modificato utilizzando JavaScript.  
+                    È possibile accedere a tutti gli attributi di stile utilizzando l'oggetto style dell'elemento.  
+                    Per esempio:
+
+                    Il codice precedente modifica il colore e  la larghezza del testo dell'elemento div. 
+
+                    <!DOCTYPE html>
+                        <html>
+                            <head>
+                                <title>Page Title</title>
+                            </head>
+                            <body>
+                                <div id="demo" style="width:200px">some text</div>
+                            </body>
+                        </html>
+
+                        //calling the function in window.onload to make sure the HTML is loaded
+                        window.onload = function() {
+                        var x = document.getElementById("demo");
+                        x.style.color = '#6600FF';
+                        x.style.width = '100px';
+                        };
+
+                    Tutte le proprietà CSS possono essere impostate e modificate utilizzando JavaScript. Ricorda solo che non puoi usare i trattini (-) nei nomi delle proprietà: questi vengono sostituiti con le versioni camelCase, dove le parole composte iniziano con una lettera maiuscola. 
+                    Ad esempio: la  proprietà background-color deve essere definita backgroundColor.
+    
+            LEZIONE 48.1 Adding & Removing Elements
+                Replacing Elements
+                    Per sostituire un elemento HTML, l'elemento. Viene utilizzato il metodo replaceChild(newNode, oldNode).  
+                    Per esempio:
+
+
+                    Il codice precedente crea un nuovo elemento paragrafo che sostituisce il paragrafo p1 esistente.
+
+                    
+                            ?
+                            ?
+                            ?
 
 
         JAVA SCRIPT I PARAMETRI
