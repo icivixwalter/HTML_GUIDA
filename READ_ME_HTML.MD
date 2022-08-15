@@ -1,5 +1,4 @@
 # A
-  ### Allineamento testo
 
         ### Attributo Rowspan 
                 L'attributo Rowspan estende la colonna su piu rige es.
@@ -2102,557 +2101,1191 @@
 # J
 
    JAVASCRIPT
-        
-        LEZIONE 01
-                    
-                Welcome to JavaScript!
+        Basic Concepts
 
-                        Hai mai visitato un sito web che ti ha fatto pensare..."Wow, questo sito è davvero cool e
-                        interattivo"? Bene, JavaScript probabilmente lo stava facendo accadere. contenutoImmagineIn
-                        questo corso, imparerai a programmare con JavaScript, uno dei linguaggi di programmazione più
-                        popolari che rende i siti Web dinamici e interattivi. Puoi anche usare JavaScript per creare
-                        app e giochi per dispositivi mobili, elaborare dati e molto altro! 
+                LEZIONE 01
+                            
+                        Welcome to JavaScript!
 
-            The Console
+                                Hai mai visitato un sito web che ti ha fatto pensare..."Wow, questo sito è davvero cool e
+                                interattivo"? Bene, JavaScript probabilmente lo stava facendo accadere. contenutoImmagineIn
+                                questo corso, imparerai a programmare con JavaScript, uno dei linguaggi di programmazione più
+                                popolari che rende i siti Web dinamici e interattivi. Puoi anche usare JavaScript per creare
+                                app e giochi per dispositivi mobili, elaborare dati e molto altro! 
 
-                        JavaScript è un linguaggio di programmazione che viene eseguito nei browser Web. La maggior
-                        parte dei siti Web utilizza JavaScript e quando le cose vanno male, gli sviluppatori Web
-                        utilizzano la console per indagare sugli errori.  
+                    The Console
 
-                        In questa lezione imparerai a conoscere l'arma principale dello sviluppatore web: la console
-                        dello sviluppatore. Gli errori di codifica non sono visibili nel browser. Gli sviluppatori Web
-                        utilizzano la console per testare il codice e correggere i bug. 
+                                JavaScript è un linguaggio di programmazione che viene eseguito nei browser Web. La maggior
+                                parte dei siti Web utilizza JavaScript e quando le cose vanno male, gli sviluppatori Web
+                                utilizzano la console per indagare sugli errori.  
 
-            Logging Messages  Logging (writing) console.log() log messages
-                
-                        La console fa parte del browser Web.  La registrazione (scrittura) dei messaggi nella console è
-                        un buon modo per diagnosticare e risolvere problemi minori nel codice.  
-                         
-                        È possibile utilizzare console.log() per scrivere o registrare messaggi. Nel codice di esempio
-                        riportato di seguito, il messaggio "Tutto bene, nessun errore" viene inviato alla console.
-                        esempio console.log('All good, no errors') 
+                                In questa lezione imparerai a conoscere l'arma principale dello sviluppatore web: la console
+                                dello sviluppatore. Gli errori di codifica non sono visibili nel browser. Gli sviluppatori Web
+                                utilizzano la console per testare il codice e correggere i bug. 
 
-                        Puoi registrare i messaggi per informare l'esecuzione del codice o avvisare che si è verificato
-                        un problema.
+                    Logging Messages  Logging (writing) console.log() log messages
+                        
+                                La console fa parte del browser Web.  La registrazione (scrittura) dei messaggi nella console è
+                                un buon modo per diagnosticare e risolvere problemi minori nel codice.  
+                                 
+                                È possibile utilizzare console.log() per scrivere o registrare messaggi. Nel codice di esempio
+                                riportato di seguito, il messaggio "Tutto bene, nessun errore" viene inviato alla console.
+                                esempio console.log('All good, no errors') 
 
-            Text Messages
+                                Puoi registrare i messaggi per informare l'esecuzione del codice o avvisare che si è verificato
+                                un problema.
 
-                        Il testo in JavaScript deve essere racchiuso tra virgolette console.log('Testing in progress')
+                    Text Messages
 
-                        Il codice JavaScript non funzionerà se non includi una coppia di virgolette intorno al messaggio
-                        di testo. È possibile utilizzare virgolette singole o doppie. 
+                                Il testo in JavaScript deve essere racchiuso tra virgolette console.log('Testing in progress')
 
-             The Code Playground
+                                Il codice JavaScript non funzionerà se non includi una coppia di virgolette intorno al messaggio
+                                di testo. È possibile utilizzare virgolette singole o doppie. 
 
-                        Il parco giochi Code Pronto a scrivere ed eseguire codice reale? Il Code Playground ti
-                        permetterà di farlo in questo corso.  
-                         
-                        Premere sul blocco di codice per aprire code playground, quindi premere Esegui per visualizzare
-                        il messaggio nella console. La console con il messaggio si aprirà nella parte inferiore della
-                        pagina. console.log('My first console message') 
+                     The Code Playground
 
-                        È possibile modificare il codice JavaScript per inviare un messaggio diverso alla console? Il
-                        Code Playground ha sezioni per le 3 tecnologie web di base.  
-                         
-                        - HTML controlla la struttura di una pagina web.  
-                         
-                        - CSS controlla la presentazione e lo stile di una pagina web.  
-                         
-                        In questa lezione utilizzerai solo la sezione JavaScript. 
+                                Il parco giochi Code Pronto a scrivere ed eseguire codice reale? Il Code Playground ti
+                                permetterà di farlo in questo corso.  
+                                 
+                                Premere sul blocco di codice per aprire code playground, quindi premere Esegui per visualizzare
+                                il messaggio nella console. La console con il messaggio si aprirà nella parte inferiore della
+                                pagina. console.log('My first console message') 
 
-             Lesson Takeaways 
+                                È possibile modificare il codice JavaScript per inviare un messaggio diverso alla console? Il
+                                Code Playground ha sezioni per le 3 tecnologie web di base.  
+                                 
+                                - HTML controlla la struttura di una pagina web.  
+                                 
+                                - CSS controlla la presentazione e lo stile di una pagina web.  
+                                 
+                                In questa lezione utilizzerai solo la sezione JavaScript. 
 
-                        Sei fantastico! In questa lezione, hai imparato che: 
-                         
-                        - JavaScript è un linguaggio di programmazione molto popolare.  
-                        - Gli sviluppatori Web utilizzano la console per testare il codice e correggere i bug.  
-                        - È possibile utilizzare console.log() per scrivere o registrare messaggi sulla console.  
-                         
-                        Nelle prossime lezioni imparerai a usare JavaScript per creare pagine web interattive. 
+                     Lesson Takeaways 
 
-        LEZIONE 02 Output 
-            Output 
+                                Sei fantastico! In questa lezione, hai imparato che: 
+                                 
+                                - JavaScript è un linguaggio di programmazione molto popolare.  
+                                - Gli sviluppatori Web utilizzano la console per testare il codice e correggere i bug.  
+                                - È possibile utilizzare console.log() per scrivere o registrare messaggi sulla console.  
+                                 
+                                Nelle prossime lezioni imparerai a usare JavaScript per creare pagine web interattive. 
 
-              Usiamo JavaScript per stampare "Hello World" sul browser. Ecco come sarebbe. Noti
-              qualche roba in più lì? Niente ti supera! 
-       
-                      document.write È ora di introdurre la  funzione document.write(). Questo è ciò che dobbiamo usare per
-                      scrivere testo nel nostro documento HTML. 
-                               
-                              Ti senti fantasioso? Certo che lo sei! È inoltre possibile utilizzare il linguaggio di markup
-                              HTML standard per personalizzare il testo di aspetto nell'output: 
+                LEZIONE 02 Output 
+                    Output 
 
-                              ATTENZIONE document.write() deve essere utilizzato solo per i test. Tratteremo presto alcuni
-                              altri meccanismi di output reali.
-
-                                      HTML
-
-                                      <!DOCTYPE html> <html> <head> <title>Page Title</title> </head> <body>
-                                                              
-                                                  </body> </html>
-
-                                      JS document.write("<h1>Hello World!</h1>");
-
-                              Output to console Giusto, ora siamo esperti nella scrittura di output HTML con document.write
-                              ().  Tempo per un diverso tipo di output. Impariamo a conoscere l'output nella console del
-                              browser. 
+                      Usiamo JavaScript per stampare "Hello World" sul browser. Ecco come sarebbe. Noti
+                      qualche roba in più lì? Niente ti supera! 
+               
+                              document.write È ora di introdurre la  funzione document.write(). Questo è ciò che dobbiamo usare per
+                              scrivere testo nel nostro documento HTML. 
                                        
-                                      Per questo avremo bisogno della fidata console.log () funzione.  
-                                       
-                                      Aspetta, non così in fretta! Cos'è questa console di cui stiamo parlando? 
-                                       
-                                      La console fa parte del browser Web e consente di registrare i messaggi, eseguire codice
-                                      JavaScript e visualizzare errori e avvisi. 
+                                      Ti senti fantasioso? Certo che lo sei! È inoltre possibile utilizzare il linguaggio di markup
+                                      HTML standard per personalizzare il testo di aspetto nell'output: 
 
-                                              JS console.log("Hello!");
+                                      ATTENZIONE document.write() deve essere utilizzato solo per i test. Tratteremo presto alcuni
+                                      altri meccanismi di output reali.
 
-                              CONSOLLE TEST Testa alta! Gli sviluppatori utilizzano principalmente la console per testare il
-                              loro codice JavaScript.
+                                              HTML
 
-                                      primo programma
+                                              <!DOCTYPE html> <html> <head> <title>Page Title</title> </head> <body>
+                                                                      
+                                                          </body> </html>
 
-                                              console.log("JS is fun"); ATTENZIONE CONTROLLA LE PAROLE ALL'INTERNO
+                                              JS document.write("<h1>Hello World!</h1>");
 
-        LEZIONE 03.1 Variables var 
+                                      Output to console Giusto, ora siamo esperti nella scrittura di output HTML con document.write
+                                      ().  Tempo per un diverso tipo di output. Impariamo a conoscere l'output nella console del
+                                      browser. 
+                                               
+                                              Per questo avremo bisogno della fidata console.log () funzione.  
+                                               
+                                              Aspetta, non così in fretta! Cos'è questa console di cui stiamo parlando? 
+                                               
+                                              La console fa parte del browser Web e consente di registrare i messaggi, eseguire codice
+                                              JavaScript e visualizzare errori e avvisi. 
 
-            CONTENITORI DI ARCHIVIAZIONE LE VARIABILI
-        
-                Le variabili sono contenitori per l'archiviazione dei valori dei dati. Il valore di una variabile può
-                cambiare nel corso del programma. 
-                         
-                        Dichiarare una variabile è semplice come usare la parola chiave var. Che sarebbe simile a
-                        questo: var x = 10;
+                                                      JS console.log("Hello!");
 
-                assignment In questo esempio abbiamo assegnato un valore pari  a 10 alla variabile x.  
- 
-                        Abbiamo usato la parola assegnata deliberatamente qui, perché in JavaScript, il segno di uguale
-                        (=) è in realtà chiamato operatore "assegnazione", piuttosto che un operatore "uguale a". 
+                                      CONSOLLE TEST Testa alta! Gli sviluppatori utilizzano principalmente la console per testare il
+                                      loro codice JavaScript.
 
-                        Ciò significa che in JavaScript, x = y assegnerà il valore di y alla variabile x. CASE SENSITIVE
-                        JavaScript è sensibile, cioè con distinzione tra maiuscole e minuscole. Quindi variabili come
-                        lastName e lastname non sono le stesse.
+                                              primo programma
 
-                Using Variables
+                                                      console.log("JS is fun"); ATTENZIONE CONTROLLA LE PAROLE ALL'INTERNO
 
-                        Ok, mettiamo insieme un po' di quello che abbiamo imparato!  
-                         
-                        Che ne dici di assegnare un valore a una variabile e inviarlo al browser. Abbiamo questo! 
+                LEZIONE 03.1 Variables var 
 
-                                var x = 100; document.write(x); 
-
-                                   n.b. con documento viene inviato al brouser
-
-                        Ma qual è il punto delle variabili comunque? Bene, immagina che il tuo programma abbia 1000
-                        righe di codice che includono la variabile x. Con le variabili è possibile modificare il valore
-                        delle variabili e utilizzarle più volte nel 
-
-                        codice: es var x = 100; document.write(x);
-
-                                        x = 42; document.write(x);
-
-
-
-                        Testa alta! Ogni "istruzione" scritta è chiamata dichiarazione. Le istruzioni JavaScript  sono
-                        separate da punto e virgola.
-
-                Naming Variables
-
-                        Parliamo di nomi.  È molto importante ricordare che i nomi delle variabili JavaScript fanno
-                        distinzione tra maiuscole e minuscole.  
-                         
-                        Quale pensi che sarebbe l'output del seguente codice? 
-
-                                errore la variabile case sensitive var x = 100; document.write(X); deve essere x non X
-
-
-                        Giusto! Un errore. Questo perché x e X sono diversi e non abbiamo dichiarato la variabile X. 
- 
-                        Preparati per altre regole! CARATTERI AMMESSI 
-                        - Il primo carattere del nome di una variabile deve essere una lettera, un carattere di
-                          sottolineatura (_) o un simbolo del dollaro ($) (i caratteri successivi possono essere
-                          lettere, cifre, caratteri di sottolineatura o segni di dollaro). CARATTERI NON AMMESSI 
-                        - Il primo carattere di un nome di variabile non può essere un numero.  
-                        - I nomi delle variabili non possono includere un operatore matematico o logico nel loro nome.
-                          Ad esempio, 2 * qualcosa o questo + quello; 
-                        - I nomi delle variabili non possono contenere spazi.  
-                        - Non ti è permesso usare simboli speciali, come il mio #num, num%, ecc. 
-
-                        Testa alta!  JavaScript è una zona senza trattini. Sono riservati alle sottrazioni. 
-
-        LEZIONE 04.1 Comments JavaScript 
-
-               Comments 
-
-                     //, or between /* and */, 
-
-
-
-                Roba fantastica! Presto sarai un master variabile. 
-                 
-                Ok, parliamo di commenti in JavaScript.  Quindi conosciamo le istruzioni, queste sono le istruzioni
-                all'interno del nostro programma che vengono "eseguite" quando il programma viene eseguito.  Ma! Non
-                tutte le istruzioni JavaScript sono "eseguite". Qualsiasi codice dopo una doppia barra //, o tra /*
-                e */, viene trattato come un commento e verrà ignorato e non eseguito.  Per scrivere un commento a riga
-                singola usiamo le doppie barre. Così:
-
-                        // This is a single line comment alert("This is an alert box!"); 
-
-                                @messaggio.box 
-
-                Ma perché scrivere codice che non verrà mai eseguito. Non è una perdita di tempo? Niente affatto! I
-                commenti sono una buona idea, specialmente quelli relativi a funzioni di grandi dimensioni, in quanto
-                aiutano a rendere il nostro codice più leggibile per gli altri. Quindi sii gentile e commenta!
-
-        LEZIONE 05.1 Data TypesData 
+                    CONTENITORI DI ARCHIVIAZIONE LE VARIABILI
                 
-                Data Types
-
-                        Il termine tipo di dati si riferisce ai tipi di valori con cui un programma può lavorare. Il
-                        cielo è il limite con le variabili JavaScript, che possono contenere un sacco di diversi tipi
-                        di dati: numeri, stringhe, matrici, lo chiami.  
-                         
-                        Iniziamo in modo semplice però.  I numeri possono essere scritti con o senza decimali. Così: 
-
-                                <!DOCTYPE html> <html> <head> <title>Page Title</title> </head> <body>
-                                                
-                                            </body> </html> js var price = 55.55; document.write(price);
-
-
-
-                        Cambiare questa variabile è un gioco da ragazzi, basta assegnarle qualsiasi altro valore di tipo
-                        di dati, come num = 'qualche stringa casuale'.
-
-                Strings
-
-                        In JavaScript possiamo usare stringhe per memorizzare e manipolare il testo. Una stringa può
-                        essere qualsiasi testo racchiuso tra virgolette. Virgolette singole o doppie, non importa,
-                        purché tu sia coerente con loro. Così:
-                                @virgolette.singole  @virgolette.doppie var name = 'John'; var text = "My name is John
-                                 Smith";
-
-
-                        like this: \" or \'
-
-                        È possibile ottenere virgolette doppie all'interno delle virgolette doppie utilizzando il
-                        carattere di escape come questo: \" o \' all'interno delle virgolette singole.
-
-
-                        Cosa succede se vogliamo usare le virgolette all'interno di una stringa però?? Non c'è problema!
-                        È possibile utilizzare le virgolette all'interno di una stringa, purché non corrispondano alle
-                        virgolette che racchiudono la stringa stessa. Dai un'occhiata: var text = "My name
-                        is 'John' ";
-
-                                        @virgolettato.nella.stringa
-                                        @Quotation.marks = ""
-
-                         backslash (\) escape character Ora è un buon momento per parlare del carattere escape character
-                         backslash (\). Viene in soccorso quando è necessario inserire virgolette all'interno di
-                         stringhe (e un sacco di altre situazioni) trasformando caratteri speciali in caratteri
-                         stringa. 
-
-                         Ma il carattere di escape (\) non è solo per le virgolette, funziona quando è necessario
-                         inserire anche altri caratteri speciali all'interno delle stringhe! 
-
-                                \'      = virgolette
-                                \''     = doppie
-                                \\      = backslash
-                                \n      = new line
-                                \r      = carrage return
-                                \tab    = TAB
-                                \basck  = backspace
-                                \f      = form feed
-
-
-
-
-                         
-                        Se inizi una stringa con una singola citazione, devi terminarla anche con una singola citazione.
-                        Questo vale per le virgolette doppie. Altrimenti, JavaScript si confonderà. JavaScript
-                        scadente.
-        
-                Booleans 
-
-                   Non solo divertente da dire, i booleani in JavaScript svolgono una funzione utile permettendoti
-                   di avere uno dei due valori, vero o falso.  
-
-                           Quindi, quando hai bisogno di un tipo di dati che può avere solo uno dei due valori possibili,
-                           come Sì / No, on / off o true / false, non cercare oltre Mr Boolean. Diamo un'occhiata a un
-                           esempio: 
-
-
-                                   var isActive = true; var isHoliday = false;
-
-
-                        Il valore booleano 0 (zero), null, undefined, stringa vuota è false.  Tutto ciò che ha un
-                        valore "reale" è vero.
-
-
-                        EVAL() resituisce il risultato di una espressione stringa eval("10*20+8") RESTITUISCE IL CALCOLO
-                        se l'argomento è vuoto restituiesce undefinit
-
-        LEZIONE 06.1 Quiz 
-
-                Quiz eseguiti
-
-        LEZIONE 07.1 Math Operators
-
-                Arithmetic Operators 
-
-                   Il nome potrebbe essere un po 'un omaggio, ma gli operatori aritmetici eseguono
-                   funzioni aritmetiche sui numeri (sia letterali che variabili). 
-                                   +
-                                   -
-                                   *
-                                   /%      = modulo 56 % 3= 2
-                                   ++      = INCREMENT     var a = 11 ++, ora a = 11
-                                   --      = DECREMENT     var a = 10 --, ora a = 9
-
-                   EVAL @TAG.EVAL @EVAL
-
-                           È possibile ottenere il risultato di un'espressione stringa utilizzando la funzione eval(), che
-                           accetta un argomento di espressione stringa come eval("10 * 20 + 8") e restituisce il
-                           risultato. Se l'argomento è vuoto, restituisce undefined.
-
-
-                Multiplication * operator
-
-                        Usiamo l'operatore * per moltiplicare un numero per l'altro.  Così: esempio var x = 10 * 5;
-                        document.write(x);
-
-
-                                                var computers = parseInt(readLine(), 10)
-
-                                                //your code goes here esempio 10 pc x 2 monitor ed esempio 2 20 pc per
-                                                  2
-
-
-                                                     var computers = parseInt(readLine(), 10)
-
-                                                        //your code goes here
-
-                                                        console.log (computers*2);
-
-                        Division
-
-                                Utilizziamo l'operatore / per eseguire operazioni di divisione. Così: var x = 100 / 5;
-                                document.write(x);
-                                                @DIVISIONE ATTENZIONE ALLA DIVISIONE PER ZERO Fai attenzione alle
-                                                 situazioni in cui potrebbe esserci una divisione per 0, le cose si
-                                                 incasinano quando facciamo matematica impossibile! 
-
-                        The Modulus Modulus (%) operator
-
-                                L'operatore Modulo (%) restituisce il resto della divisione (ciò che rimane). Perché ti
-                                rimane un resto di 2 quando dividi 26 per 6. 
-
-                                        var myVariable = 26 % 6; document.write(myVariable);
-
-                                In JavaScript, possiamo usare l'operatore del modulo su numeri interi E su numeri in
-                                virgola mobile. 
-
-                        Increment & Decrement Increment ++ = operatore increases L'operatore incremento aumenta il
-                        valore numerico del suo operando di 1. Se posizionato prima dell'operando, restituirà il valore
-                        incrementato. Quando viene posizionato dopo di esso, restituirà il valore originale e quindi
-                        incrementerà l'operando. ESEMPIO  VAR ++   POST INCREMENTO          
-
-                                                ESEMPIO var=0 b= 10; var a = b++;   ---> PRIMA ASSEGNA E POI SOMMA
-                                                result A= 10 B= 11
-
-                                        ESEMPIO ++ VAR PREINCREMENTO
-
-                                                var=0 b= 10; var a = ++b;    ---> PRIMA SOMMA E POI ASSEGNA RESULT A= 11
-                                                B= 11
-                                        
-
-
-                        Decrement --  decreases L'operatore di decremento riduce il valore numerico del suo operando di
-                        1. Se posizionato prima dell'operando, restituirà il valore decrementato. Se posizionato dopo
-                        l'operando, restituirà il valore originale e quindi decrederà l'operando. esempi
-                                                
-                                         ESEMPIO  VAR --   POST DECREMENTO  
-
-                                                ESEMPIO var=0 b= 10; var a = b--;   ---> PRIMA ASSEGNA E POI SOTTRAE
-                                                result A= 10 B= 9
-
-
-                                        ESEMPIO ++ VAR PRE DECREMENTO
-
-                                                var=0 b= 10; var a = --b;    ---> PRIMA DECREMENTA E POI ASSEGNA RESULT
-                                                A= 9 B= 9
-
-
-                                Proprio come la matematica che hai imparato a scuola, puoi cambiare l'ordine delle
-                                operazioni aritmetiche usando le parentesi. ù ù Come questo: var x = (100 + 50) * 3;
-
-        LEZIONE 08.1 Assignment Operators
-
-                Assignment Operators 
-
-                   Assignment Operators Il prossimo di una serie di operatori dal nome molto logico
-                   è ...  Operatori di assegnazione!
-
-                                   =       X=Y     EQUIVALENTE A ---->     X=Y
-                                   +=      X+=Y    EQUIVALENTE A ---->     X=X+Y
-                                   -=      X-=Y    EQUIVALENTE A ---->     X=X-Y
-                                   *=      X*=Y    EQUIVALENTE A ---->     X=X*Y
-                                   /=      X/=Y    EQUIVALENTE A ---->     X=X/Y
-                                   %=      X%=Y    EQUIVALENTE A ---->     X=X%Y
-
-                           
-                        È possibile utilizzare più operatori di assegnazione in una riga, ad esempio x 
-                        -= y += 9.
-
-        LEZIONE 09.1 Comparison Operators 
-                
-                Comparison Operators equal to (==) 
-
-                        Possiamo usare gli operatori di confronto nelle istruzioni logiche per scoprire se le variabili
-                        o i valori sono diversi.  
+                        Le variabili sono contenitori per l'archiviazione dei valori dei dati. Il valore di una variabile può
+                        cambiare nel corso del programma. 
+                                 
+                                Dichiarare una variabile è semplice come usare la parola chiave var. Che sarebbe simile a
+                                questo: var x = 10;
+
+                        assignment In questo esempio abbiamo assegnato un valore pari  a 10 alla variabile x.  
          
+                                Abbiamo usato la parola assegnata deliberatamente qui, perché in JavaScript, il segno di uguale
+                                (=) è in realtà chiamato operatore "assegnazione", piuttosto che un operatore "uguale a". 
 
-                        Ad esempio, l'operatore uguale a (==) controlla se i valori degli operandi sono uguali. var num
-                        = 10; console.log(num == 8);   ---> RESTITUISCE FALSE
+                                Ciò significa che in JavaScript, x = y assegnerà il valore di y alla variabile x. CASE SENSITIVE
+                                JavaScript è sensibile, cioè con distinzione tra maiuscole e minuscole. Quindi variabili come
+                                lastName e lastname non sono le stesse.
+
+                        Using Variables
+
+                                Ok, mettiamo insieme un po' di quello che abbiamo imparato!  
+                                 
+                                Che ne dici di assegnare un valore a una variabile e inviarlo al browser. Abbiamo questo! 
+
+                                        var x = 100; document.write(x); 
+
+                                           n.b. con documento viene inviato al brouser
+
+                                Ma qual è il punto delle variabili comunque? Bene, immagina che il tuo programma abbia 1000
+                                righe di codice che includono la variabile x. Con le variabili è possibile modificare il valore
+                                delle variabili e utilizzarle più volte nel 
+
+                                codice: es var x = 100; document.write(x);
+
+                                                x = 42; document.write(x);
 
 
-                        È possibile confrontare tutti i tipi di dati con gli operatori di confronto, restituiranno
-                        sempre true o false. 
 
-                        Dai un'occhiata a questa tabella per vedere una ripartizione degli operatori di confronto.
+                                Testa alta! Ogni "istruzione" scritta è chiamata dichiarazione. Le istruzioni JavaScript  sono
+                                separate da punto e virgola.
 
-                                L'operatore     DESCRIPTION            EXAMPLE           == Equalto 5==10 false ===
-                                identico a Equal to     5===10 false e dello stesso tipo
-                                !=              Not Equal to            5!=10           True
-                                !==             Not identical           10 !==10        False
-                                >               Greater than            10 >5           True
-                                >=               equal to               10 >=5          True < Less than 10>=5 True
+                        Naming Variables
 
-                        ATTENZIONE CONFRONTO STESSO TIPO DI DATI Una cosa importante da ricordare quando usiamo gli
-                        operatori, è che funzionano solo quando confrontano lo stesso tipo di dati; numeri con numeri,
-                        stringhe con stringhe, hai l'idea. 
+                                Parliamo di nomi.  È molto importante ricordare che i nomi delle variabili JavaScript fanno
+                                distinzione tra maiuscole e minuscole.  
+                                 
+                                Quale pensi che sarebbe l'output del seguente codice? 
 
-                                esercizio java script con la funzione main function main() { var age = parseInt(readLine
-                                (), 10)
-                                            // Your code here
+                                        errore la variabile case sensitive var x = 100; document.write(X); deve essere x non X
 
-                                            console.log (age>=18);
+
+                                Giusto! Un errore. Questo perché x e X sono diversi e non abbiamo dichiarato la variabile X. 
+         
+                                Preparati per altre regole! CARATTERI AMMESSI 
+                                - Il primo carattere del nome di una variabile deve essere una lettera, un carattere di
+                                  sottolineatura (_) o un simbolo del dollaro ($) (i caratteri successivi possono essere
+                                  lettere, cifre, caratteri di sottolineatura o segni di dollaro). CARATTERI NON AMMESSI 
+                                - Il primo carattere di un nome di variabile non può essere un numero.  
+                                - I nomi delle variabili non possono includere un operatore matematico o logico nel loro nome.
+                                  Ad esempio, 2 * qualcosa o questo + quello; 
+                                - I nomi delle variabili non possono contenere spazi.  
+                                - Non ti è permesso usare simboli speciali, come il mio #num, num%, ecc. 
+
+                                Testa alta!  JavaScript è una zona senza trattini. Sono riservati alle sottrazioni. 
+
+                LEZIONE 04.1 Comments JavaScript 
+
+                    Comments 
+
+                        //, or between /* and */, 
+                        Roba fantastica! Presto sarai un master variabile. 
+                         
+                        Ok, parliamo di commenti in JavaScript.  Quindi conosciamo le istruzioni, queste sono le istruzioni
+                        all'interno del nostro programma che vengono "eseguite" quando il programma viene eseguito.  Ma! Non
+                        tutte le istruzioni JavaScript sono "eseguite". Qualsiasi codice dopo una doppia barra //, o tra /*
+                        e */, viene trattato come un commento e verrà ignorato e non eseguito.  Per scrivere un commento a riga
+                        singola usiamo le doppie barre. Così:
+
+                                // This is a single line comment alert("This is an alert box!"); 
+
+                                        @messaggio.box 
+
+                        Ma perché scrivere codice che non verrà mai eseguito. Non è una perdita di tempo? Niente affatto! I
+                        commenti sono una buona idea, specialmente quelli relativi a funzioni di grandi dimensioni, in quanto
+                        aiutano a rendere il nostro codice più leggibile per gli altri. Quindi sii gentile e commenta!
+
+                LEZIONE 05.1 Data TypesData 
+                        
+                        Data Types
+
+                                Il termine tipo di dati si riferisce ai tipi di valori con cui un programma può lavorare. Il
+                                cielo è il limite con le variabili JavaScript, che possono contenere un sacco di diversi tipi
+                                di dati: numeri, stringhe, matrici, lo chiami.  
+                                 
+                                Iniziamo in modo semplice però.  I numeri possono essere scritti con o senza decimali. Così: 
+
+                                        <!DOCTYPE html> <html> <head> <title>Page Title</title> </head> <body>
+                                                        
+                                                    </body> </html> js var price = 55.55; document.write(price);
+
+
+
+                                Cambiare questa variabile è un gioco da ragazzi, basta assegnarle qualsiasi altro valore di tipo
+                                di dati, come num = 'qualche stringa casuale'.
+
+                        Strings
+
+                                In JavaScript possiamo usare stringhe per memorizzare e manipolare il testo. Una stringa può
+                                essere qualsiasi testo racchiuso tra virgolette. Virgolette singole o doppie, non importa,
+                                purché tu sia coerente con loro. Così:
+                                        @virgolette.singole  @virgolette.doppie var name = 'John'; var text = "My name is John
+                                         Smith";
+
+
+                                like this: \" or \'
+
+                                È possibile ottenere virgolette doppie all'interno delle virgolette doppie utilizzando il
+                                carattere di escape come questo: \" o \' all'interno delle virgolette singole.
+
+
+                                Cosa succede se vogliamo usare le virgolette all'interno di una stringa però?? Non c'è problema!
+                                È possibile utilizzare le virgolette all'interno di una stringa, purché non corrispondano alle
+                                virgolette che racchiudono la stringa stessa. Dai un'occhiata: var text = "My name
+                                is 'John' ";
+
+                                                @virgolettato.nella.stringa
+                                                @Quotation.marks = ""
+
+                                 backslash (\) escape character Ora è un buon momento per parlare del carattere escape character
+                                 backslash (\). Viene in soccorso quando è necessario inserire virgolette all'interno di
+                                 stringhe (e un sacco di altre situazioni) trasformando caratteri speciali in caratteri
+                                 stringa. 
+
+                                 Ma il carattere di escape (\) non è solo per le virgolette, funziona quando è necessario
+                                 inserire anche altri caratteri speciali all'interno delle stringhe! 
+
+                                        \'      = virgolette
+                                        \''     = doppie
+                                        \\      = backslash
+                                        \n      = new line
+                                        \r      = carrage return
+                                        \tab    = TAB
+                                        \basck  = backspace
+                                        \f      = form feed
+
+
+
+
+                                 
+                                Se inizi una stringa con una singola citazione, devi terminarla anche con una singola citazione.
+                                Questo vale per le virgolette doppie. Altrimenti, JavaScript si confonderà. JavaScript
+                                scadente.
+                
+                        Booleans 
+
+                           Non solo divertente da dire, i booleani in JavaScript svolgono una funzione utile permettendoti
+                           di avere uno dei due valori, vero o falso.  
+
+                                   Quindi, quando hai bisogno di un tipo di dati che può avere solo uno dei due valori possibili,
+                                   come Sì / No, on / off o true / false, non cercare oltre Mr Boolean. Diamo un'occhiata a un
+                                   esempio: 
+
+
+                                           var isActive = true; var isHoliday = false;
+
+
+                                Il valore booleano 0 (zero), null, undefined, stringa vuota è false.  Tutto ciò che ha un
+                                valore "reale" è vero.
+
+
+                                EVAL() resituisce il risultato di una espressione stringa eval("10*20+8") RESTITUISCE IL CALCOLO
+                                se l'argomento è vuoto restituiesce undefinit
+
+                LEZIONE 06.1 Quiz 
+
+                        Quiz eseguiti
+
+                LEZIONE 07.1 Math Operators
+
+                        Arithmetic Operators 
+
+                           Il nome potrebbe essere un po 'un omaggio, ma gli operatori aritmetici eseguono
+                           funzioni aritmetiche sui numeri (sia letterali che variabili). 
+                                           +
+                                           -
+                                           *
+                                           /%      = modulo 56 % 3= 2
+                                           ++      = INCREMENT     var a = 11 ++, ora a = 11
+                                           --      = DECREMENT     var a = 10 --, ora a = 9
+
+                           EVAL @TAG.EVAL @EVAL
+
+                                   È possibile ottenere il risultato di un'espressione stringa utilizzando la funzione eval(), che
+                                   accetta un argomento di espressione stringa come eval("10 * 20 + 8") e restituisce il
+                                   risultato. Se l'argomento è vuoto, restituisce undefined.
+
+
+                        Multiplication * operator
+
+                                Usiamo l'operatore * per moltiplicare un numero per l'altro.  Così: esempio var x = 10 * 5;
+                                document.write(x);
+
+
+                                                        var computers = parseInt(readLine(), 10)
+
+                                                        //your code goes here esempio 10 pc x 2 monitor ed esempio 2 20 pc per
+                                                          2
+
+
+                                                             var computers = parseInt(readLine(), 10)
+
+                                                                //your code goes here
+
+                                                                console.log (computers*2);
+
+                                Division
+
+                                        Utilizziamo l'operatore / per eseguire operazioni di divisione. Così: var x = 100 / 5;
+                                        document.write(x);
+                                                        @DIVISIONE ATTENZIONE ALLA DIVISIONE PER ZERO Fai attenzione alle
+                                                         situazioni in cui potrebbe esserci una divisione per 0, le cose si
+                                                         incasinano quando facciamo matematica impossibile! 
+
+                                The Modulus Modulus (%) operator
+
+                                        L'operatore Modulo (%) restituisce il resto della divisione (ciò che rimane). Perché ti
+                                        rimane un resto di 2 quando dividi 26 per 6. 
+
+                                                var myVariable = 26 % 6; document.write(myVariable);
+
+                                        In JavaScript, possiamo usare l'operatore del modulo su numeri interi E su numeri in
+                                        virgola mobile. 
+
+                                Increment & Decrement Increment ++ = operatore increases L'operatore incremento aumenta il
+                                valore numerico del suo operando di 1. Se posizionato prima dell'operando, restituirà il valore
+                                incrementato. Quando viene posizionato dopo di esso, restituirà il valore originale e quindi
+                                incrementerà l'operando. ESEMPIO  VAR ++   POST INCREMENTO          
+
+                                                        ESEMPIO var=0 b= 10; var a = b++;   ---> PRIMA ASSEGNA E POI SOMMA
+                                                        result A= 10 B= 11
+
+                                                ESEMPIO ++ VAR PREINCREMENTO
+
+                                                        var=0 b= 10; var a = ++b;    ---> PRIMA SOMMA E POI ASSEGNA RESULT A= 11
+                                                        B= 11
+                                                
+
+
+                                Decrement --  decreases L'operatore di decremento riduce il valore numerico del suo operando di
+                                1. Se posizionato prima dell'operando, restituirà il valore decrementato. Se posizionato dopo
+                                l'operando, restituirà il valore originale e quindi decrederà l'operando. esempi
+                                                        
+                                                 ESEMPIO  VAR --   POST DECREMENTO  
+
+                                                        ESEMPIO var=0 b= 10; var a = b--;   ---> PRIMA ASSEGNA E POI SOTTRAE
+                                                        result A= 10 B= 9
+
+
+                                                ESEMPIO ++ VAR PRE DECREMENTO
+
+                                                        var=0 b= 10; var a = --b;    ---> PRIMA DECREMENTA E POI ASSEGNA RESULT
+                                                        A= 9 B= 9
+
+
+                                        Proprio come la matematica che hai imparato a scuola, puoi cambiare l'ordine delle
+                                        operazioni aritmetiche usando le parentesi. ù ù Come questo: var x = (100 + 50) * 3;
+
+                LEZIONE 08.1 Assignment Operators
+
+                        Assignment Operators 
+
+                           Assignment Operators Il prossimo di una serie di operatori dal nome molto logico
+                           è ...  Operatori di assegnazione!
+
+                                           =       X=Y     EQUIVALENTE A ---->     X=Y
+                                           +=      X+=Y    EQUIVALENTE A ---->     X=X+Y
+                                           -=      X-=Y    EQUIVALENTE A ---->     X=X-Y
+                                           *=      X*=Y    EQUIVALENTE A ---->     X=X*Y
+                                           /=      X/=Y    EQUIVALENTE A ---->     X=X/Y
+                                           %=      X%=Y    EQUIVALENTE A ---->     X=X%Y
+
+                                   
+                                È possibile utilizzare più operatori di assegnazione in una riga, ad esempio x 
+                                -= y += 9.
+
+                LEZIONE 09.1 Comparison Operators 
+                        
+                        Comparison Operators equal to (==) 
+
+                                Possiamo usare gli operatori di confronto nelle istruzioni logiche per scoprire se le variabili
+                                o i valori sono diversi.  
+                 
+
+                                Ad esempio, l'operatore uguale a (==) controlla se i valori degli operandi sono uguali. var num
+                                = 10; console.log(num == 8);   ---> RESTITUISCE FALSE
+
+
+                                È possibile confrontare tutti i tipi di dati con gli operatori di confronto, restituiranno
+                                sempre true o false. 
+
+                                Dai un'occhiata a questa tabella per vedere una ripartizione degli operatori di confronto.
+
+                                        L'operatore     DESCRIPTION            EXAMPLE           == Equalto 5==10 false ===
+                                        identico a Equal to     5===10 false e dello stesso tipo
+                                        !=              Not Equal to            5!=10           True
+                                        !==             Not identical           10 !==10        False
+                                        >               Greater than            10 >5           True
+                                        >=               equal to               10 >=5          True < Less than 10>=5 True
+
+                                ATTENZIONE CONFRONTO STESSO TIPO DI DATI Una cosa importante da ricordare quando usiamo gli
+                                operatori, è che funzionano solo quando confrontano lo stesso tipo di dati; numeri con numeri,
+                                stringhe con stringhe, hai l'idea. 
+
+                                        esercizio java script con la funzione main function main() { var age = parseInt(readLine
+                                        (), 10)
+                                                    // Your code here
+
+                                                    console.log (age>=18);
+                                                    
+                                                }
+
+
+                                        Dato un orologio che misura 24 ore al giorno, scrivi un programma che prenda l'ora come
+                                        input. Se l'ora è compresa tra 0 e 12, l'output am alla console e l'output pm se non lo
+                                        è. 
+
+                                         @esempio.eta.utente function main() { var hour = parseInt(readLine(), 10);
+                                            // Your code goes here time=hour >=0 && hour <=12 ? "am": "pm"; console.log(time)
                                             
                                         }
+                                                                                        
+                LEZIONE 10.1 Logical or Boolean Operators 
+                        
+                        Logical Operators 
+
+                            Gli operatori logici, noti anche come  operatori booleani, (o gli operatori vulcaniani ... ok,
+                            quello non è vero) valutano un'espressione e restituiscono true o false. 
+
+                            Dai un'occhiata alla tabella qui sotto per vedere maggiori dettagli sugli operatori logici(AND, OR,
+                            NOT). 
+
+                            &&      return true se entrambi veri ||      RETURN TRUE se un operando è vero
 
 
-                                Dato un orologio che misura 24 ore al giorno, scrivi un programma che prenda l'ora come
-                                input. Se l'ora è compresa tra 0 e 12, l'output am alla console e l'output pm se non lo
-                                è. 
+                            È possibile controllare tutti i tipi di dati; gli operatori di confronto restituiscono sempre true o
+                            false. 
 
-                                 @esempio.eta.utente function main() { var hour = parseInt(readLine(), 10);
-                                    // Your code goes here time=hour >=0 && hour <=12 ? "am": "pm"; console.log(time)
-                                    
+
+                        Diamo un'occhiata a un esempio. 
+
+                            Qui abbiamo collegato due espressioni booleane con l'operatore AND. <!DOCTYPE html> <html> <head>
+                            <title>Page Title</title> </head> <body>
+                                              
+                            }         </body> </html> document.write((4 > 2) && (10 < 15));
+
+                            Affinché questa espressione sia vera, entrambe le condizioni devono essere vere. 
+                            - La prima condizione determina se 4 è maggiore di 2, il che è vero.  
+                            - La seconda condizione determina se 10 è minore di 15, il che è anche vero.  
+
+                            Operatore condizionale (ternario)
+
+                            Gli operatori condizionali, o ternari,  assegnano un valore a una variabile, in base a una
+                            condizione.  
+
+                            Ecco come sarebbe la sintassi: 
+
+
+                              <!DOCTYPE html> <html> <head> <title>Page Title</title> </head> <body>
+
+                              </body>
+
+                              </html> var age = 42; var isAdult = (age < 18) ? "Too young": "Old enough"; document.write
+                              (isAdult);
+
+                              Se l'età variabile è un valore inferiore a 18 anni, il valore della variabile isAdult sarà "Troppo
+                              giovane". In caso contrario, il valore di isAdult sarà "Old enough". 
+
+
+                              Con gli operatori logici è possibile connettere tutte le espressioni desiderate o necessarie. 
+
+                LEZIONE 11.1 String Operators 
+                       
+                       String Operators Concatenation 
+
+                          È ora di introdurre l'operatore più utile per le stringhe... rullo di
+                          tamburi per favore. 
+            
+                                   ... Concatenazione.  Possiamo usare la concatenazione (rappresentata dal segno +) per costruire
+                                       stringhe composte da più stringhe più piccole o unendo stringhe con altri tipi. Dai
+                                       un'occhiata: 
+
+                                   <!DOCTYPE html> <html> <head> <title>Page Title</title> </head> <body>
+                                                   
+                                               </body> </html>
+
+                                                   @concatena.stringhe var mystring1 = "I am learning "; var mystring2
+                                                    = "JavaScript with SoloLearn."; document.write(mystring1 + mystring2);
+
+                                                   I numeri tra virgolette sono trattati come stringhe: quindi "42" non è il numero
+                                                   42, è una stringa che include i due caratteri separati, 4 e 2. 
+
+                LEZIONE 12.1 Quiz
+
+                    quiz eseguiti
+            
+                LEZIONE 13.1 Code Project
+
+                    Trip Planner
+
+                        Devi pianificare un viaggio su strada. Stai viaggiando ad una velocità media di 40 miglia all'ora.  
+                        Data una distanza in miglia come input (il codice per prendere l'input è già presente), invia alla console il tempo che ti ci vorrà per percorrerlo in minuti. 
+
+
+
+                                function main() {
+                                var distance = parseInt(readLine(), 10);
+                                    //your code goes here
+                                    var calcolo = (distance/40)*60;
+                                    console.log(calcolo);
+
+                            
+                        }
+
+            Conditionals and Loops
+
+                LEZIONE 14.1 The if Statement
+                        
+                        The if Statement
+
+                            conditional statements IF: 
+                            Spesso quando scriviamo codice, vogliamo eseguire azioni diverse in base a condizioni diverse.  
+                            Ed è qui che  entrano in gioco le dichiarazioni condizionali. 
+                            Ci sono un sacco di condizionali diversi, da coprire, ma stiamo iniziando con uno dei più utili: "if"   @IF
+                            Usiamo se per specificare un blocco di codice che vogliamo venga eseguito se una condizione specificata è vera.
+
+                            Le istruzioni verranno eseguite solo se la condizione specificata è true. Diamo un'occhiata a un esempio: 
+                                ESEMPIO
+                                    HTML
+                                        <!DOCTYPE html>
+                                            <html>
+                                                <head>
+                                                    <title>Page Title</title>
+                                                </head>
+                                                <body>
+                                                    
+                                                </body>
+                                            </html>
+
+                                         javascript
+                                            var myNum1 = 7;
+                                            var myNum2 = 10;
+                                            if (myNum1 < myNum2) {
+                                                alert("JavaScript is easy to learn.");
+                                            }
+                                                @alert = messaggio in javascript
+                                                @messaggio.javascript
+                                                @javascript.messaggio
+                                                @finestra.pop.up
+
+
+
+                                        Puoi vedere dall'esempio sopra, abbiamo usato javascript alert() per generare una finestra di avviso popup che contiene le informazioni all'interno delle parentesi.
+
+                            Ecco un po 'più di dettagli sulla dichiarazione if.  
+                            Questo è un esempio di falsa  istruzione condizionale:
+
+
+                                    <!DOCTYPE html>
+                                    <html>
+                                        <head>
+                                            <title>Page Title</title>
+                                        </head>
+                                        <body>
+                                            
+                                        </body>
+                                    </html>
+
+                                    var myNum1 = 7;
+                                    var myNum2 = 10;
+                                    if (myNum1 > myNum2) {
+                                        alert("JavaScript is easy to learn.");
+                                    }
+
+
+                            Poiché la condizione viene valutata come falsa, l'istruzione di avviso viene ignorata e il programma continua con la riga dopo la parentesi graffa di chiusura dell'istruzione if. 
+                            se è in lettere minuscole. Le lettere maiuscole (If o IF) non funzioneranno.
+
+                            Completa il codice per l'output "vacanza", se il mese specificato è agosto. Non produrre nulla altrimenti. 
+                                var month = readLine()
+                                //your code goes here
+
+                                if (month == "August") {
+
+                                console.log ("vacation")
                                 }
-                                                                                
-        LEZIONE 10.1 Logical or Boolean Operators 
-                
-                Logical Operators 
 
-                    Gli operatori logici, noti anche come  operatori booleani, (o gli operatori vulcaniani ... ok,
-                    quello non è vero) valutano un'espressione e restituiscono true o false. 
+                LEZIONE 15.1 The else Statement
+                    
+                    The else Statement
 
-                    Dai un'occhiata alla tabella qui sotto per vedere maggiori dettagli sugli operatori logici(AND, OR,
-                    NOT). 
+                        Giusto, quindi abbiamo visto che l'azione viene saltata quando un blocco di codice che utilizza l'istruzione if valuta come false, ma cosa succede se vogliamo che accada qualcos'altro.  
+                        Bene, usiamo l'affermazione "else", ovviamente!  
+                         
+                        È possibile utilizzare l'istruzione else per specificare un blocco di codice che verrà eseguito se la condizione è false. Così:
 
-                    &&      return true se entrambi veri ||      RETURN TRUE se un operando è vero
+                            if (expression) {
+                               // executed if condition is true
+                            }
+                            else {
+                               // executed if condition is false
+                            }
 
+                        È possibile ignorare le parentesi graffe se il codice nella condizione contiene un solo comando.
 
-                    È possibile controllare tutti i tipi di dati; gli operatori di confronto restituiscono sempre true o
-                    false. 
+                        Ecco un altro esempio delle  istruzioni if e else che lavorano insieme:
 
-
-                Diamo un'occhiata a un esempio. 
-
-                    Qui abbiamo collegato due espressioni booleane con l'operatore AND. <!DOCTYPE html> <html> <head>
-                    <title>Page Title</title> </head> <body>
-                                      
-                    }         </body> </html> document.write((4 > 2) && (10 < 15));
-
-                    Affinché questa espressione sia vera, entrambe le condizioni devono essere vere. 
-                    - La prima condizione determina se 4 è maggiore di 2, il che è vero.  
-                    - La seconda condizione determina se 10 è minore di 15, il che è anche vero.  
-
-                    Operatore condizionale (ternario)
-
-                    Gli operatori condizionali, o ternari,  assegnano un valore a una variabile, in base a una
-                    condizione.  
-
-                    Ecco come sarebbe la sintassi: 
+                                <!DOCTYPE html>
+                                <html>
 
 
-                      <!DOCTYPE html> <html> <head> <title>Page Title</title> </head> <body>
 
-                      </body>
-
-                      </html> var age = 42; var isAdult = (age < 18) ? "Too young": "Old enough"; document.write
-                      (isAdult);
-
-                      Se l'età variabile è un valore inferiore a 18 anni, il valore della variabile isAdult sarà "Troppo
-                      giovane". In caso contrario, il valore di isAdult sarà "Old enough". 
-
-
-                      Con gli operatori logici è possibile connettere tutte le espressioni desiderate o necessarie. 
-
-        LEZIONE 11.1 String Operators 
-               
-               String Operators Concatenation 
-
-                  È ora di introdurre l'operatore più utile per le stringhe... rullo di
-                  tamburi per favore. 
-    
-                           ... Concatenazione.  Possiamo usare la concatenazione (rappresentata dal segno +) per costruire
-                               stringhe composte da più stringhe più piccole o unendo stringhe con altri tipi. Dai
-                               un'occhiata: 
-
-                           <!DOCTYPE html> <html> <head> <title>Page Title</title> </head> <body>
-                                           
-                                       </body> </html>
-
-                                           @concatena.stringhe var mystring1 = "I am learning "; var mystring2
-                                            = "JavaScript with SoloLearn."; document.write(mystring1 + mystring2);
-
-                                           I numeri tra virgolette sono trattati come stringhe: quindi "42" non è il numero
-                                           42, è una stringa che include i due caratteri separati, 4 e 2. 
-
-        LEZIONE 12.1 Quiz
-
-            quiz eseguiti
-    
-        LEZIONE 13.1 Code Project
-
-            Trip Planner
-
-                Devi pianificare un viaggio su strada. Stai viaggiando ad una velocità media di 40 miglia all'ora.  
-                Data una distanza in miglia come input (il codice per prendere l'input è già presente), invia alla console il tempo che ti ci vorrà per percorrerlo in minuti. 
+                                    <head>
+                                        <title>Page Title</title>
+                                    </head>
+                                    <body>
+                                        
+                                    </body>
+                                </html>
 
 
+                                var myNum1 = 7;
+                                var myNum2 = 10;
+                                if (myNum1 > myNum2) {
+                                    alert("This is my first condition");
+                                }
+                                else {
+                                    alert("This is my second condition");
+                                }
+
+
+
+                        - if myNum1 è maggiore di myNum2, avvisa "Questa è la mia prima condizione";  
+                        - else, avvisa "Questa è la mia seconda condizione".  
+                         
+                        Quindi il browser stamperà la seconda condizione, poiché 7 non è maggiore di 10.
+
+
+                        C'è un altro modo per fare questo controllo usando l'operatore ?: a > b ? alert(a) : alert(b).
+
+                                esempio @else.if
+
+                                        var score = parseInt(readLine(), 10)
+                                        /*
+                                        88 and above => excellent
+                                        40-87   => good
+                                        0-39 => fail
+                                        */
+                                        // your code goes here
+
+                                        if (score >= 88  ) console.log ("excellent");
+
+                                        else if (score >=40 && score < 88  ) 
+                                        console.log ("good");
+
+                                        else console.log ("fail")
+
+                LEZIONE 16.1 The else if Statement
+
+                    else if
+
+                        L'ultimo  blocco else verrà eseguito quando nessuna delle condizioni è vera.  
+                        Cambiamo il valore della  variabile corso nel nostro esempio precedente.
+                        Puoi scrivere tutte le altre dichiarazioni di cui hai bisogno.
+
+                            <!DOCTYPE html>
+                            <html>
+                            <head>
+                            <title>Page Title</title>
+                            </head>
+                            <body>
+
+                            </body>
+                            </html>
+
+                            var course = 3;
+                            if (course == 1) {
+                                document.write("<h1>HTML Tutorial</h1>");
+                            } else if (course == 2) {
+                                document.write("<h1>CSS Tutorial</h1>");
+                            } else {
+                                document.write("<h1>JavaScript Tutorial</h1>");
+                            }
+
+                LEZIONE 17.1 The switch Statement
+                    Switch
+                        Ma cosa succede se è necessario testare più condizioni? In questi casi, scrivere se altro le dichiarazioni per ogni condizione potrebbe non essere la soluzione migliore.  @select.case, @switch, @case
+         
+                        Invece, possiamo usare l'istruzione switch per eseguire azioni diverse in base a condizioni diverse. 
+
+                            switch (expression) {
+                            case n1: 
+                                 statements
+                                 break;
+                              case n2: 
+                                 statements
+                                 break;
+                              default: 
+                                 statements
+                            }
+
+                            L'espressione switch viene valutata una volta. Il valore dell'espressione viene confrontato con i valori di ogni caso e, se c'è una corrispondenza, quel blocco di codice viene eseguito. 
+
+                        Puoi ottenere lo stesso risultato con più se... else, ma l'istruzione switch è più efficace in tali situazioni. 
+
+                            esempio switch
+
+                                    <!DOCTYPE html>
+                                    <html>
+                                    <head>
+                                    <title>Page Title</title>
+                                    </head>
+                                    <body>
+
+                                    </body>
+                                    </html>
+
+
+                                    var day = 2;
+                                    switch (day) {
+                                        case 1:
+                                            document.write("Monday");
+                                            break;
+                                        case 2:
+                                            document.write("Tuesday");
+                                            break;
+                                        case 3:
+                                            document.write("Wednesday");
+                                            break;
+                                        default:
+                                            document.write("Another day");
+                                    }
+
+
+                            Puoi avere tutte le  dichiarazioni di caso di cui hai bisogno.
+                    
+                    The switch Statement
+                        
+                        esempio switch per i giorni della settimana
+
+                            <!DOCTYPE html>
+                            <html>
+                                <head>
+                                    <title>Page Title</title>
+                                </head>
+                                <body>
+                                    
+                                </body>
+                            </html>
+
+                            var day = 2;
+                            switch (day) {
+                            case 1:
+                            document.write("Monday");
+                            break;
+                            case 2:
+                            document.write("Tuesday");
+                            break;
+                            case 3:
+                            document.write("Wednesday");
+                            break;
+                            default:
+                            document.write("Another day");
+                            }
+
+                    The break Keyword
+                        Quindi abbiamo imparato che l'istruzione switch testa un blocco di codice, ma non sempre vogliamo che esegua il test dell'intero blocco. La  parola chiave break disattiva essenzialmente l'istruzione switch.  
+         
+                        L'uscita dal blocco switch interrompe l'esecuzione di più test di codice e casi all'interno del blocco. 
+
+                        Di solito, una pausa dovrebbe essere messa in ogni dichiarazione del caso.
+
+                        Ti viene dato un programma che prende 
+                        il numero come input. Completa il programma in modo che restituisca alla console il tema in base al numero di input. 
+
+                            Esempio di main con switch per 5 casi
+                            @esempio.switch
+
+                                function main() {
+                                    var themeNumber = parseInt(readLine(), 10)
+                                    /*
+                                    L'utente può scegliere il tema del colore per il browser: 
+                                    1 - Light
+                                    2 - Dark
+                                    3 - Nocturne
+                                    4 - Terminal
+                                    5 - Indigo
+                                    */
+                                    // Your code here
+
+                                        switch(themeNumber)
+                                            {
+                                                case 1:
+                                                    console.log("Light")
+                                                    break
+                                                case 2:
+                                                    console.log("Dark")
+                                                    break
+
+                                                case 3:
+                                                    console.log("Nocturne")
+                                                    break
+                                                
+                                                case 4:
+                                                    console.log("Terminal")
+                                                    break
+                                                
+                                                case 5:
+                                                    console.log("Indigo")
+                                                    break
+                                                
+
+                                            }    
+                                }
+
+                    The default Keyword
+                        Spesso non ci sarà corrispondenza, ma abbiamo ancora bisogno del programma per produrre qualcosa ... per questo usiamo la  parola chiave predefinita e default, che specifica il codice da eseguire se non c'è corrispondenza del caso. 
+
+                            esempio
+
+                                var color ="yellow";
+                                switch(color) {
+                                    case "blue": 
+                                        document.write("This is blue.");
+                                        break;
+                                    case "red":     
+                                        document.write("This is red.");
+                                        break;
+                                    case "green": 
+                                        document.write("This is green.");    
+                                        break;
+                                    case "orange":  
+                                        document.write("This is orange.");    
+                                        break;
+                                    default: 
+                                        document.write("Color not found.");
+                                }
+
+
+
+                        ATTENZIONE Il blocco predefinito può essere omesso, se non è necessario gestire il caso quando non viene trovata alcuna corrispondenza. 
+
+                LEZIONE 18.1 The For Loop
+
+                        for, while, and do while. 
+
+                            I cicli possono eseguire un blocco di codice più volte. Sono utili quando si desidera eseguire ripetutamente lo stesso codice, aggiungendo ogni volta un valore diverso. 
+                            JavaScript ha tre tipi di cicli:  
+                                for, 
+                                while, and 
+                                do while..  
+
+                            Inizieremo qui con il classico per loop. Il classico loop "for" è costituito da quanti componenti? da 3 componenti:
+                                for (statement 1; statement 2; statement 3) {
+                                code block to be executed
+                                }
+
+                            Ed ecco cosa succede quando viene eseguito: 
+                             
+                            l'istruzione 1 viene eseguita prima dell'avvio del ciclo (il blocco di codice).  
+                            L'istruzione 2 definisce la condizione per l'esecuzione del ciclo (il blocco di codice).  
+                            L'istruzione 3 viene eseguita ogni volta dopo l'esecuzione del ciclo (il blocco di codice). 
+
+                            Come puoi vedere, il classico per loop ha tre componenti, o istruzioni.
+
+                        The For Loop
+                            Ora abbiamo la teoria, diamo un'occhiata a un esempio specifico.  
+                            In questo esempio viene creato un  ciclo for che stampa i numeri da 1 a 5:.
+
+                            Quindi cosa sta realmente accadendo?  
+
+                                <!DOCTYPE html>
+                                    <html>
+                                        <head>
+                                            <title>Page Title</title>
+                                        </head>
+                                        <body>
+                                            
+                                        </body>
+                                    </html>
+                             
+                                        for (i=1; i<=5; i++) {
+                                            document.write(i + "<br />");
+                                        }
+
+                            In questo esempio, l'istruzione 1 imposta una variabile prima dell'inizio del ciclo (var i = 1).  
+                            L'istruzione 2 definisce la condizione per l'esecuzione del ciclo (deve essere minore o uguale a 5).  
+                            L'istruzione 3 aumenta un valore (i++) ogni volta che il blocco di codice nel ciclo è stato eseguito.
+
+                            STATEMENT 1 FACOLTATIVA
+                            L'istruzione 1 è facoltativa e può essere omessa se i valori vengono impostati prima dell'inizio del ciclo.
+
+                                var i = 1;
+                                for (; i<=5; i++) {
+                                    document.write(i + "<br />");
+                                    }
+                            AVVIARE PIU DI UN VALORE
+                            È inoltre possibile avviare più di un valore nell'istruzione 1, utilizzando virgole per separarli.
+
+                                for (i=1, text=" "; i<=5; i++) {
+                                    text = i +" secondo valore: test";
+                                    document.write(i + "<br />");
+                                     document.write(text + "<br />");
+                                }
+
+
+                                ESERCIZIO
+                                var expression = readLine();
+                                    /*
+
+                                    Ispirati da queste parole, creiamo un piccolo programma che produrrà un'espressione che viene data come input, 3 volte. 
+
+                                    Attività
+                                    Completa il codice per eseguire l'output dell'espressione specificata 3 volte.  
+                                    
+                                    Sample Input
+                                    Learning è divertente!  
+                                    
+                                    Esempio di output
+                                    L'apprendimento è divertente!  
+                                    Imparare è divertente!  
+                                    Imparare è divertente! 
+
+
+                                    */
+                                    for (var i=0; i < 3; i++)
+                                        {
+                                            console.log (expression)
+
+                                        }
+
+                            
+
+                            TERMINA IL CICLO CON IL FALSE
+                            Se l'istruzione 2 restituisce true, il ciclo ricomincia da capo, se restituisce false, il ciclo terminerà.  
+
+                            Anche l'istruzione 2 è facoltativa, ma solo se si inserisce un'interruzione all'interno del ciclo. Altrimenti, il ciclo non finirà mai! 
+                             
+                            L'istruzione 3 viene utilizzata per modificare la variabile iniziale. Può fare qualsiasi cosa, incluso l'incremento negativo (i--), l'incremento positivo (i = i + 15). 
+                             
+                            Anche l'istruzione 3 è facoltativa, ma solo se si incrementano i valori all'interno del ciclo. Così:
+
+                            È possibile avere più cicli nidificati  .
+
+                LEZIONE 19.1 The While Loop
+
+                    The While Loop
+
+                        È ora di passare alla seconda delle nostre tre istruzioni loop, mentre.  
+                        Il  ciclo while si ripete attraverso un blocco di codice, ma solo finché una condizione specificata è vera.  
+                        Ecco la sintassi:
+                            while (condition) {    
+                                   code block
+                                }
+                        La condizione può essere qualsiasi istruzione condizionale che restituisce true o false.Ok, abbiamo la teoria, diamo un'occhiata a un esempio reale:
+                        Il ciclo in questo codice continuerà a essere eseguito finché i è minore o uguale a 10. E ogni volta che il ciclo viene eseguito, aumenterà di 1. 
+                         Questo produrrà i valori da 0 a 10.
+
+
+                                <!DOCTYPE html>
+                                <html>
+                                    <head>
+                                        <title>Page Title</title>
+                                    </head>
+                                    <body>
+                                        
+                                    </body>
+                                </html>
+                                 var i=0;
+                                    while (i<=10) {
+                                        document.write(i + "<br />");
+                                        i++;
+                                    }
+
+
+
+
+                                     /* 
+                                        The while loop
+
+
+                                        Scrivi un programma-timer, che prenderà il conteggio dei secondi come input e output alla console tutti i secondi fino all'arresto del timer. 
+                                     */    
+                                           function main() {
+                                                var seconds = parseInt(readLine(), 10)
+                                                // Your code here
+                                                while (seconds >=0)
+                                               {
+                                                   console.log (seconds)
+                                                   seconds -- 
+                                                }
+                                                
+                                            }
+
+
+                                    ATTENZIONE AI LOOP INFINITI
+                                        I loop infiniti non sono buoni. E un modo in cui ciò accade è se dimentichiamo di aumentare la variabile utilizzata nella condizione. 
+                                        Assicurarsi che la condizione in un  ciclo di tempo alla fine diventi falsa.
+
+                LEZIONE 20.1 The Do...While Loop
+
+                    The Do...While 
+
+                        L'ultimo loop che stiamo guardando in questo modulo è il do... while loop, è una variante del while loop ma con una differenza importante.  
+                         
+                        Questo ciclo eseguirà il blocco di codice una volta, prima di verificare se la condizione è vera, quindi ripeterà il ciclo finché la condizione è vera. 
+
+                            do {
+                               code block
+                            }
+                            while (condition);
+
+
+                        Si noti il punto e virgola utilizzato alla fine del do... mentre loop. Questo è importante.
+
+                LEZIONE 21.1 Break and Continue
+
+                    Break
+                        Abbiamo incontrato l'istruzione break in precedenza in questo modulo, la usiamo per "saltare fuori" da un ciclo e continuare a eseguire il codice dopo il ciclo. 
+
+                            esempio @break con            @for.annidato
+                                <!DOCTYPE html>
+                                <html>
+                                    <head>
+                                        <title>Page Title</title>
+                                    </head>
+                                    <body>
+                                        
+                                    </body>
+                                </html>
+
+                                for (i = 0; i <= 10; i++) {
+                                        if (i == 5) {
+                                             document.write(" break a 5 ");
+                                            break; 
+                                        }
+                                        document.write(i + "<br />");
+                                    }
+
+                             In questo esempio, una volta raggiunto 5, uscirà dal ciclo. 
+                            ATTENZIONE RETURN
+                            È possibile utilizzare la parola chiave return per restituire immediatamente un valore dal ciclo all'interno di una funzione. Anche questo spezzerà il cerchio. 
+
+
+                    Continue
+                            
+                            A differenza dell'istruzione break, l'istruzione continue interrompe solo un'iterazione nel ciclo e continua con l'iterazione successiva. 
+
+                                <!DOCTYPE html>
+                                <html>
+                                    <head>
+                                        <title>Page Title</title>
+                                    </head>
+                                    <body>
+                                        
+                                    </body>
+                                </html>
+
+
+                                    for (i = 0; i <= 10; i++) {
+                                        if (i == 5) {
+                                             document.write(" i == 5 salta il ciclo di stampa <br> " +
+                                                             "e prosegue con IL COMANDO CONTINUE <br />");
+                                            continue;
+                                        }
+                                        document.write(i + "<br />");
+                                    }
+
+                            Il valore 5 non viene stampato, perché continue ignora l'iterazione del ciclo.
+
+
+
+                            Molti edifici alti, compresi gli hotel, saltano il numero 13 quando numerano i piani - spesso passando dal piano 12 al piano 14. Si pensa che il numero 13 sia sfortunato. 
+                            Scrivi un programma che conterà 15 stanze a partire da 1, saltando il numero 13. Invia alla console ogni numero di stanza in una riga separata. 
+
+                            var countOfRooms = 15;
+                            // Your code here
+                            for (i=1; i<=16; i++ ) { 
+                               if (i==13) 
+                                    continue;
+                                console.log(i);
+                            }
+
+                            Fai attenzione- considerando il numero mancante, il numero dell'ultima stanza dovrebbe essere maggiore del conteggio delle camere di 1.
+            
+                LEZIONE 22.1 QUIZ
+
+                    ESEGUITI
+                            
+                LEZIONE 23.1 CODCE PROJECT
+
+                        La lumaca si arrampica su 7 piedi ogni giorno e scivola indietro di 2 piedi ogni notte.  
+                            Quanti giorni ci vorranno alla lumaca per uscire da un pozzo con la profondità data?  
+                             
+                            Input campione: 
+                            31 
+                             
+                            Output campione:
+                             6 
+                             
+                            Spiegazione: Analizziamo la distanza che la lumaca copre ogni giorno: 
+                            Giorno 1: 7-2 = 5 
+                            Giorno 2: 5 + 7-2 = 10 
+                            Giorno 3: 10 + 7-2 = 15 
+                            Giorno 4: 15+7-2=20 
+                            Giorno 5: 20+7-2=25 
+                            Giorno 6: 25+7=32 
+                            Quindi, il Giorno 6 la lumaca raggiungerà i 32 piedi e uscirà dal pozzo di giorno, senza scivolare indietro quella notte. 
+                            Suggerimento: è possibile utilizzare un ciclo per calcolare la distanza che la lumaca copre ogni giorno e interrompere il ciclo quando raggiunge la distanza desiderata.
 
                         function main() {
-                        var distance = parseInt(readLine(), 10);
-                            //your code goes here
-                            var calcolo = (distance/40)*60;
-                            console.log(calcolo);
+                                var depth = parseInt(readLine(), 10);
+                                //your code goes here
+                                let days = 0;
+                                let distance = 0;
 
-                    
-                }
+                                while (distance < depth) {
+                                    distance += 7;
+                                    days++;
+                                    if (distance >= depth) {
+                                        break;
+                                    } else {
+                                        distance -= 2;
+                                    }
+                                } 
 
-        LEZIONE 14.1 The if Statement
+                                console.log(days);  
+
+
+                            }
                 
-                The if Statement
 
-                    conditional statements IF: 
-                    Spesso quando scriviamo codice, vogliamo eseguire azioni diverse in base a condizioni diverse.  
-                    Ed è qui che  entrano in gioco le dichiarazioni condizionali. 
-                    Ci sono un sacco di condizionali diversi, da coprire, ma stiamo iniziando con uno dei più utili: "if"   @IF
-                    Usiamo se per specificare un blocco di codice che vogliamo venga eseguito se una condizione specificata è vera.
+            Functions
+                    LEZIONE 24.1 User-Defined Functions
 
-                    Le istruzioni verranno eseguite solo se la condizione specificata è true. Diamo un'occhiata a un esempio: 
-                        ESEMPIO
-                            HTML
+                        JavaScript Functions
+
+                            Una funzione JavaScript è un blocco di codice progettato per eseguire una particolare attività.  
+                            I principali vantaggi dell'utilizzo delle funzioni: 
+                            Riutilizzo del codice: definire il codice una volta e utilizzarlo molte volte.  
+                            Utilizzare lo stesso codice molte volte con argomenti diversi, per produrre risultati diversi. 
+                            
+                            Una funzione JavaScript viene eseguita quando "qualcosa" la richiama o la chiama. 
+                            @JavaScript.Functions
+
+                        Defining a Function
+
+                            Per definire una funzione JavaScript, utilizzare la  parola chiave function, seguita da un nome, seguita da un set di parentesi ().  
+
+                            Il codice che deve essere eseguito dalla funzione viene inserito all'interno delle parentesi graffe {}.
+
+                                    function name() {
+                                          //code to be executed
+                                        }
+                            NOMI DELLE FUNZIONI
+
+
+                        Calling a Function
+
+                                Per eseguire la funzione, è necessario chiamarla.  
+                                Per chiamare una funzione, iniziare con il nome della funzione, quindi seguirla con gli argomenti tra parentesi.  
+                                Esempio:
+
                                 <!DOCTYPE html>
                                     <html>
                                         <head>
@@ -2663,752 +3296,238 @@
                                         </body>
                                     </html>
 
-                                 javascript
-                                    var myNum1 = 7;
-                                    var myNum2 = 10;
-                                    if (myNum1 < myNum2) {
-                                        alert("JavaScript is easy to learn.");
-                                    }
-                                        @alert = messaggio in javascript
-                                        @messaggio.javascript
-                                        @javascript.messaggio
-                                        @finestra.pop.up
 
-
-
-                                Puoi vedere dall'esempio sopra, abbiamo usato javascript alert() per generare una finestra di avviso popup che contiene le informazioni all'interno delle parentesi.
-
-                    Ecco un po 'più di dettagli sulla dichiarazione if.  
-                    Questo è un esempio di falsa  istruzione condizionale:
-
-
-                            <!DOCTYPE html>
-                            <html>
-                                <head>
-                                    <title>Page Title</title>
-                                </head>
-                                <body>
-                                    
-                                </body>
-                            </html>
-
-                            var myNum1 = 7;
-                            var myNum2 = 10;
-                            if (myNum1 > myNum2) {
-                                alert("JavaScript is easy to learn.");
-                            }
-
-
-                    Poiché la condizione viene valutata come falsa, l'istruzione di avviso viene ignorata e il programma continua con la riga dopo la parentesi graffa di chiusura dell'istruzione if. 
-                    se è in lettere minuscole. Le lettere maiuscole (If o IF) non funzioneranno.
-
-                    Completa il codice per l'output "vacanza", se il mese specificato è agosto. Non produrre nulla altrimenti. 
-                        var month = readLine()
-                        //your code goes here
-
-                        if (month == "August") {
-
-                        console.log ("vacation")
-                        }
-
-        LEZIONE 15.1 The else Statement
-            
-            The else Statement
-
-                Giusto, quindi abbiamo visto che l'azione viene saltata quando un blocco di codice che utilizza l'istruzione if valuta come false, ma cosa succede se vogliamo che accada qualcos'altro.  
-                Bene, usiamo l'affermazione "else", ovviamente!  
-                 
-                È possibile utilizzare l'istruzione else per specificare un blocco di codice che verrà eseguito se la condizione è false. Così:
-
-                    if (expression) {
-                       // executed if condition is true
-                    }
-                    else {
-                       // executed if condition is false
-                    }
-
-                È possibile ignorare le parentesi graffe se il codice nella condizione contiene un solo comando.
-
-                Ecco un altro esempio delle  istruzioni if e else che lavorano insieme:
-
-                        <!DOCTYPE html>
-                        <html>
-
-
-
-                            <head>
-                                <title>Page Title</title>
-                            </head>
-                            <body>
-                                
-                            </body>
-                        </html>
-
-
-                        var myNum1 = 7;
-                        var myNum2 = 10;
-                        if (myNum1 > myNum2) {
-                            alert("This is my first condition");
-                        }
-                        else {
-                            alert("This is my second condition");
-                        }
-
-
-
-                - if myNum1 è maggiore di myNum2, avvisa "Questa è la mia prima condizione";  
-                - else, avvisa "Questa è la mia seconda condizione".  
-                 
-                Quindi il browser stamperà la seconda condizione, poiché 7 non è maggiore di 10.
-
-
-                C'è un altro modo per fare questo controllo usando l'operatore ?: a > b ? alert(a) : alert(b).
-
-                        esempio @else.if
-
-                                var score = parseInt(readLine(), 10)
-                                /*
-                                88 and above => excellent
-                                40-87   => good
-                                0-39 => fail
-                                */
-                                // your code goes here
-
-                                if (score >= 88  ) console.log ("excellent");
-
-                                else if (score >=40 && score < 88  ) 
-                                console.log ("good");
-
-                                else console.log ("fail")
-
-        LEZIONE 16.1 The else if Statement
-
-            else if
-
-                L'ultimo  blocco else verrà eseguito quando nessuna delle condizioni è vera.  
-                Cambiamo il valore della  variabile corso nel nostro esempio precedente.
-                Puoi scrivere tutte le altre dichiarazioni di cui hai bisogno.
-
-                    <!DOCTYPE html>
-                    <html>
-                    <head>
-                    <title>Page Title</title>
-                    </head>
-                    <body>
-
-                    </body>
-                    </html>
-
-                    var course = 3;
-                    if (course == 1) {
-                        document.write("<h1>HTML Tutorial</h1>");
-                    } else if (course == 2) {
-                        document.write("<h1>CSS Tutorial</h1>");
-                    } else {
-                        document.write("<h1>JavaScript Tutorial</h1>");
-                    }
-
-        LEZIONE 17.1 The switch Statement
-            Switch
-                Ma cosa succede se è necessario testare più condizioni? In questi casi, scrivere se altro le dichiarazioni per ogni condizione potrebbe non essere la soluzione migliore.  @select.case, @switch, @case
- 
-                Invece, possiamo usare l'istruzione switch per eseguire azioni diverse in base a condizioni diverse. 
-
-                    switch (expression) {
-                    case n1: 
-                         statements
-                         break;
-                      case n2: 
-                         statements
-                         break;
-                      default: 
-                         statements
-                    }
-
-                    L'espressione switch viene valutata una volta. Il valore dell'espressione viene confrontato con i valori di ogni caso e, se c'è una corrispondenza, quel blocco di codice viene eseguito. 
-
-                Puoi ottenere lo stesso risultato con più se... else, ma l'istruzione switch è più efficace in tali situazioni. 
-
-                    esempio switch
-
-                            <!DOCTYPE html>
-                            <html>
-                            <head>
-                            <title>Page Title</title>
-                            </head>
-                            <body>
-
-                            </body>
-                            </html>
-
-
-                            var day = 2;
-                            switch (day) {
-                                case 1:
-                                    document.write("Monday");
-                                    break;
-                                case 2:
-                                    document.write("Tuesday");
-                                    break;
-                                case 3:
-                                    document.write("Wednesday");
-                                    break;
-                                default:
-                                    document.write("Another day");
-                            }
-
-
-                    Puoi avere tutte le  dichiarazioni di caso di cui hai bisogno.
-            
-            The switch Statement
-                
-                esempio switch per i giorni della settimana
-
-                    <!DOCTYPE html>
-                    <html>
-                        <head>
-                            <title>Page Title</title>
-                        </head>
-                        <body>
-                            
-                        </body>
-                    </html>
-
-                    var day = 2;
-                    switch (day) {
-                    case 1:
-                    document.write("Monday");
-                    break;
-                    case 2:
-                    document.write("Tuesday");
-                    break;
-                    case 3:
-                    document.write("Wednesday");
-                    break;
-                    default:
-                    document.write("Another day");
-                    }
-
-            The break Keyword
-                Quindi abbiamo imparato che l'istruzione switch testa un blocco di codice, ma non sempre vogliamo che esegua il test dell'intero blocco. La  parola chiave break disattiva essenzialmente l'istruzione switch.  
- 
-                L'uscita dal blocco switch interrompe l'esecuzione di più test di codice e casi all'interno del blocco. 
-
-                Di solito, una pausa dovrebbe essere messa in ogni dichiarazione del caso.
-
-                Ti viene dato un programma che prende 
-                il numero come input. Completa il programma in modo che restituisca alla console il tema in base al numero di input. 
-
-                    Esempio di main con switch per 5 casi
-                    @esempio.switch
-
-                        function main() {
-                            var themeNumber = parseInt(readLine(), 10)
-                            /*
-                            L'utente può scegliere il tema del colore per il browser: 
-                            1 - Light
-                            2 - Dark
-                            3 - Nocturne
-                            4 - Terminal
-                            5 - Indigo
-                            */
-                            // Your code here
-
-                                switch(themeNumber)
-                                    {
-                                        case 1:
-                                            console.log("Light")
-                                            break
-                                        case 2:
-                                            console.log("Dark")
-                                            break
-
-                                        case 3:
-                                            console.log("Nocturne")
-                                            break
-                                        
-                                        case 4:
-                                            console.log("Terminal")
-                                            break
-                                        
-                                        case 5:
-                                            console.log("Indigo")
-                                            break
-                                        
-
-                                    }    
-                        }
-
-            The default Keyword
-                Spesso non ci sarà corrispondenza, ma abbiamo ancora bisogno del programma per produrre qualcosa ... per questo usiamo la  parola chiave predefinita e default, che specifica il codice da eseguire se non c'è corrispondenza del caso. 
-
-                    esempio
-
-                        var color ="yellow";
-                        switch(color) {
-                            case "blue": 
-                                document.write("This is blue.");
-                                break;
-                            case "red":     
-                                document.write("This is red.");
-                                break;
-                            case "green": 
-                                document.write("This is green.");    
-                                break;
-                            case "orange":  
-                                document.write("This is orange.");    
-                                break;
-                            default: 
-                                document.write("Color not found.");
-                        }
-
-
-
-                ATTENZIONE Il blocco predefinito può essere omesso, se non è necessario gestire il caso quando non viene trovata alcuna corrispondenza. 
-
-        LEZIONE 18.1 The For Loop
-
-                for, while, and do while. 
-
-                    I cicli possono eseguire un blocco di codice più volte. Sono utili quando si desidera eseguire ripetutamente lo stesso codice, aggiungendo ogni volta un valore diverso. 
-                    JavaScript ha tre tipi di cicli:  
-                        for, 
-                        while, and 
-                        do while..  
-
-                    Inizieremo qui con il classico per loop. Il classico loop "for" è costituito da quanti componenti? da 3 componenti:
-                        for (statement 1; statement 2; statement 3) {
-                        code block to be executed
-                        }
-
-                    Ed ecco cosa succede quando viene eseguito: 
-                     
-                    l'istruzione 1 viene eseguita prima dell'avvio del ciclo (il blocco di codice).  
-                    L'istruzione 2 definisce la condizione per l'esecuzione del ciclo (il blocco di codice).  
-                    L'istruzione 3 viene eseguita ogni volta dopo l'esecuzione del ciclo (il blocco di codice). 
-
-                    Come puoi vedere, il classico per loop ha tre componenti, o istruzioni.
-
-                The For Loop
-                    Ora abbiamo la teoria, diamo un'occhiata a un esempio specifico.  
-                    In questo esempio viene creato un  ciclo for che stampa i numeri da 1 a 5:.
-
-                    Quindi cosa sta realmente accadendo?  
-
-                        <!DOCTYPE html>
-                            <html>
-                                <head>
-                                    <title>Page Title</title>
-                                </head>
-                                <body>
-                                    
-                                </body>
-                            </html>
-                     
-                                for (i=1; i<=5; i++) {
-                                    document.write(i + "<br />");
-                                }
-
-                    In questo esempio, l'istruzione 1 imposta una variabile prima dell'inizio del ciclo (var i = 1).  
-                    L'istruzione 2 definisce la condizione per l'esecuzione del ciclo (deve essere minore o uguale a 5).  
-                    L'istruzione 3 aumenta un valore (i++) ogni volta che il blocco di codice nel ciclo è stato eseguito.
-
-                    STATEMENT 1 FACOLTATIVA
-                    L'istruzione 1 è facoltativa e può essere omessa se i valori vengono impostati prima dell'inizio del ciclo.
-
-                        var i = 1;
-                        for (; i<=5; i++) {
-                            document.write(i + "<br />");
-                            }
-                    AVVIARE PIU DI UN VALORE
-                    È inoltre possibile avviare più di un valore nell'istruzione 1, utilizzando virgole per separarli.
-
-                        for (i=1, text=" "; i<=5; i++) {
-                            text = i +" secondo valore: test";
-                            document.write(i + "<br />");
-                             document.write(text + "<br />");
-                        }
-
-
-                        ESERCIZIO
-                        var expression = readLine();
-                            /*
-
-                            Ispirati da queste parole, creiamo un piccolo programma che produrrà un'espressione che viene data come input, 3 volte. 
-
-                            Attività
-                            Completa il codice per eseguire l'output dell'espressione specificata 3 volte.  
-                            
-                            Sample Input
-                            Learning è divertente!  
-                            
-                            Esempio di output
-                            L'apprendimento è divertente!  
-                            Imparare è divertente!  
-                            Imparare è divertente! 
-
-
-                            */
-                            for (var i=0; i < 3; i++)
-                                {
-                                    console.log (expression)
-
-                                }
-
-                    
-
-                    TERMINA IL CICLO CON IL FALSE
-                    Se l'istruzione 2 restituisce true, il ciclo ricomincia da capo, se restituisce false, il ciclo terminerà.  
-
-                    Anche l'istruzione 2 è facoltativa, ma solo se si inserisce un'interruzione all'interno del ciclo. Altrimenti, il ciclo non finirà mai! 
-                     
-                    L'istruzione 3 viene utilizzata per modificare la variabile iniziale. Può fare qualsiasi cosa, incluso l'incremento negativo (i--), l'incremento positivo (i = i + 15). 
-                     
-                    Anche l'istruzione 3 è facoltativa, ma solo se si incrementano i valori all'interno del ciclo. Così:
-
-                    È possibile avere più cicli nidificati  .
-
-        LEZIONE 19.1 The While Loop
-
-            The While Loop
-
-                È ora di passare alla seconda delle nostre tre istruzioni loop, mentre.  
-                Il  ciclo while si ripete attraverso un blocco di codice, ma solo finché una condizione specificata è vera.  
-                Ecco la sintassi:
-                    while (condition) {    
-                           code block
-                        }
-                La condizione può essere qualsiasi istruzione condizionale che restituisce true o false.Ok, abbiamo la teoria, diamo un'occhiata a un esempio reale:
-                Il ciclo in questo codice continuerà a essere eseguito finché i è minore o uguale a 10. E ogni volta che il ciclo viene eseguito, aumenterà di 1. 
-                 Questo produrrà i valori da 0 a 10.
-
-
-                        <!DOCTYPE html>
-                        <html>
-                            <head>
-                                <title>Page Title</title>
-                            </head>
-                            <body>
-                                
-                            </body>
-                        </html>
-                         var i=0;
-                            while (i<=10) {
-                                document.write(i + "<br />");
-                                i++;
-                            }
-
-
-
-
-                             /* 
-                                The while loop
-
-
-                                Scrivi un programma-timer, che prenderà il conteggio dei secondi come input e output alla console tutti i secondi fino all'arresto del timer. 
-                             */    
-                                   function main() {
-                                        var seconds = parseInt(readLine(), 10)
-                                        // Your code here
-                                        while (seconds >=0)
-                                       {
-                                           console.log (seconds)
-                                           seconds -- 
+                                        //DEFINISCO LA FUNZIONE PRODUCO UN MESSAGGIO
+                                        function myFunction() {
+                                            alert("Calling a Function!");
                                         }
+
+                                        //CHIAMO LA FUNZIONE SENZA PARAMETRI
+                                        myFunction();
+
+                            FINE FUNZIONE;
+                                Ricordarsi sempre di terminare l'istruzione con un punto e virgola dopo aver chiamato la funzione.
+
+
+                            CHIAMATE ALLA FUNZIONE
+                                
+                                Una volta definita la funzione, JavaScript consente di chiamarla tutte le volte che si desidera.
+
+                                function myFunction() {
+                                            alert("Alert box!");
+                                        }
+                                        //CHIAMO 2 VOLE IL MESSAGGIO
+                                        myFunction();
+
+                                        // some other code
+
+                                        myFunction();
+
+                                PASSAGGIO DI THIS
+                                    Puoi anche chiamare una funzione usando questa sintassi: myFunction.call(). La differenza è che quando chiami in questo modo, stai passando la parola chiave "this" a una funzione. Ne parlerai più tardi.
+
+                                LOADING
+
+                                    User-Defined Functions
+                                    È molto comodo avere un componente precaricato soprattutto in ...
+
+                                    È molto comune avere il componente "Preloader", specialmente nelle app e nei siti Web multifunzionali.  
+                                    Creare una funzione che emetterà "Caricamento" sulla console. 
+
+                                        function showPreloader() {
+                                                //complete the function
+                                                console.log("Loading");
+                                            }
+
+                                            //call the function
+                                            showPreloader()
+
+                    LEZIONE 25.1 Function Parameters
+
+                        Functions can take parameters.
+                            
+                            Le funzioni possono assumere parametri.  
+                            I parametri di funzione sono i nomi elencati nella definizione della funzione. 
+
+                                functionName(param1, param2, param3) {
+                                           // some code
+                                        }
+
+                            Come per le variabili, ai parametri dovrebbero essere dati nomi, che sono separati da virgole all'interno delle parentesi.
+
+                        Using Parameters
+                            Dopo aver definito i parametri, è possibile utilizzarli all'interno della funzione.
+
+                            Questa funzione accetta un parametro, che viene chiamato nome. Quando si chiama la funzione, specificare il valore del parametro (argomento) all'interno delle parentesi. 
+
+                                <!DOCTYPE html>
+                                <html>
+                                    <head>
+                                        <title>Page Title</title>
+                                    </head>
+                                    <body>
                                         
+                                    </body>
+                                </html>
+
+                                    // ATTIVA IL MESSAGGIO con il nome
+
+                                    function sayHello(name) {
+                                        alert("Hi, " + name);
                                     }
 
-
-                            ATTENZIONE AI LOOP INFINITI
-                                I loop infiniti non sono buoni. E un modo in cui ciò accade è se dimentichiamo di aumentare la variabile utilizzata nella condizione. 
-                                Assicurarsi che la condizione in un  ciclo di tempo alla fine diventi falsa.
-
-        LEZIONE 20.1 The Do...While Loop
-
-            The Do...While 
-
-                L'ultimo loop che stiamo guardando in questo modulo è il do... while loop, è una variante del while loop ma con una differenza importante.  
-                 
-                Questo ciclo eseguirà il blocco di codice una volta, prima di verificare se la condizione è vera, quindi ripeterà il ciclo finché la condizione è vera. 
-
-                    do {
-                       code block
-                    }
-                    while (condition);
+                                    sayHello("David");
 
 
-                Si noti il punto e virgola utilizzato alla fine del do... mentre loop. Questo è importante.
-
-        LEZIONE 21.1 Break and Continue
-
-            Break
-                Abbiamo incontrato l'istruzione break in precedenza in questo modulo, la usiamo per "saltare fuori" da un ciclo e continuare a eseguire il codice dopo il ciclo. 
-
-                    esempio @break con            @for.annidato
-                        <!DOCTYPE html>
-                        <html>
-                            <head>
-                                <title>Page Title</title>
-                            </head>
-                            <body>
-                                
-                            </body>
-                        </html>
-
-                        for (i = 0; i <= 10; i++) {
-                                if (i == 5) {
-                                     document.write(" break a 5 ");
-                                    break; 
-                                }
-                                document.write(i + "<br />");
-                            }
-
-                     In questo esempio, una volta raggiunto 5, uscirà dal ciclo. 
-                    ATTENZIONE RETURN
-                    È possibile utilizzare la parola chiave return per restituire immediatamente un valore dal ciclo all'interno di una funzione. Anche questo spezzerà il cerchio. 
-
-
-            Continue
-                    
-                    A differenza dell'istruzione break, l'istruzione continue interrompe solo un'iterazione nel ciclo e continua con l'iterazione successiva. 
-
-                        <!DOCTYPE html>
-                        <html>
-                            <head>
-                                <title>Page Title</title>
-                            </head>
-                            <body>
-                                
-                            </body>
-                        </html>
-
-
-                            for (i = 0; i <= 10; i++) {
-                                if (i == 5) {
-                                     document.write(" i == 5 salta il ciclo di stampa <br> " +
-                                                     "e prosegue con IL COMANDO CONTINUE <br />");
-                                    continue;
-                                }
-                                document.write(i + "<br />");
-                            }
-
-                    Il valore 5 non viene stampato, perché continue ignora l'iterazione del ciclo.
-
-
-
-                    Molti edifici alti, compresi gli hotel, saltano il numero 13 quando numerano i piani - spesso passando dal piano 12 al piano 14. Si pensa che il numero 13 sia sfortunato. 
-                    Scrivi un programma che conterà 15 stanze a partire da 1, saltando il numero 13. Invia alla console ogni numero di stanza in una riga separata. 
-
-                    var countOfRooms = 15;
-                    // Your code here
-                    for (i=1; i<=16; i++ ) { 
-                       if (i==13) 
-                            continue;
-                        console.log(i);
-                    }
-
-                    Fai attenzione- considerando il numero mancante, il numero dell'ultima stanza dovrebbe essere maggiore del conteggio delle camere di 1.
-    
-        LEZIONE 22.1 QUIZ
-
-            ESEGUITI
-                    
-        LEZIONE 23.1 CODCE PROJECT
-
-                La lumaca si arrampica su 7 piedi ogni giorno e scivola indietro di 2 piedi ogni notte.  
-                    Quanti giorni ci vorranno alla lumaca per uscire da un pozzo con la profondità data?  
-                     
-                    Input campione: 
-                    31 
-                     
-                    Output campione:
-                     6 
-                     
-                    Spiegazione: Analizziamo la distanza che la lumaca copre ogni giorno: 
-                    Giorno 1: 7-2 = 5 
-                    Giorno 2: 5 + 7-2 = 10 
-                    Giorno 3: 10 + 7-2 = 15 
-                    Giorno 4: 15+7-2=20 
-                    Giorno 5: 20+7-2=25 
-                    Giorno 6: 25+7=32 
-                    Quindi, il Giorno 6 la lumaca raggiungerà i 32 piedi e uscirà dal pozzo di giorno, senza scivolare indietro quella notte. 
-                    Suggerimento: è possibile utilizzare un ciclo per calcolare la distanza che la lumaca copre ogni giorno e interrompere il ciclo quando raggiunge la distanza desiderata.
-
-                function main() {
-                        var depth = parseInt(readLine(), 10);
-                        //your code goes here
-                        let days = 0;
-                        let distance = 0;
-
-                        while (distance < depth) {
-                            distance += 7;
-                            days++;
-                            if (distance >= depth) {
-                                break;
-                            } else {
-                                distance -= 2;
-                            }
-                        } 
-
-                        console.log(days);  
-
-
-                    }
-        
-
-        LEZIONE 24.1 User-Defined Functions
-
-            JavaScript Functions
-
-                Una funzione JavaScript è un blocco di codice progettato per eseguire una particolare attività.  
-                I principali vantaggi dell'utilizzo delle funzioni: 
-                Riutilizzo del codice: definire il codice una volta e utilizzarlo molte volte.  
-                Utilizzare lo stesso codice molte volte con argomenti diversi, per produrre risultati diversi. 
-                
-                Una funzione JavaScript viene eseguita quando "qualcosa" la richiama o la chiama. 
-                @JavaScript.Functions
-
-            Defining a Function
-
-                Per definire una funzione JavaScript, utilizzare la  parola chiave function, seguita da un nome, seguita da un set di parentesi ().  
-
-                Il codice che deve essere eseguito dalla funzione viene inserito all'interno delle parentesi graffe {}.
-
-                        function name() {
-                              //code to be executed
-                            }
-                NOMI DELLE FUNZIONI
-
-
-            Calling a Function
-
-                    Per eseguire la funzione, è necessario chiamarla.  
-                    Per chiamare una funzione, iniziare con il nome della funzione, quindi seguirla con gli argomenti tra parentesi.  
-                    Esempio:
-
-                    <!DOCTYPE html>
-                        <html>
-                            <head>
-                                <title>Page Title</title>
-                            </head>
-                            <body>
-                                
-                            </body>
-                        </html>
-
-
-                            //DEFINISCO LA FUNZIONE PRODUCO UN MESSAGGIO
-                            function myFunction() {
-                                alert("Calling a Function!");
-                            }
-
-                            //CHIAMO LA FUNZIONE SENZA PARAMETRI
-                            myFunction();
-
-                FINE FUNZIONE;
-                    Ricordarsi sempre di terminare l'istruzione con un punto e virgola dopo aver chiamato la funzione.
-
-
-                CHIAMATE ALLA FUNZIONE
-                    
-                    Una volta definita la funzione, JavaScript consente di chiamarla tutte le volte che si desidera.
-
-                    function myFunction() {
-                                alert("Alert box!");
-                            }
-                            //CHIAMO 2 VOLE IL MESSAGGIO
-                            myFunction();
-
-                            // some other code
-
-                            myFunction();
-
-                    PASSAGGIO DI THIS
-                        Puoi anche chiamare una funzione usando questa sintassi: myFunction.call(). La differenza è che quando chiami in questo modo, stai passando la parola chiave "this" a una funzione. Ne parlerai più tardi.
-
-                    LOADING
-
-                        User-Defined Functions
-                        È molto comodo avere un componente precaricato soprattutto in ...
-
-                        È molto comune avere il componente "Preloader", specialmente nelle app e nei siti Web multifunzionali.  
-                        Creare una funzione che emetterà "Caricamento" sulla console. 
-
-                            function showPreloader() {
-                                    //complete the function
-                                    console.log("Loading");
-                                }
-
-                                //call the function
-                                showPreloader()
-
-        LEZIONE 25.1 Function Parameters
-
-            Functions can take parameters.
-                
-                Le funzioni possono assumere parametri.  
-                I parametri di funzione sono i nomi elencati nella definizione della funzione. 
-
-                    functionName(param1, param2, param3) {
-                               // some code
-                            }
-
-                Come per le variabili, ai parametri dovrebbero essere dati nomi, che sono separati da virgole all'interno delle parentesi.
-
-            Using Parameters
-                Dopo aver definito i parametri, è possibile utilizzarli all'interno della funzione.
-
-                Questa funzione accetta un parametro, che viene chiamato nome. Quando si chiama la funzione, specificare il valore del parametro (argomento) all'interno delle parentesi. 
-
-                    <!DOCTYPE html>
-                    <html>
-                        <head>
-                            <title>Page Title</title>
-                        </head>
-                        <body>
+                            Gli argomenti della funzione sono i valori reali passati a (e ricevuti da) la funzione.
                             
-                        </body>
-                    </html>
+                            Promemoria importanti
+                                Completare la funzione-promemoria per generare il messaggio corrispondente.
 
-                        // ATTIVA IL MESSAGGIO con il nome
+                                A volte è molto utile impostare un promemoria per aiutarti a svolgere tutte le tue attività.  
+                                Il programma che ti viene fornito prende un evento come input.  
+                                Completare il promemoria della funzione per prendere quell'evento come argomento e generare il messaggio corrispondente.
 
-                        function sayHello(name) {
-                            alert("Hi, " + name);
-                        }
+                                Utilizzare l'operatore + per concatenare insieme i valori stringa. 
+                                For example, console.log("JS is " + "fun!") will output "JS is fun". 
 
-                        sayHello("David");
+                                Sample Output
+                                Hai impostato un promemoria sull'allenamento 
+
+                               function main() {
+                                        var eventExample = readLine();
+                                        // function call
+                                        setReminder(eventExample)
+                                    }
+                                        //complete the function
+                                        function setReminder(event) {
+                                            console.log ('You set a reminder about ' + event);
+                                        
+                                    };
+
+                            Function Parameters
+
+                                È possibile definire una singola funzione e passarvi diversi valori di parametro (argomenti).
+                                    ESEMPIO di passaggio di 3 parametri strina una alla volta
+
+                                        <!DOCTYPE html>
+                                            <html>
+                                                <head>
+                                                    <title>Page Title</title>
+                                                </head>
+                                                <body>
+                                                    
+                                                </body>
+                                            </html>
 
 
-                Gli argomenti della funzione sono i valori reali passati a (e ricevuti da) la funzione.
-                
-                Promemoria importanti
-                    Completare la funzione-promemoria per generare il messaggio corrispondente.
+                                            function sayHello(name) {
+                                            alert("Hi, " + name);
+                                            }
+                                            sayHello("David");
+                                            sayHello("Sarah");
+                                            sayHello("John");
 
-                    A volte è molto utile impostare un promemoria per aiutarti a svolgere tutte le tue attività.  
-                    Il programma che ti viene fornito prende un evento come input.  
-                    Completare il promemoria della funzione per prendere quell'evento come argomento e generare il messaggio corrispondente.
+                                Questo eseguirà il codice della funzione ogni volta per l'argomento fornito.
 
-                    Utilizzare l'operatore + per concatenare insieme i valori stringa. 
-                    For example, console.log("JS is " + "fun!") will output "JS is fun". 
+                    LEZIONE 26.1 Using Multiple Parameters with Functions     
+                        Multiple Parameters
+                            È possibile definire più parametri per una funzione separandoli tra virgole. 
 
-                    Sample Output
-                    Hai impostato un promemoria sull'allenamento 
+                                function myFunc(x, y) {
+                                       // some code
+                                    }
 
-                   function main() {
-                            var eventExample = readLine();
-                            // function call
-                            setReminder(eventExample)
-                        }
-                            //complete the function
-                            function setReminder(event) {
-                                console.log ('You set a reminder about ' + event);
-                            
-                        };
+                            L'esempio precedente definisce la funzione myFunc per prendere due parametri.   
 
-                Function Parameters
+                            ESEMPIO MULTIPARAMETRI
+                                I parametri vengono utilizzati all'interno della definizione della funzione.
 
-                    È possibile definire una singola funzione e passarvi diversi valori di parametro (argomenti).
-                        ESEMPIO di passaggio di 3 parametri strina una alla volta
+                                    function sayHello(name, age) {
+                                    document.write( name + " is " + age + " years old.");
+                                    }
+
+                                I parametri di funzione sono i nomi elencati nella definizione della funzione.
+
+
+
+                                Quando si chiama la funzione, specificare gli argomenti nello stesso ordine in cui sono stati definiti.
+
+                                <!DOCTYPE html>
+                                        <html>
+                                            <head>
+                                                <title>Page Title</title>
+                                            </head>
+                                            <body>
+                                                
+                                            </body>
+                                        </html>
+
+                                        function sayHello(name, age) {
+                                        document.write( name + " is " + age + " years old.");
+                                        }
+
+                                        sayHello("John", 20)
+
+
+
+                                PARAMETRI > DI QUELLI DEFINITI MATRICE
+                                            function main() {
+                                                    var goalsTeam1 = parseInt(readLine(), 10);
+                                                    var goalsTeam2 = parseInt(readLine(), 10);
+                                                    // function call
+                                                    finalResult(goalsTeam1, goalsTeam2)
+                                                    
+                                                }
+                                                //complete the function
+                                                function finalResult(goalsTeam1 , goalsTeam2) {
+
+                                                    if  (goalsTeam1 > goalsTeam2)  {
+                                                        console.log("Team 1 won");
+                                                    }
+
+
+                                                    
+                                                    if  (goalsTeam1 < goalsTeam2)  {
+                                                        console.log("Team 2 won");
+                                                    }
+
+                                                    
+                                                    if  (goalsTeam1 == goalsTeam2)  {
+                                                        console.log("Draw");
+                                                    }
+                                                    
+                                                    
+
+                                                };
+                                Se si passano più argomenti di quelli definiti, questi verranno assegnati a una matrice denominata argomenti. Possono essere usati in questo modo: argomenti[0], argomenti[1], ecc.
+
+                                ATTENZIONE NESSUN CONTROLLO PARAMETRI
+                                    Dopo aver definito la funzione, è possibile chiamarla tutte le volte che è necessario.  
+                                    Le funzioni JavaScript non controllano il numero di argomenti ricevuti. 
+
+                                    Se una funzione viene chiamata con argomenti mancanti (meno di quanto dichiarato), i valori mancanti vengono impostati su undefined, il che indica che a una variabile non è stato assegnato un valore.
+
+                    LEZIONE 27.1 The return Statement
+
+                        Function Return
+                            Una funzione può avere un'istruzione return facoltativa. Viene utilizzato per restituire un valore dalla funzione. 
+             
+                            Questa istruzione è utile quando si effettuano calcoli che richiedono un risultato. 
+                            Quando JavaScript raggiunge un'istruzione return, l'esecuzione della funzione viene interrotta.
+
+                            Utilizzare l'istruzione return per restituire un valore.  
+                            Ad esempio, calcoliamo il prodotto di due numeri e restituiamo il risultato.
+
+                                        function product(a, b) {
+                                                return a * b;
+                                            }
+
+                                            var result= product(8, 11); 
+                                            console.log(result);
+
+                            RETURN INDEFINITO
+                            Se non si restituisce nulla da una funzione, questa verrà restituita indefinita
 
                             <!DOCTYPE html>
                                 <html>
@@ -3420,225 +3539,674 @@
                                     </body>
                                 </html>
 
-
-                                function sayHello(name) {
-                                alert("Hi, " + name);
-                                }
-                                sayHello("David");
-                                sayHello("Sarah");
-                                sayHello("John");
-
-                    Questo eseguirà il codice della funzione ogni volta per l'argomento fornito.
-
-        LEZIONE 26.1 Using Multiple Parameters with Functions     
-            Multiple Parameters
-                È possibile definire più parametri per una funzione separandoli tra virgole. 
-
-                    function myFunc(x, y) {
-                           // some code
-                        }
-
-                L'esempio precedente definisce la funzione myFunc per prendere due parametri.   
-
-                ESEMPIO MULTIPARAMETRI
-                    I parametri vengono utilizzati all'interno della definizione della funzione.
-
-                        function sayHello(name, age) {
-                        document.write( name + " is " + age + " years old.");
-                        }
-
-                    I parametri di funzione sono i nomi elencati nella definizione della funzione.
-
-
-
-                    Quando si chiama la funzione, specificare gli argomenti nello stesso ordine in cui sono stati definiti.
-
-                    <!DOCTYPE html>
-                            <html>
-                                <head>
-                                    <title>Page Title</title>
-                                </head>
-                                <body>
-                                    
-                                </body>
-                            </html>
-
-                            function sayHello(name, age) {
-                            document.write( name + " is " + age + " years old.");
-                            }
-
-                            sayHello("John", 20)
-
-
-
-                    PARAMETRI > DI QUELLI DEFINITI MATRICE
-                                function main() {
-                                        var goalsTeam1 = parseInt(readLine(), 10);
-                                        var goalsTeam2 = parseInt(readLine(), 10);
-                                        // function call
-                                        finalResult(goalsTeam1, goalsTeam2)
-                                        
+                                function addNumbers(a, b) {
+                                        var c = a+b;
+                                        return c;
                                     }
-                                    //complete the function
-                                    function finalResult(goalsTeam1 , goalsTeam2) {
+                                    document.write( addNumbers(40, 2) );
+             
+                            ALTRO ESEMPIO RETURN
+                                Il comando document.write restituisce il valore restituito dalla funzione, che è la somma dei due parametri.
+                                Ti viene dato un programma che prende 3 numeri come input.  
+                                Completa la funzione data per calcolare la media di quei 3 numeri, assegnarla alla variabile data e emetterla.  
 
-                                        if  (goalsTeam1 > goalsTeam2)  {
-                                            console.log("Team 1 won");
-                                        }
+                                Uscita
+                                 campione 6 
+                                Utilizzare l'istruzione return per restituire il valore calcolato e utilizzarlo tramite il programma.
+
+                                            function main() {
+                                            var num1 = parseInt(readLine(),10);
+                                            var num2 = parseInt(readLine(),10);
+                                            var num3 = parseInt(readLine(),10);
+
+                                            var average= avg(num1,num2,num3);
 
 
-                                        
-                                        if  (goalsTeam1 < goalsTeam2)  {
-                                            console.log("Team 2 won");
-                                        }
+                                            //assign the average value to the variable average 
 
-                                        
-                                        if  (goalsTeam1 == goalsTeam2)  {
-                                            console.log("Draw");
-                                        }
-                                        
-                                        
+                                            console.log(average)
 
-                                    };
-                    Se si passano più argomenti di quelli definiti, questi verranno assegnati a una matrice denominata argomenti. Possono essere usati in questo modo: argomenti[0], argomenti[1], ecc.
+                                            }
 
-                    ATTENZIONE NESSUN CONTROLLO PARAMETRI
-                        Dopo aver definito la funzione, è possibile chiamarla tutte le volte che è necessario.  
-                        Le funzioni JavaScript non controllano il numero di argomenti ricevuti. 
+                                            //complete the function
+                                            function avg(X,Y,Z){
+                                            return (X+Y+Z)/3   
+                                            }
 
-                        Se una funzione viene chiamata con argomenti mancanti (meno di quanto dichiarato), i valori mancanti vengono impostati su undefined, il che indica che a una variabile non è stato assegnato un valore.
+                    LEZIONE 28.1 Alert, Prompt, Confirm
+                        
+                        The Alert Box 
+                        
+                            JavaScript offre tre tipi di finestre popup, le caselle Avviso, Prompt e Conferma. 
 
-        LEZIONE 27.1 The return Statement
+                            Casella di avviso
+                                Alert Box = Una casella di avviso viene utilizzata quando si desidera assicurarsi che le informazioni arrivino all'utente.  
+                                Quando viene visualizzata una finestra di avviso, l'utente deve fare clic su OK per procedere. La allert funzione utilizza 1 parametro.
+                            Funzione di avviso  
+                                alert  = La  funzione di avviso accetta un singolo parametro, che è il testo visualizzato nella finestra popup.  
+                                Esempio:
 
-            Function Return
-                Una funzione può avere un'istruzione return facoltativa. Viene utilizzato per restituire un valore dalla funzione. 
- 
-                Questa istruzione è utile quando si effettuano calcoli che richiedono un risultato. 
-                Quando JavaScript raggiunge un'istruzione return, l'esecuzione della funzione viene interrotta.
+                                    <!DOCTYPE html>
+                                    <html>
+                                        <head>
+                                            <title>Page Title</title>
+                                        </head>
+                                        <body>
+                                            
+                                        </body>
+                                    </html>
+                                        esempio di allert
+                                        alert("Do you really want to leave this page?"); 
 
-                Utilizzare l'istruzione return per restituire un valore.  
-                Ad esempio, calcoliamo il prodotto di due numeri e restituiamo il risultato.
+                                INTERRUZIONE DI LINEA
+                                Per visualizzare le interruzioni di riga all'interno di una finestra popup, utilizzare una barra rovesciata seguita dal carattere \n.
 
-                            function product(a, b) {
-                                    return a * b;
-                                }
+                                    alert("Hello\nHow are you?");
 
-                                var result= product(8, 11); 
-                                console.log(result);
-
-                RETURN INDEFINITO
-                Se non si restituisce nulla da una funzione, questa verrà restituita indefinita
-
-                <!DOCTYPE html>
-                    <html>
-                        <head>
-                            <title>Page Title</title>
-                        </head>
-                        <body>
+                                ATTENZIONE ALLE CASELLE DI AVVISO
+                                Prestare attenzione quando si utilizzano le caselle di avviso, poiché l'utente può continuare a utilizzare la pagina solo dopo aver fatto clic su OK.
                             
-                        </body>
-                    </html>
+                            Prompt Box
+                                Una casella di prompt viene spesso utilizzata per fare in modo che l'utente inserisca un valore prima di immettere una pagina.  
+                                Quando viene visualizzata una finestra di richiesta, l'utente dovrà fare clic su OK o Annulla per procedere dopo aver inserito il valore di input.  
+                                Se l'utente fa clic su OK, la casella restituisce il valore di input. Se l'utente fa clic su Annulla, la casella restituisce null. 
 
-                    function addNumbers(a, b) {
-                            var c = a+b;
-                            return c;
-                        }
-                        document.write( addNumbers(40, 2) );
- 
-                ALTRO ESEMPIO RETURN
-                    Il comando document.write restituisce il valore restituito dalla funzione, che è la somma dei due parametri.
-                    Ti viene dato un programma che prende 3 numeri come input.  
-                    Completa la funzione data per calcolare la media di quei 3 numeri, assegnarla alla variabile data e emetterla.  
+                            Il  metodo prompt() accetta due parametri.  
+                            - Il primo è l'etichetta, che si desidera visualizzare nella casella di testo.  
+                            - La seconda è una stringa predefinita da visualizzare nella casella di testo (opzionale).
 
-                    Uscita
-                     campione 6 
-                    Utilizzare l'istruzione return per restituire il valore calcolato e utilizzarlo tramite il programma.
+                                    <!DOCTYPE html>
+                                    <html>
+                                        <head>
+                                            <title>Page Title</title>
+                                        </head>
+                                        <body>
+                                            
+                                        </body>
+                                    </html>
 
-                                function main() {
-                                var num1 = parseInt(readLine(),10);
-                                var num2 = parseInt(readLine(),10);
-                                var num3 = parseInt(readLine(),10);
+                                    var user = prompt("Please enter your name");
+                                    alert(user);
 
-                                var average= avg(num1,num2,num3);
-
-
-                                //assign the average value to the variable average 
-
-                                console.log(average)
-
-                                }
-
-                                //complete the function
-                                function avg(X,Y,Z){
-                                return (X+Y+Z)/3   
-                                }
-
-        LEZIONE 28.1 Alert, Prompt, Confirm
-            
-            The Alert Box 
-            
-                JavaScript offre tre tipi di finestre popup, le caselle Avviso, Prompt e Conferma. 
-
-                Casella di avviso
-                    Alert Box = Una casella di avviso viene utilizzata quando si desidera assicurarsi che le informazioni arrivino all'utente.  
-                    Quando viene visualizzata una finestra di avviso, l'utente deve fare clic su OK per procedere. La allert funzione utilizza 1 parametro.
-                Funzione di avviso  
-                    alert  = La  funzione di avviso accetta un singolo parametro, che è il testo visualizzato nella finestra popup.  
-                    Esempio:
-
-                        <!DOCTYPE html>
-                        <html>
-                            <head>
-                                <title>Page Title</title>
-                            </head>
-                            <body>
-                                
-                            </body>
-                        </html>
-                            esempio di allert
-                            alert("Do you really want to leave this page?"); 
-
-                    INTERRUZIONE DI LINEA
-                    Per visualizzare le interruzioni di riga all'interno di una finestra popup, utilizzare una barra rovesciata seguita dal carattere \n.
-
-                        alert("Hello\nHow are you?");
-
-                    ATTENZIONE ALLE CASELLE DI AVVISO
-                    Prestare attenzione quando si utilizzano le caselle di avviso, poiché l'utente può continuare a utilizzare la pagina solo dopo aver fatto clic su OK.
-                
-                Prompt Box
-                    Una casella di prompt viene spesso utilizzata per fare in modo che l'utente inserisca un valore prima di immettere una pagina.  
-                    Quando viene visualizzata una finestra di richiesta, l'utente dovrà fare clic su OK o Annulla per procedere dopo aver inserito il valore di input.  
-                    Se l'utente fa clic su OK, la casella restituisce il valore di input. Se l'utente fa clic su Annulla, la casella restituisce null. 
-
-                Il  metodo prompt() accetta due parametri.  
-                - Il primo è l'etichetta, che si desidera visualizzare nella casella di testo.  
-                - La seconda è una stringa predefinita da visualizzare nella casella di testo (opzionale).
-
-                        <!DOCTYPE html>
-                        <html>
-                            <head>
-                                <title>Page Title</title>
-                            </head>
-                            <body>
-                                
-                            </body>
-                        </html>
-
-                        var user = prompt("Please enter your name");
-                        alert(user);
-
-                    Quando viene visualizzata una finestra di richiesta, l'utente dovrà fare clic su "OK" o "Annulla" per procedere dopo aver inserito un valore di input. Non abusare di questo metodo, perché impedisce all'utente di accedere ad altre parti della pagina fino a quando la casella non viene chiusa.
+                                Quando viene visualizzata una finestra di richiesta, l'utente dovrà fare clic su "OK" o "Annulla" per procedere dopo aver inserito un valore di input. Non abusare di questo metodo, perché impedisce all'utente di accedere ad altre parti della pagina fino a quando la casella non viene chiusa.
 
 
 
-                Confirm Box
+                            Confirm Box
 
-                    Una casella di conferma viene spesso utilizzata per consentire all'utente di verificare o accettare qualcosa.  
-                    Quando viene visualizzata una finestra di conferma, l'utente deve fare clic su OK o Annulla per procedere.  
-                    Se l'utente fa clic su OK, la casella restituisce true. Se l'utente fa clic su Annulla, la casella restituisce false. 
+                                Una casella di conferma viene spesso utilizzata per consentire all'utente di verificare o accettare qualcosa.  
+                                Quando viene visualizzata una finestra di conferma, l'utente deve fare clic su OK o Annulla per procedere.  
+                                Se l'utente fa clic su OK, la casella restituisce true. Se l'utente fa clic su Annulla, la casella restituisce false. 
+
+                                        <!DOCTYPE html>
+                                        <html>
+                                            <head>
+                                                <title>Page Title</title>
+                                            </head>
+                                            <body>
+                                                
+                                            </body>
+                                        </html>
+
+                                        var result = confirm("Do you really want to leave this page?");
+                                        if (result == true) {
+                                            alert("Thanks for visiting");
+                                        }
+                                        else {
+                                            alert("Thanks for staying with us");
+                                        }
+
+                                ATTENZIONE
+                                    Non abusare di questo metodo, perché impedisce anche all'utente di accedere ad altre parti della pagina fino a quando la casella non viene chiusa.
+
+                    LEZIONE 29.1 Lesson Quiz
+
+                                    ESERCIZIO FINALE ESEGUITO
+
+                                            function main() {
+                                                var amount = parseFloat(readLine(), 10);
+                                                var rate = parseFloat(readLine(), 10);
+                                                
+                                                console.log(convert(amount, rate));
+                                            }
+
+                                            function convert (amount, rate){
+                                                return amount*rate
+                                            }
+
+                    LEZIONE 30.1 Code Proect
+                            Currency Converter
+
+                                    ESEMPIO CONVERSIONE
+                                            function main() {
+                                                        var amount = parseFloat(readLine(), 10);
+                                                        var rate = parseFloat(readLine(), 10);
+                                                        
+                                                        console.log(convert(amount, rate));
+                                                    }
+
+                                                    function convert (amount, rate){
+                                                        return amount*rate
+                                                    }
+
+        Objects
+            LEZIONE 31.1 Introducing Objects
+                    JavaScript Objects
+                        CONTENITORI VARIABILI JAVA SCRIPT
+                        Le variabili JavaScript sono contenitori per i valori dei dati.  Anche gli oggetti sono variabili, ma possono contenere molti valori.  
+
+                        Pensa a un oggetto come a un elenco di valori scritti come  coppie nome:valore, con i nomi e i valori separati da due punti.  
+                        Esempio:
+                                        var person = {
+                                        name: "John", age: 31, 
+                                        favColor: "green", height: 183
+                                        };
+                        Questi valori sono chiamati proprietà. 
+                        Gli oggetti JavaScript sono contenitori per valori denominati.
+                    Object Properties
+
+                        ACCESSO ALLE PROPRIETA
+                        È possibile accedere alle proprietà dell'oggetto in due modi.
+                            objectName.propertyName
+                            //or
+                            objectName['propertyName']
+
+                            In questo esempio viene illustrato come accedere all'età dell'oggetto persona. 
+
+                            @proprieta.oggetti
 
                             <!DOCTYPE html>
+                                <html>
+                                    <head>
+                                        <title>Page Title</title>
+                                    </head>
+                                    <body>
+                                        
+                                    </body>
+                                </html>
+
+                                esempio 1 accesso all'eta in 2 modi con il punto o le parentesi
+                                var person = {
+                                        name: "John", age: 31, 
+                                        favColor: "green", height: 183
+                                    };
+                                    var x = person.age;
+                                    var y = person['age'];
+
+
+                                    document.write(x);
+                                    document.write(y);
+
+
+                            La proprietà length incorporata di JavaScript  viene utilizzata per contare il numero di caratteri in una proprietà o stringa.
+
+                            esempio 2 proprieta length conteggio lunghezza
+                                var course = {name: "JS", lessons: 41};
+                                document.write(course.name.length);
+
+                                Gli oggetti sono uno dei concetti fondamentali di JavaScript.
+
+                    Object Methods
+                        @metodo
+                        Un metodo  oggetto è una proprietà che contiene una definizione di funzione. 
+                            objectName.methodName() 
+ 
+                        Utilizzare la sintassi seguente per accedere a un metodo oggetto.
+                        Come già sapete, document.write() restituisce i dati. La  funzione write() è in realtà un metodo dell'oggetto documento. 
+
+                            document.write("This is some text");
+
+                            I metodi sono funzioni archiviate come proprietà dell'oggetto.
+
+                            esecizio cubo
+                                La classe data rappresenta un cuboide (ad esempio un prisma rettangolare) che contiene le proprietà di lunghezza, larghezza e altezza.  
+                                Completare il programma per calcolare e trasmettere il volume di un determinato cuboide alla console. 
+                                Per calcolare il volume del cuboide utilizzare la  formula lunghezza*larghezza*altezza.
+
+
+                                var cuboid = {
+                                    length: 25,
+                                    width: 50,
+                                    height: 200
+                                };
+
+                                //your code goes here
+
+                                console.log (cuboid.length * cuboid.width * cuboid.height)
+
+            LEZIONE 32.1 Creating Your Own Objects
+
+                    The Object Constructor
+                        Nella lezione precedente è stato creato un oggetto utilizzando la  sintassi letterale dell'oggetto (o inizializzatore).
+
+                                var person = {
+                                    name: "John", age: 42, favColor: "green"
+                                    };
+
+                        Ciò consente di creare un solo oggetto.  
+                        A volte, abbiamo bisogno di impostare un "tipo di oggetto" che può essere utilizzato per creare un numero di oggetti di un singolo tipo.  
+                        Il modo standard per creare un "tipo di oggetto" consiste nell'utilizzare una funzione di costruttore di oggetti. 
+
+                                    @costruttore.oggetto
+                                    function person(name, age, color) {
+                                              this.name = name;
+                                              this.age = age;
+                                              this.favColor = color;
+                                            }
+
+                                    La funzione di cui sopra (person) è un costruttore di oggetti, che accetta i parametri e li assegna alle proprietà dell'oggetto. 
+                                    La  parola chiave this si riferisce all'oggetto corrente.  
+                                    Si noti che questa non è una variabile. È una parola chiave e il suo valore non può essere modificato.
+                Creating Objects
+
+                            @new   @creazione.oggetti.stesso.tipo
+                            Una volta ottenuto un costruttore di oggetti, è possibile utilizzare la  parola chiave new per creare nuovi oggetti dello stesso tipo.
+                                        <!DOCTYPE html>
+                                            <html>
+                                                <head>
+                                                    <title>Page Title</title>
+                                                </head>
+                                                <body>
+                                                    
+                                                </body>
+                                            </html>
+
+
+                                            function person(name, age, color) {
+                                            this.name = name;
+                                            this.age = age;
+                                            this.favColor = color;
+                                            }
+
+                                            var p1 = new person("John", 42, "green");
+                                            var p2 = new person("Amy", 21, "red");
+
+                                            document.write(p1.age); 
+                                            document.write(p2.name);
+
+
+                            p1 e p2 sono ora oggetti del  tipo persona. Le loro proprietà sono assegnate ai valori corrispondenti.
+
+                            Si consideri l'esempio seguente.
+
+                            Accedere alle proprietà dell'oggetto utilizzando la sintassi del punto, come si faceva in precedenza. 
+                                    Jhon.name
+                                    Jhon.age
+
+
+
+                                    Creazione di oggetti personalizzati
+
+
+                                    Bob è stato assunto come addetto alle informazioni aeroportuali e deve generare messaggi di stato per ogni volo. Aiutiamolo!  
+                                    Completa il programma specificato fissando il costruttore, creando un oggetto flight e assegnalo a una determinata variabile per eseguire correttamente il messaggio corrispondente.  
+                                    L'ID del volo e lo stato del volo (atterrato, in tempo, in ritardo, ecc.) vengono presi come input.  
+                                     
+                                    Sample Input
+                                    NGT 929 
+                                    atterrato 
+                                     
+                                    Sample Output
+                                    Flight NGT 929 è atterrato 
+                                    Utilizzare nuova parola chiave per creare un nuovo oggetto utilizzando il costruttore.
+
+                                                function main() {
+                                                    //take flight number and its status
+                                                    var flightNumber = readLine();
+                                                    var flightStatus = readLine();
+                                                    
+                                                    var flight1= new Flight (flightNumber, flightStatus);
+                                                    //assign a flight object to flight1 variable
+                                                    
+                                                    //output
+                                                    console.log('The flight ' + flight1.number + ' is ' + flight1.status)
+                                                    
+                                                }
+
+                                                function Flight(flightNumber, status) {
+                                                    //fix the constructor
+                                                    this.number = flightNumber;
+                                                    this.status = status;
+                                                };
+
+                            Comprendere la creazione di oggetti è essenziale.
+
+            LEZIONE 33.1 Object Initialization
+                    Object Initialization
+
+                        Utilizzare la  sintassi dell'oggetto letterale o dell'inizializzatore per creare singoli oggetti.
+
+                            //INIZIALIZZO john e James
+                            var John = {name: "John", age: 25};
+                            var James = {name: "James", age: 21};
+
+                        Gli oggetti sono costituiti da proprietà, che vengono utilizzate per descrivere un oggetto. I valori delle proprietà dell'oggetto possono contenere tipi di dati primitivi o altri oggetti.
+
+                    Using Object Initializers
+                        Gli spazi e le interruzioni di riga non sono importanti. Una definizione di oggetto può estendersi su più righe.
+
+                                //DEFINIZIONE DI UN OGGETTO SU PIU LINEE
+
+                                <!DOCTYPE html>
+                                    <html>
+                                        <head>
+                                            <title>Page Title</title>
+                                        </head>
+                                        <body>
+                                            
+                                        </body>
+                                    </html>
+
+                                var John = {
+                                      name: "John",
+                                      age: 25
+                                    };
+                                    var James = {
+                                      name: "James",
+                                      age: 21
+                                    }
+
+                        Indipendentemente dalla modalità di creazione dell'oggetto, la sintassi per l'accesso alle proprietà e ai metodi non cambia.
+
+            LEZIONE 34.1 Adding Methods
+                    Adding Methods
+                        I metodi sono funzioni archiviate come proprietà dell'oggetto.  
+                        Utilizzare la sintassi seguente per creare un metodo oggetto:
+                            @creazione.metodo
+                            methodName = function() { code lines } //CREO UN METODO
+
+                            Accedere a un metodo oggetto utilizzando la sintassi seguente:
+                                @accesso.al.metodo
+                                objectName.methodName()
+
+
+                                @REFERENZIARE.UN.METODO  @METODO.REFERENZIATO
+                                Un metodo è una funzione, appartenente a un oggetto. Può essere referenziato utilizzando la parola chiave this. 
+                                La  parola chiave this viene utilizzata come riferimento all'oggetto corrente, il che significa che è possibile accedere alle proprietà e ai metodi degli oggetti che lo utilizzano.  
+                                 
+                                La definizione dei metodi viene eseguita all'interno della funzione del costruttore.  
+                                 
+                                Per esempio:
+                                Nell'esempio precedente, abbiamo definito un metodo denominato changeName per la nostra persona, che è una funzione, che accetta un nome di parametro  e lo assegna alla  proprietà name dell'oggetto.  
+                                this.name si riferisce alla proprietà name dell'oggetto. 
+                                Il  metodo changeName modifica la proprietà name dell'oggetto  nel relativo argomento.
+                                icona
+                                Calcolo dello sconto
+                                Attenzione! Qualcosa non va: il metodo, che dovrebbe eseguire lo sconto, è incompleto.
+
+                                <!DOCTYPE html>
+                                    <html>
+                                        <head>
+                                            <title>Page Title</title>
+                                        </head>
+                                        <body>
+                                            
+                                        </body>
+                                    </html>
+
+                                    function person(name, age) {
+                                        this.name = name;  
+                                        this.age = age;
+                                        //metodo dell'oggetto
+                                        this.changeName = function (name) {
+                                            this.name = name;
+                                        }
+                                    }
+
+                                    //P NUOVO OGGETTO PERSON
+                                    var p = new person("David", 21);
+                                    //CHIAMO il metodo dell'oggetto
+                                    p.changeName("John");
+
+                                    document.write(p.name);
+
+
+                                Nell'esempio precedente, abbiamo definito un metodo denominato changeName per la nostra persona, che è una funzione, che accetta un nome di parametro  e lo assegna alla  proprietà name dell'oggetto.  
+                                this.name si riferisce alla proprietà name dell'oggetto. 
+                                 Il  metodo changeName modifica la proprietà name dell'oggetto  nel relativo argomento.
+
+
+
+                                 Aggiunta di metodi
+
+
+                                    Un store manager ha bisogno di un programma per impostare sconti per i prodotti.  
+                                    Il programma dovrebbe prendere l'ID prodotto, il prezzo e lo sconto come input e output il prezzo scontato. Tuttavia, il  metodo changePrice, che dovrebbe calcolare lo sconto, è incompleto. Risolvi il problema! 
+                                     
+                                    Esempio di ingresso
+                                    LD1493 
+                                    1700 
+                                    15 
+                                     
+                                    Uscita
+                                     campione LD1493 prezzo: 1700 
+                                    LD1493 nuovo prezzo: 1445 
+                                    Il primo input è l'ID prodotto, il secondo è il prezzo prima dello sconto e il terzo è la percentuale di sconto.  
+                                    Quindi dopo aver scontato il nuovo prezzo sarà 1700-(0,15 * 1700) = 1445.
+
+
+                                    function main() {
+                                            //2 VARIABILI oggetto 
+                                            var prodID = readLine();
+                                            var price = parseInt(readLine(),10);
+                                            //variabile discount
+                                            var discount = parseInt(readLine(),10);
+                                            
+                                            //crea la variabile oggetto Product passando 2 parametri
+                                            var prod1= new Product(prodID, price);
+
+                                            //il risultato viene impostato a prod1 e stampato
+                                            console.log(prod1.prodID + " price: " + prod1.price);
+                                            
+                                            prod1.changePrice(discount);
+                                            console.log(prod1.prodID + " new price: " + prod1.price);
+                                        }
+
+                                        //costruttore Product riceve 2 parametri ID + PREZZO
+                                        function Product(prodID, price) {
+                                            //IMPOSTO 2 PROPRIETA id + prezzo
+                                            this.prodID = prodID;
+                                            this.price = price;
+
+                                            //imposto un metodo dell'oggetto changePrice CON IL CALCOLO
+                                            this.changePrice = function(discount) {
+                                                //your code goes here
+
+                                                this.price= price- ((discount/100)*price);
+
+                                                
+                                            }
+                                        }
+
+            LEZIONE 35.1 Module 5 Quiz
+
+            LEZIONE 36.1 Contact Manager
+                    ESERCIZIO GESTIONE CONTATTI
+
+                            Stai lavorando a un'app Gestione contatti.  
+                            È stato creato il  costruttore dell'oggetto contatto, che dispone di due argomenti, name e number.  
+                            È necessario aggiungere un metodo print() all'oggetto, che invierà i dati di contatto alla console nel seguente formato: nome: numero
+                            Il codice specificato dichiara due oggetti e chiama i relativi  metodi print(). Completare il codice definendo il  metodo print() per gli oggetti. 
+                            Notare lo spazio dopo i due punti, quando si emettono i dati di contatto.
+
+
+                                //OGGETTO CONTATTO con il metodo  print
+                                function contact(name, number) {
+                                    this.name = name;
+                                    this.number = number;
+
+                                      /*METODO PRINT 
+                                        construito con la  funzione print 
+                                         imposta x = nom e imposta y = numero
+                                         stampa su console log nome e numero
+                                      */
+                                      this.print = function (){
+                                        var x = this.name
+                                        var y = this.number 
+                                        console.log(x+": "+y)
+                                    }
+                                 }                 
+
+
+
+
+
+                                /* CREA IL contatto 
+                                    crea 2 variabili oggetto del contatto a e breakfasts
+                                    richiama con le due variabili la funzione contact e con 
+                                    il metodo print passando due valori diversi e la stampa su consolle 
+                                    sara diversa per le due chiamate
+                                */
+                                var a = new contact("David", 12345);
+                                var b = new contact("Amy", 987654321);
+                                a.print();
+                                b.print();
+
+            LEZIONE 37.1 Arrays
+                    
+                    JavaScript Arrays
+                        Le matrici memorizzano più valori in una singola variabile.  
+                        Per memorizzare tre nomi di corsi, sono necessarie tre variabili.
+                                var course1 ="HTML"; 
+                                var course2 ="CSS"; 
+                                var course3 ="JS";
+
+                        Ma cosa succederebbe se avessi 500 corsi? La soluzione è un array
+
+                            var courses = new Array("HTML", "CSS", "JS");  
+
+                        Questa sintassi dichiara una matrice denominata courses, che memorizza tre valori o elementi.
+
+                    Accessing an Array
+                        RIFERIMENTO ALLA MATRICE - Si fa riferimento a un elemento di matrice facendo riferimento al numero di indice scritto tra parentesi quadre.  
+                        Questa istruzione accede al valore del primo elemento nei corsi e modifica il valore del secondo elemento.
+
+                            var courses = new Array("HTML", "CSS", "JS"); 
+                            var course = courses[0]; // HTML
+                            courses[1] = "C++"; //Changes the second element  
+
+                        [0] è il primo elemento di una matrice. [1] è il secondo. Gli indici di matrice iniziano con 0.
+
+                        Tentando di accedere a un indice esterno alla matrice, restituisce il valore non definito
+
+                            //INDICE FUORI ELEMENTO 
+                            var courses = new Array("HTML", "CSS", "JS"); 
+                            document.write(courses[10]);
+
+                        Il nostro  array di corsi ha solo 3 elementi, quindi il 10 ° indice, che è l'11 ° elemento, non esiste (è indefinito).
+
+                        L'array che ti viene fornito rappresenta il menu delle opzioni per la colazione disponibili presso l'hotel.  
+                        Lo Chef ha deciso di sostituire una delle opzioni con "Fluffy Pancakes".  
+                        Scrivi un programma per prendere l'indice come input, sostituisci l'elemento con quell'indice con "Fluffy Pancakes" e invia il nuovo menu alla console come array.  
+                         
+                        Sample Input
+                        2 
+                         
+                        Sample Output
+                        [ 
+                         'Cinnamon Doughnuts', 
+                         'Waffles', 
+                         'Fluffy Pancakes', 
+                         'Chorizo Burrito', 
+                         'French Toast' 
+                        ] 
+                         
+                        L'elemento con indice 2 è stato sostituito nella matrice di output. 
+                        Tenere presente che il primo elemento di una matrice ha 0 indice.
+
+                        function main() {
+                                    var breakfasts = ['Cinnamon Doughnuts', 
+                                                       'Waffles', 'Granola', 
+                                                        'Chorizo Burrito', 
+                                'French Toast'];
+
+                                    var index = parseInt(readLine(), 10)
+                                   
+                                    //replace the corresponding element by "Fluffy Pancakes"
+                                    /* se inserisco L'INDICE NUMERICO 1,2,3 ALLORA 
+                                        la sostituzione è diretta
+                                            es. breakfasts[4]="Fluffy Pancakes"
+                                         ALTRIMENTI se inserico  la variabile index
+                                        si riferisce sempre all'ultima posizione */
+                                    breakfasts[index]="Fluffy Pancakes"
+
+                                   
+
+                                    
+                                    //output l'indice totale sempre 4
+                                    console.log(breakfasts) 
+
+
+                                    
+                                    
+
+                                }
+
+            LEZIONE 37.2 Fluffy Pancakes
+                    ESERCIZIO Arraysù
+                        L'array che ti viene fornito rappresenta il menu delle opzioni per la colazione disponibili presso l'hotel.  
+                        Lo Chef ha deciso di sostituire una delle opzioni con "Fluffy Pancakes".  
+                        Scrivi un programma per prendere l'indice come input, sostituisci l'elemento con quell'indice con "Fluffy Pancakes" e invia il nuovo menu alla console come array. 
+                        
+                            function main() {
+                                var breakfasts = ['Cinnamon Doughnuts', 
+                                                   'Waffles', 'Granola', 
+                                                    'Chorizo Burrito', 
+                                                      'French Toast'];
+
+                                            var index = parseInt(readLine(), 10)
+                                           
+                                            //replace the corresponding element by "Fluffy Pancakes"
+                                            /* se inserisco L'INDICE NUMERICO 1,2,3 ALLORA 
+                                                la sostituzione è diretta
+                                                    es. breakfasts[4]="Fluffy Pancakes"
+                                                 ALTRIMENTI se inserico  la variabile index
+                                                si riferisce sempre all'ultima posizione */
+                                            breakfasts[index]="Fluffy Pancakes"
+
+                                           
+
+                                            
+                                            //output l'indice totale sempre 4
+                                            console.log(breakfasts) 
+
+
+                                            
+                                            
+
+                                        }
+
+                        L'elemento con indice 2 è stato sostituito nella matrice di output. 
+                        Tenere presente che il primo elemento di una matrice ha 0 indice.
+
+            LEZIONE 38.1 Other Ways to Create Arrays
+                    È inoltre possibile dichiarare una matrice, comunicarle il numero di elementi che memorizzerà e aggiungerli in un secondo momento.
+
+                    Una matrice è un tipo speciale di oggetto.  
+                    Una matrice utilizza numeri per accedere ai propri elementi e un oggetto utilizza nomi per accedere ai propri membri. 
+
+                        <!DOCTYPE html>
+                        <html>
+                            <head>
+                                <title>Page Title</title>
+                            </head>
+                            <body>
+                                
+                            </body>
+                        </html>
+                    var courses = new Array(3);
+                        courses[0] = "HTML";
+                        courses[1] = "CSS";
+                        courses[2] = "JS";
+
+                        document.write(courses[2]);
+
+
+                    MATRICE DINAMICA
+                        @MATRICE.DINAMICA
+                        Le matrici JavaScript sono dinamiche, quindi è possibile dichiarare una matrice e non passare alcun argomento con il costruttore Array(). È quindi possibile aggiungere gli elementi in modo dinamico.
+
+                        <!DOCTYPE html>
                             <html>
                                 <head>
                                     <title>Page Title</title>
@@ -3648,39 +4216,224 @@
                                 </body>
                             </html>
 
-                            var result = confirm("Do you really want to leave this page?");
-                            if (result == true) {
-                                alert("Thanks for visiting");
-                            }
-                            else {
-                                alert("Thanks for staying with us");
-                            }
+                            var courses = new Array();
+                            courses[0] = "HTML";
+                            courses[1] = "CSS";
+                            courses[2] = "JS";
+                            courses[3] = "C++";
 
-                    ATTENZIONE
-                        Non abusare di questo metodo, perché impedisce anche all'utente di accedere ad altre parti della pagina fino a quando la casella non viene chiusa.
+                            document.write(courses[2]);
+
+                            Puoi aggiungere tutti gli elementi di cui hai bisogno.
+
+                    Array Literal - MATRICE LETTERALE  @MATRICE.LETTERALE
+                        Per una maggiore semplicità, leggibilità e velocità di esecuzione, è anche possibile dichiarare le matrici utilizzando la  sintassi letterale della matrice.
 
 
-        LEZIONE 29.1 Lesson Quiz
+                        È possibile accedere e modificare gli elementi della matrice utilizzando il numero di indice, come si faceva in precedenza.
+                                <!DOCTYPE html>
+                                    <html>
+                                        <head>
+                                            <title>Page Title</title>
+                                        </head>
+                                        <body>
+                                            
+                                        </body>
+                                    </html>
 
-                        ESERCIZIO FINALE ESEGUITO
 
-                                function main() {
-                                    var amount = parseFloat(readLine(), 10);
-                                    var rate = parseFloat(readLine(), 10);
+                                    var courses = ["HTML", "CSS", "JS"]; 
+                                    document.write(courses[2]);
+
+                        In questo modo viene creata la stessa matrice creata con la  nuova  sintassi  new Array().  
+
+                        MODO CONSIGLIATO PER CREARE LA MATRICE: La  sintassi letterale della matrice è il modo consigliato per dichiarare le matrici.
+
+            LEZIONE 39.1 Array Properties & Methods
+                The length Property
+                    @PROPRIETA.LENGTH
+                    Gli array JavaScript hanno utili  proprietà e metodi incorporati.  
+                    La proprietà length di una matrice restituisce il numero dei suoi elementi.
+                        <!DOCTYPE html>
+                            <html>
+                                <head>
+                                    <title>Page Title</title>
+                                </head>
+                                <body>
                                     
-                                    console.log(convert(amount, rate));
+                                </body>
+                            </html>
+
+                            var courses = ["HTML", "CSS", "JS"];
+                            document.write(courses.length);
+
+                    La  proprietà length è sempre una in più rispetto all'indice di matrice più alto.  
+                    Se la matrice è vuota, la proprietà length restituisce 0.
+                
+                Combining Arrays
+                    @METODO.concat 
+                    Il metodo concat() di JavaScript  consente di unire matrici e creare un array completamente nuovo. 
+
+                            @concatenazione.esempio
+
+                                <!DOCTYPE html>
+                                <html>
+                                    <head>
+                                        <title>Page Title</title>
+                                    </head>
+                                    <body>
+                                        
+                                    </body>
+                                </html>
+
+                                var c1 = ["HTML", "CSS"];
+                                var c2 = ["JS", "C++"];
+                                var courses = c1.concat(c2); //concatena l'array
+
+                                //docopo CONCAT puoi scegliere indice da 0 a 3
+                                document.write(courses[2]);
+
+
+                    L'array  dei corsi che risulta contiene 4 elementi (HTML, CSS, JS, C++). 
+                    L'operazione concat non influisce sulle  matrici c1 e c2, ma restituisce la concatenazione risultante come nuova matrice.
+
+                    Array Properties & Methods
+                        esempio punti guadagnati
+                        Scrivere un programma per creare la matrice di punti corrispondente e produrre la somma di tutti i punti guadagnati
+
+                        Il giocatore riceve punti dopo aver superato ogni livello di una partita.  
+                        Il programma fornito prende il numero di livelli passati come input, seguito dai punti guadagnati per ogni livello, e crea la matrice corrispondente di punti.  
+                        Completa il programma per calcolare e trasmettere alla console la somma di tutti i punti guadagnati.  
+                         
+                        Input
+                         di esempio 3 
+                        1 
+                        4 
+                        8 
+                         
+                        Output
+                         di esempio 13 
+                         
+                        Spiegazione
+                         Il primo input rappresenta il numero di livelli passati, -- in questo caso, 3 (la dimensione di una matrice da creare). I successivi 3 input sono i punti assegnati al giocatore per il superamento di ogni livello. Il giocatore ha guadagnato 1 + 4 + 8 punti per 3 livelli passati, che viene poi rilasciato. 
+                        Si noti che il primo numero immesso può essere utilizzato come lunghezza di una matrice.
+
+
+                        function main() {
+                                //take the number of passed levels
+                                var levels = parseInt(readLine(),10);
+                                var points = new Array();
+                                
+                                var count = 0;
+                                while(count<levels){
+                                    var elem = parseInt(readLine(),10);
+                                    points[count] = elem;
+                                    count++;
                                 }
+                                
+                                var sum = 0;
+                                //calculate the sum of points 
 
-                                function convert (amount, rate){
-                                    return amount*rate
-                                }
+                                    sum = points.reduce (function(a,b) {
+                                                                        return a+ b} ,0)
+
+                                
+                                //output
+                                console.log(sum);
+                            }
+
+            LEZIONE 40.1 Associative Arrays
+                Associative Arrays
+
+                    Mentre molti linguaggi di programmazione supportano array con indici denominati (testo anziché numeri), javascript  non  lo fa.  
+                    Tuttavia, è comunque possibile utilizzare la sintassi della matrice denominata, che produrrà un oggetto. 
 
 
-        
+                    <!DOCTYPE html>
+                        <html>
+                            <head>
+                                <title>Page Title</title>
+                            </head>
+                            <body>
+                                
+                            </body>
+                        </html>
+
+                        //creo oggetto persona
+                        var person = []; //empty array
+                        person["name"] = "John";    //indici name ed sono le proprieta dell'oggetto
+                        person["age"] = 46;
+                        document.write(person["age"]);
+
+                        Ora, la persona viene trattata come un oggetto, invece di essere un array.  
+                        Gli indici denominati "nome" ed "età" diventano proprietà dell'oggetto persona.
+
+                        DIFETTI ATTENZIONE ALLE PROPRIETA STADARD DELLA MATRICE
+                        length Non funziona:
+                        Poiché la matrice person viene trattata come un oggetto, i metodi e le proprietà della matrice standard produrranno risultati non corretti. Ad esempio, person.length restituirà 0. 
+
+                Associative Arrays
+                    JAVA SCRIPT NON USA MATRICI CON INDICI DENOMINATI
+                    Ricorda che JavaScript non supporta le matrici con indici denominati.  
+                    In JavaScript, le matrici utilizzano sempre indici numerati.  
+                    USARE L'OGGETTO CON INDICI STRINGA: È meglio usare un oggetto quando si desidera che l'indice sia una stringa (testo).  
+                    Utilizzare una matrice quando si desidera che l'indice sia un numero.
+
+                    RIDEFINIZIONE IN UN OGGETTO STANDARD
+                    Se si utilizza un indice denominato, JavaScript ridefinirà la matrice in un oggetto standard.  
+            
+            LEZIONE 41.1 The Math Object
+                The Math Object
+                    L'oggetto Math consente di eseguire attività matematiche e include diverse proprietà. 
+                        PROPRIETA                       DESCRIPTION
+                            E                           constante
+                            LN2                         LOG BASE 2
+                            LN10                        LOG BASE 10
+                            LNG2E                       LOG 
+                            LNG10E                       LOG 
+                            PI                          P greco
+
+                        <!DOCTYPE html>
+                            <html>
+                                <head>
+                                    <title>Page Title</title>
+                                </head>
+                                <body>
+                                    
+                                </body>
+                            </html>
+
+                        document.write(Math.PI);
+
+                        NO COSTRUTTORE
+                        Math non ha un costruttore. Non è necessario creare prima un oggetto Math.
+
+                Math Object Methods
+
+                    @MATH.METODI
+                    L'oggetto Math contiene una serie di metodi utilizzati per i calcoli: 
+
+                        PROPRIETA                       DESCRIPTION
+                        
+                        abx(x)                           ?
+                        acos(x)                           ?
+                        asin(x)                           ?
+                        atan(x)                           ?
+                        atan2(x)                           ?
+                        ceil(x)                           ?
+                        cos(x)                           ?
+                        exp(x)                           ?
+                        floor(x)                           ?
+                        log(x)                           logaritmo base E of x
+                        max(x,y,z...,n)                 logaritmo base E of x
+                   
+
+                ?
 
 
+        JAVA SCRIPT I PARAMETRI
 
-        JAVA SCRIPT PARAMETRI > DI QUELLI DEFINITI MATRICE
+                JAVA SCRIPT PARAMETRI > DI QUELLI DEFINITI MATRICE
 
                            quando è necessario implementare lo stesso blocco di codice all'interno di una pluralità di pagine web.
 
@@ -3700,18 +4453,18 @@
                    nelle istruzioni sulla stessa riga es: document.write("Benvenuto"); document.write(" su
                    Mr.Webmaster");
 
-               Il Tag <noscript> Al fine di evitare errori all'interno di browser obsoleti o qualora il supporto per
-               javascript sia stato volontariamente disattivato dall'utente è possibile implementare il tag <noscript>.
-               Questo tag si include al di sotto dello script o nel punto della pagina in cui si visualizza la sua
-               esecuzione.
+                   Il Tag <noscript> Al fine di evitare errori all'interno di browser obsoleti o qualora il supporto per
+                   javascript sia stato volontariamente disattivato dall'utente è possibile implementare il tag <noscript>.
+                   Questo tag si include al di sotto dello script o nel punto della pagina in cui si visualizza la sua
+                   esecuzione.
 
-               All'interno del tag <noscript>, solitamente, si scrive un avviso del tipo: "Il tuo browser non supporta
-               Javascript", o un qualunque messaggio che avvisi l'utente che la pagina non sarà visualizzata ne sarà
-               funzionale come dovrebbe per mancanza del supporto di Javascript.
+                   All'interno del tag <noscript>, solitamente, si scrive un avviso del tipo: "Il tuo browser non supporta
+                   Javascript", o un qualunque messaggio che avvisi l'utente che la pagina non sarà visualizzata ne sarà
+                   funzionale come dovrebbe per mancanza del supporto di Javascript.
 
-               Come detto il testo contenuto tra i tag <noscript> e </noscript> viene mostrato a video solo se viene
-               rilevato che il browser non supporta Javascript, o per qualunque motivo detta funzione è stato
-               disattivata.
+                   Come detto il testo contenuto tra i tag <noscript> e </noscript> viene mostrato a video solo se viene
+                   rilevato che il browser non supporta Javascript, o per qualunque motivo detta funzione è stato
+                   disattivata.
 # L
 
   ## LISTE 
