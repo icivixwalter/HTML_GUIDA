@@ -737,7 +737,7 @@
 
                                 Internet Explorer 9 e versioni precedenti non supportano la proprietà text-shadow.
 
-                                        @todo:da finire
+                                        @todo: da finire
 
 
 
@@ -3776,7 +3776,8 @@
 
             LEZIONE 32.1 Creating Your Own Objects
 
-                    The Object Constructor
+                The Object Constructor
+
                         Nella lezione precedente è stato creato un oggetto utilizzando la  sintassi letterale dell'oggetto (o inizializzatore).
 
                                 var person = {
@@ -3797,6 +3798,7 @@
                                     La funzione di cui sopra (person) è un costruttore di oggetti, che accetta i parametri e li assegna alle proprietà dell'oggetto. 
                                     La  parola chiave this si riferisce all'oggetto corrente.  
                                     Si noti che questa non è una variabile. È una parola chiave e il suo valore non può essere modificato.
+                
                 Creating Objects
 
                             @new   @creazione.oggetti.stesso.tipo
@@ -4897,10 +4899,191 @@
 
                     Il codice precedente crea un nuovo elemento paragrafo che sostituisce il paragrafo p1 esistente.
 
+            LEZIONE 49.1 Creating Animations
+                Animations
+
+                    Ora che sappiamo come selezionare e modificare gli elementi DOM, possiamo creare una semplice animazione.  
+                    Creiamo una semplice pagina HTML con un  elemento box che verrà animato usando JS. 
+
+                    Il nostro  elemento box si trova all'interno di un  elemento contenitore. Si noti l'attributo position utilizzato per gli elementi: il contenitore è relativo e la casella è assoluta. Questo ci permetterà di creare l'animazione relativa al contenitore. @contenitore.oggetti
+
+                            @esempio.box
+                                <!DOCTYPE html>
+                                    <html>
+                                        <head>
+                                            <title>Page Title</title>
+                                        </head>
+                                        <body>
+                                            <div id="container">
+                                                <div id="box"> </div>
+                                            </div>
+                                        </body>
+                                    </html>
+
+                                #container {
+                                    width: 200px;
+                                    height: 200px;
+                                    background: green;
+                                    position: relative;
+                                }
+                                #box {
+                                    width: 50px;
+                                    height: 50px;
+                                    background: red;
+                                    position: absolute;
+                                }
+
+
+
+                    Animeremo la scatola rossa per farla spostare sul lato destro del contenitore. 
+                        @animazione
+                        @attributo.posizion
+                                L'ATTRIBUTO POSIZION per  il contenitore deve essere impostato a 
+                                relative per avere l'animazione.
+
+                    È necessario avere familiarità con CSS per comprendere meglio il codice fornito.
+
+                 setInterval() Metodo
+
+                        PER AVERE ANIMAZIONE OCCORRE MODIFICARE LA PROPRIETA DI UN ELEMENTO
+                        Per creare un'animazione, è necessario modificare le proprietà di un elemento a piccoli intervalli di tempo. Possiamo raggiungere questo obiettivo utilizzando il  metodo setInterval(), che ci consente di creare un timer e chiamare una funzione per modificare ripetutamente le proprietà a intervalli definiti (in millisecondi).  
+                        Per esempio:  @crea.animazione
+
+                                var t = setInterval(move, 500); 
+
+                        Questo codice crea un timer che chiama una  funzione move() ogni 500 millisecondi.  
+                        Ora dobbiamo definire la  funzione move(), che cambia la posizione della scatola. 
+
+                                // starting position
+                                var pos = 0; 
+                                //our box element
+                                var box = document.getElementById("box");
+
+                                function move() {
+                                  pos += 1;
+                                  box.style.left = pos+"px"; //px = pixels
+                                }
+
+                        La  funzione move() incrementa di  uno la proprietà left dell'elemento box ogni volta che viene chiamato.
+
+                    II ESEMPIO DI MOVE
+                        Il codice seguente definisce un timer che chiama la  funzione move() ogni 10 millisecondi: 
+                                var t = setInterval(move, 10);
+
+                        Tuttavia, questo fa sì che la nostra scatola si sposti a destra per sempre. Per interrompere l'animazione quando la casella raggiunge la fine del contenitore, aggiungiamo un semplice segno di spunta alla funzione move() e utilizziamo il  metodo clearInterval() per arrestare il timer.
+
+                                function move() {
+                                      if(pos >= 150) {
+                                        clearInterval(t);
+                                      }
+                                      else {
+                                        pos += 1;
+                                        box.style.left = pos+"px";
+                                      }
+                                    }
+
+                        Quando l'attributo sinistro della casella raggiunge il valore di 150, la casella raggiunge la fine del contenitore, in base a una larghezza del contenitore di 200 e una larghezza della scatola di 50. 
+
+
+                        <!DOCTYPE html>
+                                <html>
+                                    <head>
+                                        <title>Page Title</title>
+                                    </head>
+                                    <body>
+                                        <div id="container">
+                                            <div id="box"> </div>
+                                        </div>
+                                    </body>
+                                </html>
+
+                                @CONTAINER
+                                #container {
+                                    width: 200px;
+                                    height: 200px;
+                                    background: green;
+                                    position: relative;
+                                }
+                                #box {
+                                    width: 50px;
+                                    height: 50px;
+                                    background: red;
+                                    position: absolute;
+                                }
+
+
+
+                                //calling the function in window.onload to make sure the HTML is loaded
+                                window.onload = function() {
+                                     var pos = 0; 
+                                    //our box element
+                                    var box = document.getElementById('box');
+                                    var t = setInterval(move, 10);
+                                  
+                                    function move() {
+                                        if(pos >= 150) {
+                                            clearInterval(t);  //stop o arresto il setInterval
+                                        }
+                                        else {
+                                            //INCRMENTO CONTATORE
+                                            pos += 1;
+                                            //AGGIORNA LA POSIZIONE SX LEFT DELLA SCATOLA
+                                            box.style.left = pos+'px';
+                                        }
+                                    }
+                                };
+            
+            LEZIONE 50.1 Handling Events
+                Events
+                    ESECUZIONE EVENTI
+                        È possibile scrivere codice JavaScript che viene eseguito quando  si verifica un evento, ad esempio quando un utente fa clic su un elemento HTML, sposta il mouse o invia un modulo.  
+                        Quando si verifica un evento su un elemento di destinazione, viene eseguita una funzione handler. 
+                        Gli eventi HTML comuni includono: 
+
+                            EVENT                      DESCRIPTION
+                            
+                            onclick
+                            onload
+                            onunload
+                            onchange
+                            onmouseover
+                            onmouseout
+                            onmousedown
+                            onmouseup
+                            onblur
+                            onfocu
+
+
+
+
+                    EVENTI AGGIUNTI AD HTML COME ATTRIBUTI
+                        Gli eventi corrispondenti possono essere aggiunti agli elementi HTML come attributi.  @EVENTO.CLICK @EVENTI, @HTML.EVENTI
+                        Ad esempio: <p onclick="someFunc()">alcuno testo</p>
                     
-                            ?
-                            ?
-                            ?
+                    Handling Events
+
+
+                            Visualizziamo un popup di avviso quando l'utente fa clic su un pulsante specificato: VEDI ESEMPIO @EVENTO.BUTTON.CLICK
+                                @BUTTON.ONCLICK
+
+                                        <!DOCTYPE html>
+                                            <html>
+                                                <head>
+                                                    <title>Page Title</title>
+                                                </head>
+                                                <body>
+                                                    <button onclick="show();">Click Me</button>
+                                                </body>
+                                            </html>
+
+
+                                            function show() {
+                                                alert("Hi there");
+                                            }
+                     ?
+                    ?
+                    ?
+                    ?
 
 
         JAVA SCRIPT I PARAMETRI
