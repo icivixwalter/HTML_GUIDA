@@ -1,13 +1,16 @@
-/* GIT SALVATAGGI
-	attivo il comando status
-*/
+rem GIT SALVATAGGI
+rem  attivo il comando status
+echo off
 
+cd ..
 
-git status 	//lo stato attuale
-git add .  	//segno tutti i file nuovi dal salvare
+dir *.*
 
+git status 	
+
+git add .  	
 git commit -m "salvataggio"
-
 git push
 
-pause
+
+call GIT_REPOSITORY_GITHUB.BAT
