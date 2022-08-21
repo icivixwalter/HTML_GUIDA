@@ -5046,7 +5046,7 @@
                             onload
                             onunload
                             onchange
-                            onmouseover
+                            onmouseover                 evento mouse sull'elemento 
                             onmouseout
                             onmousedown
                             onmouseup
@@ -5080,10 +5080,506 @@
                                             function show() {
                                                 alert("Hi there");
                                             }
-                     ?
+                     
+                    
+                    Eventi assegnati agli elementi HTML
+                                <!DOCTYPE html>
+                                    <html>
+                                        <head>
+                                            <title>Page Title</title>
+                                        </head>
+                                        <body>
+                                            <button id="demo">Click Me</button>
+                                        </body>
+                                    </html>
+
+                                    //calling the function in window.onload to make sure the HTML is loaded
+
+                                    window.onload = function() {
+                                        var x = document.getElementById('demo');
+                                        x.onclick = function () {
+                                            document.body.innerHTML = Date();
+                                        }
+                                    };
+                                                            
+                        I gestori eventi possono essere assegnati agli elementi.    
+                        È possibile allegare eventi a quasi tutti gli elementi HTML.
+                        @evento.pagina
+
+                    EVENTO ONLOAD ONUNLOAD
+                        Gli  eventi onload e onunload vengono attivati quando l'utente entra o esce dalla pagina. Questi possono essere utili quando si eseguono azioni dopo il caricamento della pagina. 
+                            <body onload="doSomething()">
+
+                    EVENTO CARICAMENTO PAGINA HTML
+                        Analogamente, l'evento window.onload può essere utilizzato per eseguire il codice dopo il caricamento dell'intera pagina. @EVENTO.CARICA.PAGINA.HTML
+
+                            window.onload = function() {
+                                       //some code
+                                    }
+                    EVENTO ONCHANGE CASELLA DI TESTO
+                        
+                        L'evento onchange viene utilizzato principalmente nelle caselle di testo. Il gestore eventi viene chiamato quando il testo all'interno della casella di testo cambia e lo stato attivo viene perso dall'elemento. 
+                                <!DOCTYPE html>
+                                <html>
+                                    <head>
+                                        <title>Page Title</title>
+                                    </head>
+                                    <body>
+                                        <input type="text" id="name" onchange="change()">
+                                    </body>
+                                </html>
+
+                                //quano si riempie la casella di testo con una stringa in minuscolo
+                                //con Enter viene trasformata in maiuscole. @evento.change.  @change.
+                                function change() {
+                                        var x = document.getElementById('name');
+                                        x.value = x.value.toUpperCase();
+                                    }
+
+                        È importante comprendere gli eventi, perché sono una parte essenziale delle pagine web dinamiche.
+
+                    ALTRO ESEMPIO CHIAMO CLEAR AL CARICAMENTO DEL CORPO
+                        quando carica il corpo chiamo la funzione clear
+                        @evento.onload del corpo body
+                        <body onload="clear"> </body>
+
+                Event Listeners
+                    COLLEGA UN GESTIONE DEGLI EVENTI  @gestore.eventi
+                    Il  metodo addEventListener() collega un gestore eventi a un elemento senza sovrascrivere i gestori eventi esistenti. È possibile aggiungere molti gestori eventi a un elemento.  @multigestori.eventi
+
+                    È inoltre possibile aggiungere molti gestori eventi dello stesso tipo a un elemento, ovvero due eventi "click". @multigestori.dello.stesso.tipo
+                            //3 parametri
+                            element.addEventListener(event, function, useCapture);
+
+                    01) Il primo parametro è il tipo  di evento (come "click" o "mousedown").  
+                    02) Il secondo parametro è la funzione che vogliamo chiamare quando si verifica l'evento.  
+                    03) Il terzo parametro è un valore booleano che specifica se utilizzare il bubbling degli eventi o l'acquisizione degli eventi. Questo parametro è facoltativo e verrà descritto nella lezione successiva. 
+
+                    Tieni presente che non usi il prefisso "on" per questo evento; usa "click" invece di "onclick".
+
+                        //si usa il CLICK
+                        element.addEventListener("click", myFunction);
+                            element.addEventListener("mouseover", myFunction);
+
+                            function myFunction() {
+                              alert("Hello World!");
+                            }
+
+                  
+
+                    ESEMPIO CREA UN GESTORE DI EVENTI CHE SI AUTORIMUOVE
+
+                        Creiamo un gestore eventi che si rimuova dopo essere stato eseguito: 
+
+                            <!DOCTYPE html>
+                            <html>
+                                <head>
+                                    <title>Page Title</title>
+                                </head>
+                                <body>
+                                      <button id="demo">Start</button>
+                                </body>
+                            </html>
+
+                            //calling the function in window.onload to make sure the HTML is loaded
+                            window.onload = function() {
+                                //VIENE CREATO IL BUTTON
+                                var btn = document.getElementById("demo");
+                                //QUI VIENE AGGIUNTO L'EVENTO CLICK
+                                btn.addEventListener("click", myFunction);
+
+                                function myFunction() {
+                                    alert(Math.random());
+                                    //QUI RIMUOVE L'EVENTO e funziona solo una volta
+                                    btn.removeEventListener("click", myFunction);
+                                }
+                            };
+
+                        In questo modo vengono aggiunti due listener di eventi all'elemento.  
+                        Possiamo rimuovere uno degli ascoltatori: 
+
+                        Dopo aver fatto clic sul pulsante, viene visualizzato un avviso con un numero casuale e il listener dell'evento viene rimosso. 
+
+                        INTERNET EXPLORE <= 8
+                        Internet Explorer versione 8 e precedenti non supportano i  metodi addEventListener() e removeEventListener(). Tuttavia, è possibile utilizzare il documento. metodo attachEvent() per collegare gestori eventi in Internet Explorer.
+
+            LEZIONE 51.1 Event Propagation
+                Event Propagation
+                    Esistono due modi di propagazione degli eventi nel DOM HTML: gorgogliamento (bubbling) e acquisizione  bubbling and capturing (acquisizione).
+
+                        La propagazione degli eventi consente la definizione dell'ordine degli elementi quando si verifica un evento. Se si dispone di un elemento <p> all'interno di un elemento <div> e l'utente fa clic sull'elemento <p>, quale evento "click" dell'elemento deve essere gestito per primo? 
+
+                    
+                    bubbling
+
+                        ELEMENTO INTERNO PER PRIMO
+                        l'evento dell'elemento più interno viene gestito per primo e quindi l'evento dell'elemento esterno. L'evento click dell'elemento <p> viene gestito per primo, seguito dall'evento click dell'elemento <div>. 
+
+                   capturing
+                        ELEMENTO ESTERNO PER PRIMO
+                        l'evento dell'elemento più esterno viene gestito prima e poi quello interno. L'evento click dell'elemento <div> viene gestito per primo, seguito dall'evento click dell'elemento <p>.
+
+                        capturing = L'acquisizione va giù per il DOM.  
+                        bubbling  = Il gorgogliamento risale il DOM. 
+                
+
+                Capturing vs. Bubbling
+                    addEventListener
+                        Il  metodo addEventListener() consente di specificare il tipo di propagazione con il parametro "useCapture".
+                                addEventListener(event, function, useCapture) //DEFAULT FALSE
+
+                        Il valore predefinito è FALSE, il che significa che viene utilizzata la propagazione bubbling (gorgogliante); quando il valore è impostato su TRUE, l'evento utilizza la propagazione di capturing (acquisizione). 
+                                bubbling    = FALSE
+                                capturing   = TRUE
+
+                                ESEMPIO
+                                    //TRUE= Capturing propagation 
+                                    elem1.addEventListener("click", myFunction, true); 
+
+                                    //FALSE= Bubbling propagation 
+                                    elem2.addEventListener("click", myFunction, false);
+
+                                Ciò è particolarmente utile quando viene gestito lo stesso evento per più elementi nella gerarchia DOM.
+           
+            LEZIONE 52.1 Creating an Image Slider
+                Image Slider
+                    Ora possiamo creare un progetto di scorrimento dell'immagine di esempio. Le immagini verranno modificate utilizzando i pulsanti "Avanti" e "Precedente". 
+                    Ora, creiamo il nostro HTML, che include un'immagine e i due pulsanti di navigazione: 
+
+                            <!DOCTYPE html>
+                                <html>
+                                    <head>
+                                        <title>Page Title</title>
+                                    </head>
+                                    <body>
+                                        <div>
+                                        <button> Prev </button>
+                                        <img src="http://www.sololearn.com/uploads/slider/1.jpg" width="200px" height="100px" />
+                                            <button> Next </button>
+                                        </div>
+                                    </body>
+                                </html>
+
+                                button {
+                                    margin-top:30px;
+                                    float:left;
+                                    height:50px;
+                                }
+                                img {
+                                    float:left;
+                                    margin-right:10px;
+                                    margin-left:10px;
+                                 }
+
+                    Successivamente, definiamo le nostre immagini di esempio in una matrice: 
+
+                        Successivamente, definiamo le nostre immagini di esempio in una matrice: 
+                                var images = [
+                                   "http://www.sololearn.com/uploads/slider/1.jpg", 
+                                   "http://www.sololearn.com/uploads/slider/2.jpg", 
+                                   "http://www.sololearn.com/uploads/slider/3.jpg"
+                                        ];
+                        Useremo tre immagini di esempio che abbiamo caricato sul nostro server. È possibile utilizzare qualsiasi numero di immagini.
+                                definizione dell'array
+                                        var arr=[                                             'A'
+                                                 'B'
+                                                 'C'
+                                        ]
+
+                        Ora dobbiamo gestire i clic del pulsante Avanti e Precedente e chiamare le funzioni corrispondenti per modificare l'immagine. 
+
+                                //QUI MODIFICHI L'IMMAGINE
+                                <div>
+                                  <button onclick="prev()"> Prev </button>
+                                  <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg" 
+                                    width="200px" height="100px"/>
+                                  <button onclick="next()"> Next </button>
+                                </div>
+
+
+                                 var images = [
+                                    'http://www.sololearn.com/uploads/slider/1.jpg', 
+                                    'http://www.sololearn.com/uploads/slider/2.jpg', 
+                                    'http://www.sololearn.com/uploads/slider/3.jpg'
+                                ];
+                                var num = 0;
+                                function next() {
+                                    var slider = document.getElementById('slider');
+                                    num++;
+                                    if(num >= images.length) {
+                                        num = 0;
+                                    }
+                                    slider.src = images[num];
+                                }
+                                function prev() {
+                                    var slider = document.getElementById('slider');
+                                    num--;
+                                    if(num < 0) {
+                                        num = images.length-1;
+                                    }
+                                    slider.src = images[num];
+                                }
+
+
+                                esercizio richiesto
+
+                                var arr = document.
+
+                                    getElementsByTagName("img");
+
+                                    for(var x=0; x<arr.length ; x++) {
+
+                                    arr[x].src = "demo.jpg";
+
+                                    }
+                    
                     ?
-                    ?
-                    ?
+                ?
+                ?
+                ?
+
+            LEZIONE 53.1 Form Validation
+                Form Validation
+
+                    @ATTRIBUTI.OBBLIGATORI AGGIUNGO AL CAMPO DI IMPUT
+                        HTML5 aggiunge alcuni attributi che consentono la convalida del modulo. Ad esempio, l'attributo obbligatorio può essere aggiunto a un campo di input per rendere obbligatoria la compilazione.  
+
+                        La convalida di moduli più complessi può essere eseguita utilizzando JavaScript.  
+                        L'elemento form dispone di un  evento onsubmit che può essere gestito per eseguire la convalida.  
+                        Ad esempio, creiamo un modulo con due input e un pulsante. Il testo in entrambi i campi deve essere lo stesso e non vuoto per superare la convalida.
+
+                                /*CREO DUE PULSANTI
+                                    la form contiene l'attributo obbligatorio che
+                                    viene aggiunto al campo.
+                                    La form ha l'evento onsubmit 
+                                */
+                                <form onsubmit="return validate()" method="post">
+                                  Number: <input type="text" name="num1" id="num1" />
+                                  <br />
+                                  Repeat: <input type="text" name="num2" id="num2" />
+                                  <br />
+                                  <!-- crea il button con valore Submit -->
+                                  <input type="submit" value="Submit" />
+                                </form>
+
+                        Ora dobbiamo definire la  funzione validate(): 
+
+                        Restituiamo true solo quando i valori non sono vuoti e sono uguali. 
+
+                                <form onsubmit="return validate()" method="post">
+                                Number: <input type="text" name="num1" id="num1" /><br />
+                                Repeat: <input type="text" name="num2" id="num2" /><br />
+                                <!--- obbligo submit --->
+                                <input type="submit" value="Submit" />
+                                </form>
+
+                                /*FUNZIONE VALIDATE cre 2 caselle di testo
+                                    con obbligo di validarle altrimenti un
+                                    allert
+                                */
+                                function validate() {
+                                var n1 = document.getElementById('num1');
+                                var n2 = document.getElementById('num2');
+                                //controllo due valori non vuoti ed uguali
+                                if(n1.value != '' && n2.value != '') {
+                                if(n1.value == n2.value) {
+                                return true;
+                                }
+                                }
+                                //se non validate allert
+                                alert("The values should be equal and not blank");
+                                return false;
+                                }
+
+                        Il modulo non verrà inviato se l'evento onsubmit restituisce false. 
+        
+        ECMAScript 6
+            LEZIONE 55.1 Intro to ES6
+                ECMAScript (ES) è una specifica del linguaggio di scripting creata per standardizzare JavaScript.  
+     
+                La sesta edizione, inizialmente nota come ECMAScript 6 (ES6) e successivamente rinominata ECMAScript 2015, aggiunge una nuova sintassi significativa per la scrittura di applicazioni complesse, tra cui classi e moduli, iteratori e for/of loop, generatori, funzioni freccia, dati binari, array tipizzati, raccolte (mappe, set e mappe deboli), promesse, miglioramenti numerici e matematici, riflessione e proxy.  
+                 
+                In altre parole, ES6 è un superset di JavaScript (ES5). Il motivo per cui ES6 è diventato così popolare è che ha introdotto nuove convenzioni e concetti OOP come le classi. 
+
+                In questo modulo, copriamo le aggiunte più importanti a ES6.  
+                Quindi, saltiamo subito dentro!
+
+            LEZIONE 56.1 ES6 Variables and Strings
+                var & let
+                    In ES6 abbiamo tre modi di dichiarare le variabili: 
+                        var a = 10;             // variabile globale o una funzione locale
+                        const b = 'hello';      // 
+                        let c = true;
+                    Il tipo di dichiarazione utilizzata dipende dall'ambito necessario.  Scope è il concetto fondamentale in tutti i linguaggi di programmazione che definisce la visibilità di una variabile. 
+
+                    var & let
+
+                    
+                    LET DICHIARA SOLO VARIABILI LOCALI
+                    A differenza della  parola chiave var, che definisce una variabile a livello globale o localmente a un'intera funzione indipendentemente dall'ambito del blocco, consente  di dichiarare le variabili con ambito limitato al blocco, all'istruzione o all'espressione in cui vengono utilizzate. 
+
+                    In questo caso, la  variabile name è accessibile solo nell'ambito dell'istruzione if perché è stata dichiarata come let. 
+
+                    Per dimostrare la differenza di ambito tra var e let, si consideri questo esempio: 
+
+                                        function varTest() {
+                                                    var x = 1;
+                                                    if (true) {
+                                                        var x = 2;  // same variable
+                                                        console.log(x);  // 2
+                                                    }
+                                                    console.log(x);  // 2
+                                                }
+
+                                                function letTest() {
+                                                    let x = 1;
+                                                    if (true) {
+                                                        let x = 2;  // different variable
+                                                        console.log(x);  // 2
+                                                    }
+                                                    console.log(x);  // 1
+                                                }
+
+                                                varTest();
+                                                letTest();
+
+                        Uno dei migliori usi per let è in loop: 
+
+                            Qui, la  variabile i è accessibile solo nell'ambito del  ciclo for, dove è necessaria. 
+
+                                            for (let i = 0; i < 3; i++) {
+                                                    document.write(i);
+                                                }
+
+                            let non è soggetto a Variable Hoisting, il che significa che  le dichiarazioni let non si spostano all'inizio del contesto di esecuzione corrente.
+
+
+                            VAR: A differenza della  parola chiave var, che definisce una variabile a livello globale o localmente a un'intera funzione indipendentemente dall'ambito del blocco, 
+                            LET consente  di dichiarare le variabili con ambito limitato al blocco, all'istruzione o all'espressione in cui vengono utilizzate. 
+
+                                    if (true) {
+                                            let name = 'Jack';
+                                        }
+                                        alert(name);
+
+
+                            In questo caso, la  variabile name è accessibile solo nell'ambito dell'istruzione if perché è stata dichiarata come let.  
+ 
+                            Per dimostrare la differenza di ambito tra var e let, si consideri questo esempio: 
+
+                                    function varTest() {
+                                            var x = 1;
+                                            if (true) {
+                                                var x = 2;  // same variable
+                                                console.log(x);  // 2
+                                            }
+                                            console.log(x);  // 2
+                                        }
+
+                                        function letTest() {
+                                            let x = 1;
+                                            if (true) {
+                                                let x = 2;  // different variable
+                                                console.log(x);  // 2
+                                            }
+                                            console.log(x);  // 1
+                                        }
+
+                                        varTest();
+                                        letTest();
+
+                                LET E LOOP: Uno dei migliori usi per let è in loop: 
+
+                                            for (let i = 0; i < 3; i++) {
+                                                document.write(i);
+                                            }
+
+                                
+                                Qui, la variabile i è accessibile solo nell'ambito del ciclo for, dove è necessaria.
+
+                                LET NO HOSTING: let non è soggetto a Variable Hoisting, il che significa che le dichiarazioni let non si spostano all'inizio del contesto di esecuzione corrente.
+
+                const
+
+                                CONST VALIDITA GLOBALE
+                                Le variabili const hanno lo stesso ambito delle variabili dichiarate utilizzando let. La differenza è che le variabili const sono immutabili - non possono essere riassegnate.  
+                                Ad esempio, quanto segue genera un'eccezione: 
+
+                                    const a = 'Hello';
+                                    a = 'Bye';
+
+
+                            CONST NO HOSTING:
+                                anche const non è soggetto a Variable Hoisting, il che significa che  le dichiarazioni const non si spostano all'inizio del contesto di esecuzione corrente.  
+                                Si noti inoltre che il codice ES6 verrà eseguito solo nei browser che lo supportano. I dispositivi e i browser meno recenti che non supportano ES6 restituiranno un errore di sintassi.
+
+                Template Literals in ES6
+
+                            I valori letterali del modello sono un modo per generare variabili nella stringa.  
+                            Prima di ES6 dovevamo rompere la corda, ad esempio: 
+
+                                        let name = 'David';
+                                        let msg = 'Welcome ' + name + '!';
+                                        console.log(msg);
+
+                            ES6 introduce un nuovo modo di generare valori variabili nelle stringhe. Lo stesso codice sopra può essere riscritto come:                             
+
+                                        let name = 'David';
+                                        let msg = `Welcome ${name}!`; //inserisce in msg Welcome + name
+                                        console.log(msg);
+                            
+
+                            Si noti che i valori letterali del modello sono racchiusi dal  carattere backtick (' ') anziché dalle virgolette doppie o singole.  
+                            ${expression} è un segnaposto e può includere qualsiasi espressione, che verrà valutata e inserita nel modello letterale. 
+
+
+                                                let a = 8;
+                                        let b = 34;
+                                        let msg = `The sum is ${a+b}`;
+                                        console.log(msg);
+
+                                        = The sum is 42 
+
+
+                            Per sfuggire a un backtick in un modello letterale, inserire una barra rovesciata \ prima del backtick.
+                                    es.
+                                        let msg = `The sum is \${a+b}`; = The sum is ${a+b} 
+
+
+                          Problem ES6 Variables and Strings
+
+                                Devi creare carte paese per un progetto scolastico.  
+                                Il programma dato prende il paese e il suo nome capitale come input.  
+                                Completare la funzione per restituire una stringa nel formato indicato nell'output di esempio: 
+
+                                Sample Input
+                                        Portugal
+                                        Lisbon
+
+                                        Sample Output
+                                        Name: Portugal, Capital: Lisbon
+
+                                        Utilizzare i valori letterali del modello per l'output delle variabili nelle stringhe.
+
+                                                    function main() {
+                                                            var country = readLine();
+                                                            var capital = readLine();
+                                                            
+                                                            console.log(countryCard(country, capital));
+                                                        }
+
+                                                        function countryCard(country, capital){
+                                                            //complete the function
+                                                            //use backtick (` `) for template literal
+                                                            const card = `Name: ${country}, Capital: ${capital}`;
+                                                            return card
+                                                            
+                                                        }
+
+            LEZIONE 57.1 Loops and Functions in ES6
+                !todo: da finire da fare
+                !
+                !
 
 
         JAVA SCRIPT I PARAMETRI
