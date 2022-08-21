@@ -13,4 +13,4 @@ git commit -m "salvataggio"
 git push
 
 
-call GIT_REPOSITORY_GITHUB.BAT
+start "" GIT_REPOSITORY_GITHUB.BAT
