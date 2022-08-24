@@ -5577,7 +5577,39 @@
                                                         }
 
             LEZIONE 57.1 Loops and Functions in ES6
-                !todo: da finire da fare
+                    Loops in ECMAScript 6
+
+                        In JavaScript usiamo comunemente il  ciclo for per iterare sui valori in un elenco:
+                            let arr = [1, 2, 3];
+                            for (let k = 0; k < arr.length; k++) {
+                                console.log(arr[k]);
+                            }
+
+                    Il per... in loop è destinato all'iterazione sulle chiavi enumerabili di un oggetto.  
+                    Per esempio:
+
+
+                        let obj = {a: 1, b: 2, c: 3};  //ATTENZIONE ARRAY SU  STRINGHE ERRATO
+                                for (let v in obj) {
+                                    console.log(v);
+                            }
+
+                    ATTENZIONE Il FOR ... in loop NON  dovrebbe essere usato per iterare su array perché, a seconda del motore JavaScript, potrebbe iterare in un ordine arbitrario. Inoltre, la variabile iterante è una stringa, non un numero, quindi se provi a fare qualsiasi matematica con la variabile, eseguirai la concatenazione della stringa anziché l'addizione.
+
+                    ES6 presenta il NUOVO FOR ... di loop, che crea un ciclo che itera su oggetti iterabili.  
+                    Per esempio:
+                        let list = ["x", "y", "z"];
+                        for (let val of list) {
+                            console.log(val);
+                        }
+
+                    Durante ogni iterazione alla  variabile val viene assegnato l'elemento corrispondente nell'elenco.  
+ 
+                    Il for... di loop funziona anche per altri oggetti iterabili, comprese le stringhe
+                            for (let ch of "Hello") {
+                                console.log(ch);
+                            }
+
                 !
                 !
 
