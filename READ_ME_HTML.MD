@@ -5577,7 +5577,7 @@
                                                         }
 
             LEZIONE 57.1 Loops and Functions in ES6
-                    Loops in ECMAScript 6
+                Loops in ECMAScript 6
 
                         In JavaScript usiamo comunemente il  ciclo for per iterare sui valori in un elenco:
                             let arr = [1, 2, 3];
@@ -5610,9 +5610,97 @@
                                 console.log(ch);
                             }
 
-                !
-                !
 
+                    Il forr... di loop funziona anche sulle raccolte appena introdotte (Map, Set, WeakMap e WeakSet). Ne parleremo nelle prossime lezioni. 
+                        Si noti che il codice ES6 verrà eseguito solo nei browser che lo supportano. I dispositivi e i browser meno recenti che non supportano ES6 restituiranno un errore di sintassi. 
+
+                Functions in ECMAScript 6
+                        Prima di ES6, una funzione JavaScript era definita in questo modo: 
+
+                            //funzione normale
+                            function add(x, y) {
+                                    var sum = x+y;  
+                                    console.log(sum);
+                                }
+                                add(35, 7);
+
+                    @FUNZIONE.ES6 @NUOVA.SINTASSI.FUNZIONE.ES6 @ES6.FUNZIONE
+                    ES6 introduce una nuova sintassi per le funzioni di scrittura. La stessa funzione dall'alto può essere scritta come: 
+
+                            //nuova forma di funzione definita come const
+                                const add = (x, y) => {
+                                        let sum = x + y;  
+                                        console.log(sum);
+                                    }
+                                    add(35, 7);
+                    Questa nuova sintassi è abbastanza utile quando hai solo bisogno di una semplice funzione con un argomento.  @FUNZIONE.1.ARGOMENTO
+                    È possibile saltare la funzione di digitazione  e tornare, nonché alcune parentesi e parentesi graffe.  
+                    Per esempio:
+                                //FUNZIONE CON 1 ARGOMENTO CON LA NUOVA SINTASSI
+                                const greet = x => "Welcome " + x;
+                                    @ES6.FUNZIONE
+
+                                    Il codice precedente definisce una funzione denominata greet che ha un argomento e restituisce un messaggio.  
+     
+                                    Se non ci sono parametri, è necessario utilizzare una coppia vuota di parentesi, come in
+                                     @FUNZIONE.ES6,  @ES6.FUNZIONE
+
+                                    //FUNZIONE NUOVA SENZA PARAMETRI ()
+                                    const x = () => alert("Hi");
+                                        x(); //CHIAMO LA FUNZIONE
+
+
+                                    alert(greet("David"));
+
+                FUNZIONE DA UTILIZZARE IN LINEA PER OGNI ELEMENTO DELL'ARRAY
+                   
+                    La sintassi è molto utile per le funzioni in linea. Ad esempio, supponiamo di avere un array e per ogni elemento dell'array dobbiamo eseguire una funzione. Usiamo il  metodo forEach dell'array per chiamare una funzione per ogni elemento: 
+
+                            //funzione per ogni elemento dell'array
+                            var arr = [2, 3, 7, 8];
+                                //el è 1 parametro per la linea di comando
+
+                                arr.forEach(function(el) {
+                                    console.log(el * 2);
+                                });
+
+                    Tuttavia, in ES6, il codice sopra può essere riscritto come segue: 
+
+                            const arr = [2, 3, 7, 8];
+                                //FUNZIONE LAMPDA O ANOMINA
+                                arr.forEach(v => {
+                                    console.log(v * 2);
+                                });
+
+                    Il codice è più corto e sembra piuttosto carino, non è vero? 
+
+                    Esercizio funzione lampda
+                            cost printOdds =(arr)=>{
+                                    arr.forEach(el => {
+                                       if (el %2 !=0)console.log (el);
+                                    });
+                                }
+
+                    Default Parameters in ES6  @funzione.lampda, @funzione.anomina, @es.lampda
+                    In ES6, possiamo inserire i valori predefiniti proprio nella firma delle funzioni.
+
+                        /*
+                            //A non predifinito b=3 e c= 42
+                            function test(a, b = 3, c = 42) {
+                              return a + b + c;
+                            }
+                            console.log(test(5));
+                            */
+
+
+                            // Full ES6 equivalent FUNZIONE LAMPDA UGUALE ALLA CANONICA
+                            const test = (a, b = 3, c = 42) => a + b + c;
+                            console.log(test(5)); //PASSO 1 PARAMETRO SOLO A = 5
+
+                            Ed ecco un esempio di una funzione freccia con parametri predefiniti:
+
+            LEZIONE 58.1 ES6 Objects
+                todo:da fare
 
         JAVA SCRIPT I PARAMETRI
 

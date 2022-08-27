@@ -1,0 +1,1 @@
+﻿get-service | Select-object Name, StartType, Status | Group-Object -property Status
