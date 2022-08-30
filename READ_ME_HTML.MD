@@ -5334,10 +5334,7 @@
                                     }
                     
                     ?
-                ?
-                ?
-                ?
-
+                
             LEZIONE 53.1 Form Validation
                 Form Validation
 
@@ -5700,7 +5697,110 @@
                             Ed ecco un esempio di una funzione freccia con parametri predefiniti:
 
             LEZIONE 58.1 ES6 Objects
-                todo:da fare
+                        
+                        Le variabili JavaScript possono essere  tipi di dati Object che contengono molti valori chiamati proprietà.  @PROPRIETA.JAVASCRIPT
+                        Un oggetto può anche avere proprietà che sono definizioni di funzione chiamate metodi per l'esecuzione di azioni sull'oggetto.  @METODI.FUNZIONE
+                        ES6 introduce notazioni stenografiche e nomi di proprietà calcolati che rendono la dichiarazione e l'utilizzo di oggetti più facili da capire.   
+                        DEFINIZIONE DEL METODO SENZA I DUE PUNTI
+                            La nuova abbreviazione di definizione del metodo non richiede i due punti (:) o  parola chiave function, come nella  funzione grow della dichiarazione dell'oggetto tree:
+
+                                        //oggetto tree
+                                        let tree = {
+                                        //2 proprieta altezza + colore
+                                        height: 10,
+                                        color: 'green',
+                                        //1 metodo o definizione di funzione con calcolo somma per l'altezza
+                                        grow() { 
+                                            this.height += 2;
+                                        }
+                                    };
+
+                                    tree.grow();
+                                    console.log(tree.height); // 12 CHIAMO LA PROPRIETA ALTEZZA CON SOMMA DI 10+2
+
+                            STENOGRAFICA DEL VALORE DELLA PROPRIETA
+                                
+                                È inoltre possibile utilizzare una stenografia del valore della proprietà quando si inizializzano proprietà con una variabile con lo stesso nome.  
+                                Ad esempio, le proprietà height e health vengono inizializzate con variabili denominate height e health
+
+                                            //PROPRIETA heigt e health inizializzate
+                                            let height = 5;
+                                            let health = 100;
+
+                                            let athlete = {
+                                                height, // height: height,
+                                                health // health: health
+                                            };
+
+                                            console.log(athlete.height); // 5
+
+                                Quando si crea un oggetto utilizzando nomi di proprietà duplicati, l'ultima proprietà sovrascriverà quelle precedenti con lo stesso nome.  
+                                Per esempio:
+                                        var a = {x: 1, x: 2, x: 3, x: 4}; //x= nome duplicato l'ultima proprieta viene sovrascritta
+                                        console.log(a.x); // 4 
+
+                                I nomi di proprietà duplicati hanno generato un Oggetto SyntaxError in ES5 quando si utilizza la modalità rigorosa. Tuttavia, ES6 ha rimosso questa limitazione.
+
+
+                                ESEMPIO ESERCIZIO
+                                            let car = {
+                                            speed:40,
+
+                                            accelerate(){
+                                            this.speed +=10;
+
+
+                                            }
+                                            };  
+
+                                            car.accelerate();
+                                            car.accelerate();
+                                            console.log(car.speed);
+
+                        Computed Property Names
+
+                                Con ES6, è ora possibile utilizzare i nomi delle proprietà calcolate. Usando la notazione tra parentesi quadre [], possiamo usare un'espressione per il nome di una proprietà, incluse le stringhe concatenate. Questo può essere utile nei casi in cui vogliamo creare determinati oggetti in base ai dati dell'utente (ad esempio id, e-mail e così via).
+
+                                    let prop = 'name';
+                                    let id = '1234';
+                                    let mobile = '08923';
+
+                                    let user = {
+                                      [prop]: 'Jack',
+                                      [`user_${id}`]: `${mobile}`
+                                    };
+
+                                    console.log(user.name); // Jack
+                                    console.log(user.user_1234); // 08923 
+
+                                Example 2:
+
+                                    var i = 0;
+                                    var a = {
+                                      ['foo' + ++i]: i,
+                                      ['foo' + ++i]: i,
+                                      ['foo' + ++i]: i
+                                    };
+
+                                    console.log(a.foo1); // 1
+                                    console.log(a.foo2); // 2
+                                    console.log(a.foo3); // 3
+
+                                Example 3:
+
+                                    var param = 'size';
+                                    var config = {
+                                    [param]: 12,
+                                    ['mobile' + param.charAt(0).toUpperCase() + param.slice(1)]: 4
+                                    };
+
+                                    console.log(config.mobileSize); // 4
+
+                                È molto utile quando è necessario creare oggetti personalizzati basati su alcune variabili.
+
+
+
+
 
         JAVA SCRIPT I PARAMETRI
 
